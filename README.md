@@ -1,4 +1,5 @@
-From R Markdown to Quarto
+FromAndrew Bray is an Associate Teaching Professor in the Department of Statistics at UC Berkeley where he develops and teaches courses in statistics and data science. His research interests include statistical computing, data privacy, and applications of statistical models to environmental science. He was previously an Associate Professor of Statistics in the Department of Mathematics at Reed College and an NSF Five Colleges postdoctoral fellow in western Massachusetts.
+R Markdown to Quarto
 ================
 
 ### rstudio::conf 2022
