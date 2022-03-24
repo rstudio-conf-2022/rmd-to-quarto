@@ -29,7 +29,7 @@ This workshop is designed for those who want to take their R Markdown skills and
 
 ## Learning objectives
 
-LEARNING_OBJECTIVES
+[ADD AN ITEMIZED LIST OF LEARNING OBJECTIVES.]
 
 ## Is this course for me?
 
