@@ -33,7 +33,11 @@ LEARNING_OBJECTIVES
 
 ## Is this course for me?
 
-THREE_QUESTIONS
+This course will be appropriate for you if you answer yes to any of these questions:
+
+Have you authored R Markdown documents and are you interested in migrating your workflow to its successor format, Quarto?
+
+Are you interested in exploring the wide spectrum of documents that can be produced with Quarto, including static documents, websites, and slides?
 
 ## Prework
 
