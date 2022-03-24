@@ -3,7 +3,7 @@ From R Markdown to Quarto
 
 ### rstudio::conf 2022
 
-by INSTRUCTOR_NAME
+by Andrew Bray
 
 -----
 
