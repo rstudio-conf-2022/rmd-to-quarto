@@ -1,0 +1,60 @@
+---
+title: "Welcome to Quarto"
+toc: true
+---
+
+> Meet your fellow students, familiarize yourself with the format of the workshop, rendering a document into multiple formats, and manipulate the block and inline elements that make up any document.
+
+### Introductions
+
+### Workshop Structure
+
+### Quarto Overview
+
+- Blocks and inlines
+
+### Exercise 1
+
+The exercises focuses on using `quarto` at the command line. Within RStudio, this can be done in the Terminal tab in the Console pane.
+
+1. Render `ex1.qmd` as an html file. How is the list expressed in html?
+2. Render `ex1.qmd` as a latex file. How is the list expressed in latex?
+3. Render `ex1.qmd` as a pdf file but specify that you want to output to a file named `handout.pdf`. (see the helpfile `quarto render --help`)
+4. What defaults does Quarto use if you simply run `quarto render ex1.qmd`?
+
+### Markdown
+
+- Survey (easy to hard)
+- Inlines
+  - italics
+  - bold
+  - super/sub script
+  - strikethrough
+  - verbatim
+  - links
+  - images
+  - inline math
+  - spans
+- Blocks
+  - paragraph
+  - lists
+  - tables
+  - source code
+  - display math
+  - diagrams
+  - fenced divs
+  - callouts
+  - blockquotes
+  - lineblock
+  
+### Simple Figures
+
+### Tables
+
+### Code Blocks
+
+### Exercise 2
+
+1. Open `ex2-goal.html` in a browser window.
+2. Modify `ex2.qmd`, using `img1` and `img2` to recreate `ex2-goal.html`.
+

@@ -1,0 +1,103 @@
+// fonts
+@import url(https://fonts.googleapis.com/css?family=Cabin:600,600i&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Commissioner&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC:Bold,700&display=swap);
+$font-family-sans-serif: "Commissioner" !default;
+$presentation-font-size-root: 36px;
+
+// colors
+:root {
+  --red-100: #bf2642;
+  --orange-100: #f2a03d;
+  --green-100: #02733e;
+  --purple-100: #73245e;
+}
+
+// set your custom colors here
+$body-color: #5c5859 !default;
+
+// headings
+$presentation-heading-color: #4466B0 !default;
+$presentation-heading-font: "Cabin", "Commissioner", sans serif !default;
+
+// code
+$code-block-bg: lighten($body-color, 60%) !default;
+$code-block-border-color: $body-color !default;
+
+/*-- scss:rules --*/
+
+details>summary {
+  font-size: 0.75em;
+}
+
+.small {
+  font-size: 0.75em;
+}
+
+.reveal .slide .question {
+  border-left: 3px solid #7090A5;
+  padding-left: 0.5em;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+  background: #A9BCC9;
+}
+
+.reveal .slide .poll {
+  border-left: 3px solid #FFD166;
+  padding-left: 0.5em;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+  background: #FFEDC2;
+}
+
+.reveal .slide .appex {
+  border-left: 3px solid #003559;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  padding: 0.5em;
+  background: #EBF7FF;
+}
+
+/*
+.reveal .slide b, strong {
+  color: #D3533A;
+}
+*/
+
+.bigadage {
+  font-size: 250%;
+  font-family: Amatic SC;
+}
+
+.smalladage {
+  font-size: 150%;
+  font-family: Amatic SC;
+}
+
+.bgreen {
+  font-weight: 700;
+  color: var(--green-100);
+}
+
+.bpurple {
+  font-weight: 700;
+  color: var(--purple-100);
+}
+
+.borange {
+  font-weight: 700;
+  color: var(--orange-100);
+}
+
+.v-center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+}
+
+.w90-container {
+  display: flex;
+  width: 90%;
+  align-items: center;
+}

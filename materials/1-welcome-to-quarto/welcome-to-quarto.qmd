@@ -1,0 +1,240 @@
+---
+title: "Welcome to Quarto"
+subtitle: "rstudio::conf(2022) <br> From R Markdown to Quarto"
+author: "Andrew Bray"
+format: 
+  revealjs:
+    theme: ../slides.scss
+    multiplex: true
+    transition: fade
+    slide-number: true
+    incremental: false 
+    center: false
+    menu: false
+    highlight-style: github
+execute:
+  freeze: auto
+---
+
+## Introductions
+
+Let's take \~2 minutes to introduce yourself to your neighbors.
+
+\
+
+::: poll
+Please share ...
+
+1.  Your name
+2.  Where you're from
+3.  What you work on in 3 words or fewer
+4.  Name one thing you've made that you're proud of
+:::
+
+## 
+
+::: {.v-center-container style="text-align: center"}
+Workshop schedule, slides, and exercises are at: [rstd.io/rmd-to-quarto](rstd.io/rmd-to-quarto){style="font-size: 1.5em"}
+:::
+
+## Workshop Schedule
+
+Table from website
+
+## Discussions
+
+Ask a question by opening a new discussion post:\
+[https://github.com/rstudio-conf-2022/rmd-to-quarto/discussions](https://github.com/rstudio-conf-2022/rmd-to-quarto/discussions){.uri style="font-size: .9em"}
+
+![](images/github-discussion.png){fig-alt="Screenshot of the github discussion page that serves as the forum for the workshop." fig-align="center" width="546"}
+
+## Communication: stickies
+
+During an exercise, place a green sticky on your laptop if you're good to go and a pink sticky if you want help.
+
+zzq add photos
+
+# Quarto Gallery
+
+# Workshop Goals
+
+1.  Author powerful documents, slick slides, wonderful websites
+2.  Understand the machine behind the magic
+3.  
+
+## 
+
+![Artwork by Allison Horst](images/rmarkdown_wizards.png){fig-alt="Two fuzzy round monsters dressed as wizards, working together to brew different things together from a pantry (code, text, figures, etc.) in a cauldron labeled “R Markdown”. The monster wizard at the cauldron is reading a recipe that includes steps “1. Add text. 2. Add code. 3. Knit. 4. (magic) 5. Celebrate perceived wizardry.” The R Markdown potion then travels through a tube, and is converted to markdown by a monster on a broom with a magic wand, and eventually converted to an output by pandoc. Stylized text (in a font similar to Harry Potter) reads “R Markdown. Text. Code. Output. Get it together, people.”"}
+
+# Quarto and R Markdown
+
+Here is my [sentence]{.bgreen}.
+
+::: {data-id="box1" auto-animate-delay="0" style="background: #2780e3; width: 200px; height: 150px; margin: 10px;"}
+Text
+:::
+
+# The Building Blocks of a Document {background-color="black" background-image="images/disassembled-rubix.jpg"}
+
+## 
+
+![By user Curis on Wikipedia, CC BY 2.5](images/disassembled-rubix.jpg){fig-align="center"}
+
+
+##  {auto-animate="true"}
+
+\
+\
+
+### What is a document? {style="text-align: center"}
+
+\
+
+::: {style="text-align: center"}
+[A document is a list of]{.fragment}[block elements]{.bgreen} [that contain]{.fragment}[inline elements]{.bpurple} or other blocks, [along with associated]{.fragment}[metadata]{.borange}.
+:::
+
+##  {auto-animate="true"}
+
+::: {style="text-align: center"}
+A document is a list of [block elements]{.bgreen} that contain [inline elements]{.bpurple} or other blocks, along with associated [metadata]{.borange}.
+:::
+
+::: {.w90-container layout-ncol="2"}
+::: {data-id="box1" auto-animate-delay="0" style="background: #2780e3; width: 20px; height: 150px; margin: 10px;"}
+:::
+
+::: r-stack
+::: {.fragment .fade-right}
+![](images/demo-pdf.png)
+:::
+
+::: {.fragment .fade-left}
+![](images/demo-html.png)
+:::
+
+::: {.fragment .fade-left}
+![](images/demo-docx.png)
+:::
+:::
+:::
+
+## 
+
+quarto render
+
+:   Render input file to various document formats.
+
+::: r-fit-text
+    quarto render <input> --to <format>
+:::
+
+::: {layout-ncol="2"}
+### Input
+
+-   `*.qmd`
+-   `*.ipynb`
+-   `*.md`
+-   `*.Rmd`
+
+### Format
+
+-   `html`
+-   `pdf`
+-   `revealjs`
+-   `etc`
+:::
+
+## 
+
+Let's code!
+
+::: notes
+1.  Navigate to the terminal tab of the console pane
+2.  
+:::
+
+## The expression of an element depends on its format
+
+-   image in html and pdf
+-   inline footnote in html, latex, and presentation
+
+# Exercise 1 {background-color="black"}
+
+Let's focus on using `quarto` at the command line. Within RStudio, this can be done in the Terminal tab in the Console pane.
+
+1. Render `ex1.qmd` to html. How is the list expressed in html?
+2. Render `ex1.qmd` to latex. How is the list expressed in latex?
+3. Render `ex1.qmd` to pdf but specify that you want to output to a file named `handout.pdf`. (see the helpfile `quarto render --help`)
+4. What defaults does Quarto use if you simply run `quarto render ex1.qmd`?
+
+# Authoring with Markdown
+
+## 
+
+Markdown is designed to be easy to write, and, even more importantly, easy to read:
+
+> A Markdown-formatted document should be publishable as-is, as plain text, without looking like it's been marked up with tags or formatting instructions.\
+> -John Gruber
+
+## Inline Text Formatting
+
++-----------------------------------+-------------------------------+
+| Markdown Syntax                   | Output                        |
++===================================+===============================+
+|     *italics* and **bold**        | *italics* and **bold**        |
++-----------------------------------+-------------------------------+
+|     superscript^2^ / subscript~2~ | superscript^2^ / subscript~2~ |
++-----------------------------------+-------------------------------+
+|     ~~strikethrough~~             | ~~strikethrough~~             |
++-----------------------------------+-------------------------------+
+|     `verbatim code`               | `verbatim code`               |
++-----------------------------------+-------------------------------+
+
+## Header Blocks
+
++---------------------+-----------------------------------+
+| Markdown Syntax     | Output                            |
++=====================+===================================+
+|     # Header 1      | # Header 1 {.heading-output}      |
++---------------------+-----------------------------------+
+|     ## Header 2     | ## Header 2 {.heading-output}     |
++---------------------+-----------------------------------+
+|     ### Header 3    | ### Header 3 {.heading-output}    |
++---------------------+-----------------------------------+
+|     #### Header 4   | #### Header 4 {.heading-output}   |
++---------------------+-----------------------------------+
+|     ##### Header 5  | ##### Header 5 {.heading-output}  |
++---------------------+-----------------------------------+
+|     ###### Header 6 | ###### Header 6 {.heading-output} |
++---------------------+-----------------------------------+
+
+## Math
+
+Mathematical notation included via $\LaTeX$.
+
++-------------------------------+-------------------------+
+| Markdown Syntax               | Output                  |
++===============================+=========================+
+|     inline math: $E = mc^{2}$ | inline math: $E=mc^{2}$ |
++-------------------------------+-------------------------+
+|     display math:             | display math:\          |
+|                               | $$E = mc^{2}$$          |
+|     $$E = mc^{2}$$            |                         |
++-------------------------------+-------------------------+
+
+## Links and Images
+
++-------------------------------------+---------------------------------------------------------------------------------------+
+| Markdown Syntax                     | Output                                                                                |
++=====================================+=======================================================================================+
+|     <https://quarto.org>            | <https://quarto.org>                                                                  |
++-------------------------------------+---------------------------------------------------------------------------------------+
+|     [Quarto](https://quarto.org)    | [Quarto](https://quarto.org)                                                          |
++-------------------------------------+---------------------------------------------------------------------------------------+
+|     ![Caption](images/elephant.png) | ![Caption](images/elephant.png){fig-alt="A line drawing of an elephant." width="200"} |
++-------------------------------------+---------------------------------------------------------------------------------------+
+
+## References and further reading
+
+-   [Pandoc documentation on type references](https://pandoc.org/lua-filters.html#lua-type-reference): this section documents the tools needed to write Lua filters but included in this is a compendium of the different block and inline elements recognized by pandoc.
