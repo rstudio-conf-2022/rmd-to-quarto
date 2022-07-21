@@ -8,31 +8,47 @@ project:
 
 website:
   title: "From R Markdown to Quarto"
+  page-navigation: true
   navbar:
     background: light
     foreground: dark
     right:
-      - href: index.qmd
-        text: "Overview"
+      - text: "Overview"
+        href: index.qmd
       - text: "Materials"
-        menu:
-          - text: "Welcome to Quarto"
+        href: materials/index.qmd
+      - text: "About"
+        href: about.qmd
+  
+  sidebar:
+    - id: materials
+      title: "Materials"
+      style: "docked"
+      align: left
+      contents:
+          - text: "Materials"
+            href: materials/index.qmd
+          - text: "1. Welcome to Quarto"
             href: materials/1-welcome-to-quarto/index.qmd
-          - text: "Polishing Documents"
+          - text: "2. Polishing Documents"
             href: materials/2-polishing-documents/index.qmd
-          - text: "Computation"
+          - text: "3. Computation"
             href: materials/3-computation/index.qmd
-          - text: "Projects and Publishing"
+          - text: "4. Projects and Publishing"
             href: materials/4-projects-and-publishing/index.qmd
-          - text: "Presentations"
+          - text: "5. Presentations"
             href: materials/5-presentations/index.qmd
-          - text: "Websites and Books"
+          - text: "6. Websites and Books"
             href: materials/6-websites-and-books/index.qmd
-          - text: "Workshop"
+          - text: "7. Workshop"
             href: materials/7-workshop/index.qmd
-          - text: "Extending Quarto"
+          - text: "8. Extending Quarto"
             href: materials/8-extending-quarto/index.qmd
-            
+    - id: about
+      contents:
+        - about.qmd
+        # navigation items
+    
   page-footer:
     left: "This page is built with ❤️ and [Quarto](https://quarto.org/)."
     right: "&copy; Copyright 2022, Andrew Bray"
