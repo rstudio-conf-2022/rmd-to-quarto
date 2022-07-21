@@ -1,0 +1,53 @@
+project:
+  type: website
+  render:
+    - "*.qmd"
+    - "!demo*.qmd"
+    - "!ex*.qmd"
+    - "!*/slides/"
+
+website:
+  title: "From R Markdown to Quarto"
+  navbar:
+    background: light
+    foreground: dark
+    right:
+      - href: index.qmd
+        text: "Overview"
+      - text: "Materials"
+        menu:
+          - text: "Welcome to Quarto"
+            href: materials/1-welcome-to-quarto/index.qmd
+          - text: "Polishing Documents"
+            href: materials/2-polishing-documents/index.qmd
+          - text: "Computation"
+            href: materials/3-computation/index.qmd
+          - text: "Projects and Publishing"
+            href: materials/4-projects-and-publishing/index.qmd
+          - text: "Presentations"
+            href: materials/5-presentations/index.qmd
+          - text: "Websites and Books"
+            href: materials/6-websites-and-books/index.qmd
+          - text: "Workshop"
+            href: materials/7-workshop/index.qmd
+          - text: "Extending Quarto"
+            href: materials/8-extending-quarto/index.qmd
+            
+  page-footer:
+    left: "This page is built with ❤️ and [Quarto](https://quarto.org/)."
+    right: "&copy; Copyright 2022, Andrew Bray"
+
+format: 
+  html:
+    theme: 
+    - sandstone
+    - custom.scss
+    
+execute:
+  freeze: auto
+    
+# Design tips:
+# 1. maggieappleton.com
+# 2. Palette: https://www.jpl.nasa.gov/images/the-grand-tour-jpl-travel-poster
+
+  
