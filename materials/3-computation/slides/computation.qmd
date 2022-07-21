@@ -1,0 +1,47 @@
+---
+title: "Computations"
+subtitle: "rstudio::conf(2022) <br> From R Markdown to Quarto"
+author: "Andrew Bray"
+format:
+  revealjs:
+    theme: ../../slides.scss
+    css: ../tachyons.min.css
+    multiplex: true
+    transition: fade
+    slide-number: true
+    incremental: false 
+    center: false
+    menu: false
+    highlight-style: github
+    progress: false
+    code-overflow: wrap
+---
+
+# Code Blocks for Display
+
+## pandoc code cells
+
+# Code Blocks for Computing
+
+## Quarto syntax
+
+````markdown
+```{language}
+#| option1: value
+#| option2: value
+
+code
+```
+````
+
+# Shiny
+
+
+
+
+## References and further reading {.smaller}
+
+- [Client Side Web Developent Ch. 5-7](https://info340.github.io/css.html): approachable and concise introduction to how CSS work.
+- [](): 
+- https://patents.google.com/patent/US3811677A/en?q=stilts&oq=stilts
+- https://patents.google.com/patent/US6688257B2/en?q=pet+dog&oq=pet+dog

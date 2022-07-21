@@ -1,0 +1,81 @@
+---
+title: "Extending Quarto"
+subtitle: "rstudio::conf(2022) <br> From R Markdown to Quarto"
+author: "Andrew Bray"
+format:
+  revealjs:
+    theme: ../../slides.scss
+    css: ../tachyons.min.css
+    multiplex: true
+    transition: fade
+    slide-number: true
+    incremental: false 
+    center: false
+    menu: false
+    highlight-style: github
+    progress: false
+    code-overflow: wrap
+---
+
+# Generic Blocks and Inlines
+
+## What happens when you pandoc it?
+
+## Syntax of Bracketed Span
+
+```{.markdown .r-fit-text}
+[content]{#id .class attribute="value"}
+```
+
+- You can have multiple identifiers, classes, and attributes. Separate them with a space.
+
+
+
+## Syntax of Fenced Div
+
+```{.markdown .r-fit-text}
+::: {#id .class attribute="value"}
+content
+:::
+```
+
+# Extended Elements
+
+## Border
+
+## Callout blocks
+
+## Layouts
+
+## Tables
+
+## RStudio Visual Editor
+
+## YAML Intelligence
+
+# Exercise 1
+
+# Styling with CSS
+
+## Rule syntax
+
+## Attributes
+
+## Selectors
+
+## Cascade
+
+## Ex. Formatting text inline
+
+## Ex. Making a box
+
+# Exercise 2
+
+Make your own css
+
+## References and further reading {.smaller}
+
+- [Client Side Web Developent Ch. 5-7](https://info340.github.io/css.html): approachable and concise introduction to how CSS work.
+- [](): 
+- https://patents.google.com/patent/US3811677A/en?q=stilts&oq=stilts
+- https://patents.google.com/patent/US6688257B2/en?q=pet+dog&oq=pet+dog

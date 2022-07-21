@@ -1,0 +1,16 @@
+---
+title: "Quarto"
+subtitle: "rstudio::conf(2022) <br> From R Markdown to Quarto"
+author: "Andrew Bray"
+format:
+  revealjs:
+    theme: ../../slides.scss
+    transition: fade
+    slide-number: true
+    incremental: false 
+    center: false
+    menu: false
+    highlight-style: github
+    progress: false
+    code-overflow: wrap
+---

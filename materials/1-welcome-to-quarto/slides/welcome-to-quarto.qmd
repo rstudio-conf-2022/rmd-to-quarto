@@ -1,0 +1,1093 @@
+---
+title: "Welcome to Quarto"
+#subtitle: "rstudio::conf(2022) <br> From R Markdown to Quarto"
+author: "Andrew Bray"
+format:
+  revealjs:
+    theme: ../../slides.scss
+    multiplex: true
+    transition: fade
+    slide-number: true
+    incremental: false 
+    center: false
+    menu: false
+    highlight-style: github
+    progress: false
+    code-overflow: wrap
+---
+
+## Introductions
+
+Let's take \~2 minutes to introduce yourself to your neighbors.
+
+\
+
+::: poll
+Please share ...
+
+1.  Your name
+2.  Where you're from
+3.  What you work on in 3 words or fewer
+4.  Name one thing you've made that you're proud of
+:::
+
+# About the Workshop
+
+##
+
+::: {.v-center-container style="text-align: center"}
+Workshop schedule, slides, and exercises are at: [rstd.io/rmd-to-quarto](rstd.io/rmd-to-quarto){style="font-size: 1.5em"}
+:::
+
+# Workshop Goal
+
+From Magic to Magical Machines
+
+<!-- ![Artwork by Allison Horst](images/rmarkdown_wizards.png){fig-alt="Two fuzzy round monsters dressed as wizards, working together to brew different things together from a pantry (code, text, figures, etc.) in a cauldron labeled “R Markdown”. The monster wizard at the cauldron is reading a recipe that includes steps “1. Add text. 2. Add code. 3. Knit. 4. (magic) 5. Celebrate perceived wizardry.” The R Markdown potion then travels through a tube, and is converted to markdown by a monster on a broom with a magic wand, and eventually converted to an output by pandoc. Stylized text (in a font similar to Harry Potter) reads “R Markdown. Text. Code. Output. Get it together, people.”"} -->
+
+## Workshop Schedule
+
+1. Quarto and RMarkdown
+2. What is a document? Rendering with Quarto
+3. Authoring with Markdown
+4. Expanding with Quarto
+5. Computing
+
+
+## Discussions
+
+Ask a question by opening a new discussion post:\
+[https://github.com/rstudio-conf-2022/rmd-to-quarto/discussions](https://github.com/rstudio-conf-2022/rmd-to-quarto/discussions){.uri style="font-size: .9em"}
+
+![](images/github-discussion.png){fig-alt="Screenshot of the github discussion page that serves as the forum for the workshop." fig-align="center" width="546"}
+
+## Communication: stickies
+
+During an exercise, place a green sticky on your laptop if you're good to go and a pink sticky if you want help.
+
+zzq add photos
+
+
+# What can you do with Quarto?
+
+
+## Articles
+
+::: {layout-ncol="2"}
+![](images/gallery-doc-html.png)
+
+![](images/gallery-doc-pdf.png)
+:::
+
+## Presentations
+
+::: {layout-ncol="2"}
+![](images/gallery-pres-3.png)
+
+![](images/gallery-pres-4.png)
+:::
+
+## Websites
+
+::: {layout-ncol="2"}
+![](images/gallery-web-nasa.png)
+
+![](images/gallery-web-quarto.png)
+:::
+
+
+## Books
+
+::: {layout-ncol="2"}
+![](images/gallery-books-viz.png)
+
+![](images/gallery-books-r4ds.png)
+:::
+
+
+# Quarto and R Markdown
+
+## Quarto and R Markdown, a history . . . {.smaller}
+
+::: incremental
+- 1984 **Literate Programming** proposed to combine text with code
+- 2002 `Sweave` weaves together S/R and $\TeX$
+- 2006 `pandoc` converts between different document formats
+- 2012 `knitr` a next gen Sweave for R and Markdown
+- 2014 `knitr::pandoc` added to leverage `pandoc` flexible outputs
+- 2015  `pandoc` functionality moved into new `rmarkdown`
+- 2018 *R Markdown: A definite guide*
+- 2020 *R Markdown Cookbook*
+:::
+
+. . .
+
+. . . throughout, an ecosystem of R packages develops (`bookdown`, `blogdown`, `distill`, etc.)
+
+## Diagram of R Markdown model
+
+## Diagram of Quarto model
+
+## 
+
+### How is Quarto Different than R Markdown?
+
+::: incremental
+1. Quarto is compute-agnostic. R Markdown requires R.
+
+2. The ecosystem of R packages is replaced by a single framework.
+:::
+
+##
+
+### What can you do with R Markdown that you can't with Quarto?
+
+- Access tools built around R Markdown (e.g. `blogdown`, `xaringan`, `workflowr`, `papaja`) that haven't yet been implemented in Quarto.
+
+> Heavy users of such tools may want to stick with R Markdown.
+
+##
+
+### What can you do with Quarto that you can't with R Markdown?
+
+- Easier to organize appearance across documents
+- Features have better cross-format support
+- Figure layout, table layout
+- Better cross referencing
+- Up-to-date revealjs slides
+- Easier to customize websites and books with projects
+
+
+# Exercise 0 {background-color="#00403d" style="font-size: .7em"}
+
+Let's kick the tires on Quarto!
+
+1. Open up a new Quarto document using an HTML format
+
+2. Click the Render button.
+
+3. Look carefully through the source. What do you notice that's different from what it would look like in an R document? Discuss with your neighbor then post your answers to the discussion forum.
+
+# The Building Blocks of a Document
+
+<!-- ##  -->
+
+<!-- ![By user Curis on Wikipedia, CC BY 2.5](images/disassembled-rubix.jpg){fig-align="center"} -->
+
+## Diagram of pandoc part of flow
+
+##
+
+::: columns
+:::{.column width="25%"}
+\
+\
+\
+\
+\
+
+### Inputs
+:::
+:::{.column width="50%"}
+![](images/pandoc-diagram.svg){fig-align="center"}
+:::
+
+:::{.column width="25%"}
+\
+\
+\
+\
+\
+
+### Outputs
+:::
+:::
+
+## Quarto Render
+
+Render input file to various document formats.
+
+::: {layout-ncol="2" style="font-size: .7em; text-align: center"}
+### Input
+
+-   `*.qmd`
+-   `*.ipynb`
+-   `*.md`
+-   `*.Rmd`
+
+### Format
+
+-   `html`
+-   `pdf`
+-   `revealjs`
+-   `docx`
+-   `ppt`
+-   and many more!
+:::
+
+
+## Three ways to render
+
+1. **Quarto is integrated into RStudio**
+
+   Click ![](images/render-icon.png){fig-alt="small icon of render arrow" width="100"} in Editor pane of RStudio.
+
+. . . 
+
+2. **Quarto is an R package**
+
+   Run in R:
+
+   ```r
+   quarto::quarto_render(input = ___, output_format = ___)
+   ```
+   
+. . .
+
+3. **Quarto is a command line tool**
+
+   Run at the terminal:
+   
+   ```bash
+   quarto render <input> --to <format>`
+   ```
+
+##  {auto-animate="true"}
+
+![](images/rstudio-console.png){fig-align="center"}
+
+. . .
+
+::: {data-id="spotlight" style="background: #f2a03d40; width: 60px; height: 25px; margin: 5px; position: absolute; top: 86px; left: 344px; border-radius: 8px; border: 4px solid #f2a03d"}
+:::
+
+##  {auto-animate="true"}
+
+![](images/rstudio-console.png){fig-align="center"}
+
+::: {data-id="spotlight" style="background: #f2a03d50; width: 60px; height: 25px; margin: 5px; position: absolute; top: 393px; left: 91px; border-radius: 8px; border: 4px solid #f2a03d"}
+:::
+
+::: {data-id="typed-code" style="background: #02733e50; width: 308px; height: 22px; margin: 5px; position: absolute; top: 607px; left: 95px"}
+:::
+
+##  {auto-animate="true"}
+
+![](images/rstudio-console.png){fig-align="center"}
+
+::: {data-id="spotlight" style="background: #f2a03d50; width: 70px; height: 25px; margin: 5px; position: absolute; top: 393px; left: 150px; border-radius: 8px; border: 4px solid #f2a03d"}
+:::
+
+::: {data-id="typed-code" style="background: #02733e50; width: 308px; height: 22px; margin: 5px; position: absolute; top: 607px; left: 95px"}
+:::
+
+## {auto-animate="true"}
+
+![](images/rstudio-terminal.png){fig-align="center"}
+
+::: {data-id="spotlight" style="background: #f2a03d50; width: 70px; height: 25px; margin: 5px; position: absolute; top: 393px; left: 150px; border-radius: 8px; border: 4px solid #f2a03d"}
+:::
+
+::: {data-id="typed-code" style="background: #02733e50; width: 537px; height: 22px; margin: 5px; position: absolute; top: 455px; left: 95px"}
+:::
+
+## Let's Code
+
+\
+\
+
+I will:
+
+1. Render to several formats using `quarto render`
+2. See how elements are expressed in the different formats
+
+Then you'll do the same.
+
+::: notes
+1.  Navigate to the terminal tab of the console pane
+2.  Run quarto render demo.qmd --to html
+3.  Run quarto render demo.qmd --to docx
+4.  Run quarto render demo.qmd --to latex
+5.  Inspect how emphasis and the image is expressed
+:::
+
+## Element expression depends on format
+
+#### Emphasis
+
+[HTML]{.smallcaps style="font-size: .5em"}
+``` html
+A <em>spatial logical toy</em>
+```
+
+[LATEX]{.smallcaps style="font-size: .5em"}
+``` latex
+A \emph{spatial logical toy}
+```
+
+\
+
+#### Image
+
+[HTML]{.smallcaps style="font-size: .5em"}
+``` html
+<img src="images/med-rubiks-cube.png" class="img-fluid">
+```
+
+[LATEX]{.smallcaps style="font-size: .5em"}
+``` latex
+\includegraphics{images/med-rubiks-cube.png}
+```
+
+# Exercise 1 {background-color="#00403d" style="font-size: .7em"}
+
+Let's focus on using `quarto` at the command line. Within RStudio, this can be done in the Terminal tab in the Console pane.
+
+1.  Render `ex-1.qmd` to `html` and view the html file in an editor. How is the list expressed in html?
+2.  Render `ex-1.qmd` to `latex` and view the latex file in an editor. How is the list expressed in latex?
+3.  Render `ex-1.qmd` to `pdf` but specify that you want to output to a file named `handout.pdf`. (see the helpfile for `render` by typing `quarto render --help`)
+4.  Try changing the extension of `ex-1.qmd` to be `.md` and `.Rmd` and re-rendering. Does the output differ?
+5.  Explore full list of commands available in Quarto by using `quarto --help`.
+
+## Metadata through YAML {.smaller}
+
+Metadata can be appended to a document via YAML (Yet Another Markup Language):
+
+```markdown
+---
+format: latex
+title: US Patent
+author: Andrew Bray
+---
+
+# Spatial Logical Toy
+
+- Inventor: **Erno Rubik**
+- Assignee: Politoys Ipari Szovetkezet, Budapest, Hungary
+- Appl. No.: 289,192
+- Filed: Aug. 3, 1981
+
+## Abstract
+
+A spatial logical toy is formed from a total of eighteen toy elements, out of which two sets of eight identical toy elements two connecting elements are provided. The elements of the two sets have cam members with hollows with spherical convex or concave surfaces in-between. The elements are connected by the aid of the cams and the two remaining centrally positioned substantially identical connecting elements each having a ...
+```
+
+# Authoring with Markdown
+
+## {data-menu-title="Working with pandoc"}
+
+Whenever I hear "Pandoc", I picture . . .
+
+. . .
+
+::: columns
+:::{.column width="50%"}
+\
+
+<iframe src="https://giphy.com/embed/3L8k2sJ2DwEZG" width="480" height="333" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p></p>
+:::
+
+:::{.column width="50%"}
+![ . . . but there's help!](images/pandoc-docs.png){.fragment .fade-left}
+:::
+:::
+
+::: footer
+Via giphy.
+:::
+
+## What Defines a Document?
+
+A document consists of *content*, *structure*, *appearance*, *format*.
+
+::: columns
+:::{.column width="50%" .fragment .fade-right}
+![](images/rubiks-patent.png)
+:::
+
+::: {.column width="50%" .fragment}
+\
+
+- **Content:** text, code, graphics
+- **Structure:** paragraphs, lists, etc.
+- **Appearance:** fonts, colors
+- **Format:** layout, functionality
+
+:::
+:::
+
+##  {data-menu-title="Document Structure" auto-animate="true"}
+
+\
+\
+
+### What defines the *structure* of a document? {style="text-align: center"}
+
+\
+
+::: {style="text-align: center"}
+[A document is a list of ]{.fragment}[block elements]{.block-el} [that contain ]{.fragment}[inline elements]{.inline-el} or other blocks, [along with associated ]{.fragment}[metadata]{.meta-el}.
+:::
+
+##  {data-menu-title="Block Elements" auto-animate="true"}
+
+::: {style="text-align: center"}
+A document is a list of [block elements]{.block-el} that contain [inline elements]{.inline-el} or other blocks, along with associated [metadata]{.meta-el}.
+:::
+
+\
+
+. . .
+
+[Block Element]{.block-el}
+
+:   Starts on a new line and followed by an empty line. Forms a visible block.
+
+. . .
+
+::: {layout-ncol="2"}
+::: {#leftcol}
+::: {.v-center-container .block-el data-id="block-1" style="width: 300px; height: 100px; margin: 5px; position: absolute; top: 30px; left: 95px"}
+Block 1
+:::
+
+::: {.v-center-container .block-el data-id="block-2" style="width: 300px; height: 100px; margin: 5px; position: absolute; top: 140px; left: 95px"}
+Block 2
+:::
+
+::: {.v-center-container .block-el data-id="block-3" style="width: 300px; height: 100px; margin: 5px; position: absolute; top: 250px; left: 95px"}
+Block 3
+:::
+:::
+
+::: {#rightcol style="font-size: .7em"}
+\
+
+Examples:
+
+-   Paragraph
+-   Heading
+-   Image
+-   List
+:::
+:::
+
+##  {data-menu-title="Inline Elements" auto-animate="true"}
+
+::: {style="text-align: center"}
+A document is a list of [block elements]{.block-el} that contain [inline elements]{.inline-el} or other blocks, along with associated [metadata]{.meta-el}.
+:::
+
+\
+
+[Inline Element]{.inline-el}
+
+:   Modifies content inline and is not followed by a new line.
+
+::: {layout-ncol="2"}
+<div>
+
+::: {.v-center-container .block-el data-id="block-1" style="width: 300px; height: 100px; margin: 5px; position: absolute; top: 30px; left: 95px"}
+Block 1
+:::
+
+::: {.v-center-container .block-el data-id="block-2" style="width: 300px; height: 100px; margin: 5px; position: absolute; top: 140px; left: 95px"}
+:::
+
+::: {.v-center-container .inline-el data-id="inline-1" style="width: 135px; height: 40px; margin: 5px; position: absolute; top: 150px; left: 105px; font-size: .7em"}
+Inline 1
+:::
+
+::: {.v-center-container .inline-el data-id="inline-1" style="width: 135px; height: 40px; margin: 5px; position: absolute; top: 150px; left: 250px; font-size: .7em"}
+Inline 2
+:::
+
+::: {.v-center-container .block-el data-id="block-3" style="width: 300px; height: 100px; margin: 5px; position: absolute; top: 250px; left: 95px"}
+Block 3
+:::
+
+</div>
+
+::: {style="font-size: .7em"}
+\
+
+Examples:
+
+-   Emphasis
+-   Link
+-   Footnote
+-   Citation
+:::
+:::
+
+##  {data-menu-title="Metadata" auto-animate="true"}
+
+::: {style="text-align: center"}
+A document is a list of [block elements]{.block-el} that contain [inline elements]{.inline-el} or other blocks, along with associated [metadata]{.meta-el}.
+:::
+
+\
+
+[Metadata]{.meta-el}
+
+:   Ancillary info about the document's origin, format, look, etc.
+
+::: {layout-ncol="2"}
+<div>
+
+::: {.v-center-container .meta-el data-id="metadata" style="width: 300px; height: 60px; margin: 5px; position: absolute; top: 30px; left: 95px"}
+Metadata
+:::
+
+::: {.v-center-container .block-el data-id="block-1" style="width: 300px; height: 100px; margin: 5px; position: absolute; top: 100px; left: 95px"}
+Block 1
+:::
+
+::: {.v-center-container .block-el data-id="block-2" style="width: 300px; height: 100px; margin: 5px; position: absolute; top: 210px; left: 95px"}
+:::
+
+::: {.v-center-container .inline-el data-id="inline-1" style="width: 135px; height: 40px; margin: 5px; position: absolute; top: 220px; left: 105px; font-size: .7em"}
+Inline 1
+:::
+
+::: {.v-center-container .inline-el data-id="inline-1" style="purple; width: 135px; height: 40px; margin: 5px; position: absolute; top: 220px; left: 250px; font-size: .7em"}
+Inline 2
+:::
+
+::: {.v-center-container .block-el data-id="block-3" style="width: 300px; height: 100px; margin: 5px; position: absolute; top: 320px; left: 95px"}
+Block 3
+:::
+
+</div>
+
+::: {style="font-size: .7em"}
+\
+
+Examples:
+
+-   Author
+-   Keywords
+-   Character set
+-   Appearance/style
+:::
+:::
+
+##  {data-menu-title="Document Formats" auto-animate="true"}
+
+::: {style="text-align: center"}
+A document is a list of [block elements]{.block-el} that contain [inline elements]{.inline-el} or other blocks, along with associated [metadata]{.meta-el}.
+:::
+
+::: {layout-ncol="2"}
+::: {#\"leftcol}
+::: {.v-center-container .block-el data-id="block-1" style="width: 300px; height: 60px; margin: 5px; position: absolute; top: 60px; left: 95px"}
+Header
+:::
+
+::: {.v-center-container .block-el data-id="block-2" style="width: 300px; height: 150px; margin: 5px; position: absolute; top: 130px; left: 95px"}
+Paragraph
+:::
+
+::: {.v-center-container .inline-el data-id="inline-1" style="width: 135px; height: 40px; margin: 5px; position: absolute; top: 140px; left: 125px; font-size: .6em"}
+Emphasis
+:::
+
+::: {.v-center-container .block-el data-id="block-3" style="width: 300px; height: 150px; margin: 5px; position: absolute; top: 290px; left: 95px"}
+Image
+:::
+
+::: {.fragment .fade-right fragment-index="4"}
+![](images/demo-md.png)
+:::
+:::
+
+::: r-stack
+::: {.fragment .fade-left fragment-index="1"}
+![](images/demo-pdf.png)
+:::
+
+::: {.fragment .fade-left fragment-index="2"}
+![](images/demo-html.png)
+:::
+
+::: {.fragment .fade-left fragment-index="3"}
+![](images/demo-docx.png)
+:::
+:::
+:::
+
+##  {data-menu-title="Markdown"}
+
+::: {style="font-size: 4em; text-align: center"}
+{{< fa brands markdown >}}
+:::
+
+-   Markdown is designed to be easy to write, and, even more importantly, easy to read:
+
+    > A Markdown-formatted document should be publishable as-is, as plain text, without looking like it's been marked up with tags or formatting instructions.\
+    > -John Gruber
+
+. . .
+
+-   Quarto uses extended version of **Pandoc markdown** designed with multiple output formats in mind.
+
+
+## [Inline Elements:]{.inline-el} Text Formatting {.smaller}
+
+::: columns
+::: {.column width="50%"}
+#### Markdown
+
+```{.markdown style="font-size: 1.5em"}
+Markdown allows you to format
+text with *emphasis* and 
+**strong emphasis**. You can 
+also add superscripts^2^, 
+subscripts~2~, and display code 
+`verbatim`. Little known fact: 
+you can also ~~strikethrough~~ 
+text and present it in 
+[small caps]{.smallcaps}.
+```
+:::
+
+::: {.column width="50%" .fragment}
+#### Output
+
+Markdown allows you to format text with *emphasis* and **strong emphasis**. You can also add superscripts^2^, subscripts~2~, and display code `verbatim`. Little known fact: you can also ~~strikethrough~~ text and present it in [small caps]{.smallcaps}.
+:::
+:::
+
+::: footer
+^[Either the `*` or `_` can be used for emphasis and strong.]
+:::
+
+## [Inline Elements:]{.inline-el} Math {.smaller}
+
+::: columns
+::: {.column width="50%"}
+#### Markdown
+
+```markdown
+The area of a circle is $A = \pi r^2$, 
+where $r$ is the radius and $\pi$ is 
+the constant $3.141592\ldots$.
+```
+:::
+
+::: {.column width="50%" .fragment}
+#### Output
+
+The area of a circle is $A = \pi r^2$, where $r$ is the radius and $\pi$ is the constant $3.141592\ldots$.
+:::
+:::
+
+. . .
+
+\
+
+\
+
+TeX math lives between two `$`. Opening `$` must have a non-space character immediately to its right, while the closing `$` must have a non-space character immediately to its left, and must not be followed immediately by a digit.
+
+The $\TeX$ will be rendered by MathJax by default but other options are available.
+
+
+## [Inline Elements:]{.inline-el} Links and Images {.smaller}
+
+::: columns
+::: {.column width="50%"}
+#### Markdown
+
+```markdown
+You can embed [links with names](https://quarto.org/),
+direct urls like <https://quarto.org/>, and links to 
+[other places](#inline-elements-text-formatting) in 
+the document. The syntax is similar for embedding an
+inline image: ![render icon](images/render-icon.png).
+```
+:::
+
+::: {.column width="50%" .fragment}
+#### Output
+
+You can embed [links with names](https://quarto.org/), direct urls like <https://quarto.org/>, and links to [other places](#inline-elements-text-formatting) in the document. The syntax is similar for embedding an inline image: ![render icon](images/render-icon.png){fig-alt="small icon of render arrow" width="100"}.
+:::
+:::
+
+
+## [Inline Elements:]{.inline-el} Footnotes {.smaller}
+
+::: columns
+::: {.column width="50%"}
+#### Markdown
+
+```{.markdown style="font-size: 1.3em"}
+Here is a short note.^[Small 
+enough to fit inline.]
+```
+:::
+
+::: {.column width="50%" .fragment}
+#### Output
+
+Here is a short note.^[Small 
+enough to fit inline.]
+:::
+:::
+
+. . .
+
+\
+
+::: columns
+::: {.column width="50%"}
+
+```{.markdown style="font-size: 1.3em"}
+Here is a longer footnote[^1]
+
+[^1]: This footnote can be placed in a
+separate block. The identifier can be 
+any alphanumeric string.
+```
+:::
+
+::: {.column width="50%" .fragment}
+Here is a longer footnote[^1]
+
+[^1]: This footnote can be placed in a
+separate block. The identifier can be any 
+alphanumeric string.
+
+:::
+:::
+
+. . .
+
+::: {.callout-note icon="false"}
+Placement of the actual footnote depends on the format: end of page for pdf, end of doc for HTML, bottom of slide for presentations.
+:::
+
+## [Block Elements:]{.block-el} Paragraph {.smaller}
+
+One or more lines of text followed by one or more blank lines.
+
+::: columns
+::: {.column width="50%"}
+#### Markdown
+
+```markdown
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+Sed do eiusmod tempor.
+```
+:::
+
+::: {.column width="50%" .fragment}
+#### Output
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+Sed do eiusmod tempor.
+:::
+:::
+
+. . .
+
+\
+
+Without the blank line, the line break is treated as a space.
+
+::: columns
+::: {.column width="50%"}
+```markdown
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Sed do eiusmod tempor.
+```
+:::
+
+::: {.column width="50%}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Sed do eiusmod tempor.
+:::
+:::
+
+## [Block Elements:]{.block-el} Headers
+
++---------------------+-----------------------------------+
+| Markdown Syntax     | Output                            |
++=====================+===================================+
+|     # Header 1      | # Header 1 {.heading-output}      |
++---------------------+-----------------------------------+
+|     ## Header 2     | ## Header 2 {.heading-output}     |
++---------------------+-----------------------------------+
+|     ### Header 3    | ### Header 3 {.heading-output}    |
++---------------------+-----------------------------------+
+|     #### Header 4   | #### Header 4 {.heading-output}   |
++---------------------+-----------------------------------+
+|     ##### Header 5  | ##### Header 5 {.heading-output}  |
++---------------------+-----------------------------------+
+|     ###### Header 6 | ###### Header 6 {.heading-output} |
++---------------------+-----------------------------------+
+
+## [Block Elements:]{.block-el} Lists {.smaller}
+
+Can use `*`, `-`, or `+` may be used for unordered list items.
+
+::: columns
+::: {.column width="50%"}
+#### Markdown
+
+Unordered list
+```markdown
+* red
+* green
+* blue
+```
+:::
+
+::: {.column width="50%" .fragment}
+#### Output
+
+- red
+- green
+- blue
+:::
+:::
+
+::: columns
+::: {.column width="50%"}
+Ordered list
+```markdown
+1. red
+1. green
+3. blue
+```
+:::
+
+::: {.column width="50%" .fragment}
+1. red
+2. green
+3. blue
+:::
+:::
+
+. . .
+
+Pandoc gives you a lot of control over lists, including *nesting*, *fancy lists*, *definition lists*, *blocks in lists*, and *example lists*.
+
+Read the docs for details: <https://pandoc.org/MANUAL.html#pandocs-markdown>
+
+
+## [Block Elements:]{.block-el} Lists (blocks in lists) {.smaller}
+
+A list item may contain multiple paragraphs and other block-level content. Subsequent block elements must be preceded by a blank line and indented to line up with the first non-space content after the list marker.
+
+::: columns
+::: {.column width="50%"}
+#### Markdown
+
+```markdown
+1. First item...
+
+   ...Continued.
+
+1. Second item 
+
+   # header
+   
+1. Third item
+```
+:::
+
+::: {.column width="50%"}
+#### Output
+
+1. First item...
+
+   ...Continued.
+
+1. Second item 
+
+   # header
+   
+1. Third item
+:::
+:::
+
+
+## [Block Elements:]{.block-el} Lists (example lists) {.smaller}
+
+The first list item with a `@` marker will be numbered 1., the next 2., etc. The numbered examples need not occur in a single list; each new list using `@` will take up where the last stopped.
+
+::: columns
+::: {.column width="50%"}
+#### Markdown
+
+```markdown
+(@)  My first example will be numbered (1).
+(@)  My second example will be numbered (2).
+
+Explanation of examples.
+
+(@)  My third example will be numbered (3).
+```
+:::
+
+::: {.column width="50%"}
+#### Output
+
+(@)  My first example will be numbered (1).
+(@)  My second example will be numbered (2).
+
+Explanation of examples.
+
+(@)  My third example will be numbered (3).
+:::
+:::
+
+> You can also label your examples: `(@goodname)`.
+
+
+## [Block Elements:]{.block-el} Math {.smaller}
+
+::: columns
+::: {.column width="50%"}
+#### Markdown
+
+```markdown
+A larger equation:
+
+$$ 
+f(x)={\sqrt{\frac{\tau}{2\pi}}}
+      e^{-\tau (x-\mu )^{2}/2}
+$$
+
+This breaks it:
+
+$$
+
+\bar{x} = \sum_{i=i}^n x_1
+$$
+```
+:::
+
+::: {.column width="50%" .fragment}
+#### Output
+
+A larger equation:
+
+$$
+f(x)=\sqrt{\frac{\tau}{2\pi}}
+    e^{-\tau (x-\mu )^{2}/2}
+$$
+
+This breaks it:
+
+$$
+
+\bar{x} = \sum_{i=i}^n x_1
+$$
+:::
+:::
+
+. . .
+
+\
+
+\
+
+For "display" math, use `$$` delimiters. The delimiters may be separated from the formula by whitespace. No blank lines between the opening and closing `$$` delimiters.
+
+
+## [Block Elements:]{.block-el} Images {.smaller}
+
+Block images use the same syntax as inline images.
+
+::: columns
+::: {.column width="50%"}
+#### Markdown
+
+```markdown
+Images on their own line become a block with a `[caption]`:
+
+![Elephant](images/elephant.png)
+
+or do they?
+```
+:::
+
+::: {.column width="50%" .fragment}
+#### Output
+
+Images on their own line become a block:
+
+![Elephant](images/elephant.png){width="20%"}
+
+or do they?
+:::
+:::
+
+::: {.fragment .fade-left style="position: absolute; width: 500px; top: 350px; left: 300px; filter: drop-shadow(10px 10px 4px #5c5859)"}
+![](images/elephant-html.png){fig-alt="Screenshot of html output showing the image inside a paragraph block."}
+:::
+
+::: {.fragment .fade-left style="position: absolute; width: 450px; top: 334px; left: 325px; filter: drop-shadow(10px 10px 4px #5c5859)"}
+![](images/elephant-latex.png){fig-alt="Screenshot of latex output showing the image inside a figure environment"}
+:::
+
+. . .
+
+\
+\
+\
+\
+
+Images behave mostly like inline elements but often live in a dedicated block (e.g. a paragraph). Their behavior depends on output format.
+
+# Exercise 2 {background-color="#00403d" style="font-size: .7em"}
+
+Inside `ex-2.qmd` you'll find all of the *content* needed to create the output files `ex-2-goal.html` and `ex-2-goal.pdf`. Add into `ex-2.qmd` the markdown syntax needed to create the various inline and block elements found in the output documents.
+
+\
+
+::: {layout-ncol="4"}
+
+\
+
+#### Inline
+- text formatting
+- math
+- links and images
+- footnotes
+
+#### Block
+- paragraphs
+- headers
+- lists
+- math
+- images
+
+\
+
+:::
+
+# Structure, Format, Content, and Appearance
+
+
+# Exercise 3 {background-color="#00403d" style="font-size: .7em"}
+
+Open a new `.qmd` file in the visual editor and create an document that describes your favorite place to visit on vacation. No need to author the content itself, you can pull that from 
+
+1. At least two levels of header
+2. 
+
+
+## References and further reading {.smaller}
+
+- [A Brief History of R Markdown](https://slides.yihui.org/2021-Brazilian-R-Day.html): a presentation by Yihui Xie in 2021.
+- [Pandoc documentation on type references](https://pandoc.org/lua-filters.html#lua-type-reference): this section documents the tools needed to write Lua filters but included in this is a compendium of the different block and inline elements recognized by pandoc.
+- [Block and Inline Elements](https://info340.github.io/html-fundamentals.html#block-vs.-inline-elements): from Client-side Web Development by Ross and Freeman. Provides clear description of elements in the setting of HTML.
+- [Spatial Logical Toy](https://patents.google.com/patent/US4378116A/en): The US patent of what became the Rubik's Cube. Several examples in these slides borrow figures and text from the patent.
+- [Wizard of Oz Gif](https://giphy.com/gifs/wizard-of-oz-3L8k2sJ2DwEZG)
+

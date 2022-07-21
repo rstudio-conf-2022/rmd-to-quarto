@@ -1,0 +1,7 @@
+---
+title: "About the Workshop"
+---
+
+These materials are for a two day workshop taking place on July 25 - 26, 2022 before the [rstudio::conf](https://www.rstudio.com/conference/).
+
+This workshop is designed for those who want to take their R Markdown skills and expertise and apply them in Quarto, the next generation of R Markdown. Quarto is an open-source scientific and technical publishing system that offers multilingual programming language support to create dynamic and static documents, books, presentations, blogs, and other online resources. In this workshop you will learn how to apply your reproducible authoring skills to the Quarto format and learn about new tools and workflows for authoring with Quarto in RStudio.

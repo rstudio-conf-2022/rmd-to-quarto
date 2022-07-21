@@ -1,0 +1,14 @@
+---
+format: html
+---
+
+# Spatial Logical Toy
+
+- Inventor: **Erno Rubik**
+- Assignee: Politoys Ipari Szovetkezet, Budapest, Hungary
+- Appl. No.: 289,192
+- Filed: Aug. 3, 1981
+
+## Abstract
+
+A spatial logical toy is formed from a total of eighteen toy elements, out of which two sets of eight identical toy elements two connecting elements are provided. The elements of the two sets have cam members with hollows with spherical convex or concave surfaces in-between. The elements are connected by the aid of the cams and the two remaining centrally positioned substantially identical connecting elements each having a T-shape cross-section and when assembled the toy is in the form of a regular or an irregular solid. Fixation is performed by one single screw passing through bores in the connecting elements. In such a manner the toy elements forming the lateral faces of the spatial logical toy can be rotated along the spatial axes and by yielding several variation possibilities the toy is well suitable for stimulating logical thinking activity.

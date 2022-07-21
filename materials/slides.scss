@@ -13,16 +13,26 @@ $presentation-font-size-root: 36px;
   --purple-100: #73245e;
 }
 
+$red: #bf2642;
+$orange: #f2a03d;
+$green: #02733e;
+$purple: #73245e;
+$beige: #f8f5f0;
+$blue: #00817c;
+$dark-beige: #a6854d;
+
 // set your custom colors here
 $body-color: #5c5859 !default;
 
 // headings
-$presentation-heading-color: #4466B0 !default;
+$presentation-heading-color: $blue !default;
 $presentation-heading-font: "Cabin", "Commissioner", sans serif !default;
 
 // code
-$code-block-bg: lighten($body-color, 60%) !default;
-$code-block-border-color: $body-color !default;
+// $code-block-bg: lighten($beige, 60%) !default;
+$code-block-bg: $beige !default;
+$code-color: $purple !default;
+// $code-block-border-color: $dark-beige !default;
 
 /*-- scss:rules --*/
 
@@ -43,11 +53,11 @@ details>summary {
 }
 
 .reveal .slide .poll {
-  border-left: 3px solid #FFD166;
+  border-left: 3px solid $dark-beige;
   padding-left: 0.5em;
   padding-top: 0.25em;
   padding-bottom: 0.25em;
-  background: #FFEDC2;
+  background: $beige;
 }
 
 .reveal .slide .appex {
@@ -57,6 +67,7 @@ details>summary {
   padding: 0.5em;
   background: #EBF7FF;
 }
+
 
 /*
 .reveal .slide b, strong {
@@ -74,19 +85,40 @@ details>summary {
   font-family: Amatic SC;
 }
 
-.bgreen {
+span.block-el {
   font-weight: 700;
   color: var(--green-100);
+  text-align: center;
 }
 
-.bpurple {
+div.block-el {
   font-weight: 700;
-  color: var(--purple-100);
+  color: white;
+  background-color: var(--green-100);
 }
 
-.borange {
+span.inline-el {
+  font-weight: 700;
+  color: var(--red-100);
+  text-align: center;
+}
+
+div.inline-el {
+  font-weight: 700;
+  color: white;
+  background-color: var(--red-100);
+}
+
+span.meta-el {
   font-weight: 700;
   color: var(--orange-100);
+  text-align: center;
+}
+
+div.meta-el {
+  font-weight: 700;
+  color: white;
+  background-color: var(--orange-100);
 }
 
 .v-center-container {
@@ -96,8 +128,84 @@ details>summary {
   height: 90%;
 }
 
-.w90-container {
-  display: flex;
-  width: 90%;
-  align-items: center;
+
+
+/*
+
+pre {
+  padding: 0 0.8em;
+  margin: 19px 0;
+  border-width: 5px;
+  font-size: 1em;
 }
+
+pre.r {
+    border-color: #264DE4;
+    position: relative;
+}
+
+pre.r, pre.js, pre.md, pre.markdown, pre.yaml, pre.json, pre.bash, pre.html, pre.css {
+    background: none;
+}
+
+pre {
+    font-family: var(--font-monospace);
+    padding: 0.8em;
+    position: relative;
+    font-size: 1rem;
+    line-height: 1.2em;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    border-left: 3px solid var(--text-lighter);
+}
+
+pre.r::after {
+    content: 'r';
+    color: #264de4;
+}
+
+pre::after {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    opacity: 0.5;
+}
+
+pre.r::after,
+pre.js::after,
+pre.yaml::after,
+pre.json::after,
+pre.bash::after,
+pre.html::after,
+pre.css::after {
+  text-transform: uppercase;
+  font-family: var(--font-header);
+  left: -1.25em;
+  bottom: -1em;
+  transform-origin: top left;
+  transform: rotate(-90deg);
+}
+
+pre.pre-hide-filetype,
+.pre-hide-filetype pre::after {
+  content: '';
+}
+
+pre.pre-hide-border,
+.pre-hide-border pre {
+  border-color: transparent;
+}
+
+p::after {
+  content: " - Remember this";
+}
+
+#cb1::after {
+  text-transform: uppercase;
+  font-family: var(--font-header);
+  left: -1.25em;
+  bottom: -1em;
+  transform-origin: top left;
+  transform: rotate(-90deg);
+}
+*/
