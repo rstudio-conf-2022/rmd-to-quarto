@@ -1,0 +1,11 @@
+{
+  "hash": "bbae8c02fde62357ff589954482f3e56",
+  "result": {
+    "markdown": "---\ntitle: \"Computations\"\nsubtitle: \"rstudio::conf(2022) <br> From R Markdown to Quarto\"\nauthor: \"Andrew Bray\"\nformat:\n  revealjs:\n    theme: ../slides.scss\n    css: ../tachyons.min.css\n    multiplex: true\n    transition: fade\n    slide-number: true\n    incremental: false \n    center: false\n    menu: false\n    highlight-style: github\n    progress: false\n    code-overflow: wrap\n---\n\n# Code Blocks for Display\n\n## pandoc code cells\n\n# Code Blocks for Computing\n\n## Quarto syntax\n\n````markdown\n```{language}\n#| option1: value\n#| option2: value\n\ncode\n```\n````\n\n# Shiny\n\n\n\n\n## References and further reading {.smaller}\n\n- [Client Side Web Developent Ch. 5-7](https://info340.github.io/css.html): approachable and concise introduction to how CSS work.\n- [](): \n- https://patents.google.com/patent/US3811677A/en?q=stilts&oq=stilts\n- https://patents.google.com/patent/US6688257B2/en?q=pet+dog&oq=pet+dog\n\n",
+    "supporting": [
+      "computation_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}

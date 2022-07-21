@@ -1,0 +1,11 @@
+{
+  "hash": "4c61cce6736fd121d81c025b15720e52",
+  "result": {
+    "markdown": "---\ntitle: \"Simple Documents\"\nsubtitle: \"rstudio::conf(2022) <br> From R Markdown to Quarto\"\nauthor: \"Andrew Bray\"\nfooter: \"[rstd.io/rmd-to-quarto](https://rstd.io/rmd-to-quarto)\"\nformat: \n  revealjs:\n    theme: ../slides.scss\n    multiplex: true\n    transition: fade\n    slide-number: true\n    incremental: true \n    center: false\nexecute:\n  freeze: auto\n---\n\n## Introductions\n\nPlease take ~2 minutes to introduce yourself to your neighbors. Share:\n\n1. Your name\n2. Where you’re from\n3. What you work on in 3 words or fewer\n4. Name one thing you’ve made that you’re proud of\n\n## Workshop Resources\n\n[rstd.io/rmd-to-quarto](rstd.io/rmd-to-quarto)\n\n\n## Workshop Schedule\n\nTable from website\n\n\n## Communication: stickies\n\nDuring an exercise, place a green sticky on your laptop if you're good to go and a pink sticky if you want help.\n\nzzq add photos\n\n\n## Workshop Discussion\n\nIf you have a question that you think will be useful to everyone or useful to have on record, post to [https://github.com/rstudio-conf-2022/rmd-to-quarto/discussions](https://github.com/rstudio-conf-2022/rmd-to-quarto/discussions)\n\n\n# Quarto Gallery\n\n\n# Quarto Overview\n\n\n```{css}\n#| echo: false\nh2 {\n  text-align: center;\n}\n```\n\n\n## What is a document?\n\n:::{.bigadage}\n[A document]{.fragment} [is a list of block elements]{.fragment} [that contain inline elements or other blocks.]{.fragment}\n:::\n\n",
+    "supporting": [
+      "01-single-docs_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}
