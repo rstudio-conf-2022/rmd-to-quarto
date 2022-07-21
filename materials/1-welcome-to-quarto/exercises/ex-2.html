@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.0.20">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>From R Markdown to Quarto – ex-2</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+</style>
+
+
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-fixed fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <a class="navbar-brand" href="../../../index.html">
+    <span class="navbar-title">From R Markdown to Quarto</span>
+  </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../index.html">Overview</a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-materials" role="button" data-bs-toggle="dropdown" aria-expanded="false">Materials</a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-materials">    
+        <li>
+    <a class="dropdown-item" href="../../../materials/1-welcome-to-quarto/index.html">
+ <span class="dropdown-text">Welcome to Quarto</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../materials/2-advanced-docs/index.qmd">
+ <span class="dropdown-text">Building a Document</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../materials/3-presentations/index.qmd">
+ <span class="dropdown-text">Scientific Docs</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../materials/4-websites/index.qmd">
+ <span class="dropdown-text">Layouts and Interactivity</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../materials/5-websites/index.qmd">
+ <span class="dropdown-text">Slides</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../materials/6-websites/index.qmd">
+ <span class="dropdown-text">More Slides</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../materials/7-websites/index.qmd">
+ <span class="dropdown-text">Websites</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../materials/8-websites/index.qmd">
+ <span class="dropdown-text">Books</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+
+<p>Spatial Logical Toy Inventor: Erno Rubik Assignee: Politoys Ipari Szovetkezet, Budapest, Hungary The first patent by the inventor is registered in Hungary. Appl. No.: 289,192 Filed: Aug.&nbsp;3, 1981 Background of the Invention The invention relates to a spatial logical toy having a total of eighteen toy elements which form a regular or an irregular spatial body, preferably an oblong body, in the assembled state. Spatial logical toys are well known, such as that described in the HU-PS No.&nbsp;170 062 of the same applicant, which relates to a spatial logical toy consisting of twenty-seven solids which form a cube in the assembled state. The toy elements, in the shape of small cubes, may be turned along the spatial axes of the cube by means of connecting elements arranged in the geometric center of the large cube. The surfaces of the small cubes forming each surface of the large cube are colored or carry numbers, figures or any other symbols which can be assembled into the predetermined logical order of sequence by simultaneously rotating the nine toy elements forming the surfaces of the large cube. Summary of the Invention The logical toy according to the present invention represents an improved form of the previously described spatial logical toy. The construction is based on the same principles, however, the internal connection is performed by means of absolutely new and particular solids. The key feature according to the invention, i.e.&nbsp;shape, <del>name, sounds,</del> mode of interconnection and central fixture will be described in detail by means of two preferred embodiments, by the aid of the accompanying drawings, wherein. Component blocks of the spatial logial toy. ex-2-figs.png What is claimed is: 1. In a spatial logical toy assembled from a plurality of toy elements, of which a predetermined number may be rotated in the direction of the spatial axes starting from the geometrical center of the logical toy, the improvement wherein the spatial logical toy is formed by a total of eighteen toy elements. Two sets of eight toy elements each comprise substantially cubiforms with integally formed cam elements and each of the sets comprise eight identical toy elements, and two connecting toy elements, and means for joining the connecting toy elements to coact with the cam elements to form an integrated toy body, the joining means comprising a single screw enclosed by a spring. The spatial logical toy as claimed in claim 1, wherein the toy has the shape of a regular geometrical body in the assembled state. The toy elements thereof belonging to one set comprise eight cubiform homologous elements each having a first cam element connected to one corner thereof. Two confining surfaces of which lie at a unit distance from two surfaces of the cube and are parallel therewith and are cut-off in the form of an ellipsis-quarter, and a third confining surface thereof is coplanar with another surface of the cube and between the two confining faces of the first cam element running parallel with the cube and the cube there is a hollow with a convex spherical surface.</p>
+
+
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    toggleBodyColorMode(window.document.querySelector("link#quarto-bootstrap"));
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      let href = ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">This page is built with ❤️ and <a href="https://quarto.org/">Quarto</a>.</div>   
+    <div class="nav-footer-right">© Copyright 2022, Andrew Bray</div>
+  </div>
+</footer>
+
+
+
+</body></html>

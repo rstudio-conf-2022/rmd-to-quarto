@@ -1,0 +1,79 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About the Workshop",
+    "section": "",
+    "text": "This workshop is designed for those who want to take their R Markdown skills and expertise and apply them in Quarto, the next generation of R Markdown. Quarto is an open-source scientific and technical publishing system that offers multilingual programming language support to create dynamic and static documents, books, presentations, blogs, and other online resources. In this workshop you will learn how to apply your reproducible authoring skills to the Quarto format and learn about new tools and workflows for authoring with Quarto in RStudio."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "From R Markdown to Quarto",
+    "section": "",
+    "text": "Day One\n\n9-10:30 am Welcome to Quarto\n10:30-11 am Coffee Break\n11-12:30 pm Polishing Documents\n12:30-1:30 pm Lunch\n1:30-3 pm Computations\n3-3:30 pm Coffee Break\n3:30-5 pm Projects and Publishing\n\n\n\nDay Two\n\n9-10:30 am Presentations\n10:30-11 am Coffee Break\n11-12:30 pm Websites and Books\n12:30-1:30 pm Lunch\n1:30-3 pm Workshop\n3-3:30 pm Coffee Break\n3:30-5 pm Extending Quarto"
+  },
+  {
+    "objectID": "materials/1-welcome-to-quarto/index.html",
+    "href": "materials/1-welcome-to-quarto/index.html",
+    "title": "Welcome to Quarto",
+    "section": "",
+    "text": "Warning\n\n\n\nUnder construction."
+  },
+  {
+    "objectID": "materials/2-polishing-documents/index.html",
+    "href": "materials/2-polishing-documents/index.html",
+    "title": "Polishing Documents",
+    "section": "",
+    "text": "Learning goals\n\n\nTopics\n\n\nExercises"
+  },
+  {
+    "objectID": "materials/3-computation/index.html",
+    "href": "materials/3-computation/index.html",
+    "title": "Computations",
+    "section": "",
+    "text": "Learning goals\n\n\nTopics\n\n\nExercises"
+  },
+  {
+    "objectID": "materials/4-projects-and-publishing/index.html",
+    "href": "materials/4-projects-and-publishing/index.html",
+    "title": "Projects and Publishing",
+    "section": "",
+    "text": "Learning goals\n\n\nTopics\n\n\nExercises"
+  },
+  {
+    "objectID": "materials/5-presentations/index.html",
+    "href": "materials/5-presentations/index.html",
+    "title": "Presentations",
+    "section": "",
+    "text": "Learning goals\n\n\nTopics\n\n\nExercises"
+  },
+  {
+    "objectID": "materials/6-websites-and-books/index.html",
+    "href": "materials/6-websites-and-books/index.html",
+    "title": "Websites and Books",
+    "section": "",
+    "text": "Learning goals\n\n\nTopics\n\n\nExercises"
+  },
+  {
+    "objectID": "materials/7-workshop/index.html",
+    "href": "materials/7-workshop/index.html",
+    "title": "Workshop",
+    "section": "",
+    "text": "Learning goals\n\n\nTopics\n\n\nExercises"
+  },
+  {
+    "objectID": "materials/8-extending-quarto/index.html",
+    "href": "materials/8-extending-quarto/index.html",
+    "title": "Extending Quarto",
+    "section": "",
+    "text": "Learning goals\n\n\nTopics\n\n\nExercises"
+  },
+  {
+    "objectID": "materials/index.html",
+    "href": "materials/index.html",
+    "title": "Materials",
+    "section": "",
+    "text": "Warning\n\n\n\nUnder construction."
+  }
+]
