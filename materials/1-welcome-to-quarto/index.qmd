@@ -1,64 +1,59 @@
 ---
 title: "Welcome to Quarto"
-toc: true
 ---
 
 :::{.callout-warning}
 Under construction.
 :::
 
-<!-- > Meet your fellow students, familiarize yourself with the format of the workshop, rendering a document into multiple formats, and manipulate the block and inline elements that make up any document. -->
+> Meet your fellow students, familiarize yourself with the format of the workshop, practing rendering documents with Quarto, and manipulate the markdown block and inline elements that structure all documents.
 
-<!-- ### Introductions -->
+### Outline
+1. About the Workshop
+2. What can you do with Quarto?
+3. Quarto and R Markdown
+4. Rendering in Quarto
+5. The Structure of a Document
+6. The Elements of Markdown
 
-<!-- ### Workshop Structure -->
+### Exercises
 
-<!-- ### Quarto Overview -->
+0. Let's kick the tires on Quarto!
 
-<!-- - Blocks and inlines -->
+   1. Open up a new Quarto document using an HTML format
 
-<!-- ### Exercise 1 -->
+   2. Click the Render button.
 
-<!-- The exercises focuses on using `quarto` at the command line. Within RStudio, this can be done in the Terminal tab in the Console pane. -->
+   3. Look carefully through the source. What do you notice that's different from what it would look like in an Rmd document? Discuss with your neighbor then post your answers to the discussion forum.
 
-<!-- 1. Render `ex1.qmd` as an html file. How is the list expressed in html? -->
-<!-- 2. Render `ex1.qmd` as a latex file. How is the list expressed in latex? -->
-<!-- 3. Render `ex1.qmd` as a pdf file but specify that you want to output to a file named `handout.pdf`. (see the helpfile `quarto render --help`) -->
-<!-- 4. What defaults does Quarto use if you simply run `quarto render ex1.qmd`? -->
+1. Let's focus on using `quarto` at the command line. Within RStudio, this can be done in the Terminal tab in the Console pane.
+   1.  Render `ex-1.qmd` to `html` and view the html file in an editor. How is the list expressed in html?
+   2.  Render `ex-1.qmd` to `latex` and view the latex file in an editor. How is the list expressed in latex?
+   3.  Render `ex-1.qmd` to `pdf` but specify that you want to output to a file named `handout.pdf`. (see the helpfile for `render` by typing `quarto render --help`)
+   4.  Try changing the extension of `ex-1.qmd` to be `.md` and `.Rmd` and re-rendering. Does the output differ?
+   5.  Explore full list of commands available in Quarto by using `quarto --help`.
 
-<!-- ### Markdown -->
+2. Inside `ex-2.qmd` you'll find all of the *content* needed to create the output files `ex-2-goal.html` and `ex-2-goal.pdf`. Add into `ex-2.qmd` the markdown syntax needed to create the various inline and block elements found in the output documents.
 
-<!-- - Survey (easy to hard) -->
-<!-- - Inlines -->
-<!--   - italics -->
-<!--   - bold -->
-<!--   - super/sub script -->
-<!--   - strikethrough -->
-<!--   - verbatim -->
-<!--   - links -->
-<!--   - images -->
-<!--   - inline math -->
-<!--   - spans -->
-<!-- - Blocks -->
-<!--   - paragraph -->
-<!--   - lists -->
-<!--   - tables -->
-<!--   - source code -->
-<!--   - display math -->
-<!--   - diagrams -->
-<!--   - fenced divs -->
-<!--   - callouts -->
-<!--   - blockquotes -->
-<!--   - lineblock -->
+   ::: {layout-ncol="4"}
 
-<!-- ### Simple Figures -->
+   \
 
-<!-- ### Tables -->
+   #### Inline
+   - text formatting
+   - math
+   - links and images
+   - footnotes
 
-<!-- ### Code Blocks -->
+   #### Block
+   - paragraphs
+   - headers
+   -lists
+   - math
+   - images
 
-<!-- ### Exercise 2 -->
+   \
 
-<!-- 1. Open `ex2-goal.html` in a browser window. -->
-<!-- 2. Modify `ex2.qmd`, using `img1` and `img2` to recreate `ex2-goal.html`. -->
+   :::
 
+   For reference, see: <https://pandoc.org/MANUAL.html#pandocs-markdown>

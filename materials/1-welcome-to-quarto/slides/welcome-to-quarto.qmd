@@ -4,8 +4,10 @@ subtitle: "From R Markdown to Quarto <br> `rstudio::conf(2022)`"
 author: "Andrew Bray"
 format:
   revealjs:
+    height: 900
+    width: 1600
     theme: ../../slides.scss
-    multiplex: true
+    multiplex: false
     transition: fade
     slide-number: true
     incremental: false 
@@ -14,6 +16,9 @@ format:
     highlight-style: github
     progress: false
     code-overflow: wrap
+    title-slide-attributes:
+      data-background-image: images/seaplane-headon.png
+      data-background-size: contain   
 ---
 
 ## Introductions
@@ -36,7 +41,9 @@ Please share ...
 ## {data-menu-title="Website Link"}
 
 ::: {.v-center-container style="text-align: center"}
-Workshop schedule, slides, and exercises are at: [rstd.io/rmd-to-quarto](rstd.io/rmd-to-quarto){style="font-size: 1.5em"}
+Workshop schedule, slides, and exercises are at:
+
+[rstd.io/rmd-to-quarto](rstd.io/rmd-to-quarto){style="font-size: 1.5em"}
 :::
 
 ## {data-menu-item="Workshop Goals"}
@@ -113,6 +120,17 @@ During polls, you can vote in a browser tab either on your laptop or your phone 
 ![](images/pollev.png){fig-alt="Screencap of a poll everywhere poll." fig-align="center"}
 
 
+## Practicalities
+
+- WiFi:
+	- Username: conf22
+	- Password: together!
+- There are gender neutral bathrooms located on the river side of the Potomac Ballroom.
+- The meditation room is located at Potomac Dressing Room. Open 8am - 5pm, Monday - Thursday.
+- The lactation room is located at National Harbor 9. Open 8am - 5pm, Monday - Thursday. The hotel also has a dedicated room behind the reception.
+- Participants who do not wish to be photographed have red lanyards, please note everyone's lanyard colors before taking a photo and respect their choices.
+- The Code of Conduct and COVID policies can be found at <https://www.rstudio.com/conference/2022/2022-conf-code-of-conduct/>. Please review them carefully.  RStudio requires that you wear a mask that fully covers your mouth and nose at all times in all public spaces. We strongly recommend that you use a correctly fitted N95, KN95, or similar particulate filtering mask; we will have a limited supply available upon request. You can report Code of Conduct violations in person, by email, or by phone. Please see the policy linked above for contact information.
+
 # What can you do with Quarto?
 
 
@@ -169,13 +187,18 @@ During polls, you can vote in a browser tab either on your laptop or your phone 
 
 . . . throughout, an ecosystem of R packages develops (`bookdown`, `blogdown`, `distill`, etc.)
 
-## Diagram of R Markdown model
+## {menu-title="R Markdown Workflow" background-image="images/quarto-workshop-1.jpg" background-size="contain"}
 
-## Diagram of Quarto model
+## {menu-title="R Markdown Workflow" background-image="images/quarto-workshop-2.jpg" background-size="contain"}
 
-## 
+## {menu-title="R Markdown Workflow" background-image="images/quarto-workshop-3.jpg" background-size="contain"}
 
-### How is Quarto Different than R Markdown?
+## {menu-title="Quarto Workflow" background-image="images/quarto-workshop-4.jpg" background-size="contain"}
+
+## {menu-title="Quarto Workflow" background-image="images/quarto-workshop-5.jpg" background-size="contain"}
+
+
+## How is Quarto Different than R Markdown?
 
 ::: incremental
 1. Quarto is compute-agnostic. R Markdown requires R.
@@ -183,21 +206,17 @@ During polls, you can vote in a browser tab either on your laptop or your phone 
 2. The ecosystem of R packages is replaced by a single framework.
 :::
 
-##
-
-### What can you do with R Markdown that you can't with Quarto?
+## What can you do with R Markdown that you can't with Quarto?
 
 - Access tools built around R Markdown (e.g. `blogdown`, `xaringan`, `workflowr`, `papaja`) that haven't yet been implemented in Quarto.
 
 > Heavy users of such tools may want to stick with R Markdown.
 
-##
 
-### What can you do with Quarto that you can't with R Markdown?
+## What can you do with Quarto that you can't with R Markdown?
 
 - Easier to organize appearance across documents
-- Features have better cross-format support
-- Figure layout, table layout
+- Features (e.g. figures, tables) have better cross-format support
 - Better cross referencing
 - Up-to-date revealjs slides
 - Easier to customize websites and books with projects
@@ -219,7 +238,10 @@ Let's kick the tires on Quarto!
 
 <!-- ![By user Curis on Wikipedia, CC BY 2.5](images/disassembled-rubix.jpg){fig-align="center"} -->
 
-## Diagram of pandoc part of flow
+## {menu-title="Quarto Workflow" background-image="images/quarto-workshop-5.jpg" background-size="contain"}
+
+## {menu-title="Pandoc Workflow" background-image="images/quarto-workshop-6.jpg" background-size="contain"}
+
 
 ##
 
@@ -393,29 +415,6 @@ Let's focus on using `quarto` at the command line. Within RStudio, this can be d
 3.  Render `ex-1.qmd` to `pdf` but specify that you want to output to a file named `handout.pdf`. (see the helpfile for `render` by typing `quarto render --help`)
 4.  Try changing the extension of `ex-1.qmd` to be `.md` and `.Rmd` and re-rendering. Does the output differ?
 5.  Explore full list of commands available in Quarto by using `quarto --help`.
-
-## Metadata through YAML {.smaller}
-
-Metadata can be appended to a document via YAML (Yet Another Markup Language):
-
-```markdown
----
-format: latex
-title: US Patent
-author: Andrew Bray
----
-
-# Spatial Logical Toy
-
-- Inventor: **Erno Rubik**
-- Assignee: Politoys Ipari Szovetkezet, Budapest, Hungary
-- Appl. No.: 289,192
-- Filed: Aug. 3, 1981
-
-## Abstract
-
-A spatial logical toy is formed from a total of eighteen toy elements, out of which two sets of eight identical toy elements two connecting elements are provided. The elements of the two sets have cam members with hollows with spherical convex or concave surfaces in-between. The elements are connected by the aid of the cams and the two remaining centrally positioned substantially identical connecting elements each having a ...
-```
 
 # The Structure of a Document
 
