@@ -1,6 +1,6 @@
 ---
 title: "Welcome to Quarto"
-#subtitle: "rstudio::conf(2022) <br> From R Markdown to Quarto"
+subtitle: "From R Markdown to Quarto <br> `rstudio::conf(2022)`"
 author: "Andrew Bray"
 format:
   revealjs:
@@ -33,39 +33,84 @@ Please share ...
 
 # About the Workshop
 
-##
+## {data-menu-title="Website Link"}
 
 ::: {.v-center-container style="text-align: center"}
 Workshop schedule, slides, and exercises are at: [rstd.io/rmd-to-quarto](rstd.io/rmd-to-quarto){style="font-size: 1.5em"}
 :::
 
-# Workshop Goal
+## {data-menu-item="Workshop Goals"}
 
-From Magic to Magical Machines
+\
+\
 
-<!-- ![Artwork by Allison Horst](images/rmarkdown_wizards.png){fig-alt="Two fuzzy round monsters dressed as wizards, working together to brew different things together from a pantry (code, text, figures, etc.) in a cauldron labeled “R Markdown”. The monster wizard at the cauldron is reading a recipe that includes steps “1. Add text. 2. Add code. 3. Knit. 4. (magic) 5. Celebrate perceived wizardry.” The R Markdown potion then travels through a tube, and is converted to markdown by a monster on a broom with a magic wand, and eventually converted to an output by pandoc. Stylized text (in a font similar to Harry Potter) reads “R Markdown. Text. Code. Output. Get it together, people.”"} -->
+### Goals for the Workshop {style="font-size: 1.7em; text-align: center"}
 
-## Workshop Schedule
+:::incremental
+1. Everyone leaves with a document, slides, and a website.
 
-1. Quarto and RMarkdown
-2. What is a document? Rendering with Quarto
-3. Authoring with Markdown
-4. Expanding with Quarto
-5. Computing
+2. Learn from one another. 
 
+3. Build an understanding of the big picture.
+:::
 
-## Discussions
+## From Magic to Magical Machines
+
+![Artwork by Allison Horst](images/rmarkdown_wizards.png){fig-alt="Two fuzzy round monsters dressed as wizards, working together to brew different things together from a pantry (code, text, figures, etc.) in a cauldron labeled “R Markdown”. The monster wizard at the cauldron is reading a recipe that includes steps “1. Add text. 2. Add code. 3. Knit. 4. (magic) 5. Celebrate perceived wizardry.” The R Markdown potion then travels through a tube, and is converted to markdown by a monster on a broom with a magic wand, and eventually converted to an output by pandoc. Stylized text (in a font similar to Harry Potter) reads “R Markdown. Text. Code. Output. Get it together, people.”" width="850px" .fragment .fade-in-then-semi-out}
+
+![](images/edison-bulb.png){fig-alt="A technical sketch of a lightbulb" .fragment .fade-left style="position: absolute; top: 100px; left: 200px; height: 600px; filter: drop-shadow(10px 10px 4px #5c5859)"}
+
+## Workshop Schedule {.smaller}
+
+:::{layout-ncol="2"}
+### Day One
+- 9-10:30 am Welcome to Quarto
+- 10:30-11 am [coffee break]{.smallcaps}
+- 11-12:30 pm Polishing Documents
+- 12:30-1:30 pm [lunch]{.smallcaps}
+- 1:30-3 pm Computations
+- 3-3:30 pm [coffee break]{.smallcaps}
+- 3:30-5 pm Projects and Publishing
+
+### Day Two
+- 9-10:30 am Presentations
+- 10:30-11 am [coffee break]{.smallcaps}
+- 11-12:30 pm Websites and Books
+- 12:30-1:30 pm [lunch]{.smallcaps}
+- 1:30-3 pm Workshop
+- 3-3:30 pm [coffee break]{.smallcaps}
+- 3:30-5 pm Extending Quarto
+:::
+
+## Discussions {auto-animate=true}
 
 Ask a question by opening a new discussion post:\
 [https://github.com/rstudio-conf-2022/rmd-to-quarto/discussions](https://github.com/rstudio-conf-2022/rmd-to-quarto/discussions){.uri style="font-size: .9em"}
 
 ![](images/github-discussion.png){fig-alt="Screenshot of the github discussion page that serves as the forum for the workshop." fig-align="center" width="546"}
 
-## Communication: stickies
+## Stickies
 
-During an exercise, place a green sticky on your laptop if you're good to go and a pink sticky if you want help.
+:::{layout-ncol="2"}
+![](images/sticky.jpeg){fig-alt="Picture of a laptop with a red sticky note stuck to the top." width=400}
 
-zzq add photos
+During an exercise, place a [**green**]{style="color: green"} sticky on your laptop if you're good to go and a [**red**]{style="color: red"} sticky if you want help.
+:::
+
+:::footer
+Image by [Megan Duffy](https://dynamicecology.wordpress.com/2015/01/13/sticky-notes-as-a-teaching-and-lab-meeting-tool/)
+:::
+
+
+## Polls
+
+During polls, you can vote in a browser tab either on your laptop or your phone at
+
+::: {style="text-align: center"}
+[pollev.com/rmdtoquarto](https://pollev.com/rmdtoquarto){style="font-size: 1.5em"}
+:::
+
+![](images/pollev.png){fig-alt="Screencap of a poll everywhere poll." fig-align="center"}
 
 
 # What can you do with Quarto?
@@ -166,9 +211,9 @@ Let's kick the tires on Quarto!
 
 2. Click the Render button.
 
-3. Look carefully through the source. What do you notice that's different from what it would look like in an R document? Discuss with your neighbor then post your answers to the discussion forum.
+3. Look carefully through the source. What do you notice that's different from what it would look like in an Rmd document? Discuss with your neighbor then post your answers to the discussion forum.
 
-# The Building Blocks of a Document
+# Rendering in Quarto
 
 <!-- ##  -->
 
@@ -372,29 +417,7 @@ author: Andrew Bray
 A spatial logical toy is formed from a total of eighteen toy elements, out of which two sets of eight identical toy elements two connecting elements are provided. The elements of the two sets have cam members with hollows with spherical convex or concave surfaces in-between. The elements are connected by the aid of the cams and the two remaining centrally positioned substantially identical connecting elements each having a ...
 ```
 
-# Authoring with Markdown
-
-## {data-menu-title="Working with pandoc"}
-
-Whenever I hear "Pandoc", I picture . . .
-
-. . .
-
-::: columns
-:::{.column width="50%"}
-\
-
-<iframe src="https://giphy.com/embed/3L8k2sJ2DwEZG" width="480" height="333" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p></p>
-:::
-
-:::{.column width="50%"}
-![ . . . but there's help!](images/pandoc-docs.png){.fragment .fade-left}
-:::
-:::
-
-::: footer
-Via giphy.
-:::
+# The Structure of a Document
 
 ## What Defines a Document?
 
@@ -616,6 +639,7 @@ Image
 :::
 :::
 
+# The Elements of Markdown
 ##  {data-menu-title="Markdown"}
 
 ::: {style="font-size: 4em; text-align: center"}
@@ -631,6 +655,51 @@ Image
 
 -   Quarto uses extended version of **Pandoc markdown** designed with multiple output formats in mind.
 
+## {data-menu-title="Working with pandoc"}
+
+Whenever I hear "Pandoc", I picture . . .
+
+. . .
+
+::: columns
+:::{.column width="50%"}
+\
+
+<iframe src="https://giphy.com/embed/3L8k2sJ2DwEZG" width="480" height="333" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p></p>
+:::
+
+:::{.column width="50%"}
+![ . . . but there's help!](images/pandoc-docs.png){.fragment .fade-left}
+:::
+:::
+
+::: footer
+Via giphy.
+:::
+
+## Poll
+
+::: poll
+Which of the following forms of text formatting are possible in pandoc markdown?
+
+- italics
+- bold
+- underline
+- superscript
+- subscript
+- strikethrough
+:::
+
+:::footer
+Please respond at [pollev.com/rmdtoquarto](https://pollev.com/rmdtoquarto).
+:::
+
+
+## {data-menu-title="Results"}
+
+<center>
+<iframe src="https://embed.polleverywhere.com/multiple_choice_polls/lPD3yZWSvtJzgxUfNKQwx?controls=none&short_poll=true" width="800px" height="600px"></iframe>
+</center>
 
 ## [Inline Elements:]{.inline-el} Text Formatting {.smaller}
 
@@ -689,8 +758,6 @@ The area of a circle is $A = \pi r^2$, where $r$ is the radius and $\pi$ is the 
 \
 
 TeX math lives between two `$`. Opening `$` must have a non-space character immediately to its right, while the closing `$` must have a non-space character immediately to its left, and must not be followed immediately by a digit.
-
-The $\TeX$ will be rendered by MathJax by default but other options are available.
 
 
 ## [Inline Elements:]{.inline-el} Links and Images {.smaller}
@@ -764,9 +831,7 @@ alphanumeric string.
 
 . . .
 
-::: {.callout-note icon="false"}
-Placement of the actual footnote depends on the format: end of page for pdf, end of doc for HTML, bottom of slide for presentations.
-:::
+> Placement of the actual footnote depends on the format: end of page for pdf, end of doc for HTML, bottom of slide for presentations.
 
 ## [Block Elements:]{.block-el} Paragraph {.smaller}
 
@@ -1045,6 +1110,179 @@ or do they?
 
 Images behave mostly like inline elements but often live in a dedicated block (e.g. a paragraph). Their behavior depends on output format.
 
+## Poll {.smaller}
+
+::: poll
+Which of the following are valid ways to include metadata with a document?
+:::
+:::columns
+:::{.column width="50%"}
+[A]{.smallcaps}
+```markdown
+---
+title: US Patent: A Spatial Toy
+author: Erno Rubik
+format: html
+---
+
+My idea is to build a cube...
+```
+
+[C]{.smallcaps}
+```markdown
+---
+format: html
+---
+
+My idea is to build a cube...
+
+---
+title: A Spatial Toy
+author: Erno Rubik
+---
+```
+
+:::
+
+:::{.column width="50%"}
+[C]{.smallcaps}
+
+```markdown
+My idea is to build a cube...
+```
+
+[... then at the command line, run:]{style="font-size: .8em"}
+
+```bash
+quarto render patent.qmd --to html -M title:patent
+```
+
+
+[D]{.smallcaps}
+```markdown
+---
+title: "US Patent: A Spatial Toy"
+author: "Erno Rubik"
+format: "html"
+---
+
+My idea is to build a cube...
+```
+
+:::
+:::
+
+:::footer
+Please respond at [pollev.com/rmdtoquarto](https://pollev.com/rmdtoquarto).
+:::
+
+## {data-menu-title="Results"}
+
+<center>
+<iframe src="https://embed.polleverywhere.com/multiple_choice_polls/u9b7ZayoFkgRuLUrgxd6i?controls=none&short_poll=true" width="800px" height="600px"></iframe>
+</center>
+
+## [Metadata:]{.meta-el} YAML {.smaller}
+
+Metadata can be included via YAML (YAML Ain't Markup Language).
+
+:::columns
+:::{.column width="50%"}
+```yaml
+---
+title: "US Patent: A Spatial Toy"
+author: 
+  - Erno Rubrik
+  - Albert Einstein
+format: 
+  html:
+    toc: true
+    abstract: |
+      This is the abstract.
+    
+      It has two paragraphs.
+---
+
+```
+:::
+
+:::{.column width="50%"}
+Some syntax rules:
+
+::: incremental
+- Set a single option `key: value`
+- Strings with `:` must be quoted
+- Include multiple values in a list with `-`
+- Nest key-value pairs using indentation
+- Multi-line strings follow `|`
+- Multiple YAML blocks in a document will be merged
+:::
+
+Read more in the pandoc docs[^1] or on Wikipedia[^2].
+:::
+:::
+
+[^1]: <https://pandoc.org/MANUAL%202.html#extension-yaml_metadata_block>
+[^2]: <https://en.m.wikipedia.org/wiki/YAML#Syntax>
+
+
+## [Metadata:]{.meta-el} YAML {.smaller}
+:::columns
+:::{.column width="50%"}
+[A]{.smallcaps}
+```markdown
+---
+title: US Patent: A Spatial Toy
+author: Erno Rubik
+format: html
+---
+
+My idea is to build a cube...
+```
+
+[C]{.smallcaps}
+```markdown
+---
+format: html
+---
+
+My idea is to build a cube...
+
+---
+title: A Spatial Toy
+author: Erno Rubik
+---
+```
+
+:::
+
+:::{.column width="50%"}
+[C]{.smallcaps}
+
+```markdown
+My idea is to build a cube...
+```
+
+[... then at the command line, run:]{style="font-size: .8em"}
+
+```bash
+quarto render patent.qmd --to html -M title:patent
+```
+
+
+[D]{.smallcaps}
+```markdown
+---
+title: "US Patent: A Spatial Toy"
+author: "Erno Rubik"
+format: "html"
+---
+
+My idea is to build a cube...
+```
+
+:::
+:::
 # Exercise 2 {background-color="#00403d" style="font-size: .7em"}
 
 Inside `ex-2.qmd` you'll find all of the *content* needed to create the output files `ex-2-goal.html` and `ex-2-goal.pdf`. Add into `ex-2.qmd` the markdown syntax needed to create the various inline and block elements found in the output documents.
@@ -1072,15 +1310,7 @@ Inside `ex-2.qmd` you'll find all of the *content* needed to create the output f
 
 :::
 
-# Structure, Format, Content, and Appearance
-
-
-# Exercise 3 {background-color="#00403d" style="font-size: .7em"}
-
-Open a new `.qmd` file in the visual editor and create an document that describes your favorite place to visit on vacation. No need to author the content itself, you can pull that from 
-
-1. At least two levels of header
-2. 
+For reference, see: <https://pandoc.org/MANUAL.html#pandocs-markdown>
 
 
 ## References and further reading {.smaller}
@@ -1089,5 +1319,3 @@ Open a new `.qmd` file in the visual editor and create an document that describe
 - [Pandoc documentation on type references](https://pandoc.org/lua-filters.html#lua-type-reference): this section documents the tools needed to write Lua filters but included in this is a compendium of the different block and inline elements recognized by pandoc.
 - [Block and Inline Elements](https://info340.github.io/html-fundamentals.html#block-vs.-inline-elements): from Client-side Web Development by Ross and Freeman. Provides clear description of elements in the setting of HTML.
 - [Spatial Logical Toy](https://patents.google.com/patent/US4378116A/en): The US patent of what became the Rubik's Cube. Several examples in these slides borrow figures and text from the patent.
-- [Wizard of Oz Gif](https://giphy.com/gifs/wizard-of-oz-3L8k2sJ2DwEZG)
-

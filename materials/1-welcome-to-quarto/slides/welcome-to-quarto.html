@@ -384,6 +384,7 @@
 
 <section id="title-slide" class="center">
   <h1 class="title">Welcome to Quarto</h1>
+  <p class="subtitle">From R Markdown to Quarto <br> <code>rstudio::conf(2022)</code></p>
   <p class="author">Andrew Bray</p>
 </section>
 
@@ -407,39 +408,97 @@
 <h1>About the Workshop</h1>
 
 </section>
-<section id="section" class="slide level2">
+<section id="section" class="slide level2" data-menu-title="Website Link">
 <h2></h2>
 <div class="v-center-container" style="text-align: center">
 <p>Workshop schedule, slides, and exercises are at: <a href="rstd.io/rmd-to-quarto" style="font-size: 1.5em">rstd.io/rmd-to-quarto</a></p>
 </div>
-</section></section>
-<section>
-<section id="workshop-goal" class="title-slide slide level1 center">
-<h1>Workshop Goal</h1>
-<p>From Magic to Magical Machines</p>
-<!-- ![Artwork by Allison Horst](images/rmarkdown_wizards.png){fig-alt="Two fuzzy round monsters dressed as wizards, working together to brew different things together from a pantry (code, text, figures, etc.) in a cauldron labeled “R Markdown”. The monster wizard at the cauldron is reading a recipe that includes steps “1. Add text. 2. Add code. 3. Knit. 4. (magic) 5. Celebrate perceived wizardry.” The R Markdown potion then travels through a tube, and is converted to markdown by a monster on a broom with a magic wand, and eventually converted to an output by pandoc. Stylized text (in a font similar to Harry Potter) reads “R Markdown. Text. Code. Output. Get it together, people.”"} -->
 </section>
-<section id="workshop-schedule" class="slide level2">
-<h2>Workshop Schedule</h2>
+<section id="section-1" class="slide level2" data-menu-item="Workshop Goals">
+<h2></h2>
+<p><br>
+<br>
+</p>
+<h3 style="font-size: 1.7em; text-align: center" id="goals-for-the-workshop">Goals for the Workshop</h3>
+<div>
 <ol type="1">
-<li>Quarto and RMarkdown</li>
-<li>What is a document? Rendering with Quarto</li>
-<li>Authoring with Markdown</li>
-<li>Expanding with Quarto</li>
-<li>Computing</li>
+<li class="fragment"><p>Everyone leaves with a document, slides, and a website.</p></li>
+<li class="fragment"><p>Learn from one another.</p></li>
+<li class="fragment"><p>Build an understanding of the big picture.</p></li>
 </ol>
+</div>
 </section>
-<section id="discussions" class="slide level2">
-<h2>Discussions</h2>
+<section id="from-magic-to-magical-machines" class="slide level2">
+<h2>From Magic to Magical Machines</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/rmarkdown_wizards.png" class="fragment fade-in-then-semi-out" alt="Two fuzzy round monsters dressed as wizards, working together to brew different things together from a pantry (code, text, figures, etc.) in a cauldron labeled “R Markdown”. The monster wizard at the cauldron is reading a recipe that includes steps “1. Add text. 2. Add code. 3. Knit. 4. (magic) 5. Celebrate perceived wizardry.” The R Markdown potion then travels through a tube, and is converted to markdown by a monster on a broom with a magic wand, and eventually converted to an output by pandoc. Stylized text (in a font similar to Harry Potter) reads “R Markdown. Text. Code. Output. Get it together, people.”" width="850"></p>
+<p></p><figcaption>Artwork by Allison Horst</figcaption><p></p>
+</figure>
+</div>
+<p><img data-src="images/edison-bulb.png" class="fragment fade-left" style="position: absolute; top: 100px; left: 200px; height: 600px; filter: drop-shadow(10px 10px 4px #5c5859)" alt="A technical sketch of a lightbulb"></p>
+</section>
+<section id="workshop-schedule" class="slide level2 smaller">
+<h2>Workshop Schedule</h2>
+<div class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><strong>Day One</strong></p>
+<ul>
+<li>9-10:30 am Welcome to Quarto</li>
+<li>10:30-11 am <span class="smallcaps">coffee break</span></li>
+<li>11-12:30 pm Polishing Documents</li>
+<li>12:30-1:30 pm <span class="smallcaps">lunch</span></li>
+<li>1:30-3 pm Computations</li>
+<li>3-3:30 pm <span class="smallcaps">coffee break</span></li>
+<li>3:30-5 pm Projects and Publishing</li>
+</ul>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><strong>Day Two</strong></p>
+<ul>
+<li>9-10:30 am Presentations</li>
+<li>10:30-11 am <span class="smallcaps">coffee break</span></li>
+<li>11-12:30 pm Websites and Books</li>
+<li>12:30-1:30 pm <span class="smallcaps">lunch</span></li>
+<li>1:30-3 pm Workshop</li>
+<li>3-3:30 pm <span class="smallcaps">coffee break</span></li>
+<li>3:30-5 pm Extending Quarto</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="discussions" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Discussions</h2>
 <p>Ask a question by opening a new discussion post:<br>
 <a href="https://github.com/rstudio-conf-2022/rmd-to-quarto/discussions" class="uri" style="font-size: .9em">https://github.com/rstudio-conf-2022/rmd-to-quarto/discussions</a></p>
 
 <img data-src="images/github-discussion.png" alt="Screenshot of the github discussion page that serves as the forum for the workshop." width="546" class="r-stretch quarto-figure-center"></section>
-<section id="communication-stickies" class="slide level2">
-<h2>Communication: stickies</h2>
-<p>During an exercise, place a green sticky on your laptop if you’re good to go and a pink sticky if you want help.</p>
-<p>zzq add photos</p>
-</section></section>
+<section id="stickies" class="slide level2">
+<h2>Stickies</h2>
+<div class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img data-src="images/sticky.jpeg" alt="Picture of a laptop with a red sticky note stuck to the top." width="400"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p>During an exercise, place a <span style="color: green"><strong>green</strong></span> sticky on your laptop if you’re good to go and a <span style="color: red"><strong>red</strong></span> sticky if you want help.</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<p>Image by <a href="https://dynamicecology.wordpress.com/2015/01/13/sticky-notes-as-a-teaching-and-lab-meeting-tool/">Megan Duffy</a></p>
+</div>
+</section>
+<section id="polls" class="slide level2">
+<h2>Polls</h2>
+<p>During polls, you can vote in a browser tab either on your laptop or your phone at</p>
+<div style="text-align: center">
+<p><a href="https://pollev.com/rmdtoquarto" style="font-size: 1.5em">pollev.com/rmdtoquarto</a></p>
+</div>
+
+<img data-src="images/pollev.png" alt="Screencap of a poll everywhere poll." class="r-stretch quarto-figure-center"></section></section>
 <section>
 <section id="what-can-you-do-with-quarto" class="title-slide slide level1 center">
 <h1>What can you do with Quarto?</h1>
@@ -526,7 +585,7 @@
 <section id="diagram-of-quarto-model" class="slide level2">
 <h2>Diagram of Quarto model</h2>
 </section>
-<section id="section-1" class="slide level2">
+<section id="section-2" class="slide level2">
 <h2></h2>
 <h3 id="how-is-quarto-different-than-r-markdown">How is Quarto Different than R Markdown?</h3>
 <div>
@@ -536,7 +595,7 @@
 </ol>
 </div>
 </section>
-<section id="section-2" class="slide level2">
+<section id="section-3" class="slide level2">
 <h2></h2>
 <h3 id="what-can-you-do-with-r-markdown-that-you-cant-with-quarto">What can you do with R Markdown that you can’t with Quarto?</h3>
 <ul>
@@ -546,7 +605,7 @@
 <p>Heavy users of such tools may want to stick with R Markdown.</p>
 </blockquote>
 </section>
-<section id="section-3" class="slide level2">
+<section id="section-4" class="slide level2">
 <h2></h2>
 <h3 id="what-can-you-do-with-quarto-that-you-cant-with-r-markdown">What can you do with Quarto that you can’t with R Markdown?</h3>
 <ul>
@@ -564,20 +623,20 @@
 <ol type="1">
 <li><p>Open up a new Quarto document using an HTML format</p></li>
 <li><p>Click the Render button.</p></li>
-<li><p>Look carefully through the source. What do you notice that’s different from what it would look like in an R document? Discuss with your neighbor then post your answers to the discussion forum.</p></li>
+<li><p>Look carefully through the source. What do you notice that’s different from what it would look like in an Rmd document? Discuss with your neighbor then post your answers to the discussion forum.</p></li>
 </ol>
 </section>
 
 <section>
-<section id="the-building-blocks-of-a-document" class="title-slide slide level1 center">
-<h1>The Building Blocks of a Document</h1>
+<section id="rendering-in-quarto" class="title-slide slide level1 center">
+<h1>Rendering in Quarto</h1>
 <!-- ##  -->
 <!-- ![By user Curis on Wikipedia, CC BY 2.5](images/disassembled-rubix.jpg){fig-align="center"} -->
 </section>
 <section id="diagram-of-pandoc-part-of-flow" class="slide level2">
 <h2>Diagram of pandoc part of flow</h2>
 </section>
-<section id="section-4" class="slide level2">
+<section id="section-5" class="slide level2">
 <h2></h2>
 <div class="columns">
 <div class="column" style="width:25%;">
@@ -654,7 +713,7 @@
 </ol>
 </div>
 </section>
-<section id="section-5" class="slide level2" data-auto-animate="true">
+<section id="section-6" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title"></h2>
 
 <img data-src="images/rstudio-console.png" class="r-stretch quarto-figure-center"><div class="fragment">
@@ -663,7 +722,7 @@
 </div>
 </div>
 </section>
-<section id="section-6" class="slide level2" data-auto-animate="true">
+<section id="section-7" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title"></h2>
 
 <img data-src="images/rstudio-console.png" class="r-stretch quarto-figure-center"><div data-id="spotlight" style="background: #f2a03d50; width: 60px; height: 25px; margin: 5px; position: absolute; top: 393px; left: 91px; border-radius: 8px; border: 4px solid #f2a03d">
@@ -673,7 +732,7 @@
 
 </div>
 </section>
-<section id="section-7" class="slide level2" data-auto-animate="true">
+<section id="section-8" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title"></h2>
 
 <img data-src="images/rstudio-console.png" class="r-stretch quarto-figure-center"><div data-id="spotlight" style="background: #f2a03d50; width: 70px; height: 25px; margin: 5px; position: absolute; top: 393px; left: 150px; border-radius: 8px; border: 4px solid #f2a03d">
@@ -683,7 +742,7 @@
 
 </div>
 </section>
-<section id="section-8" class="slide level2" data-auto-animate="true">
+<section id="section-9" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title"></h2>
 
 <img data-src="images/rstudio-terminal.png" class="r-stretch quarto-figure-center"><div data-id="spotlight" style="background: #f2a03d50; width: 70px; height: 25px; margin: 5px; position: absolute; top: 393px; left: 150px; border-radius: 8px; border: 4px solid #f2a03d">
@@ -772,35 +831,9 @@
 <span id="cb7-16"><a href="#cb7-16"></a>A spatial logical toy is formed from a total of eighteen toy elements, out of which two sets of eight identical toy elements two connecting elements are provided. The elements of the two sets have cam members with hollows with spherical convex or concave surfaces in-between. The elements are connected by the aid of the cams and the two remaining centrally positioned substantially identical connecting elements each having a ...</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section></section>
 <section>
-<section id="authoring-with-markdown" class="title-slide slide level1 center">
-<h1>Authoring with Markdown</h1>
+<section id="the-structure-of-a-document" class="title-slide slide level1 center">
+<h1>The Structure of a Document</h1>
 
-</section>
-<section id="section-9" class="slide level2" data-menu-title="Working with pandoc">
-<h2></h2>
-<p>Whenever I hear “Pandoc”, I picture . . .</p>
-<div class="fragment">
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><br>
-</p>
-<iframe src="https://giphy.com/embed/3L8k2sJ2DwEZG" width="480" height="333" frameborder="0" class="giphy-embed" allowfullscreen="">
-</iframe>
-<p>
-</p>
-</div><div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/pandoc-docs.png" class="fragment fade-left"></p>
-<p></p><figcaption>. . . but there’s help!</figcaption><p></p>
-</figure>
-</div>
-</div>
-</div>
-<div class="footer">
-<p>Via giphy.</p>
-</div>
-</div>
 </section>
 <section id="what-defines-a-document" class="slide level2">
 <h2>What Defines a Document?</h2>
@@ -1008,6 +1041,11 @@
 </div>
 </div>
 </div>
+</section></section>
+<section>
+<section id="the-elements-of-markdown" class="title-slide slide level1 center">
+<h1>The Elements of Markdown</h1>
+
 </section>
 <section id="section-15" class="slide level2" data-menu-title="Markdown">
 <h2></h2>
@@ -1026,6 +1064,56 @@
 <li>Quarto uses extended version of <strong>Pandoc markdown</strong> designed with multiple output formats in mind.</li>
 </ul>
 </div>
+</section>
+<section id="section-16" class="slide level2" data-menu-title="Working with pandoc">
+<h2></h2>
+<p>Whenever I hear “Pandoc”, I picture . . .</p>
+<div class="fragment">
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><br>
+</p>
+<iframe src="https://giphy.com/embed/3L8k2sJ2DwEZG" width="480" height="333" frameborder="0" class="giphy-embed" allowfullscreen="">
+</iframe>
+<p>
+</p>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/pandoc-docs.png" class="fragment fade-left"></p>
+<p></p><figcaption>. . . but there’s help!</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="footer">
+<p>Via giphy.</p>
+</div>
+</div>
+</section>
+<section id="poll" class="slide level2">
+<h2>Poll</h2>
+<div class="poll">
+<p>Which of the following forms of text formatting are possible in pandoc markdown?</p>
+<ul>
+<li>italics</li>
+<li>bold</li>
+<li>underline</li>
+<li>superscript</li>
+<li>subscript</li>
+<li>strikethrough</li>
+</ul>
+</div>
+<div class="footer">
+<p>Please respond at <a href="https://pollev.com/rmdtoquarto">pollev.com/rmdtoquarto</a>.</p>
+</div>
+</section>
+<section id="section-17" class="slide level2" data-menu-title="Results">
+<h2></h2>
+<center>
+<iframe src="https://embed.polleverywhere.com/multiple_choice_polls/lPD3yZWSvtJzgxUfNKQwx?controls=none&amp;short_poll=true" width="800px" height="600px">
+</iframe>
+</center>
 </section>
 <section id="inline-elements-text-formatting" class="slide level2 smaller">
 <h2><span class="inline-el">Inline Elements:</span> Text Formatting</h2>
@@ -1071,7 +1159,6 @@
 <p><br>
 </p>
 <p>TeX math lives between two <code>$</code>. Opening <code>$</code> must have a non-space character immediately to its right, while the closing <code>$</code> must have a non-space character immediately to its left, and must not be followed immediately by a digit.</p>
-<p>The <span class="math inline">\(\TeX\)</span> will be rendered by MathJax by default but other options are available.</p>
 </div>
 </section>
 <section id="inline-elements-links-and-images" class="slide level2 smaller">
@@ -1120,18 +1207,11 @@
 </div>
 </div>
 <div class="fragment">
-<div class="callout callout-note no-icon callout-captioned callout-style-default">
-<div class="callout-body">
-<div class="callout-caption">
-<p><strong>Note</strong></p>
-</div>
-<div class="callout-content">
+<blockquote>
 <p>Placement of the actual footnote depends on the format: end of page for pdf, end of doc for HTML, bottom of slide for presentations.</p>
+</blockquote>
 </div>
-</div>
-</div>
-</div>
-<aside><ol class="aside-footnotes"><li id="fn2" role="doc-endnote"><p>Small enough to fit inline.</p></li><li id="fn3" role="doc-endnote"><p>This footnote can be placed in a separate block. The identifier can be any alphanumeric string.</p></li></ol></aside></section>
+<aside><ol class="aside-footnotes"><li id="fn2" role="doc-endnote"><p>Small enough to fit inline.</p></li><li id="fn3" role="doc-endnote"><p><a href="https://pandoc.org/MANUAL%202.html#extension-yaml_metadata_block" class="uri">https://pandoc.org/MANUAL%202.html#extension-yaml_metadata_block</a></p></li></ol></aside></section>
 <section id="block-elements-paragraph" class="slide level2 smaller">
 <h2><span class="block-el">Block Elements:</span> Paragraph</h2>
 <p>One or more lines of text followed by one or more blank lines.</p>
@@ -1377,7 +1457,133 @@ f(x)=\sqrt{\frac{\tau}{2\pi}}
 </p>
 <p>Images behave mostly like inline elements but often live in a dedicated block (e.g.&nbsp;a paragraph). Their behavior depends on output format.</p>
 </div>
+</section>
+<section id="poll-1" class="slide level2 smaller">
+<h2>Poll</h2>
+<div class="poll">
+<p>Which of the following are valid ways to include metadata with a document?</p>
+</div>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><span class="smallcaps">A</span></p>
+<div class="sourceCode" id="cb27"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb27-1"><a href="#cb27-1"></a><span class="co">---</span></span>
+<span id="cb27-2"><a href="#cb27-2"></a><span class="an">title:</span><span class="co"> US Patent: A Spatial Toy</span></span>
+<span id="cb27-3"><a href="#cb27-3"></a><span class="an">author:</span><span class="co"> Erno Rubik</span></span>
+<span id="cb27-4"><a href="#cb27-4"></a><span class="an">format:</span><span class="co"> html</span></span>
+<span id="cb27-5"><a href="#cb27-5"></a><span class="co">---</span></span>
+<span id="cb27-6"><a href="#cb27-6"></a></span>
+<span id="cb27-7"><a href="#cb27-7"></a>My idea is to build a cube...</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><span class="smallcaps">C</span></p>
+<div class="sourceCode" id="cb28"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb28-1"><a href="#cb28-1"></a><span class="co">---</span></span>
+<span id="cb28-2"><a href="#cb28-2"></a><span class="an">format:</span><span class="co"> html</span></span>
+<span id="cb28-3"><a href="#cb28-3"></a><span class="co">---</span></span>
+<span id="cb28-4"><a href="#cb28-4"></a></span>
+<span id="cb28-5"><a href="#cb28-5"></a>My idea is to build a cube...</span>
+<span id="cb28-6"><a href="#cb28-6"></a></span>
+<span id="cb28-7"><a href="#cb28-7"></a>---</span>
+<span id="cb28-8"><a href="#cb28-8"></a>title: A Spatial Toy</span>
+<span id="cb28-9"><a href="#cb28-9"></a>author: Erno Rubik</span>
+<span id="cb28-10"><a href="#cb28-10"></a>---</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column" style="width:50%;">
+<p><span class="smallcaps">C</span></p>
+<div class="sourceCode" id="cb29"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb29-1"><a href="#cb29-1"></a>My idea is to build a cube...</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><span style="font-size: .8em">… then at the command line, run:</span></p>
+<div class="sourceCode" id="cb30"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb30-1"><a href="#cb30-1"></a><span class="ex">quarto</span> render patent.qmd <span class="at">--to</span> html <span class="at">-M</span> title:patent</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><span class="smallcaps">D</span></p>
+<div class="sourceCode" id="cb31"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb31-1"><a href="#cb31-1"></a><span class="co">---</span></span>
+<span id="cb31-2"><a href="#cb31-2"></a><span class="an">title:</span><span class="co"> "US Patent: A Spatial Toy"</span></span>
+<span id="cb31-3"><a href="#cb31-3"></a><span class="an">author:</span><span class="co"> "Erno Rubik"</span></span>
+<span id="cb31-4"><a href="#cb31-4"></a><span class="an">format:</span><span class="co"> "html"</span></span>
+<span id="cb31-5"><a href="#cb31-5"></a><span class="co">---</span></span>
+<span id="cb31-6"><a href="#cb31-6"></a></span>
+<span id="cb31-7"><a href="#cb31-7"></a>My idea is to build a cube...</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div class="footer">
+<p>Please respond at <a href="https://pollev.com/rmdtoquarto">pollev.com/rmdtoquarto</a>.</p>
+</div>
+</section>
+<section id="section-18" class="slide level2" data-menu-title="Results">
+<h2></h2>
+<center>
+<iframe src="https://embed.polleverywhere.com/multiple_choice_polls/u9b7ZayoFkgRuLUrgxd6i?controls=none&amp;short_poll=true" width="800px" height="600px">
+</iframe>
+</center>
+</section>
+<section id="metadata-yaml" class="slide level2 smaller">
+<h2><span class="meta-el">Metadata:</span> YAML</h2>
+<p>Metadata can be included via YAML (YAML Ain’t Markup Language).</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="sourceCode" id="cb32"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb32-1"><a href="#cb32-1"></a><span class="pp">---</span></span>
+<span id="cb32-2"><a href="#cb32-2"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"US Patent: A Spatial Toy"</span></span>
+<span id="cb32-3"><a href="#cb32-3"></a><span class="fu">author</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb32-4"><a href="#cb32-4"></a><span class="at">  </span><span class="kw">-</span><span class="at"> Erno Rubrik</span></span>
+<span id="cb32-5"><a href="#cb32-5"></a><span class="at">  </span><span class="kw">-</span><span class="at"> Albert Einstein</span></span>
+<span id="cb32-6"><a href="#cb32-6"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb32-7"><a href="#cb32-7"></a><span class="at">  </span><span class="fu">html</span><span class="kw">:</span></span>
+<span id="cb32-8"><a href="#cb32-8"></a><span class="at">    </span><span class="fu">toc</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb32-9"><a href="#cb32-9"></a><span class="fu">    abstract</span><span class="kw">: </span><span class="ch">|</span></span>
+<span id="cb32-10"><a href="#cb32-10"></a>      This is the abstract.</span>
+<span id="cb32-11"><a href="#cb32-11"></a><span class="at">    </span></span>
+<span id="cb32-12"><a href="#cb32-12"></a>      It has two paragraphs.</span>
+<span id="cb32-13"><a href="#cb32-13"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column" style="width:50%;">
+<p>Some syntax rules:</p>
+<div>
+<ul>
+<li class="fragment">Set a single option <code>key: value</code></li>
+<li class="fragment">Strings with <code>:</code> must be quoted</li>
+<li class="fragment">Include multiple values in a list with <code>-</code></li>
+<li class="fragment">Nest key-value pairs using indentation</li>
+<li class="fragment">Multi-line strings follow <code>|</code></li>
+<li class="fragment">Multiple YAML blocks in a document will be merged</li>
+</ul>
+</div>
+<p>Read more in the pandoc docs<sup>1</sup> or on Wikipedia<sup>2</sup>.</p>
+</div>
+</div>
+<aside><ol class="aside-footnotes"><li id="fn4" role="doc-endnote"><p><a href="https://pandoc.org/MANUAL%202.html#extension-yaml_metadata_block" class="uri">https://pandoc.org/MANUAL%202.html#extension-yaml_metadata_block</a></p></li><li id="fn5" role="doc-endnote"><p><a href="https://en.m.wikipedia.org/wiki/YAML#Syntax" class="uri">https://en.m.wikipedia.org/wiki/YAML#Syntax</a></p></li></ol></aside></section>
+<section id="metadata-yaml-1" class="slide level2 smaller">
+<h2><span class="meta-el">Metadata:</span> YAML</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><span class="smallcaps">A</span></p>
+<div class="sourceCode" id="cb33"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb33-1"><a href="#cb33-1"></a><span class="co">---</span></span>
+<span id="cb33-2"><a href="#cb33-2"></a><span class="an">title:</span><span class="co"> US Patent: A Spatial Toy</span></span>
+<span id="cb33-3"><a href="#cb33-3"></a><span class="an">author:</span><span class="co"> Erno Rubik</span></span>
+<span id="cb33-4"><a href="#cb33-4"></a><span class="an">format:</span><span class="co"> html</span></span>
+<span id="cb33-5"><a href="#cb33-5"></a><span class="co">---</span></span>
+<span id="cb33-6"><a href="#cb33-6"></a></span>
+<span id="cb33-7"><a href="#cb33-7"></a>My idea is to build a cube...</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><span class="smallcaps">C</span></p>
+<div class="sourceCode" id="cb34"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb34-1"><a href="#cb34-1"></a><span class="co">---</span></span>
+<span id="cb34-2"><a href="#cb34-2"></a><span class="an">format:</span><span class="co"> html</span></span>
+<span id="cb34-3"><a href="#cb34-3"></a><span class="co">---</span></span>
+<span id="cb34-4"><a href="#cb34-4"></a></span>
+<span id="cb34-5"><a href="#cb34-5"></a>My idea is to build a cube...</span>
+<span id="cb34-6"><a href="#cb34-6"></a></span>
+<span id="cb34-7"><a href="#cb34-7"></a>---</span>
+<span id="cb34-8"><a href="#cb34-8"></a>title: A Spatial Toy</span>
+<span id="cb34-9"><a href="#cb34-9"></a>author: Erno Rubik</span>
+<span id="cb34-10"><a href="#cb34-10"></a>---</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column" style="width:50%;">
+<p><span class="smallcaps">C</span></p>
+<div class="sourceCode" id="cb35"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb35-1"><a href="#cb35-1"></a>My idea is to build a cube...</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><span style="font-size: .8em">… then at the command line, run:</span></p>
+<div class="sourceCode" id="cb36"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb36-1"><a href="#cb36-1"></a><span class="ex">quarto</span> render patent.qmd <span class="at">--to</span> html <span class="at">-M</span> title:patent</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><span class="smallcaps">D</span></p>
+<div class="sourceCode" id="cb37"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb37-1"><a href="#cb37-1"></a><span class="co">---</span></span>
+<span id="cb37-2"><a href="#cb37-2"></a><span class="an">title:</span><span class="co"> "US Patent: A Spatial Toy"</span></span>
+<span id="cb37-3"><a href="#cb37-3"></a><span class="an">author:</span><span class="co"> "Erno Rubik"</span></span>
+<span id="cb37-4"><a href="#cb37-4"></a><span class="an">format:</span><span class="co"> "html"</span></span>
+<span id="cb37-5"><a href="#cb37-5"></a><span class="co">---</span></span>
+<span id="cb37-6"><a href="#cb37-6"></a></span>
+<span id="cb37-7"><a href="#cb37-7"></a>My idea is to build a cube...</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
 </section></section>
+<section>
 <section id="exercise-2" class="title-slide slide level1 center" data-background-color="#00403d" style="font-size: .7em">
 <h1>Exercise 2</h1>
 <p>Inside <code>ex-2.qmd</code> you’ll find all of the <em>content</em> needed to create the output files <code>ex-2-goal.html</code> and <code>ex-2-goal.pdf</code>. Add into <code>ex-2.qmd</code> the markdown syntax needed to create the various inline and block elements found in the output documents.</p>
@@ -1414,21 +1620,7 @@ f(x)=\sqrt{\frac{\tau}{2\pi}}
 </div>
 </div>
 </div>
-</section>
-
-<section id="structure-format-content-and-appearance" class="title-slide slide level1 center">
-<h1>Structure, Format, Content, and Appearance</h1>
-
-</section>
-
-<section>
-<section id="exercise-3" class="title-slide slide level1 center" data-background-color="#00403d" style="font-size: .7em">
-<h1>Exercise 3</h1>
-<p>Open a new <code>.qmd</code> file in the visual editor and create an document that describes your favorite place to visit on vacation. No need to author the content itself, you can pull that from</p>
-<ol type="1">
-<li>At least two levels of header</li>
-<li></li>
-</ol>
+<p>For reference, see: <a href="https://pandoc.org/MANUAL.html#pandocs-markdown" class="uri">https://pandoc.org/MANUAL.html#pandocs-markdown</a></p>
 </section>
 <section id="references-and-further-reading" class="slide level2 smaller">
 <h2>References and further reading</h2>
@@ -1437,7 +1629,6 @@ f(x)=\sqrt{\frac{\tau}{2\pi}}
 <li><a href="https://pandoc.org/lua-filters.html#lua-type-reference">Pandoc documentation on type references</a>: this section documents the tools needed to write Lua filters but included in this is a compendium of the different block and inline elements recognized by pandoc.</li>
 <li><a href="https://info340.github.io/html-fundamentals.html#block-vs.-inline-elements">Block and Inline Elements</a>: from Client-side Web Development by Ross and Freeman. Provides clear description of elements in the setting of HTML.</li>
 <li><a href="https://patents.google.com/patent/US4378116A/en">Spatial Logical Toy</a>: The US patent of what became the Rubik’s Cube. Several examples in these slides borrow figures and text from the patent.</li>
-<li><a href="https://giphy.com/gifs/wizard-of-oz-3L8k2sJ2DwEZG">Wizard of Oz Gif</a></li>
 </ul>
 <div class="footer footer-default">
 

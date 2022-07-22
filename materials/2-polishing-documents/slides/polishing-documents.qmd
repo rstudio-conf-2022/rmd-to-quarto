@@ -23,17 +23,15 @@ format:
 
 ## Syntax of Bracketed Span
 
-```{.markdown .r-fit-text}
+``` {.markdown .r-fit-text}
 [content]{#id .class attribute="value"}
 ```
 
-- You can have multiple identifiers, classes, and attributes. Separate them with a space.
-
-
+-   You can have multiple identifiers, classes, and attributes. Separate them with a space.
 
 ## Syntax of Fenced Div
 
-```{.markdown .r-fit-text}
+``` {.markdown .r-fit-text}
 ::: {#id .class attribute="value"}
 content
 :::
@@ -53,7 +51,13 @@ content
 
 ## YAML Intelligence
 
-# Exercise 1
+# Exercise 1 {background-color="#00403d" style="font-size: .7em"}
+
+Open a new `.qmd` file in the visual editor and create an document that describes your favorite place to visit on vacation. No need to author the content itself, you can pull that from 
+
+1. At least two levels of header
+2. 
+
 
 # Styling with CSS
 
@@ -75,7 +79,7 @@ Make your own css
 
 ## References and further reading {.smaller}
 
-- [Client Side Web Developent Ch. 5-7](https://info340.github.io/css.html): approachable and concise introduction to how CSS work.
-- [](): 
-- https://patents.google.com/patent/US3811677A/en?q=stilts&oq=stilts
-- https://patents.google.com/patent/US6688257B2/en?q=pet+dog&oq=pet+dog
+-   [Client Side Web Developent Ch. 5-7](https://info340.github.io/css.html): approachable and concise introduction to how CSS work.
+-   :
+-   https://patents.google.com/patent/US3811677A/en?q=stilts&oq=stilts
+-   https://patents.google.com/patent/US6688257B2/en?q=pet+dog&oq=pet+dog
