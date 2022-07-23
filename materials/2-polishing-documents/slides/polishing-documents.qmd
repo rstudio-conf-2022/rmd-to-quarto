@@ -20,52 +20,45 @@ format:
 
 # Generic Blocks and Inlines
 
-## What happens when you pandoc it? {auto-animate=true}
+## What happens when you pandoc it? {auto-animate="true"}
 
 From the last exercise . . .
 
-```bash
+``` bash
 quarto pandoc -f html -t markdown ex-2-goal.html -o ex-2-answer.md
 ```
 
 . . .
 
-:::columns
-:::{.column width="60%"}
-
+::: columns
+::: {.column width="60%"}
 ![](images/pandoc-convert-1.png)
-
 :::
 
-:::{.column width="40%"}
-
+::: {.column width="40%"}
 \
 \
 
 This looks familiar!
-
 :::
 :::
 
-## What happens when you pandoc it? {auto-animate=true}
+## What happens when you pandoc it? {auto-animate="true"}
 
 From the last exercise . . .
 
-```bash
+``` bash
 quarto pandoc -f html -t markdown ex-2-goal.html -o ex-2-answer.md
 ```
 
-:::columns
-:::{.column width="60%"}
-
+::: columns
+::: {.column width="60%"}
 ![](images/pandoc-convert-2.png)
 
 ![](images/pandoc-convert-1.png)
-
 :::
 
-:::{.column  width="40%"}
-
+::: {.column width="40%"}
 \
 \
 
@@ -77,33 +70,29 @@ This looks familiar!
 :::
 :::
 
+## The Bracketed Span {transition="none"}
 
-## The Bracketed Span {transition=none}
+![](images/quarto-workshop-07.jpg){fig-align="center"}
 
-![](images/quarto-workshop-07.jpg){fig-align=center}
+## The Bracketed Span {transition="none"}
 
-## The Bracketed Span {transition=none}
+![](images/quarto-workshop-08.jpg){fig-align="center"}
 
-![](images/quarto-workshop-08.jpg){fig-align=center}
+## The Bracketed Span {transition="none"}
 
-## The Bracketed Span {transition=none}
+![](images/quarto-workshop-09.jpg){fig-align="center"}
 
-![](images/quarto-workshop-09.jpg){fig-align=center}
+## The Bracketed Span {transition="none"}
 
-## The Bracketed Span {transition=none}
+![](images/quarto-workshop-10.jpg){fig-align="center"}
 
-![](images/quarto-workshop-10.jpg){fig-align=center}
+## The Bracketed Span {transition="none"}
 
-## The Bracketed Span {transition=none}
-
-![](images/quarto-workshop-11.jpg){fig-align=center}
+![](images/quarto-workshop-11.jpg){fig-align="center"}
 
 ## The Fenced Div
 
-![](images/quarto-workshop-12.jpg){fig-align=center}
-
-
-
+![](images/quarto-workshop-12.jpg){fig-align="center"}
 
 # Quarto Elements
 
@@ -111,12 +100,11 @@ This looks familiar!
 
 For when you want to highlight a bit of content for the reader.
 
-
-:::columns
-:::{.column width=50%}
-
+::: columns
+::: {.column width="50%"}
 #### Markdown
-```markdown
+
+``` markdown
 :::{.callout-note}
 Look - a squirrel!
 :::
@@ -130,15 +118,19 @@ Look - a squirrel!
 :::
 ```
 :::
-:::{.column width=50% .fragment}
+
+::: {.column .fragment width="50%"}
 #### HTML output
-:::{.callout-note}
+
+::: callout-note
 Look - a squirrel!
 :::
-:::{.callout-important}
+
+::: callout-important
 Look - a squirrel!
 :::
-:::{.callout-tip}
+
+::: callout-tip
 Look - a squirrel!
 :::
 :::
@@ -148,11 +140,11 @@ Look - a squirrel!
 
 Callouts are implemented across formats.
 
-:::columns
-:::{.column width=50%}
-
+::: columns
+::: {.column width="50%"}
 #### Markdown
-```markdown
+
+``` markdown
 :::{.callout-note}
 Look - a squirrel!
 :::
@@ -166,8 +158,10 @@ Look - a squirrel!
 :::
 ```
 :::
-:::{.column width=50%}
+
+::: {.column width="50%"}
 #### PDF output
+
 ![](images/callouts-pdf.png)
 :::
 :::
@@ -176,11 +170,11 @@ Look - a squirrel!
 
 Callouts are implemented across formats.
 
-:::columns
-:::{.column width=50%}
-
+::: columns
+::: {.column width="50%"}
 #### Markdown
-```markdown
+
+``` markdown
 :::{.callout-note}
 Look - a squirrel!
 :::
@@ -194,8 +188,10 @@ Look - a squirrel!
 :::
 ```
 :::
-:::{.column width=50%}
+
+::: {.column width="50%"}
 #### DOCX output
+
 ![](images/callouts-doc.png)
 :::
 
@@ -203,26 +199,27 @@ Look - a squirrel!
 \
 :::
 
-
 ## Element Layouts
 
 Quarto makes available several layout *attributes* that apply to broad range of block elements.
 
-- `layout-ncol`: split elements across n columns (`2`, `3`, ...).
-- `layout-nrow`: split elements across n rows (`2`, `3`, ...).
-- `layout-align`: align elements (`left`, `center`, `right`, `default`).
-- `layout-valign`: align elements (`top`, `center`, `bottom`, `default`).
-- `layout`: Split elements into a 2D array by rows and columns[^1].
+-   `layout-ncol`: split elements across n columns (`2`, `3`, ...).
+-   `layout-nrow`: split elements across n rows (`2`, `3`, ...).
+-   `layout-align`: align elements (`left`, `center`, `right`, `default`).
+-   `layout-valign`: align elements (`top`, `center`, `bottom`, `default`).
+-   `layout`: Split elements into a 2D array by rows and columns[^1].
 
-## Element Layouts {auto-animate=true}
+[^1]: For more control, see `{.grid}` which relies up the CSS Bootstrap Grid system. See the \[Guide\]{https://quarto.org/docs/output-formats/page-layout.html#article}.
+
+## Element Layouts {auto-animate="true"}
 
 `layout-ncol`
 
-:::columns
-:::{.column width=50%}
+::: columns
+::: {.column width="50%"}
 #### Markdown
 
-```markdown
+``` markdown
 :::{layout-ncol=2}
 A novelty clock, watch, and the like for 
 keeping time at an animal's rate, defined
@@ -237,9 +234,10 @@ for dogs is seven, for example.
 ```
 :::
 
-:::{.column .border width=50%}
+::: {.column .border width="50%"}
 #### HTML output
-:::{layout-ncol=2 style="border: 2px solid #5c5859"}
+
+::: {layout-ncol="2" style="border: 2px solid #5c5859"}
 [A clock for keeping time at an animal's rate. The multiple for dogs is seven, for example.]{style="font-size: .5em"}
 
 ![](images/dog-watch.png)
@@ -247,15 +245,15 @@ for dogs is seven, for example.
 :::
 :::
 
-## Element Layouts {auto-animate=true}
+## Element Layouts {auto-animate="true"}
 
 `layout-ncol` + `layout-valign`
 
-:::columns
-:::{.column width=50%}
+::: columns
+::: {.column width="50%"}
 #### Markdown
 
-```{.markdown code-line-numbers=1}
+``` {.markdown code-line-numbers="1"}
 :::{layout-ncol=2 layout-valign=middle}
 A novelty clock, watch, and the like for 
 keeping time at an animal's rate, defined
@@ -270,9 +268,10 @@ for dogs is seven, for example.
 ```
 :::
 
-:::{.column .border width=50%}
+::: {.column .border width="50%"}
 #### HTML output
-:::{layout-ncol=2 layout-valign=center style="border: 2px solid #5c5859"}
+
+::: {layout-ncol="2" layout-valign="center" style="border: 2px solid #5c5859"}
 [A clock for keeping time at an animal's rate. The multiple for dogs is seven, for example.]{style="font-size: .5em"}
 
 ![](images/dog-watch.png)
@@ -280,15 +279,15 @@ for dogs is seven, for example.
 :::
 :::
 
-## Element Layouts {auto-animate=true}
+## Element Layouts {auto-animate="true"}
 
 `layout-ncol` with small image
 
-:::columns
-:::{.column width=50%}
+::: columns
+::: {.column width="50%"}
 #### Markdown
 
-```{.markdown code-line-numbers=10}
+``` {.markdown code-line-numbers="10"}
 :::{layout-ncol=2}
 A novelty clock, watch, and the like for 
 keeping time at an animal's rate, defined
@@ -303,25 +302,26 @@ for dogs is seven, for example.
 ```
 :::
 
-:::{.column .border width=50%}
+::: {.column .border width="50%"}
 #### HTML output
-:::{layout-ncol=2 layout-valign=center style="border: 2px solid #5c5859"}
+
+::: {layout-ncol="2" layout-valign="center" style="border: 2px solid #5c5859"}
 [A clock for keeping time at an animal's rate. The multiple for dogs is seven, for example.]{style="font-size: .5em"}
 
-![](images/dog-watch.png){width=130px}
+![](images/dog-watch.png){width="130px"}
 :::
 :::
 :::
 
-## Element Layouts {auto-animate=true}
+## Element Layouts {auto-animate="true"}
 
 `layout-ncol` + `layout-align` ZZQ
 
-:::columns
-:::{.column width=50%}
+::: columns
+::: {.column width="50%"}
 #### Markdown
 
-```{.markdown code-line-numbers=1}
+``` {.markdown code-line-numbers="1"}
 :::{layout-ncol=2 layout-align=right}
 A novelty clock, watch, and the like for 
 keeping time at an animal's rate, defined
@@ -336,33 +336,35 @@ for dogs is seven, for example.
 ```
 :::
 
-:::{.column .border width=50%}
+::: {.column .border width="50%"}
 #### HTML output
-:::{layout-ncol=2 layout-align=right style="border: 2px solid #5c5859"}
+
+::: {layout-ncol="2" layout-align="right" style="border: 2px solid #5c5859"}
 [A clock for keeping time at an animal's rate. The multiple for dogs is seven, for example.]{style="font-size: .5em"}
 
-![](images/dog-watch.png){width=130px}
+![](images/dog-watch.png){width="130px"}
 :::
 :::
 :::
+
 ## Element Layout Array
 
-`layout`: The layout attribute[^1] is a 2-dimensional array where the first dimension defines rows and the second columns.
+`layout`: The layout attribute[^2] is a 2-dimensional array where the first dimension defines rows and the second columns.
+
+[^2]: For more control, see `{.grid}` which relies up the CSS Bootstrap Grid system. See the \[Guide\]{https://quarto.org/docs/output-formats/page-layout.html#article}.
 
 \
 
-- `layout="[[1,1], [1]]"` translates to: *create two rows, the first of which has two columns of equal size and the second of which has a single column*.
-- You can scale the relative dimension of each panel by changing the `1`s.
+-   `layout="[[1,1], [1]]"` translates to: *create two rows, the first of which has two columns of equal size and the second of which has a single column*.
+-   You can scale the relative dimension of each panel by changing the `1`s.
 
-[^1]: For more control, see `{.grid}` which relies up the CSS Bootstrap Grid system. See the [Guide]{https://quarto.org/docs/output-formats/page-layout.html#article}.
+## Element Layout Array {auto-animate="true"}
 
-## Element Layout Array {auto-animate=true}
-
-:::columns
-:::{.column width=50%}
+::: columns
+::: {.column width="50%"}
 #### Markdown
 
-```{.markdown code-line-numbers=1}
+``` {.markdown code-line-numbers="1"}
 :::{layout="[[1,1], [1]]"}
 ![](images/watch-face.png)
 
@@ -373,29 +375,30 @@ for dogs is seven, for example.
 ```
 :::
 
-:::{.column .border .fragment width=50%}
+::: {.column .border .fragment width="50%"}
 #### HTML output
-:::{layout="[[1,1], [1]]" style="border: 2px solid #5c5859"}
-![](images/watch-face.png){style="border: 2px solid #5c5859" width=250px}
 
-![](images/dog-watch.png){style="border: 2px solid #5c5859" width=250px}
+::: {layout="[[1,1], [1]]" style="border: 2px solid #5c5859"}
+![](images/watch-face.png){style="border: 2px solid #5c5859" width="250px"}
 
-![](images/circuit.png){style="border: 2px solid #5c5859" width=750px}
+![](images/dog-watch.png){style="border: 2px solid #5c5859" width="250px"}
+
+![](images/circuit.png){style="border: 2px solid #5c5859" width="750px"}
 :::
 :::
 :::
 
-:::{.fragment style="position: absolute; top: 420px; left: 0px"}
+::: {.fragment style="position: absolute; top: 420px; left: 0px"}
 [What would `layout="[[1,5], [1]]"` do?]{style="font-size: .8em"}
 :::
 
-## Element Layout Array {auto-animate=true}
+## Element Layout Array {auto-animate="true"}
 
-:::columns
-:::{.column width=50%}
+::: columns
+::: {.column width="50%"}
 #### Markdown
 
-```{.markdown code-line-numbers=1}
+``` {.markdown code-line-numbers="1"}
 :::{layout="[[1,5], [1]]"}
 ![](images/watch-face.png)
 
@@ -406,14 +409,15 @@ for dogs is seven, for example.
 ```
 :::
 
-:::{.column .border width=50%}
+::: {.column .border width="50%"}
 #### HTML output
-:::{layout="[[1,5], [1]]" style="border: 2px solid #5c5859"}
-![](images/watch-face.png){style="border: 2px solid #5c5859" width=250px}
 
-![](images/dog-watch.png){style="border: 2px solid #5c5859" width=250px}
+::: {layout="[[1,5], [1]]" style="border: 2px solid #5c5859"}
+![](images/watch-face.png){style="border: 2px solid #5c5859" width="250px"}
 
-![](images/circuit.png){style="border: 2px solid #5c5859" width=750px}
+![](images/dog-watch.png){style="border: 2px solid #5c5859" width="250px"}
+
+![](images/circuit.png){style="border: 2px solid #5c5859" width="750px"}
 :::
 :::
 :::
@@ -424,12 +428,11 @@ Modify the width of the main body column for individual block elements (e.g. par
 
 . . .
 
-:::columns
-:::{.column width=50%}
+::: columns
+::: {.column width="50%"}
+#### Markdown
 
-#### Markdown 
-
-```{.markdown code-line-numbers="1,11"}
+``` {.markdown code-line-numbers="1,11"}
 :::{.column-body}
 A novelty clock, watch, and the like for 
 keeping time at an animal's rate, defined
@@ -452,48 +455,46 @@ for dogs is seven, for example.
 ```
 :::
 
-:::{.column .fragment width=50%}
-
+::: {.column .fragment width="50%"}
 #### HTML output
 
-![](images/doc-layout.png){fig-align=center}
-
+![](images/doc-layout.png){fig-align="center"}
 :::
 :::
 
-
-## Document Layout: margin classes {auto-animate=true}
+## Document Layout: margin classes {auto-animate="true"}
 
 Place any inline or block element from the body to the margin.
 
 . . .
 
-:::columns
-:::{.column width=50%}
+::: columns
+::: {.column width="50%"}
 #### Markdown
 
-```{.markdown}
+``` markdown
 ![](images/dog-watch.png)
 
 What a brilliant idea.
 ```
 :::
 
-:::{.column width=50%}
+::: {.column width="50%"}
 #### Output
+
 ![](images/margin-no.png){style="border: 2px solid #5c5859"}
 :::
 :::
 
-## Document Layout: margin classes {auto-animate=true}
+## Document Layout: margin classes {auto-animate="true"}
 
 Place any inline or block element from the body to the margin.
 
-:::columns
-:::{.column width=50%}
+::: columns
+::: {.column width="50%"}
 #### Markdown
 
-```{.markdown code-line-numbers=3}
+``` {.markdown code-line-numbers="3"}
 ![](images/dog-watch.png)
 
 :::{.column-margin}
@@ -502,83 +503,167 @@ What a brilliant idea.
 ```
 :::
 
-:::{.column width=50%}
+::: {.column width="50%"}
 #### Output
 
 ![](images/margin-yes.png){style="border: 2px solid #5c5859"}
 :::
 :::
 
-
 ## Figures
 
 Set `width`, `height` and `align` of figures. Add link, caption, and alt-text.
 
-```{.markdown}
+``` markdown
 ![A caption](images/dog-watch.png){width=300 align=center fig-alt="Dog watching a watch."}
 ```
 
 . . .
 
-![A caption](images/dog-watch.png){width=300 align=center fig-alt="Dog watching a watch."}
+![A caption](images/dog-watch.png){width="300" align="center" fig-alt="Dog watching a watch."}
 
 . . .
 
-:::{style="font-size: .8em"}
-- Units default to `300px`.
-- Other choices `300in`, `300%` (relative to image size), `3em` (relative to font size).
-- Entire fig can be nested inside the link syntax (`[fig](url)`) to link the image
+::: {style="font-size: .8em"}
+-   Units default to `px`.
+-   Other choices `300in`, `300%` (relative to image size), `3em` (relative to font size).
+-   Entire fig can be nested inside the link syntax (`[fig](url)`) to link the image
 :::
 
-## Labels for Reference
+## Labels for Links
 
+In additional to external resources, links can go to elements of the same doc through its `#id`.
+
+. . .
+
+::: columns
+::: {.column width="50%"}
+#### Markdown
+
+``` markdown
+![A caption](images/dog-watch.png){#dogwatch}
+
+< Much more text >
+
+A novelty clock, [watch](#dogwatch), and the
+like for keeping time at an animal's rate . . .
+```
+:::
+
+::: {.column .fragment width="50%"}
+#### HTML output
+
+::: {style="border: 2px solid #5c5859"}
+![A caption](images/dog-watch.png){#dogwatch width="300"}
+
+::: {style="font-size: .7em"}
+\< Much more text \>
+
+A novelty clock, [watch](#dogwatch), and the like for keeping time at an animal's rate . . .
+:::
+:::
+:::
+:::
+
+::: {.fragment style="position: absolute; top: 590px; left: 80px; font-size: .8em"}
+-   Works for many elements,\
+    not just figs!
+:::
+
+## Labels for References
+
+References can be made dynamic using `#<type>-id` and `@<type>-id`.
+
+. . .
+
+::: columns
+::: {.column width="50%"}
+#### Markdown
+
+``` {.markdown code-line-numbers="1,5"}
+![Caption](images/dog-watch.png){#fig-dogwatch}
+
+< Much more text >
+
+A novelty clock, watch (@fig-dogwatch), and the like for 
+keeping time at an animal's rate . . .
+```
+:::
+
+::: {.column .fragment width="50%"}
+#### HTML output
+
+::: {style="border: 2px solid #5c5859"}
+![A caption](images/dog-watch.png){#fig-dogwatch width="300"}
+
+::: {style="font-size: .7em"}
+\< Much more text \>
+
+A novelty clock, watch (@fig-dogwatch), and the like for keeping time at an animal's rate . . .
+:::
+:::
+:::
+:::
+
+::: {.fragment style="position: absolute; top: 590px; left: 80px; font-size: .8em"}
+-   Other `<type>` include `@tbl-`,\
+    `@sec-`, `@eq-`, `@thm-`, and many\
+    more for math.
+:::
+
+## Customized References
+
+You can customize the appearance of inline references by either changing the syntax of the inline reference or by setting options.
+
+| Type          | Syntax                | Output   |
+|---------------|-----------------------|----------|
+| Default       | `@fig-elephant`       | Figure 1 |
+| Custom Prefix | `[Fig @fig-elephant]` | Fig 1    |
+| No Prefix     | `[-@fig-elephant]`    | 1        |
 
 # Rstudio and Quarto
 
-## Visual Editor
+##  {menu-title="Using the Visual Editor"}
+
+::: v-center-container
+[Let's play around in the RStudio Visual Editor!]{style="text-align: center"}
+:::
+
+## Easy Table Generation
+
+Have the editor write the markdown for you!
+
+![](images/visual-table.png){fig-alt="Screenshot of inserting a table via the Visual Editor." fig-align=center}
+
+## Catalog of Elements
+
+Type `/` on a new line to search the element types.
+
+![](images/visual-elements.png){fig-alt="Screenshot of the pop-up after typing /." fig-align=center}
+
+## Reminder of Attributes
+
+Click `...` next to elements to see the attributes you can change.
+
+![](images/visual-attributes.png){fig-alt="Screenshot highlighting the three dots along the right side of the editor." fig-align=center}
 
 ## YAML Intelligence
 
-## 
-# {{< fa umbrella-beach >}} Exercise 3{background-color="#00403d"}
+`Ctrl + space` to see all available options then tab-complete. Also works in VSCode.
+
+
+![](images/yaml-intelligence.png){fig-alt="Screenshot highlighting the three dots along the right side of the editor." fig-align=center}
+
+# {{< fa umbrella-beach >}} Exercise 3 {background-color="#00403d"}
 
 Open `ex-3.qmd` and follow the directions to create a document that describes your favorite place to visit on vacation.
 
-When you're done, please share a screenshot of your document in the GitHub Discussion thread "Exercise 3".
-
 \
 
-**Helpful References**
-
-- [Quarto Guide > Authoring > Callouts](https://quarto.org/docs/authoring/callouts.html)
-
-<!-- Modify this file to create a document that describes your favorite place to visit on a vacation. -->
-
-<!-- No need to author the content itself. You can pull text from the Wikipedia page for your destination. A wonderful resource for free images is <https://unsplash.com/>. -->
-
-<!-- Please add to your document each of the following: -->
-
-<!-- 1. At least two levels of headers. -->
-<!-- 2. Several paragraphs of text. -->
-<!-- 3. A callout box with attributes: (see <https://quarto.org/docs/authoring/callouts.html>) -->
-<!--    - (for HTML only) box collapses on click -->
-<!--    - change the appearance -->
-<!--    - remove the icon -->
-<!-- 4. One solo image with attributes: (see <https://quarto.org/docs/authoring/figures.html>) -->
-<!--    - centered -->
-<!--    - dimensions 400 by 400 pixels -->
-<!--    - add a caption -->
-<!--    - annotate with alt-text -->
-<!-- 5. Three images as sub-figures with the following layout and attributes: -->
-<!--    - centered -->
-<!--    - captioned -->
-<!--    - annotated with alt-text -->
-<!-- 6. Two references to two different labeled elements. They can be arbitrary spans of text, headers, figures - any inline or block element. -->
-
-<!-- When you're done, please share a screenshot of your document in the GitHub Discussion thread "Exercise 3". -->
-
+When you're done, please share a screenshot of your document in the GitHub Discussion thread "Exercise 3".
 
 # HTML Themes
+
 # Simple CSS
 
 ## Rule syntax
@@ -600,7 +685,6 @@ Make your own css
 ## References and further reading {.smaller}
 
 -   [Client Side Web Developent Ch. 5-7](https://info340.github.io/css.html): approachable and concise introduction to how CSS work.
--   [Clock for keeping time at a rate other than human time
-](https://patents.google.com/patent/US5023850A/en): US patent by Rodney Metts and Barry Thomas
+-   [Clock for keeping time at a rate other than human time](https://patents.google.com/patent/US5023850A/en): US patent by Rodney Metts and Barry Thomas
 -   https://patents.google.com/patent/US3811677A/en?q=stilts&oq=stilts
 -   https://patents.google.com/patent/US6688257B2/en?q=pet+dog&oq=pet+dog
