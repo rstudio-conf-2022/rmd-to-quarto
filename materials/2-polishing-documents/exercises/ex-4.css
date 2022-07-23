@@ -1,0 +1,215 @@
+// fonts
+@import url(https://fonts.googleapis.com/css?family=Cabin:600,600i&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Commissioner&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC:Bold,700&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+$font-family-sans-serif: "Commissioner" !default;
+$presentation-font-size-root: 46px;
+
+// colors
+:root {
+  --red-100: #bf2642;
+  --orange-100: #f2a03d;
+  --green-100: #02733e;
+  --purple-100: #73245e;
+}
+
+$red: #bf2642;
+$orange: #f2a03d;
+$green: #02733e;
+$purple: #73245e;
+$beige: #f8f5f0;
+$blue: #00817c;
+$dark-beige: #a6854d;
+
+// set your custom colors here
+$body-color: #5c5859 !default;
+
+// headings
+$presentation-heading-color: $blue !default;
+$presentation-heading-font: "Cabin", "Commissioner", sans serif !default;
+
+// code
+// $code-block-bg: lighten($beige, 60%) !default;
+$code-block-bg: $beige !default;
+$code-color: $purple !default;
+// $code-block-border-color: $dark-beige !default;
+
+/*-- scss:rules --*/
+
+details>summary {
+  font-size: 0.75em;
+}
+
+.small {
+  font-size: 0.75em;
+}
+
+.reveal .slide .question {
+  border-left: 3px solid #7090A5;
+  padding-left: 0.5em;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+  background: #A9BCC9;
+}
+
+.reveal .slide .poll {
+  border-left: 3px solid $dark-beige;
+  padding-left: 0.5em;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+  background: $beige;
+}
+
+.reveal .slide .appex {
+  border-left: 3px solid #003559;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  padding: 0.5em;
+  background: #EBF7FF;
+}
+
+
+/*
+.reveal .slide b, strong {
+  color: #D3533A;
+}
+*/
+
+.bigadage {
+  font-size: 250%;
+  font-family: Amatic SC;
+}
+
+.smalladage {
+  font-size: 150%;
+  font-family: Amatic SC;
+}
+
+span.block-el {
+  font-weight: 700;
+  color: var(--green-100);
+  text-align: center;
+}
+
+div.block-el {
+  font-weight: 700;
+  color: white;
+  background-color: var(--green-100);
+}
+
+span.inline-el {
+  font-weight: 700;
+  color: var(--red-100);
+  text-align: center;
+}
+
+div.inline-el {
+  font-weight: 700;
+  color: white;
+  background-color: var(--red-100);
+}
+
+span.meta-el {
+  font-weight: 700;
+  color: var(--orange-100);
+  text-align: center;
+}
+
+div.meta-el {
+  font-weight: 700;
+  color: white;
+  background-color: var(--orange-100);
+}
+
+.reveal .slide h1 {
+  font-family: 'Nanum Myeongjo', serif;
+}
+
+.v-center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+}
+
+
+/*
+
+pre {
+  padding: 0 0.8em;
+  margin: 19px 0;
+  border-width: 5px;
+  font-size: 1em;
+}
+
+pre.r {
+    border-color: #264DE4;
+    position: relative;
+}
+
+pre.r, pre.js, pre.md, pre.markdown, pre.yaml, pre.json, pre.bash, pre.html, pre.css {
+    background: none;
+}
+
+pre {
+    font-family: var(--font-monospace);
+    padding: 0.8em;
+    position: relative;
+    font-size: 1rem;
+    line-height: 1.2em;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    border-left: 3px solid var(--text-lighter);
+}
+
+pre.r::after {
+    content: 'r';
+    color: #264de4;
+}
+
+pre::after {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    opacity: 0.5;
+}
+
+pre.r::after,
+pre.js::after,
+pre.yaml::after,
+pre.json::after,
+pre.bash::after,
+pre.html::after,
+pre.css::after {
+  text-transform: uppercase;
+  font-family: var(--font-header);
+  left: -1.25em;
+  bottom: -1em;
+  transform-origin: top left;
+  transform: rotate(-90deg);
+}
+
+pre.pre-hide-filetype,
+.pre-hide-filetype pre::after {
+  content: '';
+}
+
+pre.pre-hide-border,
+.pre-hide-border pre {
+  border-color: transparent;
+}
+
+p::after {
+  content: " - Remember this";
+}
+
+#cb1::after {
+  text-transform: uppercase;
+  font-family: var(--font-header);
+  left: -1.25em;
+  bottom: -1em;
+  transform-origin: top left;
+  transform: rotate(-90deg);
+}
+*/

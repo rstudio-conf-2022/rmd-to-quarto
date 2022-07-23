@@ -6,10 +6,19 @@ title: "Polishing Documents"
 Under construction.
 :::
 
-> Learning goals
+> Learn how to create generic block and inline elements, leverage id labels, set classes and attributes, practice using Quarto-specific elements in RStudio's visual editor, and customize the appearance of your documents with elementary CSS.
 
-### Topics
+### Outline
+1. Generic Elements
+   i. Bracketed Spans
+   ii. Fenced Divs
+2. Cross Referening with Labels
+3. Quarto-specific Elements
+4. Setting Attributes with YAML
+5. RStudio's Visual Editor
+6. Customizing Appearance with CSS
 
 ### Exercises
 
-
+1. 
+2. 
