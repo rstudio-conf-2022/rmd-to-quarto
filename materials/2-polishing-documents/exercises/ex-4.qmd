@@ -3,39 +3,6 @@ title: "My Favorite Vacation Spot"
 format: html
 ---
 
-## Remove these instructions when you're done
+![A caption](dog-watch.png){#fig-dogwatch width=300}
 
-Modify this file to create a document that describes your favorite place to visit on a vacation.
-
-No need to author the content itself. You can pull text from the Wikipedia page for your destination. A wonderful resource for free images is <https://unsplash.com/>.
-
-Please add to your document each of the following:
-
-1. At least two levels of headers.
-2. Several paragraphs of text.
-3. A callout box with attributes: (see <https://quarto.org/docs/authoring/callouts.html>)
-   - (for HTML only) box collapses on click
-   - change the appearance
-   - remove the icon
-4. One solo image with attributes: (see <https://quarto.org/docs/authoring/figures.html>)
-   - centered
-   - dimensions 400 by 400 pixels
-   - links to Wikipedia page location
-   - annotate with alt-text
-5. Three images as sub-figures with the following layout and attributes:
-   - centered
-   - captioned (main figure and sub-figures)
-   - annotated with alt-text
-6. An inline or block element as margin content (e.g. list, image, text). 
-7. Two references to two different labeled elements. They can be arbitrary spans of text, headers, figures - any inline or block element.
-
-When you're done, please share a screenshot of your document in the GitHub Discussion thread "Exercise 3".
-
-
-If you'd like more of a challenge...
-
-- Switch out one of the images in a sub-figure panel with an iframe of a youtube video from that place.
-- 
-
-* * *
-
+A novelty clock, watch [dogwatch](#fig-dogwatch),
