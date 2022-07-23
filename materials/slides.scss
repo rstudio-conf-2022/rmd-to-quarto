@@ -2,8 +2,9 @@
 @import url(https://fonts.googleapis.com/css?family=Cabin:600,600i&display=swap);
 @import url(https://fonts.googleapis.com/css?family=Commissioner&display=swap);
 @import url(https://fonts.googleapis.com/css?family=Amatic+SC:Bold,700&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
 $font-family-sans-serif: "Commissioner" !default;
-$presentation-font-size-root: 36px;
+$presentation-font-size-root: 46px;
 
 // colors
 :root {
@@ -119,6 +120,10 @@ div.meta-el {
   font-weight: 700;
   color: white;
   background-color: var(--orange-100);
+}
+
+.reveal .slide h1 {
+  font-family: 'Nanum Myeongjo', serif;
 }
 
 .v-center-container {
