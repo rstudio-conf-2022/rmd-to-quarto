@@ -21,6 +21,7 @@ format:
       data-background-size: contain   
 ---
 
+
 ## Introductions
 
 Let's take \~2 minutes to introduce yourself to your neighbors.
@@ -222,7 +223,7 @@ During polls, you can vote in a browser tab either on your laptop or your phone 
 - Easier to customize websites and books with projects
 
 
-# Exercise 0 {background-color="#00403d" style="font-size: .7em"}
+# {{< fa circle-right >}} Exercise 0 {background-color="#00403d" style="font-size: .7em"}
 
 Let's kick the tires on Quarto!
 
@@ -406,7 +407,7 @@ A \emph{spatial logical toy}
 \includegraphics{images/med-rubiks-cube.png}
 ```
 
-# Exercise 1 {background-color="#00403d" style="font-size: .7em"}
+# {{< fa terminal >}} Exercise 1 {background-color="#00403d" style="font-size: .7em"}
 
 Let's focus on using `quarto` at the command line. Within RStudio, this can be done in the Terminal tab in the Console pane.
 
@@ -1282,7 +1283,7 @@ My idea is to build a cube...
 
 :::
 :::
-# Exercise 2 {background-color="#00403d" style="font-size: .7em"}
+# {{< fa cubes >}} Exercise 2 {background-color="#00403d" style="font-size: .7em"}
 
 Inside `ex-2.qmd` you'll find all of the *content* needed to create the output files `ex-2-goal.html` and `ex-2-goal.pdf`. Add into `ex-2.qmd` the markdown syntax needed to create the various inline and block elements found in the output documents.
 
