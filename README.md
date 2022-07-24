@@ -3,22 +3,20 @@ From R Markdown to Quarto
 
 ### rstudio::conf 2022
 
-by Andrew Bray
+#### Teaching Team
 
------
-
-INSTRUCTIONS FOR INSTRUCTORS: Please insert information about your
-workshop below. Then, add workshop content in the materials folder and
-link to each session’s materials from the schedule below. You are
-welcomed to add more rows to the schedule. We just ask that you take
-breaks at the specified times. Once you are done adding information, you
-can remove these instructions from the README.
+Andrew Bray
+Rebecca Barter
+Silvia Canelón
+Christophe Dervieux
+Devin Pastoor
+Tatsu Shigetu
 
 -----
 
 :spiral_calendar: July 25 and 26, 2022  
 :alarm_clock:     09:00 - 17:00  
-:hotel:           \[ADD ROOM\]  
+:hotel:           National Harbor 12/13
 :writing_hand:    [rstd.io/conf](http://rstd.io/conf)
 
 -----
@@ -26,10 +24,6 @@ can remove these instructions from the README.
 ## Overview
 
 This workshop is designed for those who want to take their R Markdown skills and expertise and apply them in Quarto, the next generation of R Markdown. Quarto is an open-source scientific and technical publishing system that offers multilingual programming language support to create dynamic and static documents, books, presentations, blogs, and other online resources. In this workshop you will learn how to apply your reproducible authoring skills to the Quarto format and learn about new tools and workflows for authoring with Quarto in RStudio. You will learn to create static documents, to add interactivity to them with Shiny and htmlwidgets, and to create presentations in various formats such as reveal.js, beamer, and pptx. The workshop will also introduce you to Quarto projects which you can use to build websites and write blogs and books. Finally, you will learn various ways to deploy and publish your Quarto projects on the web. Independent modules will also highlight authoring in Quarto with Jupyter and VS Code as well as other text editors.
-
-## Learning objectives
-
-[ADD AN ITEMIZED LIST OF LEARNING OBJECTIVES.]
 
 ## Is this course for me?
 
@@ -41,10 +35,24 @@ Are you interested in exploring the wide spectrum of documents that can be produ
 
 ## Prework
 
-\[ADD INFORMATION YOU WANT LEARNERS TO HAVE / STEPS THEY WANT THEM TO
-COMPLETE PRIOR TO THE WORKSHOP. THIS COULD BE A LINK TO A THREAD ON
-RSTUDIO COMMUNITY, PACKAGE INSTALL INSTRUCTIONS, HOW TO GET AN
-RSTUDIO.CLOUD ACCOUNT, ETC.\]
+Each session of the workshop features exercises that will learn Quarto by doing. To prepare, please install the following on your machine:
+
+- If you haven't already, please [sign-up](https://happygitwithr.com/github-acct.html) for a free GitHub account.
+- Install latest version of [RStudio](https://www.rstudio.com/products/rstudio/download/#download), v2022.07.0-548 or later
+- Install latest version of [Quarto](https://quarto.org/docs/get-started/) (v1.0.36 or greater)
+- After installing Quarto, open the terminal in RStudio and:
+  - See [this guide](https://support.rstudio.com/hc/en-us/articles/115010737148-Using-the-RStudio-Terminal-in-the-RStudio-IDE) for details on using the terminal
+  - Install/Update TinyTeX for PDFs with `quarto install tool tinytex`
+  - Install/Update Chromium with `quarto install tool chromium`
+- Ideally upgrade/use to R 4.1 or R 4.2
+- Install these R packages:
+  
+  ```{r}
+  #| eval: false
+  #| echo: true
+  pkg_list <- c("tidyverse", "quarto", "rmarkdown", "palmerpenguins")
+  install.packages(pkg_list)
+  ```
 
 ## Schedule
 
@@ -52,25 +60,25 @@ RSTUDIO.CLOUD ACCOUNT, ETC.\]
 
 | Time          | Activity         |
 | :------------ | :--------------- |
-| 09:00 - 10:30 | Session 1        |
+| 09:00 - 10:30 | Welcome to Quarto        |
 | 10:30 - 11:00 | *Coffee break*   |
-| 11:00 - 12:30 | Session 2        |
+| 11:00 - 12:30 | Polishing Documents       |
 | 12:30 - 13:30 | *Lunch break*    |
-| 13:30 - 15:00 | Session 3        |
+| 13:30 - 15:00 | Computation   |
 | 15:00 - 15:30 | *Coffee break*   |
-| 15:30 - 17:00 | Session 4        |
+| 15:30 - 17:00 | Projects and Publish        |
 
 ### Day 2
 
 | Time          | Activity         |
 | :------------ | :--------------- |
-| 09:00 - 10:30 | Session 1        |
+| 09:00 - 10:30 | Presentations        |
 | 10:30 - 11:00 | *Coffee break*   |
-| 11:00 - 12:30 | Session 2        |
+| 11:00 - 12:30 | Websites       |
 | 12:30 - 13:30 | *Lunch break*    |
-| 13:30 - 15:00 | Session 3        |
+| 13:30 - 15:00 | Workshop Projects      |
 | 15:00 - 15:30 | *Coffee break*   |
-| 15:30 - 17:00 | Session 4        |
+| 15:30 - 17:00 | The Future of Quarto        |
 
 ## Instructor
 
