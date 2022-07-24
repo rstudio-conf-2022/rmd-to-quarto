@@ -1409,5 +1409,5 @@ For reference, see: <https://pandoc.org/MANUAL.html#pandocs-markdown>
 - [A Brief History of R Markdown](https://slides.yihui.org/2021-Brazilian-R-Day.html): a presentation by Yihui Xie in 2021.
 - [Pandoc documentation on type references](https://pandoc.org/lua-filters.html#lua-type-reference): this section documents the tools needed to write Lua filters but included in this is a compendium of the different block and inline elements recognized by pandoc.
 - [Block and Inline Elements](https://info340.github.io/html-fundamentals.html#block-vs.-inline-elements): from Client-side Web Development by Ross and Freeman. Provides clear description of elements in the setting of HTML.
-- [Command Line Essentials](https://datacarpentry.org/shell-genomics/02-the-filesystem/index.html): a short primer on how to navigate through a file structure at the command line.
+- [Command Line Essentials](https://datacarpentry.org/shell-genomics/02-the-filesystem/index.html): a short primer on how to navigate through a file structure at the command line.sla
 - [Spatial Logical Toy](https://patents.google.com/patent/US4378116A/en): The US patent of what became the Rubik's Cube. Several examples in these slides borrow figures and text from the patent.
