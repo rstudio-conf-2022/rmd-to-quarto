@@ -1,16 +1,26 @@
 ---
-title: "Sandbox"
+title: sandbox
+format: html
 ---
 
 Feel free to to play along while we explore some elements in Quarto.
 
-Paths to images:
+### Paths to images
 
- - `images/dog-watch.png`
- - `images/
+Your browser dimensions will be different than my slides, so play around with different sizes.
 
-Some sample text:
+- `images/dog-watch.png`
+- `images/dog-watch-mondo.png`
+- `images/dog-watch-small.png`
+- `images/circuit.png`
+- `images/circuit-mondo.png`
+- `images/circuit-small.png`
+- `images/watch-face.png`
+- `images/watch-face-mondo.png`
+- `images/watch-face-small.png`
 
-A novelty clock, watch, and the like for keeping time at an animal's rate, defined in terms of a multiple of human rate by dividing the average lifetime of a particular animal into the average lifetime of a human being. The multiple for dogs is seven, for example. The device comprises a housing, a source of reference frequency for producing pulses, means for producing 60 pulses per second times the multiple for the particular animal, means for accumulating time, and means for displaying time. The display is the usual clock face with the speed of the hands altered, preferably also with the data indicated as the number of days since the last "new year" in animal days. A digital display of time in human terms may be provided with an analog display of time in animal terms or, alternatively, a capability to switch from one to the other may be provided. Preferably, a variable resistor, between the frequency source and producing means allows the user to change the multiple for different types of animals.
+### Sample Text
 
 Animals, such as dogs, live shorter lives as measured by human time than people. A dog that lives ten years has lived a full life; a man might live 77 years to live a full life. The relationship between the lifetimes of humans and dogs can be related by stating a period of time in "dog years." Two human years is fourteen "dog years." Although this relationship might perhaps be helpful in determining whether a dog or other animal is full grown or not, it does little to help the owner of a pet put the proper value on the animal's time. Various animals have different lifetimes. For example, seahorses and rats live an average of three human years; pigeons live three and one-half years; goldfish and hamsters live five human years; hogs, 9 years; dogs, 11 years; cats, 18 years, beavers, 12 years; lobsters, 15 years; bats, lions, and horses live 20 years; dolphins live 25 years; brown bears live 47 years and polar bears live 33 years; gorillas live 45 years; alligators, 50 years; elephants, 60 years; and giant tortoises, 100 years. All of these have a corresponding multiple to relate to them to human time.
+
+. . .

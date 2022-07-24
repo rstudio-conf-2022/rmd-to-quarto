@@ -1,6 +1,7 @@
 ---
 title: "Polishing Documents"
 subtitle: "rstudio::conf(2022) <br> From R Markdown to Quarto"
+#subtitle: "From R Markdown to Quarto"
 author: "Andrew Bray"
 format:
   revealjs:
@@ -9,13 +10,17 @@ format:
     theme: ../../slides.scss
     multiplex: false
     transition: fade
-    slide-number: true
+    slide-number: c
     incremental: false 
-    center-title-slide: true
+    center: false
     menu: false
     highlight-style: github
     progress: false
     code-overflow: wrap
+    title-slide-attributes:
+      data-background-image: ../../../images/seaplane-bg.png
+      data-background-size: contain
+      data-background-color: #f8f5f0
 ---
 
 # Generic Blocks and Inlines
@@ -90,15 +95,34 @@ This looks familiar!
 
 ![](images/quarto-workshop-11.jpg){fig-align="center"}
 
-## The Fenced Div
+## The Fenced Div {transition="none"}
 
 ![](images/quarto-workshop-12.jpg){fig-align="center"}
 
 # Quarto Elements
 
-## Callout Blocks
+## {menu-title="Disclaimers"}
 
-For when you want to highlight a bit of content for the reader.
+:::{.columns align=center}
+:::{.column width=20%}
+:::
+:::{.column .incremental width=60%}
+\
+
+### What you're about to see . . .
+
+- Most of the elements work across the main output formats (html, pdf, docx, pptx)
+- Many of the attributes work across multiple element types
+- Most of this is new Quarto functionality. Some of it is original Pandoc.
+- This is a subset of the elements available. See the Quarto Guide for the full list.
+:::
+:::{.column width=20%}
+:::
+:::
+
+## Callout Blocks {auto-animate=true}
+
+Highlight content for the reader in multiple formats.
 
 ::: columns
 ::: {.column width="50%"}
@@ -136,9 +160,9 @@ Look - a squirrel!
 :::
 :::
 
-## Callout Blocks
+## Callout Blocks {auto-animate=true}
 
-Callouts are implemented across formats.
+Highlight content for the reader in multiple formats.
 
 ::: columns
 ::: {.column width="50%"}
@@ -166,9 +190,9 @@ Look - a squirrel!
 :::
 :::
 
-## Callout Blocks
+## Callout Blocks {auto-animate=true}
 
-Callouts are implemented across formats.
+Highlight content for the reader in multiple formats.
 
 ::: columns
 ::: {.column width="50%"}
@@ -205,7 +229,6 @@ Quarto makes available several layout *attributes* that apply to broad range of 
 
 -   `layout-ncol`: split elements across n columns (`2`, `3`, ...).
 -   `layout-nrow`: split elements across n rows (`2`, `3`, ...).
--   `layout-align`: align elements (`left`, `center`, `right`, `default`).
 -   `layout-valign`: align elements (`top`, `center`, `bottom`, `default`).
 -   `layout`: Split elements into a 2D array by rows and columns[^1].
 
@@ -313,45 +336,45 @@ for dogs is seven, for example.
 :::
 :::
 
-## Element Layouts {auto-animate="true"}
+<!-- ## Element Layouts {auto-animate="true"} -->
 
-`layout-ncol` + `layout-align` ZZQ
+<!-- `layout-ncol` + `layout-align` ZZQ -->
 
-::: columns
-::: {.column width="50%"}
-#### Markdown
+<!-- ::: columns -->
+<!-- ::: {.column width="50%"} -->
+<!-- #### Markdown -->
 
-``` {.markdown code-line-numbers="1"}
-:::{layout-ncol=2 layout-align=right}
-A novelty clock, watch, and the like for 
-keeping time at an animal's rate, defined
-in terms of a multiple of human rate by 
-dividing the average lifetime of a 
-particular animal into the average 
-lifetime of a human being. The multiple
-for dogs is seven, for example.
+<!-- ``` {.markdown code-line-numbers="1"} -->
+<!-- :::{layout-ncol=2 layout-align=right} -->
+<!-- A novelty clock, watch, and the like for  -->
+<!-- keeping time at an animal's rate, defined -->
+<!-- in terms of a multiple of human rate by  -->
+<!-- dividing the average lifetime of a  -->
+<!-- particular animal into the average  -->
+<!-- lifetime of a human being. The multiple -->
+<!-- for dogs is seven, for example. -->
 
-![](images/dog-watch-small.png)
-:::
-```
-:::
+<!-- ![](images/dog-watch-small.png) -->
+<!-- ::: -->
+<!-- ``` -->
+<!-- ::: -->
 
-::: {.column .border width="50%"}
-#### HTML output
+<!-- ::: {.column .border width="50%"} -->
+<!-- #### HTML output -->
 
-::: {layout-ncol="2" layout-align="right" style="border: 2px solid #5c5859"}
-[A clock for keeping time at an animal's rate. The multiple for dogs is seven, for example.]{style="font-size: .5em"}
+<!-- ::: {layout-ncol="2" layout-align="right" style="border: 2px solid #5c5859"} -->
+<!-- [A clock for keeping time at an animal's rate. The multiple for dogs is seven, for example.]{style="font-size: .5em"} -->
 
-![](images/dog-watch.png){width="130px"}
-:::
-:::
-:::
+<!-- ![](images/dog-watch.png){width="130px"} -->
+<!-- ::: -->
+<!-- ::: -->
+<!-- ::: -->
 
 ## Element Layout Array
 
 `layout`: The layout attribute[^2] is a 2-dimensional array where the first dimension defines rows and the second columns.
 
-[^2]: For more control, see `{.grid}` which relies up the CSS Bootstrap Grid system. See the \[Guide\]{https://quarto.org/docs/output-formats/page-layout.html#article}.
+[^2]: For more control with HTML output, see `{.grid}` which relies up the CSS Bootstrap Grid system. See the \[Guide\]{https://quarto.org/docs/output-formats/page-layout.html#article}.
 
 \
 
@@ -419,6 +442,47 @@ for dogs is seven, for example.
 
 ![](images/circuit.png){style="border: 2px solid #5c5859" width="750px"}
 :::
+:::
+:::
+
+
+## Document Layout: column classes
+
+Modify the width of the main body column for individual block elements (e.g. paragraph, figures).
+
+. . .
+
+::: columns
+::: {.column width="50%"}
+#### Markdown
+
+``` {.markdown code-line-numbers="1,11"}
+:::{.column-body}
+A novelty clock, watch, and the like for 
+keeping time at an animal's rate, defined
+in terms of a multiple of human rate by 
+dividing the average lifetime of a 
+particular animal into the average 
+lifetime of a human being. The multiple
+for dogs is seven, for example.
+:::
+
+:::{.column-screen}
+A novelty clock, watch, and the like for 
+keeping time at an animal's rate, defined
+in terms of a multiple of human rate by 
+dividing the average lifetime of a 
+particular animal into the average 
+lifetime of a human being. The multiple
+for dogs is seven, for example.
+:::
+```
+:::
+
+::: {.column .fragment width="50%"}
+#### HTML output
+
+![](images/doc-layout.png){fig-align="center"}
 :::
 :::
 
@@ -510,17 +574,46 @@ What a brilliant idea.
 :::
 :::
 
+## Poll
+
+:::poll
+What is your preferred method of adding a figure to an Rmd so that it displays in HTML at 300 pixels wide?
+:::
+
+[A. markdown]{.smallcaps}
+```{.markdown}
+![A nice image.](foo/bar.png){width=300}
+```
+
+[B. html]{.smallcaps}
+```{.html}
+<img src="foo/bar.png" width="300">
+```
+
+[C: knitr]{.smallcaps}
+````
+```{{r, out.width="300px"}}
+knitr::includegraphics("foo/bar.png")
+```
+````
+
+## {menu-title="Results"}
+
+<center>
+<iframe src="https://embed.polleverywhere.com/multiple_choice_polls/VAc75oeVhE1nNsL8E0jA8?controls=none&short_poll=true" width="800px" height="600px"></iframe>
+</center>
+
 ## Figures
 
-Set `width`, `height` and `align` of figures. Add link, caption, and alt-text.
+[Quarto expands the functionality of markdown. Set `width`, `height`, `fig-align`, add link, caption, and alt-text.]{style="font-size: .8em"}
 
 ``` markdown
-![A caption](images/dog-watch.png){width=300 align=center fig-alt="Dog watching a watch."}
+![A caption](images/dog-watch.png){width=300 fig-align=right fig-alt="Dog watching a watch."}
 ```
 
 . . .
 
-![A caption](images/dog-watch.png){width="300" align="center" fig-alt="Dog watching a watch."}
+![A caption](images/dog-watch.png){width=300 fig-align=right fig-alt="Dog watching a watch."}
 
 . . .
 
@@ -605,7 +698,10 @@ A novelty clock, watch (@fig-dogwatch), and the like for keeping time at an anim
 :::
 :::
 
-::: {.fragment style="position: absolute; top: 590px; left: 80px; font-size: .8em"}
+::: {.fragment style="position: absolute; top: 530px; left: 75px; font-size: .8em"}
+-   Unlike a link, a reference changes \
+    with the ordering of the element\
+    as well as its type.
 -   Other `<type>` include `@tbl-`,\
     `@sec-`, `@eq-`, `@thm-`, and many\
     more for math.
@@ -662,25 +758,25 @@ Open `ex-3.qmd` and follow the directions to create a document that describes yo
 
 When you're done, please share a screenshot of your document in the GitHub Discussion thread "Exercise 3".
 
-# HTML Themes
+<!-- # HTML Themes -->
 
-# Simple CSS
+<!-- # Simple CSS -->
 
-## Rule syntax
+<!-- ## Rule syntax -->
 
-## Attributes
+<!-- ## Attributes -->
 
-## Selectors
+<!-- ## Selectors -->
 
-## Cascade
+<!-- ## Cascade -->
 
-## Ex. Formatting text inline
+<!-- ## Ex. Formatting text inline -->
 
-## Ex. Making a box
+<!-- ## Ex. Making a box -->
 
-# Exercise 4
+<!-- # Exercise 4 -->
 
-Make your own css
+<!-- Make your own css -->
 
 ## References and further reading {.smaller}
 
