@@ -2,6 +2,39 @@
 title: "About the Workshop"
 ---
 
-These materials are for a two day workshop taking place on July 25 - 26, 2022 before the [rstudio::conf](https://www.rstudio.com/conference/).
+These materials are for a two day workshop taking place before [rstudio::conf 2022](https://www.rstudio.com/conference/) in Washington, DC.
 
-This workshop is designed for those who want to take their R Markdown skills and expertise and apply them in Quarto, the next generation of R Markdown. Quarto is an open-source scientific and technical publishing system that offers multilingual programming language support to create dynamic and static documents, books, presentations, blogs, and other online resources. In this workshop you will learn how to apply your reproducible authoring skills to the Quarto format and learn about new tools and workflows for authoring with Quarto in RStudio.
+- [Location:]{.smallcaps} National Harbor 12/13\
+  Gaylord National Convention Center
+- [Time:]{.smallcaps} 9 am - 5 pm July 25^th^ and July^26^
+
+
+### Teaching Team
+
+#### Andrew Bray
+
+Andrew Bray is a statistician at UC Berkeley where he develops and teaches courses in statistics and data science. His gets excited about empowering students to use data to understand the world and enjoys being part of a community of people developing open source software and open source educational resources. Though primarily an R user, last year he taught a large data science class to 1100 students in Python, which had him sorely missing the R Markdown ecosystem. This makes him particularly grateful for Quarto as a bridge to other communities of data scientists.
+
+#### Rebecca Barter
+
+Rebecca is a statistician, data scientist, educator, and communicator who has a dual passion for empowering others by teaching critical thinking and technical skills for data science, and for uncovering the hidden patterns and stories that live inside complex datasets (primarily related to healthcare and medicine). She is currently a postdoc at UC Berkeley and she sometimes writes about data science and R on her website at [www.rebeccabarter.com](https://www.rebeccabarter.com).
+
+#### Silvia Canelón
+
+Silvia (she/her) is a researcher, community organizer, and R educator. Her research projects at the University of Pennsylvania leverage electronic health record data to study pregnancy-related outcomes, and her organizing values data literacy as a way to build power and effect change.
+
+She enjoys finding ways to communicate technical knowledge with a variety of audiences and loves learning how modern tools in the R ecosystem can support reproducible, efficient, and accessible workflows.
+
+You can find out what Silvia is up to lately at [silviacanelon.com](https://silviacanelon.com).
+
+#### Christophe Dervieu
+
+Bio coming soon.
+
+#### Tatsu
+
+Bio coming soon.
+
+#### Tatsu Shigeta
+
+Bio coming soon.
