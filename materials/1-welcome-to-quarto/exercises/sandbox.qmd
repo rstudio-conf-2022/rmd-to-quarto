@@ -1,0 +1,9 @@
+---
+title: "Sandbox"
+subtitle: "Welcome to Quarto"
+---
+
+This is just an empty file to tinker around with code that you see on the slides.
+
+To make it easy to quickly view the output of your file: just click "Render on Save" at the top of this file and the output should appear in the Viewer pane.
+

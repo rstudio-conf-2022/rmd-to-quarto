@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.0.20">
+<meta name="generator" content="quarto-1.0.36">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -51,12 +51,12 @@ ul.task-list{list-style: none;}
 <section id="background-of-the-invention" class="level2">
 <h2 class="anchored" data-anchor-id="background-of-the-invention">Background of the Invention</h2>
 <p>The invention relates to a spatial logical toy having a total of eighteen toy elements which form a regular or an irregular spatial body, preferably an oblong body, in the assembled state.</p>
-<p>Spatial logical toys are well known, such as that described in the HU-PS No.&nbsp;170 062 of the same applicant, which relates to a spatial logical toy consisting of <em>twenty-seven solids</em> which form a cube in the assembled state. The toy elements, in the shape of small cubes, may be turned along the spatial axes of the cube by means of connecting elements arranged in the geometric center of the large cube.</p>
+<p>Spatial logical toys are well known, such as that described in the HU-PS No.&nbsp;170 062 of the same applicant, which relates to a spatial logical toy consisting of <em>twenty-seven solids</em> which form a cube in the assembled state. The toy elements, in the shape of small cubes, may be turned along the spatial axes of the cube by means of connecting elements arranged in the <a href="https://en.wikipedia.org/wiki/Centroid">geometric center</a> of the large cube.</p>
 <p>The surfaces of the small cubes forming each surface of the large cube are colored or carry numbers, figures or any other symbols which can be assembled into the predetermined logical order of sequence by simultaneously rotating the nine toy elements forming the surfaces of the large cube.</p>
 </section>
 <section id="summary-of-the-invention" class="level2">
 <h2 class="anchored" data-anchor-id="summary-of-the-invention">Summary of the Invention</h2>
-<p>The logical toy according to the present invention represents an improved form of the previously described spatial logical toy. The construction is based on the same principles, however, the internal connection is performed by means of absolutely new and particular solids.</p>
+<p>The logical toy<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> according to the present invention represents an improved form of the previously described spatial logical toy. The construction is based on the same principles, however, the internal connection is performed by means of absolutely new and particular solids.</p>
 <p>The key feature according to the invention, i.e.&nbsp;shape, <del>name, sounds,</del> mode of interconnection and central fixture will be described in detail by means of two preferred embodiments, by the aid of the accompanying drawings, wherein.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -82,6 +82,7 @@ ul.task-list{list-style: none;}
 
 <ol>
 <li id="fn1" role="doc-endnote"><p>The first patent by the inventor is registered in Hungary.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2" role="doc-endnote"><p>It’s debatable whether this toy is logical.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section></div></main>
 <!-- /main column -->
@@ -99,7 +100,10 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   const toggleBodyColorPrimary = () => {
-    toggleBodyColorMode(window.document.querySelector("link#quarto-bootstrap"));
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
   }
   toggleBodyColorPrimary();  
   const icon = "";

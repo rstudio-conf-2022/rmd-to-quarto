@@ -1,6 +1,6 @@
 ---
 title: "Welcome to Quarto"
-subtitle: "From R Markdown to Quarto <br> `rstudio::conf(2022)`"
+subtitle: "From R Markdown to Quarto"
 author: "Andrew Bray"
 format:
   revealjs:
@@ -9,7 +9,7 @@ format:
     theme: ../../slides.scss
     multiplex: false
     transition: fade
-    slide-number: true
+    slide-number: c
     incremental: false 
     center: false
     menu: false
@@ -17,8 +17,9 @@ format:
     progress: false
     code-overflow: wrap
     title-slide-attributes:
-      data-background-image: images/seaplane-headon.png
-      data-background-size: contain   
+      data-background-image: ../../../images/seaplane-bg.png
+      data-background-size: contain
+      data-background-color: #f8f5f0
 ---
 
 
@@ -28,7 +29,7 @@ Let's take \~2 minutes to introduce yourself to your neighbors.
 
 \
 
-::: poll
+::: {.poll}
 Please share ...
 
 1.  Your name
@@ -41,7 +42,12 @@ Please share ...
 
 ## {data-menu-title="Website Link"}
 
-::: {.v-center-container style="text-align: center"}
+::: {style="text-align: center"}
+\
+\
+\
+\
+\
 Workshop schedule, slides, and exercises are at:
 
 [rstd.io/rmd-to-quarto](rstd.io/rmd-to-quarto){style="font-size: 1.5em"}
@@ -52,9 +58,9 @@ Workshop schedule, slides, and exercises are at:
 \
 \
 
-### Goals for the Workshop {style="font-size: 1.7em; text-align: center"}
+### Goals for the Workshop {style="font-size: 2.5em; text-align: center"}
 
-:::incremental
+:::{.incremental style="font-size: 1.5em"}
 1. Everyone leaves with a document, slides, and a website.
 
 2. Learn from one another. 
@@ -64,9 +70,9 @@ Workshop schedule, slides, and exercises are at:
 
 ## From Magic to Magical Machines
 
-![Artwork by Allison Horst](images/rmarkdown_wizards.png){fig-alt="Two fuzzy round monsters dressed as wizards, working together to brew different things together from a pantry (code, text, figures, etc.) in a cauldron labeled “R Markdown”. The monster wizard at the cauldron is reading a recipe that includes steps “1. Add text. 2. Add code. 3. Knit. 4. (magic) 5. Celebrate perceived wizardry.” The R Markdown potion then travels through a tube, and is converted to markdown by a monster on a broom with a magic wand, and eventually converted to an output by pandoc. Stylized text (in a font similar to Harry Potter) reads “R Markdown. Text. Code. Output. Get it together, people.”" width="850px" .fragment .fade-in-then-semi-out}
+![Artwork by Allison Horst](images/rmarkdown_wizards.png){fig-alt="Two fuzzy round monsters dressed as wizards, working together to brew different things together from a pantry (code, text, figures, etc.) in a cauldron labeled “R Markdown”. The monster wizard at the cauldron is reading a recipe that includes steps “1. Add text. 2. Add code. 3. Knit. 4. (magic) 5. Celebrate perceived wizardry.” The R Markdown potion then travels through a tube, and is converted to markdown by a monster on a broom with a magic wand, and eventually converted to an output by pandoc. Stylized text (in a font similar to Harry Potter) reads “R Markdown. Text. Code. Output. Get it together, people.”" width="1100px" .fragment .fade-in-then-semi-out}
 
-![](images/edison-bulb.png){fig-alt="A technical sketch of a lightbulb" .fragment .fade-left style="position: absolute; top: 100px; left: 200px; height: 600px; filter: drop-shadow(10px 10px 4px #5c5859)"}
+![](images/edison-bulb.png){fig-alt="A technical sketch of a lightbulb" .fragment .fade-left style="position: absolute; top: 180px; left: 450px; height: 600px; border: 3px solid orange; filter: drop-shadow(10px 10px 4px #5c5859)"}
 
 ## Workshop Schedule {.smaller}
 
@@ -85,9 +91,9 @@ Workshop schedule, slides, and exercises are at:
 - 10:30-11 am [coffee break]{.smallcaps}
 - 11-12:30 pm Websites and Books
 - 12:30-1:30 pm [lunch]{.smallcaps}
-- 1:30-3 pm Workshop
+- 1:30-3 pm Project Workshop
 - 3-3:30 pm [coffee break]{.smallcaps}
-- 3:30-5 pm Extending Quarto
+- 3:30-5 pm The Future of Quarto
 :::
 
 ## Discussions {auto-animate=true}
@@ -99,8 +105,8 @@ Ask a question by opening a new discussion post:\
 
 ## Stickies
 
-:::{layout-ncol="2"}
-![](images/sticky.jpeg){fig-alt="Picture of a laptop with a red sticky note stuck to the top." width=400}
+:::{layout="[[4, 5, 1]]" layout-valign=center}
+![](images/sticky.jpeg){fig-alt="Picture of a laptop with a red sticky note stuck to the top." width=540}
 
 During an exercise, place a [**green**]{style="color: green"} sticky on your laptop if you're good to go and a [**red**]{style="color: red"} sticky if you want help.
 :::
@@ -123,14 +129,21 @@ During polls, you can vote in a browser tab either on your laptop or your phone 
 
 ## Practicalities
 
+
+:::{layout="[[1, 1]]" style="font-size: .7em"}
 - WiFi:
-	- Username: conf22
-	- Password: together!
-- There are gender neutral bathrooms located on the river side of the Potomac Ballroom.
-- The meditation room is located at Potomac Dressing Room. Open 8am - 5pm, Monday - Thursday.
-- The lactation room is located at National Harbor 9. Open 8am - 5pm, Monday - Thursday. The hotel also has a dedicated room behind the reception.
+	- [Username:]{.smallcaps} **conf22**
+	- [Password:]{.smallcaps} **together!**
+- There are gender neutral bathrooms by the National Harbor rooms.
+- The meditation room is located at National Harbor 9. Open 8am - 5pm, Monday - Thursday. The hotel also has a dedicated room behind the reception.
+- The lactation room is located at Potomac Dressing Room. Open 8am - 5pm, Monday - Thursday.
 - Participants who do not wish to be photographed have red lanyards, please note everyone's lanyard colors before taking a photo and respect their choices.
-- The Code of Conduct and COVID policies can be found at <https://www.rstudio.com/conference/2022/2022-conf-code-of-conduct/>. Please review them carefully.  RStudio requires that you wear a mask that fully covers your mouth and nose at all times in all public spaces. We strongly recommend that you use a correctly fitted N95, KN95, or similar particulate filtering mask; we will have a limited supply available upon request. You can report Code of Conduct violations in person, by email, or by phone. Please see the policy linked above for contact information.
+
+[Code of Conduct]{.smallcaps}\
+Please carefully review the Code of Conduct and COVID policies[^coc] can be found at . Please review them carefully.  RStudio requires that you wear a mask that fully covers your mouth and nose at all times in all public spaces. We strongly recommend that you use a correctly fitted N95, KN95, or similar particulate filtering mask; we will have a limited supply available upon request. You can report Code of Conduct violations in person, by email, or by phone. Please see the policy linked above for contact information.
+:::
+
+[^coc]: <https://www.rstudio.com/conference/2022/2022-conf-code-of-conduct/>
 
 # What can you do with Quarto?
 
@@ -171,7 +184,7 @@ During polls, you can vote in a browser tab either on your laptop or your phone 
 
 # Quarto and R Markdown
 
-## Quarto and R Markdown, a history . . . {.smaller}
+## Quarto and R Markdown, a history . . . 
 
 ::: incremental
 - 1984 **Literate Programming** proposed to combine text with code
@@ -186,7 +199,7 @@ During polls, you can vote in a browser tab either on your laptop or your phone 
 
 . . .
 
-. . . throughout, an ecosystem of R packages develops (`bookdown`, `blogdown`, `distill`, etc.)
+. . . throughout, an ecosystem of R packages develops . . . (`bookdown`, `blogdown`, `distill`, etc.)
 
 ## {menu-title="R Markdown Workflow" background-image="images/quarto-workshop-1.jpg" background-size="contain"}
 
@@ -223,7 +236,7 @@ During polls, you can vote in a browser tab either on your laptop or your phone 
 - Easier to customize websites and books with projects
 
 
-# {{< fa circle-right >}} Exercise 0 {background-color="#00403d" style="font-size: .7em"}
+# {{< fa circle-right >}} Exercise 0 {background-color="#00403d" style="font-size: .9em"}
 
 Let's kick the tires on Quarto!
 
@@ -275,7 +288,9 @@ Let's kick the tires on Quarto!
 
 Render input file to various document formats.
 
-::: {layout-ncol="2" style="font-size: .7em; text-align: center"}
+::: {layout="[[1, 1, 1, 1]]" style="font-size: .7em; text-align: center"}
+\
+
 ### Input
 
 -   `*.qmd`
@@ -291,10 +306,14 @@ Render input file to various document formats.
 -   `docx`
 -   `ppt`
 -   and many more!
+
+\
 :::
 
 
 ## Three ways to render
+
+. . .
 
 1. **Quarto is integrated into RStudio**
 
@@ -320,56 +339,44 @@ Render input file to various document formats.
    quarto render <input> --to <format>`
    ```
 
-##  {auto-animate="true"}
+<!-- ##  {auto-animate="true"} -->
 
-![](images/rstudio-console.png){fig-align="center"}
+<!-- ![](images/rstudio-console.png){fig-align="center"} -->
 
-. . .
+<!-- . . . -->
 
-::: {data-id="spotlight" style="background: #f2a03d40; width: 60px; height: 25px; margin: 5px; position: absolute; top: 86px; left: 344px; border-radius: 8px; border: 4px solid #f2a03d"}
-:::
+<!-- ::: {data-id="spotlight" style="background: #f2a03d40; width: 60px; height: 25px; margin: 5px; position: absolute; top: 86px; left: 344px; border-radius: 8px; border: 4px solid #f2a03d"} -->
+<!-- ::: -->
 
-##  {auto-animate="true"}
+<!-- ##  {auto-animate="true"} -->
 
-![](images/rstudio-console.png){fig-align="center"}
+<!-- ![](images/rstudio-console.png){fig-align="center"} -->
 
-::: {data-id="spotlight" style="background: #f2a03d50; width: 60px; height: 25px; margin: 5px; position: absolute; top: 393px; left: 91px; border-radius: 8px; border: 4px solid #f2a03d"}
-:::
+<!-- ::: {data-id="spotlight" style="background: #f2a03d50; width: 60px; height: 25px; margin: 5px; position: absolute; top: 393px; left: 91px; border-radius: 8px; border: 4px solid #f2a03d"} -->
+<!-- ::: -->
 
-::: {data-id="typed-code" style="background: #02733e50; width: 308px; height: 22px; margin: 5px; position: absolute; top: 607px; left: 95px"}
-:::
+<!-- ::: {data-id="typed-code" style="background: #02733e50; width: 308px; height: 22px; margin: 5px; position: absolute; top: 607px; left: 95px"} -->
+<!-- ::: -->
 
-##  {auto-animate="true"}
+<!-- ##  {auto-animate="true"} -->
 
-![](images/rstudio-console.png){fig-align="center"}
+<!-- ![](images/rstudio-console.png){fig-align="center"} -->
 
-::: {data-id="spotlight" style="background: #f2a03d50; width: 70px; height: 25px; margin: 5px; position: absolute; top: 393px; left: 150px; border-radius: 8px; border: 4px solid #f2a03d"}
-:::
+<!-- ::: {data-id="spotlight" style="background: #f2a03d50; width: 70px; height: 25px; margin: 5px; position: absolute; top: 393px; left: 150px; border-radius: 8px; border: 4px solid #f2a03d"} -->
+<!-- ::: -->
 
-::: {data-id="typed-code" style="background: #02733e50; width: 308px; height: 22px; margin: 5px; position: absolute; top: 607px; left: 95px"}
-:::
+<!-- ::: {data-id="typed-code" style="background: #02733e50; width: 308px; height: 22px; margin: 5px; position: absolute; top: 607px; left: 95px"} -->
+<!-- ::: -->
 
-## {auto-animate="true"}
+<!-- ## {auto-animate="true"} -->
 
-![](images/rstudio-terminal.png){fig-align="center"}
+<!-- ![](images/rstudio-terminal.png){fig-align="center"} -->
 
-::: {data-id="spotlight" style="background: #f2a03d50; width: 70px; height: 25px; margin: 5px; position: absolute; top: 393px; left: 150px; border-radius: 8px; border: 4px solid #f2a03d"}
-:::
+<!-- ::: {data-id="spotlight" style="background: #f2a03d50; width: 70px; height: 25px; margin: 5px; position: absolute; top: 393px; left: 150px; border-radius: 8px; border: 4px solid #f2a03d"} -->
+<!-- ::: -->
 
-::: {data-id="typed-code" style="background: #02733e50; width: 537px; height: 22px; margin: 5px; position: absolute; top: 455px; left: 95px"}
-:::
-
-## Let's Code
-
-\
-\
-
-I will:
-
-1. Render to several formats using `quarto render`
-2. See how elements are expressed in the different formats
-
-Then you'll do the same.
+<!-- ::: {data-id="typed-code" style="background: #02733e50; width: 537px; height: 22px; margin: 5px; position: absolute; top: 455px; left: 95px"} -->
+<!-- ::: -->
 
 ::: notes
 1.  Navigate to the terminal tab of the console pane
@@ -407,7 +414,7 @@ A \emph{spatial logical toy}
 \includegraphics{images/med-rubiks-cube.png}
 ```
 
-# {{< fa terminal >}} Exercise 1 {background-color="#00403d" style="font-size: .7em"}
+# {{< fa terminal >}} Exercise 1 {background-color="#00403d" style="font-size: .8em"}
 
 Let's focus on using `quarto` at the command line. Within RStudio, this can be done in the Terminal tab in the Console pane.
 
@@ -416,6 +423,13 @@ Let's focus on using `quarto` at the command line. Within RStudio, this can be d
 3.  Render `ex-1.qmd` to `pdf` but specify that you want to output to a file named `handout.pdf`. (see the helpfile for `render` by typing `quarto render --help`)
 4.  Try changing the extension of `ex-1.qmd` to be `.md` and `.Rmd` and re-rendering. Does the output differ?
 5.  Explore full list of commands available in Quarto by using `quarto --help`.
+
+## Try Pandoc!
+
+A quick way to find out how Pandoc will convert: <https://pandoc.org/try/>.
+
+![](images/try-pandoc.png){fig-align=center}
+
 
 # The Structure of a Document
 
@@ -432,9 +446,9 @@ A document consists of *content*, *structure*, *appearance*, *format*.
 \
 
 - **Content:** text, code, graphics
-- **Structure:** paragraphs, lists, etc.
-- **Appearance:** fonts, colors
-- **Format:** layout, functionality
+- **Structure:** paragraphs, lists, emphasis, etc.
+- **Appearance:** fonts, colors, layout
+- **Format:** functionality
 
 :::
 :::
@@ -449,7 +463,7 @@ A document consists of *content*, *structure*, *appearance*, *format*.
 \
 
 ::: {style="text-align: center"}
-[A document is a list of ]{.fragment}[block elements]{.block-el} [that contain ]{.fragment}[inline elements]{.inline-el} or other blocks, [along with associated ]{.fragment}[metadata]{.meta-el}.
+[A document is a list of [block elements]{.block-el}]{.fragment} [that contain [inline elements]{.inline-el} or other blocks,]{.fragment} [along with associated [metadata]{.meta-el}.]{.fragment}
 :::
 
 ##  {data-menu-title="Block Elements" auto-animate="true"}
@@ -642,7 +656,7 @@ Image
 # The Elements of Markdown
 ##  {data-menu-title="Markdown"}
 
-::: {style="font-size: 4em; text-align: center"}
+::: {style="font-size: 4em; text-align: center; color: green"}
 {{< fa brands markdown >}}
 :::
 
@@ -701,22 +715,19 @@ Please respond at [pollev.com/rmdtoquarto](https://pollev.com/rmdtoquarto).
 <iframe src="https://embed.polleverywhere.com/multiple_choice_polls/lPD3yZWSvtJzgxUfNKQwx?controls=none&short_poll=true" width="800px" height="600px"></iframe>
 </center>
 
-## [Inline Elements:]{.inline-el} Text Formatting {.smaller}
+## [Inline Elements:]{.inline-el} Text Formatting
 
 ::: columns
 ::: {.column width="50%"}
 #### Markdown
 
-```{.markdown style="font-size: 1.5em"}
-Markdown allows you to format
-text with *emphasis* and 
-**strong emphasis**. You can 
-also add superscripts^2^, 
-subscripts~2~, and display code 
-`verbatim`. Little known fact: 
-you can also ~~strikethrough~~ 
-text and present it in 
-[small caps]{.smallcaps}.
+```{.markdown}
+Markdown allows you to format text with 
+*emphasis* and **strong emphasis**. You can 
+also add superscripts^2^, subscripts~2~, and
+display code `verbatim`. Little known fact:
+you can also ~~strikethrough~~ text and 
+present it in [small caps]{.smallcaps}.
 ```
 :::
 
@@ -731,16 +742,16 @@ Markdown allows you to format text with *emphasis* and **strong emphasis**. You 
 ^[Either the `*` or `_` can be used for emphasis and strong.]
 :::
 
-## [Inline Elements:]{.inline-el} Math {.smaller}
+## [Inline Elements:]{.inline-el} Math
 
 ::: columns
 ::: {.column width="50%"}
 #### Markdown
 
 ```markdown
-The area of a circle is $A = \pi r^2$, 
-where $r$ is the radius and $\pi$ is 
-the constant $3.141592\ldots$.
+The area of a circle is $A = \pi r^2$,where
+$r$ is the radius and $\pi$ is the constant
+$3.141592\ldots$.
 ```
 :::
 
@@ -757,10 +768,12 @@ The area of a circle is $A = \pi r^2$, where $r$ is the radius and $\pi$ is the 
 
 \
 
+:::{style="font-size: .8em"}
 TeX math lives between two `$`. Opening `$` must have a non-space character immediately to its right, while the closing `$` must have a non-space character immediately to its left, and must not be followed immediately by a digit.
+:::
 
 
-## [Inline Elements:]{.inline-el} Links and Images {.smaller}
+## [Inline Elements:]{.inline-el} Links and Images {style="font-size: .85em"}
 
 ::: columns
 ::: {.column width="50%"}
@@ -783,15 +796,14 @@ You can embed [links with names](https://quarto.org/), direct urls like <https:/
 :::
 
 
-## [Inline Elements:]{.inline-el} Footnotes {.smaller}
+## [Inline Elements:]{.inline-el} Footnotes {style="font-size: .85em"}
 
 ::: columns
 ::: {.column width="50%"}
 #### Markdown
 
-```{.markdown style="font-size: 1.3em"}
-Here is a short note.^[Small 
-enough to fit inline.]
+```{.markdown}
+Here is a short note.^[Small enough to fit inline.]
 ```
 :::
 
@@ -810,12 +822,11 @@ enough to fit inline.]
 ::: columns
 ::: {.column width="50%"}
 
-```{.markdown style="font-size: 1.3em"}
+```{.markdown}
 Here is a longer footnote[^1]
 
-[^1]: This footnote can be placed in a
-separate block. The identifier can be 
-any alphanumeric string.
+[^1]: This footnote can be placed in a separate block.
+The identifier can be any alphanumeric string.
 ```
 :::
 
@@ -833,7 +844,7 @@ alphanumeric string.
 
 > Placement of the actual footnote depends on the format: end of page for pdf, end of doc for HTML, bottom of slide for presentations.
 
-## [Block Elements:]{.block-el} Paragraph {.smaller}
+## [Block Elements:]{.block-el} Paragraph
 
 One or more lines of text followed by one or more blank lines.
 
@@ -842,7 +853,8 @@ One or more lines of text followed by one or more blank lines.
 #### Markdown
 
 ```markdown
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Lorem ipsum dolor sit amet,
+consectetur adipiscing elit.
 
 Sed do eiusmod tempor.
 ```
@@ -866,7 +878,8 @@ Without the blank line, the line break is treated as a space.
 ::: columns
 ::: {.column width="50%"}
 ```markdown
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Lorem ipsum dolor sit amet, 
+sconsectetur adipiscing elit.
 Sed do eiusmod tempor.
 ```
 :::
@@ -895,58 +908,137 @@ Sed do eiusmod tempor.
 |     ###### Header 6 | ###### Header 6 {.heading-output} |
 +---------------------+-----------------------------------+
 
-## [Block Elements:]{.block-el} Lists {.smaller}
+## [Block Elements:]{.block-el} Lists
 
 Can use `*`, `-`, or `+` may be used for unordered list items.
 
-::: columns
-::: {.column width="50%"}
+:::columns
+:::{.column width=30%}
 #### Markdown
+```{.markdown}
+Unordered list:
 
-Unordered list
-```markdown
 * red
 * green
 * blue
-```
-:::
 
-::: {.column width="50%" .fragment}
-#### Output
+Ordered list:
 
-- red
-- green
-- blue
-:::
-:::
-
-::: columns
-::: {.column width="50%"}
-Ordered list
-```markdown
 1. red
 1. green
 3. blue
 ```
 :::
 
-::: {.column width="50%" .fragment}
+:::{.column width=30%}
+#### Output
+
+:::{style="font-size: .8em"}
+Unordered list:
+
+* red
+* green
+* blue
+
+Ordered list:
+
 1. red
-2. green
+1. green
 3. blue
 :::
 :::
 
-. . .
-
+:::{.column width=40%}
+\
 Pandoc gives you a lot of control over lists, including *nesting*, *fancy lists*, *definition lists*, *blocks in lists*, and *example lists*.
+:::
+:::
 
+:::aside
 Read the docs for details: <https://pandoc.org/MANUAL.html#pandocs-markdown>
+:::
 
+## Poll
 
-## [Block Elements:]{.block-el} Lists (blocks in lists) {.smaller}
+:::poll
+Which of the following will render to the output on the right?
+:::
 
-A list item may contain multiple paragraphs and other block-level content. Subsequent block elements must be preceded by a blank line and indented to line up with the first non-space content after the list marker.
+:::columns
+:::{.column width=33%}
+[A]{.smallcaps}
+````{markdown}
+1. I once has a sandwich.
+
+   It was deliiiicous.
+   
+1. I then had coffee.
+
+   It gave me joy.
+````
+
+[C]{.smallcaps}
+````{markdown}
+1. I once has a sandwich.
+It was deliiiicous.
+   
+2. I then had coffee.
+It gave me joy.
+````
+:::
+
+:::{.column width=33%}
+[B]{.smallcaps}
+````{markdown}
+1. I once has a sandwich.
+  It was deliiiicous.
+   
+2. I then had coffee.
+  It gave me joy.
+````
+
+[D]{.smallcaps}
+````{markdown}
+1. I once has a sandwich.
+
+    It was deliiiicous.
+   
+2. I then had coffee.
+
+    It gave me joy.
+````
+:::
+
+:::{.column width=34%}
+#### Output
+
+1. I once has a sandwich.
+
+   It was deliiiicous.
+   
+2. I then had coffee.
+
+   It gave me joy.
+:::
+:::
+
+:::aside
+It's hard to tell but there are two paragraphs in each list item in the output.
+:::
+
+:::footer
+Please respond at [pollev.com/rmdtoquarto](https://pollev.com/rmdtoquarto).
+:::
+
+## {menu-title="Results"}
+
+<center>
+<iframe src="https://embed.polleverywhere.com/multiple_choice_polls/yH0ohoWOaPtixLPRqcntE?controls=none&short_poll=true" width="800px" height="600px"></iframe>
+</center>
+
+## [Block Elements:]{.block-el} Lists (blocks in lists)
+
+"A list item may contain multiple paragraphs and other block-level content. Subsequent block elements must be preceded by a blank line and indented to line up with the first non-space content after the list marker."
 
 ::: columns
 ::: {.column width="50%"}
@@ -981,9 +1073,9 @@ A list item may contain multiple paragraphs and other block-level content. Subse
 :::
 
 
-## [Block Elements:]{.block-el} Lists (example lists) {.smaller}
+## [Block Elements:]{.block-el} Lists (example lists)
 
-The first list item with a `@` marker will be numbered 1., the next 2., etc. The numbered examples need not occur in a single list; each new list using `@` will take up where the last stopped.
+"The first list item with a `@` marker will be numbered 1., the next 2., etc. The numbered examples need not occur in a single list; each new list using `@` will take up where the last stopped."
 
 ::: columns
 ::: {.column width="50%"}
@@ -1014,7 +1106,7 @@ Explanation of examples.
 > You can also label your examples: `(@goodname)`.
 
 
-## [Block Elements:]{.block-el} Math {.smaller}
+## [Block Elements:]{.block-el} Math
 
 ::: columns
 ::: {.column width="50%"}
@@ -1060,12 +1152,12 @@ $$
 
 \
 
-\
-
+:::{style="font-size: .8em"}
 For "display" math, use `$$` delimiters. The delimiters may be separated from the formula by whitespace. No blank lines between the opening and closing `$$` delimiters.
+:::
 
 
-## [Block Elements:]{.block-el} Images {.smaller}
+## [Block Elements:]{.block-el} Images
 
 Block images use the same syntax as inline images.
 
@@ -1074,7 +1166,7 @@ Block images use the same syntax as inline images.
 #### Markdown
 
 ```markdown
-Images on their own line become a block with a `[caption]`:
+Images on their own line become a block:
 
 ![Elephant](images/elephant.png)
 
@@ -1093,24 +1185,19 @@ or do they?
 :::
 :::
 
-::: {.fragment .fade-left style="position: absolute; width: 500px; top: 350px; left: 300px; filter: drop-shadow(10px 10px 4px #5c5859)"}
+::: {.fragment .fade-left style="position: absolute; width: 800px; top: 450px; left: 350px; filter: drop-shadow(10px 10px 4px #5c5859)"}
 ![](images/elephant-html.png){fig-alt="Screenshot of html output showing the image inside a paragraph block."}
 :::
 
-::: {.fragment .fade-left style="position: absolute; width: 450px; top: 334px; left: 325px; filter: drop-shadow(10px 10px 4px #5c5859)"}
+::: {.fragment .fade-left style="position: absolute; width: 650px; top: 400px; left: 400px; filter: drop-shadow(10px 10px 4px #5c5859)"}
 ![](images/elephant-latex.png){fig-alt="Screenshot of latex output showing the image inside a figure environment"}
 :::
 
 . . .
 
-\
-\
-\
-\
+[Images behave mostly like inline elements but often live in a dedicated block (e.g. a paragraph). Their behavior depends on output format.]{style="font-size: .8em"}
 
-Images behave mostly like inline elements but often live in a dedicated block (e.g. a paragraph). Their behavior depends on output format.
-
-## Poll {.smaller}
+## Poll {style="font-size: .95em"}
 
 ::: poll
 Which of the following are valid ways to include metadata with a document?
@@ -1176,13 +1263,13 @@ My idea is to build a cube...
 Please respond at [pollev.com/rmdtoquarto](https://pollev.com/rmdtoquarto).
 :::
 
-## {data-menu-title="Results"}
+## {menu-title="Results"}
 
 <center>
 <iframe src="https://embed.polleverywhere.com/multiple_choice_polls/u9b7ZayoFkgRuLUrgxd6i?controls=none&short_poll=true" width="800px" height="600px"></iframe>
 </center>
 
-## [Metadata:]{.meta-el} YAML {.smaller}
+## [Metadata:]{.meta-el} YAML {style="font-size: .85em"}
 
 Metadata can be included via YAML (YAML Ain't Markup Language).
 
@@ -1218,12 +1305,15 @@ Some syntax rules:
 - Multiple YAML blocks in a document will be merged
 :::
 
-Read more in the pandoc docs[^1] or on Wikipedia[^2].
 :::
 :::
 
-[^1]: <https://pandoc.org/MANUAL%202.html#extension-yaml_metadata_block>
-[^2]: <https://en.m.wikipedia.org/wiki/YAML#Syntax>
+:::aside
+Pandoc's interpretation of YAML metadata: <https://pandoc.org/MANUAL%202.html#extension-yaml_metadata_block>
+:::
+:::aside
+An overview of YAML syntax: <https://en.m.wikipedia.org/wiki/YAML#Syntax>
+:::
 
 
 ## [Metadata:]{.meta-el} YAML {.smaller}
@@ -1283,6 +1373,7 @@ My idea is to build a cube...
 
 :::
 :::
+
 # {{< fa cubes >}} Exercise 2 {background-color="#00403d" style="font-size: .7em"}
 
 Inside `ex-2.qmd` you'll find all of the *content* needed to create the output files `ex-2-goal.html` and `ex-2-goal.pdf`. Add into `ex-2.qmd` the markdown syntax needed to create the various inline and block elements found in the output documents.
