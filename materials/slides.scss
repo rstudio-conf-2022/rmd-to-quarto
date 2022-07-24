@@ -14,13 +14,20 @@ $presentation-font-size-root: 46px;
   --purple-100: #73245e;
 }
 
+/*
+stat20 blue: 4466B0
+stat20 teal: 
+*/
+
 $red: #bf2642;
 $orange: #f2a03d;
 $green: #02733e;
 $purple: #73245e;
-$beige: #f8f5f0;
+$dark-purple: #39122f;
 $blue: #00817c;
-$dark-beige: #a6854d;
+$beige: #f8f5f0;
+$dark-beige: #9f8e71;
+$light-orange: lighten($orange, 60%);
 
 // set your custom colors here
 $body-color: #5c5859 !default;
@@ -30,10 +37,9 @@ $presentation-heading-color: $blue !default;
 $presentation-heading-font: "Cabin", "Commissioner", sans serif !default;
 
 // code
-// $code-block-bg: lighten($beige, 60%) !default;
 $code-block-bg: $beige !default;
 $code-color: $purple !default;
-// $code-block-border-color: $dark-beige !default;
+$code-block-border-color: $dark-beige !default;
 
 /*-- scss:rules --*/
 
@@ -54,8 +60,8 @@ details>summary {
 }
 
 .reveal .slide .poll {
-  border-left: 3px solid $dark-beige;
-  padding-left: 0.5em;
+  border-left: 6px solid $orange;
+  padding-left: 0.7em;
   padding-top: 0.25em;
   padding-bottom: 0.25em;
   background: $beige;
@@ -213,3 +219,56 @@ p::after {
   transform: rotate(-90deg);
 }
 */
+
+#title-slide {
+  text-align: left;
+  font-family: 'Nanum Myeongjo', serif;
+}
+
+#title-slide h1 {
+  text-align: left;
+  font-family: 'Nanum Myeongjo', serif;
+}
+
+#title-slide .institute {
+  font-style: italic;
+  font-size: 80%;
+}
+
+#title-slide .author {
+  color: $body-color;
+}
+
+#title-slide p.author::before {
+  content: "";
+  display: block;
+  border: none;
+  background-color: $body-color;
+  color: $body-color;
+  height: 3px;
+  margin-bottom: 1em;
+}
+
+#title-slide p, #title-slide a {
+  color: $body-color;
+}
+
+.footer {
+  bottom: 8px !important;
+}
+
+.slide-logo {
+  display: block !important;
+  position: fixed !important;
+  top: 0 !important;
+  right: 10px !important;
+  max-height: 40% !important;
+  height: 100% !important;
+  width: auto !important;
+  color: $body-color !important;
+}
+
+.slide-menu-button {
+  left: 10px !important;
+  bottom: 10px !important;
+}
