@@ -2,7 +2,7 @@ project:
   type: website
   render:
     - "*.qmd"
-    - "!*/exercises/"
+    - "!materials/*/exercises/"
 
 from: markdown+emoji
 
