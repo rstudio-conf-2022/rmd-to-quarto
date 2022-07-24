@@ -5,12 +5,12 @@ From R Markdown to Quarto
 
 #### Teaching Team
 
-Andrew Bray
-Rebecca Barter
-Silvia Canelón
-Christophe Dervieux
-Devin Pastoor
-Tatsu Shigetu
+- Andrew Bray
+- Rebecca Barter
+- Silvia Canelón
+- Christophe Dervieux
+- Devin Pastoor
+- Tatsu Shigetu
 
 -----
 
