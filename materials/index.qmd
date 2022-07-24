@@ -2,6 +2,23 @@
 title: "Materials"
 ---
 
-:::{.callout-warning}
-Under construction.
-:::
+#### Configuration
+
+Each session of the workshop features exercises that will learn Quarto by doing. To prepare, please install the following on your machine:
+
+- If you haven't already, please [sign-up](https://happygitwithr.com/github-acct.html) for a free GitHub account.
+- Install latest version of [RStudio](https://www.rstudio.com/products/rstudio/download/#download), v2022.07.0-548 or later
+- Install latest version of [Quarto](https://quarto.org/docs/get-started/) (v1.0.36 or greater)
+- After installing Quarto, open the terminal in RStudio and:
+  - See [this guide](https://support.rstudio.com/hc/en-us/articles/115010737148-Using-the-RStudio-Terminal-in-the-RStudio-IDE) for details on using the terminal
+  - Install/Update TinyTeX for PDFs with `quarto install tool tinytex`
+  - Install/Update Chromium with `quarto install tool chromium`
+- Ideally upgrade/use to R 4.1 or R 4.2
+- Install these R packages:
+  
+  ```{r}
+  #| eval: false
+  #| echo: true
+  pkg_list <- c("tidyverse", "quarto", "rmarkdown", "palmerpenguins")
+  install.packages(pkg_list)
+  ```
