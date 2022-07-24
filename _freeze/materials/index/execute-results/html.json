@@ -1,0 +1,14 @@
+{
+  "hash": "75729cdd18034029a664affa870a214f",
+  "result": {
+    "markdown": "---\ntitle: \"Materials\"\n---\n\n\n#### Configuration\n\nEach session of the workshop features exercises that will learn Quarto by doing. To prepare, please install the following on your machine:\n\n- If you haven't already, please [sign-up](https://happygitwithr.com/github-acct.html) for a free GitHub account.\n- Install latest version of [RStudio](https://www.rstudio.com/products/rstudio/download/#download), v2022.07.0-548 or later\n- Install latest version of [Quarto](https://quarto.org/docs/get-started/) (v1.0.36 or greater)\n- After installing Quarto, open the terminal in RStudio and:\n  - See [this guide](https://support.rstudio.com/hc/en-us/articles/115010737148-Using-the-RStudio-Terminal-in-the-RStudio-IDE) for details on using the terminal\n  - Install/Update TinyTeX for PDFs with `quarto install tool tinytex`\n  - Install/Update Chromium with `quarto install tool chromium`\n- Ideally upgrade/use to R 4.1 or R 4.2\n- Install these R packages:\n  \n\n  ::: {.cell}\n  \n  ```{.r .cell-code}\n  pkg_list <- c(\"tidyverse\", \"quarto\", \"rmarkdown\", \"palmerpenguins\")\n  install.packages(pkg_list)\n  ```\n  :::",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
