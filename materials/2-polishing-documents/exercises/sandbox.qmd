@@ -23,4 +23,7 @@ Your browser dimensions will be different than my slides, so play around with di
 
 Animals, such as dogs, live shorter lives as measured by human time than people. A dog that lives ten years has lived a full life; a man might live 77 years to live a full life. The relationship between the lifetimes of humans and dogs can be related by stating a period of time in "dog years." Two human years is fourteen "dog years." Although this relationship might perhaps be helpful in determining whether a dog or other animal is full grown or not, it does little to help the owner of a pet put the proper value on the animal's time. Various animals have different lifetimes. For example, seahorses and rats live an average of three human years; pigeons live three and one-half years; goldfish and hamsters live five human years; hogs, 9 years; dogs, 11 years; cats, 18 years, beavers, 12 years; lobsters, 15 years; bats, lions, and horses live 20 years; dolphins live 25 years; brown bears live 47 years and polar bears live 33 years; gorillas live 45 years; alligators, 50 years; elephants, 60 years; and giant tortoises, 100 years. All of these have a corresponding multiple to relate to them to human time.
 
-. . .
+### Test Span
+
+The quick [brown fox]{} jumped over the lazy dog.
+
