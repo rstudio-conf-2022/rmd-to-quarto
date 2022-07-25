@@ -9,11 +9,11 @@ These materials are for a two day workshop taking place before [rstudio::conf 20
 - [Time:]{.smallcaps} 9 am - 5 pm July 25^th^ and July^26^
 
 
-### Teaching Team
+## Teaching Team
 
 #### Andrew Bray
 
-Andrew Bray is a statistician at UC Berkeley where he develops and teaches courses in statistics and data science. His gets excited about empowering students to use data to understand the world and enjoys being part of a community of people developing open source software and open source educational resources. Though primarily an R user, last year he taught a large data science class to 1100 students in Python, which had him sorely missing the R Markdown ecosystem. This makes him particularly grateful for Quarto as a bridge to other communities of data scientists.
+Andrew Bray is a statistician at UC Berkeley where he develops and teaches courses in statistics and data science. His gets excited about empowering students to use data to understand the world and enjoys being part of a community of people developing open source software and open source educational resources. Though primarily an R user, last year he taught a large data science class to 1100 students in Python, which had him sorely missing the R Markdown ecosystem. The experience made him particularly grateful for Quarto as a bridge to other communities of data scientists.
 
 #### Rebecca Barter
 
@@ -29,12 +29,23 @@ You can find out what Silvia is up to lately at [silviacanelon.com](https://silv
 
 #### Christophe Dervieu
 
-Bio coming soon.
+Christophe Dervieux is an active member of the R community, currently living in France. With a master’s degree in energy and economics, he started working with R as an analyst doing economic studies about market designs, before becoming a developer advocate and R admin, promoting R and supporting R users where he works.
 
-#### Tatsu
+He is interested in helping others get the most from R, and you can find him wandering in the RStudio Community as a sustainer, or on several GitHub issue boards for various R packages. In both places, you may better recognize him by his shorter handle “cderv.”
+
+As an R developer, he is a contributor to several R packages, such as bookdown, rmarkdown, and knitr. He has also co-authored the crrri package. His own projects can be found on GitHub (https://github.com/cderv), and sometimes he shares his ideas on Twitter (https://twitter.com/chrisderv).
+
+He does not like spicy food, but he enjoys playing badminton every week.
+
+#### Devin Pastoor
 
 Bio coming soon.
 
 #### Tatsu Shigeta
 
-Bio coming soon.
+Tatsu works on the Customer Success team at RStudio, and specializes in managing consulting and high tech clients. He is also PhD student at Northeastern University - studying how exercise affects the brain - that has all but defended (coming up in two weeks!). He has used RStudio for his own research purposes for a better part of decade, and looks forward to talking data science with everyone at his first rstudio::conf.
+
+
+## About these materials
+
+This source code and license for all of the materials found on this website can be found on Github [{{< fa brands github >}}](https://github.com/rstudio-conf-2022/rmd-to-quarto).
