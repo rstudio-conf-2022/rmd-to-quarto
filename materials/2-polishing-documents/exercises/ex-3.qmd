@@ -26,8 +26,6 @@ Please add to your document each of the following:
    - centered
    - captioned (main figure and sub-figures)
    - annotated with alt-text
-   
-   Some cha
 6. An inline or block element as margin content (e.g. list, image, text). 
 7. At least two references to different labeled elements. Try referencing the subfigures or exploring the other auto-populated reference types in Quarto (see <https://quarto.org/docs/authoring/cross-references.html>).
 8. One new element that we haven't discussed (search the list by typing `/` on a new line in the visual editor).
