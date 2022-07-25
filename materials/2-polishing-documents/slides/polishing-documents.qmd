@@ -1,7 +1,6 @@
 ---
 title: "Polishing Documents"
-subtitle: "rstudio::conf(2022) <br> From R Markdown to Quarto"
-#subtitle: "From R Markdown to Quarto"
+subtitle: "From R Markdown to Quarto </br> rstudio::conf 2022"
 author: "Andrew Bray"
 format:
   revealjs:
@@ -758,29 +757,303 @@ Open `ex-3.qmd` and follow the directions to create a document that describes yo
 
 When you're done, please share a screenshot of your document in the GitHub Discussion thread "Exercise 3".
 
-<!-- # HTML Themes -->
+# Addressing Appearance with Themes
 
-<!-- # Simple CSS -->
+## 
 
-<!-- ## Rule syntax -->
+:::{.v-center-container}
+| I'll show you three webpages briefly.
+|
+|
+|
+|
+|
+|                     What do you think they're for?
+|                     Who do you think is their audience?
+:::
 
-<!-- ## Attributes -->
+## 
 
-<!-- ## Selectors -->
+<iframe src="http://www.csszengarden.com/221/" width="1600px" height="900px"></iframe>
 
-<!-- ## Cascade -->
+## 
 
-<!-- ## Ex. Formatting text inline -->
+<iframe src="http://www.csszengarden.com/215/" width="1600px" height="900px"></iframe>
 
-<!-- ## Ex. Making a box -->
+## 
 
-<!-- # Exercise 4 -->
+<iframe src="http://www.csszengarden.com/213/" width="1600px" height="900px"></iframe>
 
-<!-- Make your own css -->
+##
+
+:::{.v-center-container}
+| I'll show you three webpages briefly.
+|
+|
+|
+|
+|
+|                     What do you think they're for?
+|                     Who do you think is their audience?
+:::
+
+
+
+## What Defines a Document?
+
+A document consists of *content*, *structure*, *appearance*, *format*.
+
+::: columns
+:::{.column width="50%" .fragment .fade-right}
+![](images/rubiks-patent.png)
+:::
+
+::: {.column width="50%" .fragment}
+\
+
+- **Content:** text, code, graphics
+- **Structure:** paragraphs, lists, emphasis, etc.
+- **Appearance:** fonts, colors, layout
+- **Format:** functionality
+
+:::
+:::
+
+## The Power of CSS
+
+\
+
+:::{layout="[[1,3.5,1]]"}
+
+\
+
+*A demonstration of what can be accomplished through CSS-based design. Select any style sheet from the list to load it into this page.*
+
+\
+\
+
+:::
+
+![](images/zen-1.png){width=30%} ![](images/zen-2.png){width=30%} ![](images/zen-3.png){width=30%}
+
+
+## HTML Themes
+
+A collection of CSS rules that define font, colors, and spacing is called a *theme*. Quarto has 25 pre-loaded themes from Bootswatch.
+
+![](images/bootswatch.png){fig-alt="screenshot of a collection of bootswatch themes.}
+
+::: footer
+<https://bootswatch.com/>
+:::
+
+
+# {{< fa umbrella-beach >}} Exercise 3 Redux {background-color="#00403d"}
+
+Add a Bootswatch theme to your `ex-3.qmd` by adding the following to your YAML.
+
+```{.markdown}
+---
+format:
+  html:
+    theme: <theme>
+---
+```
+
+You can find the list of theme names at [Quarto Guide >> Documents >> HTML](https://quarto.org/docs/output-formats/html-themes.html).
+
+\
+
+Try out several of the themes (or view them at <https://bootswatch.com/>) then apply your favorite and share a screenshot of the styled document in the GitHub Discussion thread "Exercise 3".
+
+# Baby Steps into CSS
+
+## HTML attributes
+
+HTML, like markdown, has a set of elements that structure a website: `<div>`, `<body>`, `<pre>`, `<span>`, etc. Compare:
+
+::::columns
+:::{.column width=33%}
+#### Markdown
+
+```{.markdown}
+A [Span Element]{}.
+```
+:::
+:::{.column width=37%}
+#### HTML Code
+
+```{.html}
+<p>A <span>Span Element</span>.</p>
+```
+:::
+:::{.column width=30%}
+#### HTML Output
+
+A [Span Element]{}.
+:::
+:::
+
+. . . 
+
+we can add labels.
+
+::::columns
+:::{.column width=33%}
+#### Markdown
+
+```{.markdown}
+A [Span Element]{#label}.
+```
+:::
+:::{.column width=37%}
+#### HTML Code
+
+```{.html}
+<p>A <span id="label">Span Element</span>.</p>
+```
+:::
+:::{.column width=30%}
+#### HTML Output
+
+A [Span Element]{#label}.
+:::
+:::
+
+. . .
+
+\
+\
+
+|              . . . still looks the same. Let's add some style.
+
+
+## Adding Style
+
+#### Markdown
+
+````{.markdown style="font-size: 1.3em"}
+A [Span Element]{#label style="color: red"}.
+````
+
+. . .
+
+\
+
+#### HTML
+
+```{.html style="font-size: 1.3em"}
+<p>A <span id="label" style="color: red">Span Element</span>.</p>
+```
+
+. . .
+
+\
+
+#### HTML Output
+
+A [Span Element]{#label style="color: red"}.
+
+## Quick Exercise {background-color="#00403d"}
+
+#### CSS Properties
+
+There are many many many CSS properties available for styling.
+
+<https://www.w3schools.com/cssref/>
+
+Take a moment and add a few more different style properties from the list to a test span in your sandbox.
+
+Syntax: `style="property-1: value; property-2: value"`
+
+\
+\
+\
+
+What do you they do?
+
+## DRY for style
+
+If you have a [style]{style="font-size: 1.5em; text-decoration: underline"} that you want to apply [multiple times]{style="font-size: 1.5em; text-decoration: underline"}, it makes sense to encapsulate it in a CSS rule. Why?
+
+. . .
+
+#### Source
+
+`If you have a [style]{style="font-size: 1.5em; text-decoration: underline"} that you want to apply [multiple times]{style="font-size: 1.5em; text-decoration: underline"}, it makes sense to encapsulate it in a CSS rule. Why?`
+
+. . .
+
+\
+
+|           [Don't Repeat Yourself]{.meta-el} (DRY): repetitive code is hard to update... and long!
+
+## CSS Rule syntax {auto-animate=true}
+
+To write a rule for a class.
+
+```{.css style="font-size: 1.5em"}
+.class {
+  property-1: value;
+  property-2: value;
+}
+```
+
+. . .
+
+Contrast with the inline style approach:
+
+```{.markdown style="font-size: 1.5em"}
+style="property-1: value; property-2: value"
+```
+
+. . .
+
+To make the rule accessible to your document, put it into a separate `styles.css` file and link to in the YAML.
+
+````{.yaml}
+---
+title: "CSS Demo"
+format:
+  html:
+    css: styles.css
+---
+````
+
+## CSS Rule syntax {auto-animate=true}
+
+To write a rule for a class.
+
+```{.css style="font-size: 1.5em"}
+.loud {
+  font-size: 1.5em;
+  text-decoration: underline;
+}
+```
+
+. . .
+
+\
+
+`If you have a [style]{.loud} that you want to apply [multiple times]{.loud}, it makes sense to encapsulate it in a CSS rule. Why?`
+
+# {{< fa palette >}} Exercise 4 {background-color="#00403d"}
+
+There are three CSS challenges in this exercise
+
+1. Write the rules that style [Inline Elements]{.inline-el}, [Block Elements]{.block-el}, and [Metadata Elements]{.meta-el} in these slides.
+2. Create your own rudimentary callout box.
+
+# {{< fa clone >}} Stickies {background-color="#00403d"}
+
+On your way out the door for lunch, please write on the blue sticky note one that confused or frustrated you and on the yellow sticky something that you enjoyed, or got your excited.
 
 ## References and further reading {.smaller}
 
+- [Quarto Guide for Authoring](https://quarto.org/docs/authoring/figures.html): format-agnostic treatment of figures, layouts, callouts and many more Quarto elements.
 -   [Client Side Web Developent Ch. 5-7](https://info340.github.io/css.html): approachable and concise introduction to how CSS work.
 -   [Clock for keeping time at a rate other than human time](https://patents.google.com/patent/US5023850A/en): US patent by Rodney Metts and Barry Thomas
--   https://patents.google.com/patent/US3811677A/en?q=stilts&oq=stilts
--   https://patents.google.com/patent/US6688257B2/en?q=pet+dog&oq=pet+dog
+
+
+<!-- -   https://patents.google.com/patent/US3811677A/en?q=stilts&oq=stilts -->
+<!-- -   https://patents.google.com/patent/US6688257B2/en?q=pet+dog&oq=pet+dog -->
