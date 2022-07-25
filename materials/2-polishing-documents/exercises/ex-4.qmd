@@ -1,8 +1,18 @@
 ---
-title: "My Favorite Vacation Spot"
+title: "Exercise 4"
 format: html
 ---
 
-![A caption](dog-watch.png){#fig-dogwatch width=300}
+### I. Typography for Elements
 
-A novelty clock, watch [dogwatch](#fig-dogwatch),
+Do your best to recreate the styles seen on the Exercise 4 slide for Inline, Block, and Metadata Elements by writing CSS rules for three classes. Think about:
+- In what ways does that text differ stylistically from normal text?
+- Can I track down the name of those attributes in the CSS property list?
+- What property values does each rule appear to be taking?
+
+### II. A Custom Callout
+
+Create a custom class for your own style of callout box. Properties to look into include:
+- borders
+- background colors
+- padding
