@@ -4,7 +4,7 @@ title: "Materials"
 
 #### Configuration
 
-Each session of the workshop features exercises that will learn Quarto by doing. To prepare, please install the following on your machine:
+Each session of the workshop features exercises that will help you learn Quarto by doing. To prepare, please install the following on your machine:
 
 - If you haven't already, please [sign-up](https://happygitwithr.com/github-acct.html) for a free GitHub account.
 - Install latest version of [RStudio](https://www.rstudio.com/products/rstudio/download/#download), v2022.07.0-548 or later
