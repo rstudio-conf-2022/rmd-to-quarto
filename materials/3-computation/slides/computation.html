@@ -389,6 +389,13 @@
   <p class="author">Andrew Bray</p>
 </section>
 
+<section id="getting-exercise" class="slide level2">
+<h2>Getting Exercise</h2>
+<p>To get the materials for each part of this course packed in an RStudio Project, run:</p>
+<div class="sourceCode" id="cb1" style="font-size: 1.5em"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1"></a><span class="in">```{r}</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a>usethis<span class="sc">::</span><span class="fu">use_course</span>(<span class="st">"rmd-to-quarto/computation"</span>)</span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
 <section id="section" class="slide level2" data-menu-title="Enter Quarto">
 <h2></h2>
 
@@ -403,9 +410,9 @@
 <p>Sandwich the code between “fences” of at least three backticks<sup>1</sup>. An optional language provides syntax highlighting.</p>
 <div class="columns">
 <div class="column" style="width:50%;">
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1"></a><span class="in">```cobol</span></span>
-<span id="cb1-2"><a href="#cb1-2"></a><span class="dv">1</span> <span class="op">+</span> <span class="dv">1</span></span>
-<span id="cb1-3"><a href="#cb1-3"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1"></a><span class="in">```cobol</span></span>
+<span id="cb2-2"><a href="#cb2-2"></a><span class="dv">1</span> <span class="op">+</span> <span class="dv">1</span></span>
+<span id="cb2-3"><a href="#cb2-3"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column fragment" style="width:50%;">
 <ul>
 <li>Useful for <strong>displaying</strong> source code, not running it</li>
@@ -421,9 +428,9 @@
 <div class="column" style="width:25%;">
 
 </div><div class="column" style="font-size: 2em">
-<div class="sourceCode" id="cb2"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, echo=FALSE}</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">rnorm</span>(<span class="dv">3</span>)</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, echo=FALSE}</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">rnorm</span>(<span class="dv">3</span>)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column" style="width:25%;">
 
 </div>
@@ -456,9 +463,9 @@
 <p>How can this be generalized to other languages?</p>
 <div class="columns">
 <div class="column" style="width:50%;">
-<div class="sourceCode" id="cb3"><pre class="sourceCode markdown code-with-copy" data-id="quarto-animate-code"><code class="sourceCode markdown hljs"><span id="cb3-1" class="hljs-ln-code"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, echo=FALSE}</span></span>
-<span id="cb3-2" class="hljs-ln-code"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">rnorm</span>(<span class="dv">3</span>)</span>
-<span id="cb3-3" class="hljs-ln-code"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode markdown code-with-copy" data-id="quarto-animate-code"><code class="sourceCode markdown hljs"><span id="cb4-1" class="hljs-ln-code"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, echo=FALSE}</span></span>
+<span id="cb4-2" class="hljs-ln-code"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">rnorm</span>(<span class="dv">3</span>)</span>
+<span id="cb4-3" class="hljs-ln-code"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column" style="width:50%;">
 <ul>
 <li>Executable code flagged by <code>{ }</code></li>
@@ -471,9 +478,9 @@
 <p>How can this be generalized to other languages?</p>
 <div class="columns">
 <div class="column" style="width:50%;">
-<div class="sourceCode" id="cb4"><pre class="sourceCode markdown code-with-copy" data-id="quarto-animate-code"><code class="sourceCode markdown hljs"><span id="cb4-1" class="hljs-ln-code"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{language, echo=FALSE}</span></span>
-<span id="cb4-2" class="hljs-ln-code"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="in">code</span></span>
-<span id="cb4-3" class="hljs-ln-code"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode markdown code-with-copy" data-id="quarto-animate-code"><code class="sourceCode markdown hljs"><span id="cb5-1" class="hljs-ln-code"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{language, echo=FALSE}</span></span>
+<span id="cb5-2" class="hljs-ln-code"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="in">code</span></span>
+<span id="cb5-3" class="hljs-ln-code"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column" style="width:50%;">
 <ul>
 <li>Executable code flagged by <code>{ }</code></li>
@@ -488,11 +495,11 @@
 <p>How can this be generalized to other languages?</p>
 <div class="columns">
 <div class="column" style="width:50%;">
-<div class="sourceCode" id="cb5"><pre class="sourceCode markdown code-with-copy" data-id="quarto-animate-code"><code class="sourceCode markdown hljs"><span id="cb5-1" class="hljs-ln-code"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{language}</span></span>
-<span id="cb5-2" class="hljs-ln-code"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="in">#| echo: false</span></span>
-<span id="cb5-3" class="hljs-ln-code"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-4" class="hljs-ln-code"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="in">code</span></span>
-<span id="cb5-5" class="hljs-ln-code"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode markdown code-with-copy" data-id="quarto-animate-code"><code class="sourceCode markdown hljs"><span id="cb6-1" class="hljs-ln-code"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{language}</span></span>
+<span id="cb6-2" class="hljs-ln-code"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="in">#| echo: false</span></span>
+<span id="cb6-3" class="hljs-ln-code"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-4" class="hljs-ln-code"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="in">code</span></span>
+<span id="cb6-5" class="hljs-ln-code"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column" style="width:50%;">
 <ul>
 <li>Executable code flagged by <code>{ }</code></li>
@@ -519,13 +526,13 @@
 </ol>
 <div class="columns">
 <div class="column" style="width:50%;">
-<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a href="#cb6-1"></a><span class="in">```{python}</span></span>
-<span id="cb6-2"><a href="#cb6-2"></a><span class="co">#| echo: false</span></span>
-<span id="cb6-3"><a href="#cb6-3"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div><div class="column" style="width:50%;">
-<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a href="#cb7-1"></a><span class="in">```{mermaid}</span></span>
-<span id="cb7-2"><a href="#cb7-2"></a>%%| echo: false</span>
+<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a href="#cb7-1"></a><span class="in">```{python}</span></span>
+<span id="cb7-2"><a href="#cb7-2"></a><span class="co">#| echo: false</span></span>
 <span id="cb7-3"><a href="#cb7-3"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column" style="width:50%;">
+<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb8-1"><a href="#cb8-1"></a><span class="in">```{mermaid}</span></span>
+<span id="cb8-2"><a href="#cb8-2"></a>%%| echo: false</span>
+<span id="cb8-3"><a href="#cb8-3"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
@@ -585,16 +592,16 @@
 <div class="columns">
 <div class="column" style="width:50%;">
 <h4 id="source">Source</h4>
-<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb8-1"><a href="#cb8-1"></a><span class="in">```{r, error=TRUE}</span></span>
-<span id="cb8-2"><a href="#cb8-2"></a><span class="co">#| echo: true</span></span>
-<span id="cb8-3"><a href="#cb8-3"></a></span>
-<span id="cb8-4"><a href="#cb8-4"></a><span class="fu">rnorm</span>(<span class="dv">5</span>       <span class="co"># this is missing a parens</span></span>
-<span id="cb8-5"><a href="#cb8-5"></a><span class="st">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb9-1"><a href="#cb9-1"></a><span class="in">```{r, error=TRUE}</span></span>
+<span id="cb9-2"><a href="#cb9-2"></a><span class="co">#| echo: true</span></span>
+<span id="cb9-3"><a href="#cb9-3"></a></span>
+<span id="cb9-4"><a href="#cb9-4"></a><span class="fu">rnorm</span>(<span class="dv">5</span>       <span class="co"># this is missing a parens</span></span>
+<span id="cb9-5"><a href="#cb9-5"></a><span class="st">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column fragment" style="width:50%;">
 <!-- -->
 <h4 id="output">Output</h4>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1"></a><span class="fu">rnorm</span>(<span class="dv">5</span>       <span class="co"># this is missing a parens</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1"></a><span class="fu">rnorm</span>(<span class="dv">5</span>       <span class="co"># this is missing a parens</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-error">
 <pre><code>Error: &lt;text&gt;:2:0: unexpected end of input
 1: rnorm(5       # this is missing a parens
@@ -624,16 +631,16 @@
 <h2 data-id="quarto-animate-title">From Cell Option to YAML</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<div class="sourceCode" id="cb11" data-code-line-numbers="7"><pre class="sourceCode numberSource markdown number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode markdown hljs"><span id="cb11-1" class="hljs-ln-code"><a href="#cb11-1"></a><span class="co">---</span></span>
-<span id="cb11-2" class="hljs-ln-code"><a href="#cb11-2"></a><span class="an">title:</span><span class="co"> My Doc</span></span>
-<span id="cb11-3" class="hljs-ln-code"><a href="#cb11-3"></a><span class="an">format:</span><span class="co"> html</span></span>
-<span id="cb11-4" class="hljs-ln-code"><a href="#cb11-4"></a><span class="co">---</span></span>
-<span id="cb11-5" class="hljs-ln-code"><a href="#cb11-5"></a></span>
-<span id="cb11-6" class="hljs-ln-code"><a href="#cb11-6"></a><span class="in">```{r}</span></span>
-<span id="cb11-7" class="hljs-ln-code"><a href="#cb11-7"></a><span class="co">#| echo: true</span></span>
-<span id="cb11-8" class="hljs-ln-code"><a href="#cb11-8"></a></span>
-<span id="cb11-9" class="hljs-ln-code"><a href="#cb11-9"></a>pi <span class="sc">+</span> <span class="dv">1</span></span>
-<span id="cb11-10" class="hljs-ln-code"><a href="#cb11-10"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb12" data-code-line-numbers="7"><pre class="sourceCode numberSource markdown number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode markdown hljs"><span id="cb12-1" class="hljs-ln-code"><a href="#cb12-1"></a><span class="co">---</span></span>
+<span id="cb12-2" class="hljs-ln-code"><a href="#cb12-2"></a><span class="an">title:</span><span class="co"> My Doc</span></span>
+<span id="cb12-3" class="hljs-ln-code"><a href="#cb12-3"></a><span class="an">format:</span><span class="co"> html</span></span>
+<span id="cb12-4" class="hljs-ln-code"><a href="#cb12-4"></a><span class="co">---</span></span>
+<span id="cb12-5" class="hljs-ln-code"><a href="#cb12-5"></a></span>
+<span id="cb12-6" class="hljs-ln-code"><a href="#cb12-6"></a><span class="in">```{r}</span></span>
+<span id="cb12-7" class="hljs-ln-code"><a href="#cb12-7"></a><span class="co">#| echo: true</span></span>
+<span id="cb12-8" class="hljs-ln-code"><a href="#cb12-8"></a></span>
+<span id="cb12-9" class="hljs-ln-code"><a href="#cb12-9"></a>pi <span class="sc">+</span> <span class="dv">1</span></span>
+<span id="cb12-10" class="hljs-ln-code"><a href="#cb12-10"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </section>
@@ -641,16 +648,16 @@
 <h2 data-id="quarto-animate-title">From Cell Option to YAML</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<div class="sourceCode" id="cb12" data-code-line-numbers="4,5"><pre class="sourceCode numberSource markdown number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode markdown hljs"><span id="cb12-1" class="hljs-ln-code"><a href="#cb12-1"></a><span class="co">---</span></span>
-<span id="cb12-2" class="hljs-ln-code"><a href="#cb12-2"></a><span class="an">title:</span><span class="co"> My Doc</span></span>
-<span id="cb12-3" class="hljs-ln-code"><a href="#cb12-3"></a><span class="an">format:</span><span class="co"> html</span></span>
-<span id="cb12-4" class="hljs-ln-code"><a href="#cb12-4"></a><span class="an">execute:</span></span>
-<span id="cb12-5" class="hljs-ln-code"><a href="#cb12-5"></a><span class="co">  echo: true</span></span>
-<span id="cb12-6" class="hljs-ln-code"><a href="#cb12-6"></a><span class="co">---</span></span>
-<span id="cb12-7" class="hljs-ln-code"><a href="#cb12-7"></a></span>
-<span id="cb12-8" class="hljs-ln-code"><a href="#cb12-8"></a><span class="in">```{r}</span></span>
-<span id="cb12-9" class="hljs-ln-code"><a href="#cb12-9"></a>pi <span class="sc">+</span> <span class="dv">1</span></span>
-<span id="cb12-10" class="hljs-ln-code"><a href="#cb12-10"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb13" data-code-line-numbers="4,5"><pre class="sourceCode numberSource markdown number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode markdown hljs"><span id="cb13-1" class="hljs-ln-code"><a href="#cb13-1"></a><span class="co">---</span></span>
+<span id="cb13-2" class="hljs-ln-code"><a href="#cb13-2"></a><span class="an">title:</span><span class="co"> My Doc</span></span>
+<span id="cb13-3" class="hljs-ln-code"><a href="#cb13-3"></a><span class="an">format:</span><span class="co"> html</span></span>
+<span id="cb13-4" class="hljs-ln-code"><a href="#cb13-4"></a><span class="an">execute:</span></span>
+<span id="cb13-5" class="hljs-ln-code"><a href="#cb13-5"></a><span class="co">  echo: true</span></span>
+<span id="cb13-6" class="hljs-ln-code"><a href="#cb13-6"></a><span class="co">---</span></span>
+<span id="cb13-7" class="hljs-ln-code"><a href="#cb13-7"></a></span>
+<span id="cb13-8" class="hljs-ln-code"><a href="#cb13-8"></a><span class="in">```{r}</span></span>
+<span id="cb13-9" class="hljs-ln-code"><a href="#cb13-9"></a>pi <span class="sc">+</span> <span class="dv">1</span></span>
+<span id="cb13-10" class="hljs-ln-code"><a href="#cb13-10"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column" style="width:50%;">
 <ul>
 <li>Options can be moved into YAML under the <code>execute</code> key to apply to all chunks. Exceptions to that option can be set cell-by-cell.</li>
@@ -662,19 +669,19 @@
 <h2 data-id="quarto-animate-title">From Cell Option to YAML</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<div class="sourceCode" id="cb13" data-code-line-numbers="6-8"><pre class="sourceCode numberSource markdown number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode markdown hljs"><span id="cb13-1" class="hljs-ln-code"><a href="#cb13-1"></a><span class="co">---</span></span>
-<span id="cb13-2" class="hljs-ln-code"><a href="#cb13-2"></a><span class="an">title:</span><span class="co"> My Doc</span></span>
-<span id="cb13-3" class="hljs-ln-code"><a href="#cb13-3"></a><span class="an">format:</span><span class="co"> html</span></span>
-<span id="cb13-4" class="hljs-ln-code"><a href="#cb13-4"></a><span class="an">execute:</span></span>
-<span id="cb13-5" class="hljs-ln-code"><a href="#cb13-5"></a><span class="co">  echo: true</span></span>
-<span id="cb13-6" class="hljs-ln-code"><a href="#cb13-6"></a><span class="an">knitr:</span></span>
-<span id="cb13-7" class="hljs-ln-code"><a href="#cb13-7"></a><span class="co">  opts_chunk: </span></span>
-<span id="cb13-8" class="hljs-ln-code"><a href="#cb13-8"></a><span class="co">    collapse: true</span></span>
-<span id="cb13-9" class="hljs-ln-code"><a href="#cb13-9"></a><span class="co">---</span></span>
-<span id="cb13-10" class="hljs-ln-code"><a href="#cb13-10"></a></span>
-<span id="cb13-11" class="hljs-ln-code"><a href="#cb13-11"></a><span class="in">```{r}</span></span>
-<span id="cb13-12" class="hljs-ln-code"><a href="#cb13-12"></a>pi <span class="sc">+</span> <span class="dv">1</span></span>
-<span id="cb13-13" class="hljs-ln-code"><a href="#cb13-13"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb14" data-code-line-numbers="6-8"><pre class="sourceCode numberSource markdown number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode markdown hljs"><span id="cb14-1" class="hljs-ln-code"><a href="#cb14-1"></a><span class="co">---</span></span>
+<span id="cb14-2" class="hljs-ln-code"><a href="#cb14-2"></a><span class="an">title:</span><span class="co"> My Doc</span></span>
+<span id="cb14-3" class="hljs-ln-code"><a href="#cb14-3"></a><span class="an">format:</span><span class="co"> html</span></span>
+<span id="cb14-4" class="hljs-ln-code"><a href="#cb14-4"></a><span class="an">execute:</span></span>
+<span id="cb14-5" class="hljs-ln-code"><a href="#cb14-5"></a><span class="co">  echo: true</span></span>
+<span id="cb14-6" class="hljs-ln-code"><a href="#cb14-6"></a><span class="an">knitr:</span></span>
+<span id="cb14-7" class="hljs-ln-code"><a href="#cb14-7"></a><span class="co">  opts_chunk: </span></span>
+<span id="cb14-8" class="hljs-ln-code"><a href="#cb14-8"></a><span class="co">    collapse: true</span></span>
+<span id="cb14-9" class="hljs-ln-code"><a href="#cb14-9"></a><span class="co">---</span></span>
+<span id="cb14-10" class="hljs-ln-code"><a href="#cb14-10"></a></span>
+<span id="cb14-11" class="hljs-ln-code"><a href="#cb14-11"></a><span class="in">```{r}</span></span>
+<span id="cb14-12" class="hljs-ln-code"><a href="#cb14-12"></a>pi <span class="sc">+</span> <span class="dv">1</span></span>
+<span id="cb14-13" class="hljs-ln-code"><a href="#cb14-13"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column" style="width:50%;">
 <ul>
 <li><p>Options can be moved into YAML under the <code>execute</code> key to apply to all chunks. Exceptions to that option can be set cell-by-cell.</p></li>
@@ -687,21 +694,21 @@
 <h2 data-id="quarto-animate-title">From Cell Option to YAML</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<div class="sourceCode" id="cb14" data-code-line-numbers="9-10"><pre class="sourceCode numberSource markdown number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode markdown hljs"><span id="cb14-1" class="hljs-ln-code"><a href="#cb14-1"></a><span class="co">---</span></span>
-<span id="cb14-2" class="hljs-ln-code"><a href="#cb14-2"></a><span class="an">title:</span><span class="co"> My Doc</span></span>
-<span id="cb14-3" class="hljs-ln-code"><a href="#cb14-3"></a><span class="an">format:</span><span class="co"> html</span></span>
-<span id="cb14-4" class="hljs-ln-code"><a href="#cb14-4"></a><span class="an">execute:</span></span>
-<span id="cb14-5" class="hljs-ln-code"><a href="#cb14-5"></a><span class="co">  echo: true</span></span>
-<span id="cb14-6" class="hljs-ln-code"><a href="#cb14-6"></a><span class="an">knitr:</span></span>
-<span id="cb14-7" class="hljs-ln-code"><a href="#cb14-7"></a><span class="co">  opts_chunk: </span></span>
-<span id="cb14-8" class="hljs-ln-code"><a href="#cb14-8"></a><span class="co">    collapse: true</span></span>
-<span id="cb14-9" class="hljs-ln-code"><a href="#cb14-9"></a><span class="co">    R.options:</span></span>
-<span id="cb14-10" class="hljs-ln-code"><a href="#cb14-10"></a><span class="co">      digits: 2</span></span>
-<span id="cb14-11" class="hljs-ln-code"><a href="#cb14-11"></a><span class="co">---</span></span>
-<span id="cb14-12" class="hljs-ln-code"><a href="#cb14-12"></a></span>
-<span id="cb14-13" class="hljs-ln-code"><a href="#cb14-13"></a><span class="in">```{r}</span></span>
-<span id="cb14-14" class="hljs-ln-code"><a href="#cb14-14"></a>pi <span class="sc">+</span> <span class="dv">1</span></span>
-<span id="cb14-15" class="hljs-ln-code"><a href="#cb14-15"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb15" data-code-line-numbers="9-10"><pre class="sourceCode numberSource markdown number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode markdown hljs"><span id="cb15-1" class="hljs-ln-code"><a href="#cb15-1"></a><span class="co">---</span></span>
+<span id="cb15-2" class="hljs-ln-code"><a href="#cb15-2"></a><span class="an">title:</span><span class="co"> My Doc</span></span>
+<span id="cb15-3" class="hljs-ln-code"><a href="#cb15-3"></a><span class="an">format:</span><span class="co"> html</span></span>
+<span id="cb15-4" class="hljs-ln-code"><a href="#cb15-4"></a><span class="an">execute:</span></span>
+<span id="cb15-5" class="hljs-ln-code"><a href="#cb15-5"></a><span class="co">  echo: true</span></span>
+<span id="cb15-6" class="hljs-ln-code"><a href="#cb15-6"></a><span class="an">knitr:</span></span>
+<span id="cb15-7" class="hljs-ln-code"><a href="#cb15-7"></a><span class="co">  opts_chunk: </span></span>
+<span id="cb15-8" class="hljs-ln-code"><a href="#cb15-8"></a><span class="co">    collapse: true</span></span>
+<span id="cb15-9" class="hljs-ln-code"><a href="#cb15-9"></a><span class="co">    R.options:</span></span>
+<span id="cb15-10" class="hljs-ln-code"><a href="#cb15-10"></a><span class="co">      digits: 2</span></span>
+<span id="cb15-11" class="hljs-ln-code"><a href="#cb15-11"></a><span class="co">---</span></span>
+<span id="cb15-12" class="hljs-ln-code"><a href="#cb15-12"></a></span>
+<span id="cb15-13" class="hljs-ln-code"><a href="#cb15-13"></a><span class="in">```{r}</span></span>
+<span id="cb15-14" class="hljs-ln-code"><a href="#cb15-14"></a>pi <span class="sc">+</span> <span class="dv">1</span></span>
+<span id="cb15-15" class="hljs-ln-code"><a href="#cb15-15"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column" style="width:50%;">
 <ul>
 <li><p>Options can be moved into YAML under the <code>execute</code> key to apply to all chunks. Exceptions to that option can be set cell-by-cell.</p></li>
@@ -758,15 +765,15 @@
 <h2 data-id="quarto-animate-title">Figure Output Example</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<div class="sourceCode" id="cb15"><pre class="sourceCode numberSource markdown number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode markdown hljs"><span id="cb15-1" class="hljs-ln-code"><a href="#cb15-1"></a><span class="in">```{r}</span></span>
-<span id="cb15-2" class="hljs-ln-code"><a href="#cb15-2"></a><span class="fu">library</span>(palmerpenguins)</span>
-<span id="cb15-3" class="hljs-ln-code"><a href="#cb15-3"></a><span class="fu">library</span>(ggplot2)</span>
-<span id="cb15-4" class="hljs-ln-code"><a href="#cb15-4"></a></span>
-<span id="cb15-5" class="hljs-ln-code"><a href="#cb15-5"></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(<span class="at">x =</span> bill_length_mm,</span>
-<span id="cb15-6" class="hljs-ln-code"><a href="#cb15-6"></a>                     <span class="at">y =</span> bill_depth_mm,</span>
-<span id="cb15-7" class="hljs-ln-code"><a href="#cb15-7"></a>                     <span class="at">col =</span> island)) <span class="sc">+</span></span>
-<span id="cb15-8" class="hljs-ln-code"><a href="#cb15-8"></a>  <span class="fu">geom_point</span>()</span>
-<span id="cb15-9" class="hljs-ln-code"><a href="#cb15-9"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb16"><pre class="sourceCode numberSource markdown number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode markdown hljs"><span id="cb16-1" class="hljs-ln-code"><a href="#cb16-1"></a><span class="in">```{r}</span></span>
+<span id="cb16-2" class="hljs-ln-code"><a href="#cb16-2"></a><span class="fu">library</span>(palmerpenguins)</span>
+<span id="cb16-3" class="hljs-ln-code"><a href="#cb16-3"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb16-4" class="hljs-ln-code"><a href="#cb16-4"></a></span>
+<span id="cb16-5" class="hljs-ln-code"><a href="#cb16-5"></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(<span class="at">x =</span> bill_length_mm,</span>
+<span id="cb16-6" class="hljs-ln-code"><a href="#cb16-6"></a>                     <span class="at">y =</span> bill_depth_mm,</span>
+<span id="cb16-7" class="hljs-ln-code"><a href="#cb16-7"></a>                     <span class="at">col =</span> island)) <span class="sc">+</span></span>
+<span id="cb16-8" class="hljs-ln-code"><a href="#cb16-8"></a>  <span class="fu">geom_point</span>()</span>
+<span id="cb16-9" class="hljs-ln-code"><a href="#cb16-9"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column fragment" style="width:50%;">
 <div class="cell">
 <div class="cell-output-display">
@@ -780,18 +787,18 @@
 <h2 data-id="quarto-animate-title">Figure Output Example</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<div class="sourceCode" id="cb16"><pre class="sourceCode numberSource markdown number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode markdown hljs"><span id="cb16-1" class="hljs-ln-code"><a href="#cb16-1"></a><span class="in">```{r}</span></span>
-<span id="cb16-2" class="hljs-ln-code"><a href="#cb16-2"></a><span class="co">#| fig-width: 5</span></span>
-<span id="cb16-3" class="hljs-ln-code"><a href="#cb16-3"></a><span class="co">#| fig-height: 3</span></span>
-<span id="cb16-4" class="hljs-ln-code"><a href="#cb16-4"></a></span>
-<span id="cb16-5" class="hljs-ln-code"><a href="#cb16-5"></a><span class="fu">library</span>(palmerpenguins)</span>
-<span id="cb16-6" class="hljs-ln-code"><a href="#cb16-6"></a><span class="fu">library</span>(ggplot2)</span>
-<span id="cb16-7" class="hljs-ln-code"><a href="#cb16-7"></a></span>
-<span id="cb16-8" class="hljs-ln-code"><a href="#cb16-8"></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(<span class="at">x =</span> bill_length_mm,</span>
-<span id="cb16-9" class="hljs-ln-code"><a href="#cb16-9"></a>                     <span class="at">y =</span> bill_depth_mm,</span>
-<span id="cb16-10" class="hljs-ln-code"><a href="#cb16-10"></a>                     <span class="at">col =</span> island)) <span class="sc">+</span></span>
-<span id="cb16-11" class="hljs-ln-code"><a href="#cb16-11"></a>  <span class="fu">geom_point</span>()</span>
-<span id="cb16-12" class="hljs-ln-code"><a href="#cb16-12"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb17"><pre class="sourceCode numberSource markdown number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode markdown hljs"><span id="cb17-1" class="hljs-ln-code"><a href="#cb17-1"></a><span class="in">```{r}</span></span>
+<span id="cb17-2" class="hljs-ln-code"><a href="#cb17-2"></a><span class="co">#| fig-width: 5</span></span>
+<span id="cb17-3" class="hljs-ln-code"><a href="#cb17-3"></a><span class="co">#| fig-height: 3</span></span>
+<span id="cb17-4" class="hljs-ln-code"><a href="#cb17-4"></a></span>
+<span id="cb17-5" class="hljs-ln-code"><a href="#cb17-5"></a><span class="fu">library</span>(palmerpenguins)</span>
+<span id="cb17-6" class="hljs-ln-code"><a href="#cb17-6"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb17-7" class="hljs-ln-code"><a href="#cb17-7"></a></span>
+<span id="cb17-8" class="hljs-ln-code"><a href="#cb17-8"></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(<span class="at">x =</span> bill_length_mm,</span>
+<span id="cb17-9" class="hljs-ln-code"><a href="#cb17-9"></a>                     <span class="at">y =</span> bill_depth_mm,</span>
+<span id="cb17-10" class="hljs-ln-code"><a href="#cb17-10"></a>                     <span class="at">col =</span> island)) <span class="sc">+</span></span>
+<span id="cb17-11" class="hljs-ln-code"><a href="#cb17-11"></a>  <span class="fu">geom_point</span>()</span>
+<span id="cb17-12" class="hljs-ln-code"><a href="#cb17-12"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column fragment" style="width:50%;">
 <div class="cell">
 <div class="cell-output-display">
@@ -805,20 +812,20 @@
 <h2 data-id="quarto-animate-title">Figure Output Example</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<div class="sourceCode" id="cb17"><pre class="sourceCode numberSource markdown number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode markdown hljs"><span id="cb17-1" class="hljs-ln-code"><a href="#cb17-1"></a><span class="in">```{r}</span></span>
-<span id="cb17-2" class="hljs-ln-code"><a href="#cb17-2"></a><span class="co">#| fig-width: 5</span></span>
-<span id="cb17-3" class="hljs-ln-code"><a href="#cb17-3"></a><span class="co">#| fig-height: 3</span></span>
-<span id="cb17-4" class="hljs-ln-code"><a href="#cb17-4"></a><span class="co">#| fig-cap: "Size of penguins on three islands in the Palmer Archipelago."</span></span>
-<span id="cb17-5" class="hljs-ln-code"><a href="#cb17-5"></a><span class="co">#| fig-alt: "Scatterplot showing the bill sizes of penguins across three islands."</span></span>
-<span id="cb17-6" class="hljs-ln-code"><a href="#cb17-6"></a></span>
-<span id="cb17-7" class="hljs-ln-code"><a href="#cb17-7"></a><span class="fu">library</span>(palmerpenguins)</span>
-<span id="cb17-8" class="hljs-ln-code"><a href="#cb17-8"></a><span class="fu">library</span>(ggplot2)</span>
-<span id="cb17-9" class="hljs-ln-code"><a href="#cb17-9"></a></span>
-<span id="cb17-10" class="hljs-ln-code"><a href="#cb17-10"></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(<span class="at">x =</span> bill_length_mm,</span>
-<span id="cb17-11" class="hljs-ln-code"><a href="#cb17-11"></a>                     <span class="at">y =</span> bill_depth_mm,</span>
-<span id="cb17-12" class="hljs-ln-code"><a href="#cb17-12"></a>                     <span class="at">col =</span> island)) <span class="sc">+</span></span>
-<span id="cb17-13" class="hljs-ln-code"><a href="#cb17-13"></a>  <span class="fu">geom_point</span>()</span>
-<span id="cb17-14" class="hljs-ln-code"><a href="#cb17-14"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb18"><pre class="sourceCode numberSource markdown number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode markdown hljs"><span id="cb18-1" class="hljs-ln-code"><a href="#cb18-1"></a><span class="in">```{r}</span></span>
+<span id="cb18-2" class="hljs-ln-code"><a href="#cb18-2"></a><span class="co">#| fig-width: 5</span></span>
+<span id="cb18-3" class="hljs-ln-code"><a href="#cb18-3"></a><span class="co">#| fig-height: 3</span></span>
+<span id="cb18-4" class="hljs-ln-code"><a href="#cb18-4"></a><span class="co">#| fig-cap: "Size of penguins on three islands in the Palmer Archipelago."</span></span>
+<span id="cb18-5" class="hljs-ln-code"><a href="#cb18-5"></a><span class="co">#| fig-alt: "Scatterplot showing the bill sizes of penguins across three islands."</span></span>
+<span id="cb18-6" class="hljs-ln-code"><a href="#cb18-6"></a></span>
+<span id="cb18-7" class="hljs-ln-code"><a href="#cb18-7"></a><span class="fu">library</span>(palmerpenguins)</span>
+<span id="cb18-8" class="hljs-ln-code"><a href="#cb18-8"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb18-9" class="hljs-ln-code"><a href="#cb18-9"></a></span>
+<span id="cb18-10" class="hljs-ln-code"><a href="#cb18-10"></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(<span class="at">x =</span> bill_length_mm,</span>
+<span id="cb18-11" class="hljs-ln-code"><a href="#cb18-11"></a>                     <span class="at">y =</span> bill_depth_mm,</span>
+<span id="cb18-12" class="hljs-ln-code"><a href="#cb18-12"></a>                     <span class="at">col =</span> island)) <span class="sc">+</span></span>
+<span id="cb18-13" class="hljs-ln-code"><a href="#cb18-13"></a>  <span class="fu">geom_point</span>()</span>
+<span id="cb18-14" class="hljs-ln-code"><a href="#cb18-14"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column fragment" style="width:50%;">
 <div class="cell">
 <div class="cell-output-display">
@@ -849,9 +856,9 @@
 <p>R’s default isn’t designed for effective display.</p>
 <div class="columns">
 <div class="column" style="width:30%;">
-<div class="sourceCode" id="cb18"><pre class="sourceCode numberSource markdown number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode markdown hljs"><span id="cb18-1" class="hljs-ln-code"><a href="#cb18-1"></a><span class="in">```{r}</span></span>
-<span id="cb18-2" class="hljs-ln-code"><a href="#cb18-2"></a>penguins</span>
-<span id="cb18-3" class="hljs-ln-code"><a href="#cb18-3"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb19"><pre class="sourceCode numberSource markdown number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode markdown hljs"><span id="cb19-1" class="hljs-ln-code"><a href="#cb19-1"></a><span class="in">```{r}</span></span>
+<span id="cb19-2" class="hljs-ln-code"><a href="#cb19-2"></a>penguins</span>
+<span id="cb19-3" class="hljs-ln-code"><a href="#cb19-3"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column" style="width:70%;">
 <div class="cell">
 <div class="cell-output cell-output-stdout">
@@ -880,9 +887,9 @@
 <p><code>kable()</code> creates tables for <span class="math inline">\(\LaTeX\)</span>, HTML, and Markdown output.</p>
 <div class="columns">
 <div class="column" style="width:30%;">
-<div class="sourceCode" id="cb20"><pre class="sourceCode numberSource markdown number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode markdown hljs"><span id="cb20-1" class="hljs-ln-code"><a href="#cb20-1"></a><span class="in">```{r}</span></span>
-<span id="cb20-2" class="hljs-ln-code"><a href="#cb20-2"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(penguins)</span>
-<span id="cb20-3" class="hljs-ln-code"><a href="#cb20-3"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb21"><pre class="sourceCode numberSource markdown number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode markdown hljs"><span id="cb21-1" class="hljs-ln-code"><a href="#cb21-1"></a><span class="in">```{r}</span></span>
+<span id="cb21-2" class="hljs-ln-code"><a href="#cb21-2"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(penguins)</span>
+<span id="cb21-3" class="hljs-ln-code"><a href="#cb21-3"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column" style="width:70%;">
 <div class="cell">
 <div class="cell-output-display">
@@ -4362,15 +4369,15 @@
 <p><code>df-print: kable</code> available as a document-level option.</p>
 <div class="columns">
 <div class="column" style="width:30%;">
-<div class="sourceCode" id="cb21"><pre class="sourceCode numberSource markdown number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode markdown hljs"><span id="cb21-1" class="hljs-ln-code"><a href="#cb21-1"></a><span class="co">---</span></span>
-<span id="cb21-2" class="hljs-ln-code"><a href="#cb21-2"></a><span class="an">format:</span></span>
-<span id="cb21-3" class="hljs-ln-code"><a href="#cb21-3"></a><span class="co">  html:</span></span>
-<span id="cb21-4" class="hljs-ln-code"><a href="#cb21-4"></a><span class="co">    df-print: kable</span></span>
-<span id="cb21-5" class="hljs-ln-code"><a href="#cb21-5"></a><span class="co">---</span></span>
-<span id="cb21-6" class="hljs-ln-code"><a href="#cb21-6"></a></span>
-<span id="cb21-7" class="hljs-ln-code"><a href="#cb21-7"></a><span class="in">```{r}</span></span>
-<span id="cb21-8" class="hljs-ln-code"><a href="#cb21-8"></a>penguins</span>
-<span id="cb21-9" class="hljs-ln-code"><a href="#cb21-9"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb22"><pre class="sourceCode numberSource markdown number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode markdown hljs"><span id="cb22-1" class="hljs-ln-code"><a href="#cb22-1"></a><span class="co">---</span></span>
+<span id="cb22-2" class="hljs-ln-code"><a href="#cb22-2"></a><span class="an">format:</span></span>
+<span id="cb22-3" class="hljs-ln-code"><a href="#cb22-3"></a><span class="co">  html:</span></span>
+<span id="cb22-4" class="hljs-ln-code"><a href="#cb22-4"></a><span class="co">    df-print: kable</span></span>
+<span id="cb22-5" class="hljs-ln-code"><a href="#cb22-5"></a><span class="co">---</span></span>
+<span id="cb22-6" class="hljs-ln-code"><a href="#cb22-6"></a></span>
+<span id="cb22-7" class="hljs-ln-code"><a href="#cb22-7"></a><span class="in">```{r}</span></span>
+<span id="cb22-8" class="hljs-ln-code"><a href="#cb22-8"></a>penguins</span>
+<span id="cb22-9" class="hljs-ln-code"><a href="#cb22-9"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column" style="width:70%;">
 <div class="cell">
 <div class="cell-output-display">
@@ -7850,15 +7857,15 @@
 <p><code>df-print: paged</code> available as a document-level option.</p>
 <div class="columns">
 <div class="column" style="width:30%;">
-<div class="sourceCode" id="cb22"><pre class="sourceCode numberSource markdown number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode markdown hljs"><span id="cb22-1" class="hljs-ln-code"><a href="#cb22-1"></a><span class="co">---</span></span>
-<span id="cb22-2" class="hljs-ln-code"><a href="#cb22-2"></a><span class="an">format:</span></span>
-<span id="cb22-3" class="hljs-ln-code"><a href="#cb22-3"></a><span class="co">  html:</span></span>
-<span id="cb22-4" class="hljs-ln-code"><a href="#cb22-4"></a><span class="co">    df-print: paged</span></span>
-<span id="cb22-5" class="hljs-ln-code"><a href="#cb22-5"></a><span class="co">---</span></span>
-<span id="cb22-6" class="hljs-ln-code"><a href="#cb22-6"></a></span>
-<span id="cb22-7" class="hljs-ln-code"><a href="#cb22-7"></a><span class="in">```{r}</span></span>
-<span id="cb22-8" class="hljs-ln-code"><a href="#cb22-8"></a>penguins</span>
-<span id="cb22-9" class="hljs-ln-code"><a href="#cb22-9"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb23"><pre class="sourceCode numberSource markdown number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode markdown hljs"><span id="cb23-1" class="hljs-ln-code"><a href="#cb23-1"></a><span class="co">---</span></span>
+<span id="cb23-2" class="hljs-ln-code"><a href="#cb23-2"></a><span class="an">format:</span></span>
+<span id="cb23-3" class="hljs-ln-code"><a href="#cb23-3"></a><span class="co">  html:</span></span>
+<span id="cb23-4" class="hljs-ln-code"><a href="#cb23-4"></a><span class="co">    df-print: paged</span></span>
+<span id="cb23-5" class="hljs-ln-code"><a href="#cb23-5"></a><span class="co">---</span></span>
+<span id="cb23-6" class="hljs-ln-code"><a href="#cb23-6"></a></span>
+<span id="cb23-7" class="hljs-ln-code"><a href="#cb23-7"></a><span class="in">```{r}</span></span>
+<span id="cb23-8" class="hljs-ln-code"><a href="#cb23-8"></a>penguins</span>
+<span id="cb23-9" class="hljs-ln-code"><a href="#cb23-9"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column" style="width:70%;">
 <p><img data-src="images/paged-df.png" style="width:70.0%"></p>
 </div>
@@ -7875,20 +7882,52 @@
 <h1>Advanced Code Features</h1>
 
 </section>
-<section id="classes-for-appearance" class="slide level2">
-<h2>Classes for Appearance</h2>
-</section>
 <section id="shiny" class="slide level2">
 <h2>Shiny</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<p><img data-src="images/shiny.png"></p>
+</div><div class="column" style="width:60%;">
+<ul>
+<li>Specify <code>server: shiny</code> in the YAML</li>
+<li>Set the UI in a normal R chunk</li>
+<li>Set the server in a chunk with <code>#| context: server</code></li>
+</ul>
+</div>
+</div>
+<p>See <a href="https://quarto.org/docs/interactive/shiny/" class="uri">https://quarto.org/docs/interactive/shiny/</a> for an example</p>
 </section>
-<section id="parameterized-documents" class="slide level2">
-<h2>Parameterized Documents</h2>
+<section id="pass-from-yaml-to-r" class="slide level2">
+<h2>Pass from Yaml to R</h2>
+<p>This allows you to create <em>parameterized</em> reports</p>
+<div class="sourceCode" id="cb24"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb24-1"><a href="#cb24-1"></a><span class="co">---</span></span>
+<span id="cb24-2"><a href="#cb24-2"></a><span class="an">title:</span><span class="co"> "My Document"</span></span>
+<span id="cb24-3"><a href="#cb24-3"></a><span class="an">params:</span></span>
+<span id="cb24-4"><a href="#cb24-4"></a><span class="co">  n_penguins: 50</span></span>
+<span id="cb24-5"><a href="#cb24-5"></a><span class="co">---</span></span>
+<span id="cb24-6"><a href="#cb24-6"></a></span>
+<span id="cb24-7"><a href="#cb24-7"></a><span class="in">```{r}</span></span>
+<span id="cb24-8"><a href="#cb24-8"></a><span class="fu">library</span>(palmerpenguins)</span>
+<span id="cb24-9"><a href="#cb24-9"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb24-10"><a href="#cb24-10"></a><span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> bill_length_mm,</span>
+<span id="cb24-11"><a href="#cb24-11"></a>           <span class="at">y =</span> bill_depth_mm)) <span class="sc">+</span></span>
+<span id="cb24-12"><a href="#cb24-12"></a>      <span class="fu">geom_point</span>()</span>
+<span id="cb24-13"><a href="#cb24-13"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>The <code>params</code> YAML field can take many parameters as keys.</li>
+<li>It’s available as a list in R using <code>params$key</code>.</li>
+<li>Since the parameters are passed through YAML, you can easily script the generation of parameterized report using <code>quarto</code> CLI.</li>
+</ul>
 </section>
-<section id="raw-output-output-asis" class="slide level2">
-<h2>Raw output output: asis</h2>
-</section>
-<section id="multilingual-docs" class="slide level2">
-<h2>Multilingual docs</h2>
+<section id="pass-from-yaml-to-r-1" class="slide level2">
+<h2>Pass from Yaml to R</h2>
+<p>You can create YAML dynamically using inline R!</p>
+
+<img data-src="images/r-in-yaml.png" class="r-stretch"></section></section>
+<section>
+<section id="fa-code-exercise-5-redux" class="title-slide slide level1 center" data-background-color="#00403d">
+<h1><i class="fa-solid fa-code"></i> Exercise 5 Redux</h1>
+<p>Revising your penguins analysis and think of parameters that you could pass to affect the R output. Knit with a few combinations of parameters and revel in the power!</p>
 </section>
 <section id="references-and-further-reading" class="slide level2 smaller">
 <h2>References and further reading</h2>
@@ -7898,15 +7937,11 @@
 <li>https://patents.google.com/patent/US3811677A/en?q=stilts&amp;oq=stilts</li>
 <li>https://patents.google.com/patent/US6688257B2/en?q=pet+dog&amp;oq=pet+dog</li>
 </ul>
-</section></section>
-<section id="exercise-6" class="title-slide slide level1 center">
-<h1>Exercise 6</h1>
 
 <div class="footer footer-default">
 
 </div>
-</section>
-
+</section></section>
 
     </div>
   </div>

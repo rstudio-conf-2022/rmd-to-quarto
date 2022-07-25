@@ -683,7 +683,7 @@
     "href": "materials/2-polishing-documents/slides/polishing-documents.html#quick-exercise",
     "title": "Polishing Documents",
     "section": "Quick Exercise",
-    "text": "Quick Exercise\nCSS Properties\nThere are many many many CSS properties available for styling.\nhttps://www.w3schools.com/cssref/\nTake a moment and add a few more different style properties from the list to a test span in your sandbox.\nSyntax: style=\"property-1: value; property-2: value\"\n\n\n\n\nWhat do you they do?"
+    "text": "Quick Exercise\nCSS Properties\nThere are many many many CSS properties available for styling.\nhttps://www.w3schools.com/cssref/\nTake a moment and add a few more different style properties from the list to a test span in your sandbox.\nSyntax: style=\"property-1: value; property-2: value\""
   },
   {
     "objectID": "materials/2-polishing-documents/slides/polishing-documents.html#dry-for-style",
@@ -718,7 +718,14 @@
     "href": "materials/3-computation/index.html",
     "title": "Computation",
     "section": "",
-    "text": "Warning\n\n\n\nThis is under construction until the start of the workshop."
+    "text": "Link to slides\n\nCode Blocks\n\nThe Hashpipe!\nControlling execution\nOther chunk options\n\nFigure Output\nData Frame Output\nShiny\nParameterized reports\nControlling YAML through R"
+  },
+  {
+    "objectID": "materials/3-computation/slides/computation.html#getting-exercise",
+    "href": "materials/3-computation/slides/computation.html#getting-exercise",
+    "title": "Computation",
+    "section": "Getting Exercise",
+    "text": "Getting Exercise\nTo get the materials for each part of this course packed in an RStudio Project, run:\n```{r}\nusethis::use_course(\"rmd-to-quarto/computation\")\n```"
   },
   {
     "objectID": "materials/3-computation/slides/computation.html#pandocs-fenced-code-block",
@@ -875,39 +882,25 @@
     "text": "Paged Output\ndf-print: paged available as a document-level option.\n\n\n---\nformat:\n  html:\n    df-print: paged\n---\n\n```{r}\npenguins\n```"
   },
   {
-    "objectID": "materials/3-computation/slides/computation.html#classes-for-appearance",
-    "href": "materials/3-computation/slides/computation.html#classes-for-appearance",
-    "title": "Computation",
-    "section": "Classes for Appearance",
-    "text": "Classes for Appearance"
-  },
-  {
     "objectID": "materials/3-computation/slides/computation.html#shiny",
     "href": "materials/3-computation/slides/computation.html#shiny",
     "title": "Computation",
     "section": "Shiny",
-    "text": "Shiny"
+    "text": "Shiny\n\n\n\n\n\nSpecify server: shiny in the YAML\nSet the UI in a normal R chunk\nSet the server in a chunk with #| context: server\n\n\n\nSee https://quarto.org/docs/interactive/shiny/ for an example"
   },
   {
-    "objectID": "materials/3-computation/slides/computation.html#parameterized-documents",
-    "href": "materials/3-computation/slides/computation.html#parameterized-documents",
+    "objectID": "materials/3-computation/slides/computation.html#pass-from-yaml-to-r",
+    "href": "materials/3-computation/slides/computation.html#pass-from-yaml-to-r",
     "title": "Computation",
-    "section": "Parameterized Documents",
-    "text": "Parameterized Documents"
+    "section": "Pass from Yaml to R",
+    "text": "Pass from Yaml to R\nThis allows you to create parameterized reports\n---\ntitle: \"My Document\"\nparams:\n  n_penguins: 50\n---\n\n```{r}\nlibrary(palmerpenguins)\nlibrary(ggplot2)\nggplot(aes(x = bill_length_mm,\n           y = bill_depth_mm)) +\n      geom_point()\n```\n\nThe params YAML field can take many parameters as keys.\nIt’s available as a list in R using params$key.\nSince the parameters are passed through YAML, you can easily script the generation of parameterized report using quarto CLI."
   },
   {
-    "objectID": "materials/3-computation/slides/computation.html#raw-output-output-asis",
-    "href": "materials/3-computation/slides/computation.html#raw-output-output-asis",
+    "objectID": "materials/3-computation/slides/computation.html#pass-from-yaml-to-r-1",
+    "href": "materials/3-computation/slides/computation.html#pass-from-yaml-to-r-1",
     "title": "Computation",
-    "section": "Raw output output: asis",
-    "text": "Raw output output: asis"
-  },
-  {
-    "objectID": "materials/3-computation/slides/computation.html#multilingual-docs",
-    "href": "materials/3-computation/slides/computation.html#multilingual-docs",
-    "title": "Computation",
-    "section": "Multilingual docs",
-    "text": "Multilingual docs"
+    "section": "Pass from Yaml to R",
+    "text": "Pass from Yaml to R\nYou can create YAML dynamically using inline R!"
   },
   {
     "objectID": "materials/3-computation/slides/computation.html#references-and-further-reading",
