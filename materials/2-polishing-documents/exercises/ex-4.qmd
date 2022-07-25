@@ -6,9 +6,12 @@ format: html
 ### I. Typography for Elements
 
 Do your best to recreate the styles seen on the Exercise 4 slide for Inline, Block, and Metadata Elements by writing CSS rules for three classes. Think about:
+
 - In what ways does that text differ stylistically from normal text?
 - Can I track down the name of those attributes in the CSS property list?
 - What property values does each rule appear to be taking?
+
+Write these rules in `ex-4.css` and then link to in the YAML of this file.
 
 ### II. A Custom Callout
 
