@@ -385,7 +385,7 @@
 
 <section id="title-slide" data-background-color="" data-background-image="../../../images/seaplane-bg.png" data-background-size="contain" class="center">
   <h1 class="title">Polishing Documents</h1>
-  <p class="subtitle">rstudio::conf(2022) <br> From R Markdown to Quarto</p>
+  <p class="subtitle">From R Markdown to Quarto <br> rstudio::conf 2022</p>
   <p class="author">Andrew Bray</p>
 </section>
 
@@ -1093,32 +1093,163 @@ more for math.</li>
 <p><code>Ctrl + space</code> to see all available options then tab-complete. Also works in VSCode.</p>
 
 <img data-src="images/yaml-intelligence.png" alt="Screenshot highlighting the three dots along the right side of the editor." class="r-stretch quarto-figure-center"></section></section>
-<section>
 <section id="fa-umbrella-beach-exercise-3" class="title-slide slide level1 center" data-background-color="#00403d">
 <h1><i class="fa-solid fa-umbrella-beach"></i> Exercise 3</h1>
 <p>Open <code>ex-3.qmd</code> and follow the directions to create a document that describes your favorite place to visit on vacation.</p>
 <p><br>
 </p>
 <p>When you’re done, please share a screenshot of your document in the GitHub Discussion thread “Exercise 3”.</p>
-<!-- # HTML Themes -->
-<!-- # Simple CSS -->
-<!-- ## Rule syntax -->
-<!-- ## Attributes -->
-<!-- ## Selectors -->
-<!-- ## Cascade -->
-<!-- ## Ex. Formatting text inline -->
-<!-- ## Ex. Making a box -->
-<!-- # Exercise 4 -->
-<!-- Make your own css -->
+</section>
+
+<section>
+<section id="addressing-appearance-with-themes" class="title-slide slide level1 center">
+<h1>Addressing Appearance with Themes</h1>
+
+</section>
+<section id="section-3" class="slide level2">
+<h2></h2>
+<div class="v-center-container">
+<p>I’ll show you three webpages briefly.<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;What do you think they’re for?<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Who do you think is their audience?</p>
+</div>
+</section>
+<section id="section-4" class="slide level2">
+<h2></h2>
+<iframe src="http://www.csszengarden.com/221/" width="1600px" height="900px">
+</iframe>
+</section>
+<section id="section-5" class="slide level2">
+<h2></h2>
+<iframe src="http://www.csszengarden.com/215/" width="1600px" height="900px">
+</iframe>
+</section>
+<section id="section-6" class="slide level2">
+<h2></h2>
+<iframe src="http://www.csszengarden.com/213/" width="1600px" height="900px">
+</iframe>
+</section>
+<section id="section-7" class="slide level2">
+<h2></h2>
+<div class="v-center-container">
+<p>I’ll show you three webpages briefly.<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;What do you think they’re for?<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Who do you think is their audience?</p>
+</div>
+</section>
+<section id="what-defines-a-document" class="slide level2">
+<h2>What Defines a Document?</h2>
+<p>A document consists of <em>content</em>, <em>structure</em>, <em>appearance</em>, <em>format</em>.</p>
+<div class="columns">
+<div class="column fragment fade-right" style="width:50%;">
+<p><img data-src="images/rubiks-patent.png"></p>
+</div><div class="column fragment" style="width:50%;">
+<p><br>
+</p>
+<ul>
+<li><strong>Content:</strong> text, code, graphics</li>
+<li><strong>Structure:</strong> paragraphs, lists, emphasis, etc.</li>
+<li><strong>Appearance:</strong> fonts, colors, layout</li>
+<li><strong>Format:</strong> functionality</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="the-power-of-css" class="slide level2">
+<h2>The Power of CSS</h2>
+<p><br>
+</p>
+<div class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 18.2%;justify-content: center;">
+<p><br>
+</p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 63.6%;justify-content: center;">
+<p><em>A demonstration of what can be accomplished through CSS-based design. Select any style sheet from the list to load it into this page.</em></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 18.2%;justify-content: center;">
+<p><br>
+<br>
+</p>
+</div>
+</div>
+</div>
+<p><img data-src="images/zen-1.png" style="width:30.0%"> <img data-src="images/zen-2.png" style="width:30.0%"> <img data-src="images/zen-3.png" style="width:30.0%"></p>
+</section>
+<section id="html-themes" class="slide level2">
+<h2>HTML Themes</h2>
+<p>A collection of CSS rules that define font, colors, and spacing is called a <em>theme</em>. Quarto has 25 pre-loaded themes from Bootswatch.</p>
+<p><img data-src="images/bootswatch.png">{fig-alt=“screenshot of a collection of bootswatch themes.}</p>
+<div class="footer">
+<p><a href="https://bootswatch.com/" class="uri">https://bootswatch.com/</a></p>
+</div>
+</section></section>
+<section id="fa-umbrella-beach-exercise-3-redux" class="title-slide slide level1 center" data-background-color="#00403d">
+<h1><i class="fa-solid fa-umbrella-beach"></i> Exercise 3 Redux</h1>
+<p>Add a Bootswatch theme to your <code>ex-3.qmd</code> by adding the following to your YAML.</p>
+<div class="sourceCode" id="cb21"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb21-1"><a href="#cb21-1"></a><span class="co">---</span></span>
+<span id="cb21-2"><a href="#cb21-2"></a><span class="an">format:</span></span>
+<span id="cb21-3"><a href="#cb21-3"></a><span class="co">  html:</span></span>
+<span id="cb21-4"><a href="#cb21-4"></a><span class="co">    theme: &lt;theme&gt;</span></span>
+<span id="cb21-5"><a href="#cb21-5"></a><span class="co">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>You can find the list of theme names at <a href="https://quarto.org/docs/output-formats/html-themes.html">Quarto Guide &gt;&gt; Documents &gt;&gt; HTML</a>.</p>
+<p><br>
+</p>
+<p>Try out several of the themes (or view them at <a href="https://bootswatch.com/" class="uri">https://bootswatch.com/</a>) then apply your favorite and share a screenshot of the styled document in the GitHub Discussion thread “Exercise 3”.</p>
+</section>
+
+<section>
+<section id="baby-steps-into-css" class="title-slide slide level1 center">
+<h1>Baby steps into CSS</h1>
+
+</section>
+<section id="rule-syntax" class="slide level2">
+<h2>Rule syntax</h2>
+</section>
+<section id="attributes" class="slide level2">
+<h2>Attributes</h2>
+</section>
+<section id="selectors" class="slide level2">
+<h2>Selectors</h2>
+</section>
+<section id="cascade" class="slide level2">
+<h2>Cascade</h2>
+</section>
+<section id="ex.-formatting-text-inline" class="slide level2">
+<h2>Ex. Formatting text inline</h2>
+</section>
+<section id="ex.-making-a-box" class="slide level2">
+<h2>Ex. Making a box</h2>
+</section>
+<section id="what-are-css" class="slide level2">
+<h2>What are CSS</h2>
+<p><span class="inline-el">Cascading Style Sheets</span> (CSS) are a formal system of <em>rules</em> by which particular styles will be applied to a webpage.</p>
+</section></section>
+<section>
+<section id="exercise-4" class="title-slide slide level1 center">
+<h1>Exercise 4</h1>
+<p>Make your own css</p>
 </section>
 <section id="references-and-further-reading" class="slide level2 smaller">
 <h2>References and further reading</h2>
 <ul>
+<li><a href="https://quarto.org/docs/authoring/figures.html">Quarto Guide for Authoring</a>: format-agnostic treatment of figures, layouts, callouts and many more Quarto elements.</li>
 <li><a href="https://info340.github.io/css.html">Client Side Web Developent Ch. 5-7</a>: approachable and concise introduction to how CSS work.</li>
 <li><a href="https://patents.google.com/patent/US5023850A/en">Clock for keeping time at a rate other than human time</a>: US patent by Rodney Metts and Barry Thomas</li>
-<li>https://patents.google.com/patent/US3811677A/en?q=stilts&amp;oq=stilts</li>
-<li>https://patents.google.com/patent/US6688257B2/en?q=pet+dog&amp;oq=pet+dog</li>
 </ul>
+<!-- -   https://patents.google.com/patent/US3811677A/en?q=stilts&oq=stilts -->
+<!-- -   https://patents.google.com/patent/US6688257B2/en?q=pet+dog&oq=pet+dog -->
 
 <div class="footer footer-default">
 

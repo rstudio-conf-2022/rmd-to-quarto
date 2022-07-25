@@ -4,7 +4,7 @@
     "href": "about.html",
     "title": "About the Workshop",
     "section": "",
-    "text": "Location: National Harbor 12/13\nGaylord National Convention Center\nTime: 9 am - 5 pm July 25th and July26\n\n\nTeaching Team\n\nAndrew Bray\nAndrew Bray is a statistician at UC Berkeley where he develops and teaches courses in statistics and data science. His gets excited about empowering students to use data to understand the world and enjoys being part of a community of people developing open source software and open source educational resources. Though primarily an R user, last year he taught a large data science class to 1100 students in Python, which had him sorely missing the R Markdown ecosystem. The experience made him particularly grateful for Quarto as a bridge to other communities of data scientists.\n\n\nRebecca Barter\nRebecca is a statistician, data scientist, educator, and communicator who has a dual passion for empowering others by teaching critical thinking and technical skills for data science, and for uncovering the hidden patterns and stories that live inside complex datasets (primarily related to healthcare and medicine). She is currently a postdoc at UC Berkeley and she sometimes writes about data science and R on her website at www.rebeccabarter.com.\n\n\nSilvia Canelón\nSilvia (she/her) is a researcher, community organizer, and R educator. Her research projects at the University of Pennsylvania leverage electronic health record data to study pregnancy-related outcomes, and her organizing values data literacy as a way to build power and effect change.\nShe enjoys finding ways to communicate technical knowledge with a variety of audiences and loves learning how modern tools in the R ecosystem can support reproducible, efficient, and accessible workflows.\nYou can find out what Silvia is up to lately at silviacanelon.com.\n\n\nChristophe Dervieu\nChristophe Dervieux is an active member of the R community, currently living in France. With a master’s degree in energy and economics, he started working with R as an analyst doing economic studies about market designs, before becoming a developer advocate and R admin, promoting R and supporting R users where he works.\nHe is interested in helping others get the most from R, and you can find him wandering in the RStudio Community as a sustainer, or on several GitHub issue boards for various R packages. In both places, you may better recognize him by his shorter handle “cderv.”\nAs an R developer, he is a contributor to several R packages, such as bookdown, rmarkdown, and knitr. He has also co-authored the crrri package. His own projects can be found on GitHub (https://github.com/cderv), and sometimes he shares his ideas on Twitter (https://twitter.com/chrisderv).\nHe does not like spicy food, but he enjoys playing badminton every week.\n\n\nDevin Pastoor\nBio coming soon.\n\n\nTatsu Shigeta\nTatsu works on the Customer Success team at RStudio, and specializes in managing consulting and high tech clients. He is also PhD student at Northeastern University - studying how exercise affects the brain - that has all but defended (coming up in two weeks!). He has used RStudio for his own research purposes for a better part of decade, and looks forward to talking data science with everyone at his first rstudio::conf."
+    "text": "Location: National Harbor 12/13\nGaylord National Convention Center\nTime: 9 am - 5 pm July 25th and July26\n\n\nTeaching Team\n\nAndrew Bray\nAndrew Bray is a statistician at UC Berkeley where he develops and teaches courses in statistics and data science. His gets excited about empowering students to use data to understand the world and enjoys being part of a community of people developing open source software and open source educational resources. Though primarily an R user, last year he taught a large data science class to 1100 students in Python, which had him sorely missing the R Markdown ecosystem. The experience made him particularly grateful for Quarto as a bridge to other communities of data scientists.\n\n\nRebecca Barter\nRebecca is a statistician, data scientist, educator, and communicator who has a dual passion for empowering others by teaching critical thinking and technical skills for data science, and for uncovering the hidden patterns and stories that live inside complex datasets (primarily related to healthcare and medicine). She is currently a postdoc at UC Berkeley and she sometimes writes about data science and R on her website at www.rebeccabarter.com.\n\n\nSilvia Canelón\nSilvia (she/her) is a researcher, community organizer, and R educator. Her research projects at the University of Pennsylvania leverage electronic health record data to study pregnancy-related outcomes, and her organizing values data literacy as a way to build power and effect change.\nShe enjoys finding ways to communicate technical knowledge with a variety of audiences and loves learning how modern tools in the R ecosystem can support reproducible, efficient, and accessible workflows.\nYou can find out what Silvia is up to lately at silviacanelon.com.\n\n\nChristophe Dervieu\nChristophe Dervieux is an active member of the R community, currently living in France. With a master’s degree in energy and economics, he started working with R as an analyst doing economic studies about market designs, before becoming a developer advocate and R admin, promoting R and supporting R users where he works.\nHe is interested in helping others get the most from R, and you can find him wandering in the RStudio Community as a sustainer, or on several GitHub issue boards for various R packages. In both places, you may better recognize him by his shorter handle “cderv.”\nAs an R developer, he is a contributor to several R packages, such as bookdown, rmarkdown, and knitr. He has also co-authored the crrri package. His own projects can be found on GitHub (https://github.com/cderv), and sometimes he shares his ideas on Twitter (https://twitter.com/chrisderv).\nHe does not like spicy food, but he enjoys playing badminton every week.\n\n\nDevin Pastoor\nBio coming soon.\n\n\nTatsu Shigeta\nTatsu works on the Customer Success team at RStudio, and specializes in managing consulting and high tech clients. He is also PhD student at Northeastern University - studying how exercise affects the brain - that has all but defended (coming up in two weeks!). He has used RStudio for his own research purposes for a better part of decade, and looks forward to talking data science with everyone at his first rstudio::conf.\n\n\n\nAbout these materials\nThis source code and license for all of the materials found on this website can be found on Github ."
   },
   {
     "objectID": "index.html",
@@ -32,7 +32,7 @@
     "href": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#introductions",
     "title": "Welcome to Quarto",
     "section": "Introductions",
-    "text": "Introductions\nLet’s take ~2 minutes to introduce yourself to your neighbors.\n\n\n\nPlease share …\n\nYour name\nWhere you’re from\nWhat you work on in 3 words or fewer\nName one thing you’ve made that you’re proud of"
+    "text": "Introductions\nTake ~2 minutes to introduce yourself to your neighbors.\n\n\n\nPlease share …\n\nYour name\nWhere you’re from\nWhat you work on in 3 words or fewer\nName one thing you’ve made that you’re proud of"
   },
   {
     "objectID": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#section",
@@ -74,7 +74,7 @@
     "href": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#stickies",
     "title": "Welcome to Quarto",
     "section": "Stickies",
-    "text": "Stickies\n\n\n\n\n\n\nDuring an exercise, place a green sticky on your laptop if you’re good to go and a red sticky if you want help.\n\n\n\n\nImage by Megan Duffy"
+    "text": "Stickies\n\n\n\n\n\n\nDuring an exercise, place a yellow sticky on your laptop if you’re good to go and a blue sticky if you want help.\n\n\n\n\nImage by Megan Duffy"
   },
   {
     "objectID": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#polls",
@@ -595,11 +595,95 @@
     "text": "YAML Intelligence\nCtrl + space to see all available options then tab-complete. Also works in VSCode."
   },
   {
+    "objectID": "materials/2-polishing-documents/slides/polishing-documents.html#section-3",
+    "href": "materials/2-polishing-documents/slides/polishing-documents.html#section-3",
+    "title": "Polishing Documents",
+    "section": "",
+    "text": "I’ll show you three webpages briefly.\n\n\n\n\n\n                    What do you think they’re for?\n                    Who do you think is their audience?"
+  },
+  {
+    "objectID": "materials/2-polishing-documents/slides/polishing-documents.html#section-7",
+    "href": "materials/2-polishing-documents/slides/polishing-documents.html#section-7",
+    "title": "Polishing Documents",
+    "section": "",
+    "text": "I’ll show you three webpages briefly.\n\n\n\n\n\n                    What do you think they’re for?\n                    Who do you think is their audience?"
+  },
+  {
+    "objectID": "materials/2-polishing-documents/slides/polishing-documents.html#what-defines-a-document",
+    "href": "materials/2-polishing-documents/slides/polishing-documents.html#what-defines-a-document",
+    "title": "Polishing Documents",
+    "section": "What Defines a Document?",
+    "text": "What Defines a Document?\nA document consists of content, structure, appearance, format.\n\n\n\n\n\n\n\nContent: text, code, graphics\nStructure: paragraphs, lists, emphasis, etc.\nAppearance: fonts, colors, layout\nFormat: functionality"
+  },
+  {
+    "objectID": "materials/2-polishing-documents/slides/polishing-documents.html#the-power-of-css",
+    "href": "materials/2-polishing-documents/slides/polishing-documents.html#the-power-of-css",
+    "title": "Polishing Documents",
+    "section": "The Power of CSS",
+    "text": "The Power of CSS\n\n\n\n\n\n\n\n\n\nA demonstration of what can be accomplished through CSS-based design. Select any style sheet from the list to load it into this page."
+  },
+  {
+    "objectID": "materials/2-polishing-documents/slides/polishing-documents.html#html-themes",
+    "href": "materials/2-polishing-documents/slides/polishing-documents.html#html-themes",
+    "title": "Polishing Documents",
+    "section": "HTML Themes",
+    "text": "HTML Themes\nA collection of CSS rules that define font, colors, and spacing is called a theme. Quarto has 25 pre-loaded themes from Bootswatch.\n{fig-alt=“screenshot of a collection of bootswatch themes.}\n\nhttps://bootswatch.com/"
+  },
+  {
+    "objectID": "materials/2-polishing-documents/slides/polishing-documents.html#rule-syntax",
+    "href": "materials/2-polishing-documents/slides/polishing-documents.html#rule-syntax",
+    "title": "Polishing Documents",
+    "section": "Rule syntax",
+    "text": "Rule syntax"
+  },
+  {
+    "objectID": "materials/2-polishing-documents/slides/polishing-documents.html#attributes",
+    "href": "materials/2-polishing-documents/slides/polishing-documents.html#attributes",
+    "title": "Polishing Documents",
+    "section": "Attributes",
+    "text": "Attributes"
+  },
+  {
+    "objectID": "materials/2-polishing-documents/slides/polishing-documents.html#selectors",
+    "href": "materials/2-polishing-documents/slides/polishing-documents.html#selectors",
+    "title": "Polishing Documents",
+    "section": "Selectors",
+    "text": "Selectors"
+  },
+  {
+    "objectID": "materials/2-polishing-documents/slides/polishing-documents.html#cascade",
+    "href": "materials/2-polishing-documents/slides/polishing-documents.html#cascade",
+    "title": "Polishing Documents",
+    "section": "Cascade",
+    "text": "Cascade"
+  },
+  {
+    "objectID": "materials/2-polishing-documents/slides/polishing-documents.html#ex.-formatting-text-inline",
+    "href": "materials/2-polishing-documents/slides/polishing-documents.html#ex.-formatting-text-inline",
+    "title": "Polishing Documents",
+    "section": "Ex. Formatting text inline",
+    "text": "Ex. Formatting text inline"
+  },
+  {
+    "objectID": "materials/2-polishing-documents/slides/polishing-documents.html#ex.-making-a-box",
+    "href": "materials/2-polishing-documents/slides/polishing-documents.html#ex.-making-a-box",
+    "title": "Polishing Documents",
+    "section": "Ex. Making a box",
+    "text": "Ex. Making a box"
+  },
+  {
+    "objectID": "materials/2-polishing-documents/slides/polishing-documents.html#what-are-css",
+    "href": "materials/2-polishing-documents/slides/polishing-documents.html#what-are-css",
+    "title": "Polishing Documents",
+    "section": "What are CSS",
+    "text": "What are CSS\nCascading Style Sheets (CSS) are a formal system of rules by which particular styles will be applied to a webpage."
+  },
+  {
     "objectID": "materials/2-polishing-documents/slides/polishing-documents.html#references-and-further-reading",
     "href": "materials/2-polishing-documents/slides/polishing-documents.html#references-and-further-reading",
     "title": "Polishing Documents",
     "section": "References and further reading",
-    "text": "References and further reading\n\nClient Side Web Developent Ch. 5-7: approachable and concise introduction to how CSS work.\nClock for keeping time at a rate other than human time: US patent by Rodney Metts and Barry Thomas\nhttps://patents.google.com/patent/US3811677A/en?q=stilts&oq=stilts\nhttps://patents.google.com/patent/US6688257B2/en?q=pet+dog&oq=pet+dog"
+    "text": "References and further reading\n\nQuarto Guide for Authoring: format-agnostic treatment of figures, layouts, callouts and many more Quarto elements.\nClient Side Web Developent Ch. 5-7: approachable and concise introduction to how CSS work.\nClock for keeping time at a rate other than human time: US patent by Rodney Metts and Barry Thomas"
   },
   {
     "objectID": "materials/3-computation/index.html",
