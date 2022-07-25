@@ -75,13 +75,6 @@ details>summary {
   background: #EBF7FF;
 }
 
-
-/*
-.reveal .slide b, strong {
-  color: #D3533A;
-}
-*/
-
 .bigadage {
   font-size: 250%;
   font-family: Amatic SC;
@@ -139,90 +132,14 @@ div.meta-el {
   height: 90%;
 }
 
-
-/*
-
-pre {
-  padding: 0 0.8em;
-  margin: 19px 0;
-  border-width: 5px;
-  font-size: 1em;
+.slide-background.center.present {
+  background-color: #f8f5f0;
 }
-
-pre.r {
-    border-color: #264DE4;
-    position: relative;
-}
-
-pre.r, pre.js, pre.md, pre.markdown, pre.yaml, pre.json, pre.bash, pre.html, pre.css {
-    background: none;
-}
-
-pre {
-    font-family: var(--font-monospace);
-    padding: 0.8em;
-    position: relative;
-    font-size: 1rem;
-    line-height: 1.2em;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-    border-left: 3px solid var(--text-lighter);
-}
-
-pre.r::after {
-    content: 'r';
-    color: #264de4;
-}
-
-pre::after {
-    position: absolute;
-    bottom: 5px;
-    right: 5px;
-    opacity: 0.5;
-}
-
-pre.r::after,
-pre.js::after,
-pre.yaml::after,
-pre.json::after,
-pre.bash::after,
-pre.html::after,
-pre.css::after {
-  text-transform: uppercase;
-  font-family: var(--font-header);
-  left: -1.25em;
-  bottom: -1em;
-  transform-origin: top left;
-  transform: rotate(-90deg);
-}
-
-pre.pre-hide-filetype,
-.pre-hide-filetype pre::after {
-  content: '';
-}
-
-pre.pre-hide-border,
-.pre-hide-border pre {
-  border-color: transparent;
-}
-
-p::after {
-  content: " - Remember this";
-}
-
-#cb1::after {
-  text-transform: uppercase;
-  font-family: var(--font-header);
-  left: -1.25em;
-  bottom: -1em;
-  transform-origin: top left;
-  transform: rotate(-90deg);
-}
-*/
 
 #title-slide {
   text-align: left;
   font-family: 'Nanum Myeongjo', serif;
+  margin: 5em 0em 0em 0em; // or margin-top: 1em;
 }
 
 #title-slide h1 {
