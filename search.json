@@ -872,7 +872,7 @@
     "href": "materials/index.html",
     "title": "Materials",
     "section": "",
-    "text": "Each session of the workshop features exercises that will learn Quarto by doing. To prepare, please install the following on your machine:\n\nIf you haven’t already, please sign-up for a free GitHub account.\nInstall latest version of RStudio, v2022.07.0-548 or later\nInstall latest version of Quarto (v1.0.36 or greater)\nAfter installing Quarto, open the terminal in RStudio and:\n\nSee this guide for details on using the terminal\nInstall/Update TinyTeX for PDFs with quarto install tool tinytex\nInstall/Update Chromium with quarto install tool chromium\n\nIdeally upgrade/use to R 4.1 or R 4.2\nInstall these R packages:\n\npkg_list <- c(\"tidyverse\", \"quarto\", \"rmarkdown\", \"palmerpenguins\")\ninstall.packages(pkg_list)"
+    "text": "Each session of the workshop features exercises that will help you learn Quarto by doing. To prepare, please install the following on your machine:\n\nIf you haven’t already, please sign-up for a free GitHub account.\nInstall latest version of RStudio, v2022.07.0-548 or later\nInstall latest version of Quarto (v1.0.36 or greater)\nAfter installing Quarto, open the terminal in RStudio and:\n\nSee this guide for details on using the terminal\nInstall/Update TinyTeX for PDFs with quarto install tool tinytex\nInstall/Update Chromium with quarto install tool chromium\n\nIdeally upgrade/use to R 4.1 or R 4.2\nInstall these R packages:\n\npkg_list <- c(\"tidyverse\", \"quarto\", \"rmarkdown\", \"palmerpenguins\")\ninstall.packages(pkg_list)"
   },
   {
     "objectID": "old-index.html",
