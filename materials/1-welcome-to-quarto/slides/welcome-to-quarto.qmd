@@ -22,6 +22,21 @@ format:
       data-background-color: #f8f5f0
 ---
 
+## From R Markdown to Quarto {style="text-align: center"}
+
+\
+
+### Welcome! {style="color: orange"}
+
+As you arrive, if you haven't already, please get your machine configured using the steps found on the workshop website. Please assist your neighbors if they're running into issues.
+
+\
+
+<https://rstudio-conf-2022.github.io/rmd-to-quarto/materials/>{style="text-align: center"}
+
+\
+
+Also, please be ready with **Discord** for discussions (you should have an invite in your email from the conference).
 
 ## Introductions
 
