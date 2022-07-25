@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.0.20">
+<meta name="generator" content="quarto-1.0.36">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -33,6 +33,7 @@ ul.task-list{list-style: none;}
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -96,23 +97,26 @@ ul.task-list{list-style: none;}
 
 
 
-<div class="hero-banner">
-<section id="from-r-markdown-to-quarto" class="content-block">
-<h1>From R Markdown to Quarto</h1>
-<h3 id="a-workshop-at-rstudioconf-2022">A workshop at rstudio::conf 2022</h3>
-<p>This workshop is designed for those who want to take their R Markdown skills and expertise and apply them in Quarto, the next generation of R Markdown. Quarto is an open-source scientific and technical publishing system that offers multilingual programming language support to create dynamic and static documents, books, presentations, blogs, and other online resources. In this workshop you will learn how to apply your reproducible authoring skills to the Quarto format and learn about new tools and workflows for authoring with Quarto in RStudio.</p>
-</section>
-<!-- ::: {.grid} -->
-<!-- ::: {.g-col-8} -->
+<!-- :::layout-ncol=2 -->
+<!-- :::{#banner-text} -->
 <!-- # From R Markdown to Quarto -->
-<!-- ### Quarto^[®]{.trademark}^ is an open-source scientific and technical publishing system built on Pandoc -->
+<!-- ### A workshop at rstudio::conf 2022 -->
 <!-- This workshop is designed for those who want to take their R Markdown skills and expertise and apply them in Quarto, the next generation of R Markdown. Quarto is an open-source scientific and technical publishing system that offers multilingual programming language support to create dynamic and static documents, books, presentations, blogs, and other online resources. In this workshop you will learn how to apply your reproducible authoring skills to the Quarto format and learn about new tools and workflows for authoring with Quarto in RStudio. -->
 <!-- ::: -->
-<!-- ::: {.g-col-4} -->
-<!-- ![](images/seaplane.png){fig-alt="Seaplane."} -->
+<!-- ::: {banner-image} -->
+<!-- ![](images/seaplane.png){width=200} -->
 <!-- ::: -->
 <!-- ::: -->
+<div class="grid">
+<section id="from-r-markdown-to-quarto" class="g-col-6">
+<h1>From R Markdown to Quarto</h1>
+<h4 id="a-workshop-at-rstudioconf-2022">A Workshop at <br> rstudio::conf 2022</h4>
+</section>
+<div class="g-col-6">
+<p><img src="images/seaplane.png" class="img-fluid" alt="Seaplane."></p>
 </div>
+</div>
+<p>This workshop is designed for those who want to take their R Markdown skills and expertise and apply them in Quarto, the next generation of R Markdown. Quarto is an open-source scientific and technical publishing system that offers multilingual programming language support to create dynamic and static documents, books, presentations, blogs, and other online resources. In this workshop you will learn how to apply your reproducible authoring skills to the Quarto format and learn about new tools and workflows for authoring with Quarto in RStudio.</p>
 <div class="content-block">
 <div class="features">
 <section id="day-one" class="feature">
@@ -122,7 +126,7 @@ ul.task-list{list-style: none;}
 <li>10:30-11 am Coffee Break</li>
 <li>11-12:30 pm <a href="materials/2-polishing-documents">Polishing Documents</a></li>
 <li>12:30-1:30 pm Lunch</li>
-<li>1:30-3 pm <a href="materials/3-computations">Computations</a></li>
+<li>1:30-3 pm <a href="materials/3-computation">Computation</a></li>
 <li>3-3:30 pm Coffee Break</li>
 <li>3:30-5 pm <a href="materials/4-projects-and-publishing">Projects and Publishing</a></li>
 </ul>
@@ -136,7 +140,7 @@ ul.task-list{list-style: none;}
 <li>12:30-1:30 pm Lunch</li>
 <li>1:30-3 pm <a href="materials/7-workshop">Workshop</a></li>
 <li>3-3:30 pm Coffee Break</li>
-<li>3:30-5 pm <a href="materials/8-extending-quarto">Extending Quarto</a></li>
+<li>3:30-5 pm <a href="materials/8-future-of-quarto">The Future of Quarto</a></li>
 </ul>
 </section>
 </div>
@@ -159,7 +163,10 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   const toggleBodyColorPrimary = () => {
-    toggleBodyColorMode(window.document.querySelector("link#quarto-bootstrap"));
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
   }
   toggleBodyColorPrimary();  
   const clipboard = new window.ClipboardJS('.code-copy-button', {
@@ -235,7 +242,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left">This page is built with ❤️ and <a href="https://quarto.org/">Quarto</a>.</div>   
+    <div class="nav-footer-left">This page is built with <i class="fa-solid fa-heart"></i> and <a href="https://quarto.org/">Quarto</a>.</div>   
     <div class="nav-footer-right">© Copyright 2022, Andrew Bray</div>
   </div>
 </footer>

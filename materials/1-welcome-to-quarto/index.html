@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.0.20">
+<meta name="generator" content="quarto-1.0.36">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -36,6 +36,7 @@ ul.task-list{list-style: none;}
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -59,7 +60,7 @@ ul.task-list{list-style: none;}
 
 </head>
 
-<body class="nav-sidebar docked nav-fixed">
+<body class="nav-sidebar floating nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -99,7 +100,7 @@ ul.task-list{list-style: none;}
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation docked overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
@@ -144,16 +145,14 @@ ul.task-list{list-style: none;}
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../materials/8-extending-quarto/index.html" class="sidebar-item-text sidebar-link">8. Extending Quarto</a>
+  <a href="../../materials/8-future-of-quarto/index.html" class="sidebar-item-text sidebar-link">8. The Future of Quarto</a>
   </div>
 </li>
     </ul>
     </div>
 </nav>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    </div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -186,48 +185,42 @@ Warning
 <p>Under construction.</p>
 </div>
 </div>
-<!-- > Meet your fellow students, familiarize yourself with the format of the workshop, rendering a document into multiple formats, and manipulate the block and inline elements that make up any document. -->
-<!-- ### Introductions -->
-<!-- ### Workshop Structure -->
-<!-- ### Quarto Overview -->
-<!-- - Blocks and inlines -->
-<!-- ### Exercise 1 -->
-<!-- The exercises focuses on using `quarto` at the command line. Within RStudio, this can be done in the Terminal tab in the Console pane. -->
-<!-- 1. Render `ex1.qmd` as an html file. How is the list expressed in html? -->
-<!-- 2. Render `ex1.qmd` as a latex file. How is the list expressed in latex? -->
-<!-- 3. Render `ex1.qmd` as a pdf file but specify that you want to output to a file named `handout.pdf`. (see the helpfile `quarto render --help`) -->
-<!-- 4. What defaults does Quarto use if you simply run `quarto render ex1.qmd`? -->
-<!-- ### Markdown -->
-<!-- - Survey (easy to hard) -->
-<!-- - Inlines -->
-<!--   - italics -->
-<!--   - bold -->
-<!--   - super/sub script -->
-<!--   - strikethrough -->
-<!--   - verbatim -->
-<!--   - links -->
-<!--   - images -->
-<!--   - inline math -->
-<!--   - spans -->
-<!-- - Blocks -->
-<!--   - paragraph -->
-<!--   - lists -->
-
-<!--   - tables -->
-<!--   - source code -->
-<!--   - display math -->
-<!--   - diagrams -->
-<!--   - fenced divs -->
-<!--   - callouts -->
-<!--   - blockquotes -->
-<!--   - lineblock -->
-<!-- ### Simple Figures -->
-
-<!-- ### Tables -->
-<!-- ### Code Blocks -->
-<!-- ### Exercise 2 -->
-<!-- 1. Open `ex2-goal.html` in a browser window. -->
-<!-- 2. Modify `ex2.qmd`, using `img1` and `img2` to recreate `ex2-goal.html`. -->
+<!-- > Meet your fellow students, familiarize yourself with the format of the workshop, practing rendering documents with Quarto, and manipulate the markdown block and inline elements that structure all documents. -->
+<!-- ### Outline -->
+<!-- 1. About the Workshop -->
+<!-- 2. What can you do with Quarto? -->
+<!-- 3. Quarto and R Markdown -->
+<!-- 4. Rendering in Quarto -->
+<!-- 5. The Structure of a Document -->
+<!-- 6. The Elements of Markdown -->
+<!-- ### Exercises -->
+<!-- 0. Let's kick the tires on Quarto! -->
+<!--    1. Open up a new Quarto document using an HTML format -->
+<!--    2. Click the Render button. -->
+<!--    3. Look carefully through the source. What do you notice that's different from what it would look like in an Rmd document? Discuss with your neighbor then post your answers to the discussion forum. -->
+<!-- 1. Let's focus on using `quarto` at the command line. Within RStudio, this can be done in the Terminal tab in the Console pane. -->
+<!--    1.  Render `ex-1.qmd` to `html` and view the html file in an editor. How is the list expressed in html? -->
+<!--    2.  Render `ex-1.qmd` to `latex` and view the latex file in an editor. How is the list expressed in latex? -->
+<!--    3.  Render `ex-1.qmd` to `pdf` but specify that you want to output to a file named `handout.pdf`. (see the helpfile for `render` by typing `quarto render --help`) -->
+<!--    4.  Try changing the extension of `ex-1.qmd` to be `.md` and `.Rmd` and re-rendering. Does the output differ? -->
+<!--    5.  Explore full list of commands available in Quarto by using `quarto --help`. -->
+<!-- 2. Inside `ex-2.qmd` you'll find all of the *content* needed to create the output files `ex-2-goal.html` and `ex-2-goal.pdf`. Add into `ex-2.qmd` the markdown syntax needed to create the various inline and block elements found in the output documents. -->
+<!--    ::: {layout-ncol="4"} -->
+<!--    \ -->
+<!--    #### Inline -->
+<!--    - text formatting -->
+<!--    - math -->
+<!--    - links and images -->
+<!--    - footnotes -->
+<!--    #### Block -->
+<!--    - paragraphs -->
+<!--    - headers -->
+<!--    -lists -->
+<!--    - math -->
+<!--    - images -->
+<!--    \ -->
+<!--    ::: -->
+<!--    For reference, see: <https://pandoc.org/MANUAL.html#pandocs-markdown> -->
 
 
 
@@ -246,7 +239,10 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   const toggleBodyColorPrimary = () => {
-    toggleBodyColorMode(window.document.querySelector("link#quarto-bootstrap"));
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
   }
   toggleBodyColorPrimary();  
   const icon = "";
@@ -341,7 +337,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left">This page is built with ❤️ and <a href="https://quarto.org/">Quarto</a>.</div>   
+    <div class="nav-footer-left">This page is built with <i class="fa-solid fa-heart"></i> and <a href="https://quarto.org/">Quarto</a>.</div>   
     <div class="nav-footer-right">© Copyright 2022, Andrew Bray</div>
   </div>
 </footer>

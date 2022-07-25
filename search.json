@@ -4,14 +4,14 @@
     "href": "about.html",
     "title": "About the Workshop",
     "section": "",
-    "text": "This workshop is designed for those who want to take their R Markdown skills and expertise and apply them in Quarto, the next generation of R Markdown. Quarto is an open-source scientific and technical publishing system that offers multilingual programming language support to create dynamic and static documents, books, presentations, blogs, and other online resources. In this workshop you will learn how to apply your reproducible authoring skills to the Quarto format and learn about new tools and workflows for authoring with Quarto in RStudio."
+    "text": "Location: National Harbor 12/13\nGaylord National Convention Center\nTime: 9 am - 5 pm July 25th and July26\n\n\nTeaching Team\n\nAndrew Bray\nAndrew Bray is a statistician at UC Berkeley where he develops and teaches courses in statistics and data science. His gets excited about empowering students to use data to understand the world and enjoys being part of a community of people developing open source software and open source educational resources. Though primarily an R user, last year he taught a large data science class to 1100 students in Python, which had him sorely missing the R Markdown ecosystem. This makes him particularly grateful for Quarto as a bridge to other communities of data scientists.\n\n\nRebecca Barter\nRebecca is a statistician, data scientist, educator, and communicator who has a dual passion for empowering others by teaching critical thinking and technical skills for data science, and for uncovering the hidden patterns and stories that live inside complex datasets (primarily related to healthcare and medicine). She is currently a postdoc at UC Berkeley and she sometimes writes about data science and R on her website at www.rebeccabarter.com.\n\n\nSilvia Canelón\nSilvia (she/her) is a researcher, community organizer, and R educator. Her research projects at the University of Pennsylvania leverage electronic health record data to study pregnancy-related outcomes, and her organizing values data literacy as a way to build power and effect change.\nShe enjoys finding ways to communicate technical knowledge with a variety of audiences and loves learning how modern tools in the R ecosystem can support reproducible, efficient, and accessible workflows.\nYou can find out what Silvia is up to lately at silviacanelon.com.\n\n\nChristophe Dervieu\nBio coming soon.\n\n\nTatsu\nBio coming soon.\n\n\nTatsu Shigeta\nBio coming soon."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "From R Markdown to Quarto",
     "section": "",
-    "text": "Day One\n\n9-10:30 am Welcome to Quarto\n10:30-11 am Coffee Break\n11-12:30 pm Polishing Documents\n12:30-1:30 pm Lunch\n1:30-3 pm Computations\n3-3:30 pm Coffee Break\n3:30-5 pm Projects and Publishing\n\n\n\nDay Two\n\n9-10:30 am Presentations\n10:30-11 am Coffee Break\n11-12:30 pm Websites and Books\n12:30-1:30 pm Lunch\n1:30-3 pm Workshop\n3-3:30 pm Coffee Break\n3:30-5 pm Extending Quarto"
+    "text": "This workshop is designed for those who want to take their R Markdown skills and expertise and apply them in Quarto, the next generation of R Markdown. Quarto is an open-source scientific and technical publishing system that offers multilingual programming language support to create dynamic and static documents, books, presentations, blogs, and other online resources. In this workshop you will learn how to apply your reproducible authoring skills to the Quarto format and learn about new tools and workflows for authoring with Quarto in RStudio.\n\n\n\nDay One\n\n9-10:30 am Welcome to Quarto\n10:30-11 am Coffee Break\n11-12:30 pm Polishing Documents\n12:30-1:30 pm Lunch\n1:30-3 pm Computation\n3-3:30 pm Coffee Break\n3:30-5 pm Projects and Publishing\n\n\n\nDay Two\n\n9-10:30 am Presentations\n10:30-11 am Coffee Break\n11-12:30 pm Websites and Books\n12:30-1:30 pm Lunch\n1:30-3 pm Workshop\n3-3:30 pm Coffee Break\n3:30-5 pm The Future of Quarto"
   },
   {
     "objectID": "materials/1-welcome-to-quarto/index.html",
@@ -21,59 +21,864 @@
     "text": "Warning\n\n\n\nUnder construction."
   },
   {
+    "objectID": "materials/1-welcome-to-quarto/slides/images/ex-2.html",
+    "href": "materials/1-welcome-to-quarto/slides/images/ex-2.html",
+    "title": "From R Markdown to Quarto",
+    "section": "",
+    "text": "Spatial Logical Toy Inventor: Erno Rubik Assignee: Politoys Ipari Szovetkezet, Budapest, Hungary The first patent by the inventor is registered in Hungary. Appl. No.: 289,192 Filed: Aug. 3, 1981 Background of the Invention The invention relates to a spatial logical toy having a total of eighteen toy elements which form a regular or an irregular spatial body, preferably an oblong body, in the assembled state. Spatial logical toys are well known, such as that described in the HU-PS No. 170 062 of the same applicant, which relates to a spatial logical toy consisting of twenty-seven solids which form a cube in the assembled state. The toy elements, in the shape of small cubes, may be turned along the spatial axes of the cube by means of connecting elements arranged in the geometric center of the large cube. The surfaces of the small cubes forming each surface of the large cube are colored or carry numbers, figures or any other symbols which can be assembled into the predetermined logical order of sequence by simultaneously rotating the nine toy elements forming the surfaces of the large cube. Summary of the Invention The logical toy according to the present invention represents an improved form of the previously described spatial logical toy. The construction is based on the same principles, however, the internal connection is performed by means of absolutely new and particular solids. The key feature according to the invention, i.e. shape, name, sounds, mode of interconnection and central fixture will be described in detail by means of two preferred embodiments, by the aid of the accompanying drawings, wherein. Component blocks of the spatial logial toy. ex-2-figs.png What is claimed is: 1. In a spatial logical toy assembled from a plurality of toy elements, of which a predetermined number may be rotated in the direction of the spatial axes starting from the geometrical center of the logical toy, the improvement wherein the spatial logical toy is formed by a total of eighteen toy elements. Two sets of eight toy elements each comprise substantially cubiforms with integally formed cam elements and each of the sets comprise eight identical toy elements, and two connecting toy elements, and means for joining the connecting toy elements to coact with the cam elements to form an integrated toy body, the joining means comprising a single screw enclosed by a spring. The spatial logical toy as claimed in claim 1, wherein the toy has the shape of a regular geometrical body in the assembled state. The toy elements thereof belonging to one set comprise eight cubiform homologous elements each having a first cam element connected to one corner thereof. Two confining surfaces of which lie at a unit distance from two surfaces of the cube and are parallel therewith and are cut-off in the form of an ellipsis-quarter, and a third confining surface thereof is coplanar with another surface of the cube and between the two confining faces of the first cam element running parallel with the cube and the cube there is a hollow with a convex spherical surface."
+  },
+  {
+    "objectID": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#introductions",
+    "href": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#introductions",
+    "title": "Welcome to Quarto",
+    "section": "Introductions",
+    "text": "Introductions\nLet’s take ~2 minutes to introduce yourself to your neighbors.\n\n\n\nPlease share …\n\nYour name\nWhere you’re from\nWhat you work on in 3 words or fewer\nName one thing you’ve made that you’re proud of"
+  },
+  {
+    "objectID": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#section",
+    "href": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#section",
+    "title": "Welcome to Quarto",
+    "section": "",
+    "text": "Workshop schedule, slides, and exercises are at:\nrstd.io/rmd-to-quarto"
+  },
+  {
+    "objectID": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#section-1",
+    "href": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#section-1",
+    "title": "Welcome to Quarto",
+    "section": "",
+    "text": "Goals for the Workshop\n\n\nEveryone leaves with a document, slides, and a website.\nLearn from one another.\nBuild an understanding of the big picture."
+  },
+  {
+    "objectID": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#from-magic-to-magical-machines",
+    "href": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#from-magic-to-magical-machines",
+    "title": "Welcome to Quarto",
+    "section": "From Magic to Magical Machines",
+    "text": "From Magic to Magical Machines\n\n\n\nArtwork by Allison Horst"
+  },
+  {
+    "objectID": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#workshop-schedule",
+    "href": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#workshop-schedule",
+    "title": "Welcome to Quarto",
+    "section": "Workshop Schedule",
+    "text": "Workshop Schedule\n\n\n\nDay One\n\n9-10:30 am Welcome to Quarto\n10:30-11 am coffee break\n11-12:30 pm Polishing Documents\n12:30-1:30 pm lunch\n1:30-3 pm Computations\n3-3:30 pm coffee break\n3:30-5 pm Projects and Publishing\n\n\n\nDay Two\n\n9-10:30 am Presentations\n10:30-11 am coffee break\n11-12:30 pm Websites and Books\n12:30-1:30 pm lunch\n1:30-3 pm Project Workshop\n3-3:30 pm coffee break\n3:30-5 pm The Future of Quarto"
+  },
+  {
+    "objectID": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#discussions",
+    "href": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#discussions",
+    "title": "Welcome to Quarto",
+    "section": "Discussions",
+    "text": "Discussions\nAsk a question by opening a new discussion post:\nhttps://github.com/rstudio-conf-2022/rmd-to-quarto/discussions"
+  },
+  {
+    "objectID": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#stickies",
+    "href": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#stickies",
+    "title": "Welcome to Quarto",
+    "section": "Stickies",
+    "text": "Stickies\n\n\n\n\n\n\nDuring an exercise, place a green sticky on your laptop if you’re good to go and a red sticky if you want help.\n\n\n\n\nImage by Megan Duffy"
+  },
+  {
+    "objectID": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#polls",
+    "href": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#polls",
+    "title": "Welcome to Quarto",
+    "section": "Polls",
+    "text": "Polls\nDuring polls, you can vote in a browser tab either on your laptop or your phone at\n\npollev.com/rmdtoquarto"
+  },
+  {
+    "objectID": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#practicalities",
+    "href": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#practicalities",
+    "title": "Welcome to Quarto",
+    "section": "Practicalities",
+    "text": "Practicalities\n\n\n\n\nWiFi:\n\nUsername: conf22\nPassword: together!\n\nThere are gender neutral bathrooms by the National Harbor rooms.\nThe meditation room is located at National Harbor 9. Open 8am - 5pm, Monday - Thursday. The hotel also has a dedicated room behind the reception.\nThe lactation room is located at Potomac Dressing Room. Open 8am - 5pm, Monday - Thursday.\nParticipants who do not wish to be photographed have red lanyards, please note everyone’s lanyard colors before taking a photo and respect their choices.\n\n\n\nCode of Conduct\nPlease carefully review the Code of Conduct and COVID policies1 can be found at . Please review them carefully. RStudio requires that you wear a mask that fully covers your mouth and nose at all times in all public spaces. We strongly recommend that you use a correctly fitted N95, KN95, or similar particulate filtering mask; we will have a limited supply available upon request. You can report Code of Conduct violations in person, by email, or by phone. Please see the policy linked above for contact information.\n\n\n\nhttps://www.rstudio.com/conference/2022/2022-conf-code-of-conduct/"
+  },
+  {
+    "objectID": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#articles",
+    "href": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#articles",
+    "title": "Welcome to Quarto",
+    "section": "Articles",
+    "text": "Articles"
+  },
+  {
+    "objectID": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#presentations",
+    "href": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#presentations",
+    "title": "Welcome to Quarto",
+    "section": "Presentations",
+    "text": "Presentations"
+  },
+  {
+    "objectID": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#websites",
+    "href": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#websites",
+    "title": "Welcome to Quarto",
+    "section": "Websites",
+    "text": "Websites"
+  },
+  {
+    "objectID": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#books",
+    "href": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#books",
+    "title": "Welcome to Quarto",
+    "section": "Books",
+    "text": "Books"
+  },
+  {
+    "objectID": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#quarto-and-r-markdown-a-history-.-.-.",
+    "href": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#quarto-and-r-markdown-a-history-.-.-.",
+    "title": "Welcome to Quarto",
+    "section": "Quarto and R Markdown, a history . . .",
+    "text": "Quarto and R Markdown, a history . . .\n\n\n1984 Literate Programming proposed to combine text with code\n2002 Sweave weaves together S/R and \\(\\TeX\\)\n2006 pandoc converts between different document formats\n2012 knitr a next gen Sweave for R and Markdown\n2014 knitr::pandoc added to leverage pandoc flexible outputs\n2015 pandoc functionality moved into new rmarkdown\n2018 R Markdown: A definite guide\n2020 R Markdown Cookbook\n\n\n\n. . . throughout, an ecosystem of R packages develops . . . (bookdown, blogdown, distill, etc.)"
+  },
+  {
+    "objectID": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#how-is-quarto-different-than-r-markdown",
+    "href": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#how-is-quarto-different-than-r-markdown",
+    "title": "Welcome to Quarto",
+    "section": "How is Quarto Different than R Markdown?",
+    "text": "How is Quarto Different than R Markdown?\n\n\nQuarto is compute-agnostic. R Markdown requires R.\nThe ecosystem of R packages is replaced by a single framework."
+  },
+  {
+    "objectID": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#what-can-you-do-with-r-markdown-that-you-cant-with-quarto",
+    "href": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#what-can-you-do-with-r-markdown-that-you-cant-with-quarto",
+    "title": "Welcome to Quarto",
+    "section": "What can you do with R Markdown that you can’t with Quarto?",
+    "text": "What can you do with R Markdown that you can’t with Quarto?\n\nAccess tools built around R Markdown (e.g. blogdown, xaringan, workflowr, papaja) that haven’t yet been implemented in Quarto.\n\n\nHeavy users of such tools may want to stick with R Markdown."
+  },
+  {
+    "objectID": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#what-can-you-do-with-quarto-that-you-cant-with-r-markdown",
+    "href": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#what-can-you-do-with-quarto-that-you-cant-with-r-markdown",
+    "title": "Welcome to Quarto",
+    "section": "What can you do with Quarto that you can’t with R Markdown?",
+    "text": "What can you do with Quarto that you can’t with R Markdown?\n\nEasier to organize appearance across documents\nFeatures (e.g. figures, tables) have better cross-format support\nBetter cross referencing\nUp-to-date revealjs slides\nEasier to customize websites and books with projects"
+  },
+  {
+    "objectID": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#section-9",
+    "href": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#section-9",
+    "title": "Welcome to Quarto",
+    "section": "",
+    "text": "Inputs\n\n\n\n\n\n\n\n\n\n\n\n\n\nOutputs"
+  },
+  {
+    "objectID": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#quarto-render",
+    "href": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#quarto-render",
+    "title": "Welcome to Quarto",
+    "section": "Quarto Render",
+    "text": "Quarto Render\nRender input file to various document formats.\n\n\n\n\n\n\n\nInput\n\n*.qmd\n*.ipynb\n*.md\n*.Rmd\n\n\n\nFormat\n\nhtml\npdf\nrevealjs\ndocx\nppt\nand many more!"
+  },
+  {
+    "objectID": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#three-ways-to-render",
+    "href": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#three-ways-to-render",
+    "title": "Welcome to Quarto",
+    "section": "Three ways to render",
+    "text": "Three ways to render\n\n\nQuarto is integrated into RStudio\nClick  in Editor pane of RStudio.\n\n\n\n\nQuarto is an R package\nRun in R:\nquarto::quarto_render(input = ___, output_format = ___)\n\n\n\n\nQuarto is a command line tool\nRun at the terminal:\nquarto render <input> --to <format>`\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNavigate to the terminal tab of the console pane\nRun quarto render demo.qmd –to html\nRun quarto render demo.qmd –to docx\nRun quarto render demo.qmd –to latex\nInspect how emphasis and the image is expressed"
+  },
+  {
+    "objectID": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#element-expression-depends-on-format",
+    "href": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#element-expression-depends-on-format",
+    "title": "Welcome to Quarto",
+    "section": "Element expression depends on format",
+    "text": "Element expression depends on format\nEmphasis\nHTML\nA <em>spatial logical toy</em>\nLATEX\nA \\emph{spatial logical toy}\n\n\nImage\nHTML\n<img src=\"images/med-rubiks-cube.png\" class=\"img-fluid\">\nLATEX\n\\includegraphics{images/med-rubiks-cube.png}"
+  },
+  {
+    "objectID": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#try-pandoc",
+    "href": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#try-pandoc",
+    "title": "Welcome to Quarto",
+    "section": "Try Pandoc!",
+    "text": "Try Pandoc!\nA quick way to find out how Pandoc will convert: https://pandoc.org/try/."
+  },
+  {
+    "objectID": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#what-defines-a-document",
+    "href": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#what-defines-a-document",
+    "title": "Welcome to Quarto",
+    "section": "What Defines a Document?",
+    "text": "What Defines a Document?\nA document consists of content, structure, appearance, format.\n\n\n\n\n\n\n\nContent: text, code, graphics\nStructure: paragraphs, lists, emphasis, etc.\nAppearance: fonts, colors, layout\nFormat: functionality"
+  },
+  {
+    "objectID": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#section-10",
+    "href": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#section-10",
+    "title": "Welcome to Quarto",
+    "section": "",
+    "text": "What defines the structure of a document?\n\n\n\nA document is a list of block elements that contain inline elements or other blocks, along with associated metadata."
+  },
+  {
+    "objectID": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#section-11",
+    "href": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#section-11",
+    "title": "Welcome to Quarto",
+    "section": "",
+    "text": "A document is a list of block elements that contain inline elements or other blocks, along with associated metadata.\n\n\n\n\n\nBlock Element\n\nStarts on a new line and followed by an empty line. Forms a visible block.\n\n\n\n\n\n\n\n\nBlock 1\n\n\nBlock 2\n\n\nBlock 3\n\n\n\n\n\nExamples:\n\nParagraph\nHeading\nImage\nList"
+  },
+  {
+    "objectID": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#section-12",
+    "href": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#section-12",
+    "title": "Welcome to Quarto",
+    "section": "",
+    "text": "A document is a list of block elements that contain inline elements or other blocks, along with associated metadata.\n\n\n\n\nInline Element\n\nModifies content inline and is not followed by a new line.\n\n\n\n\n\n\nBlock 1\n\n\n\n\n\nInline 1\n\n\nInline 2\n\n\nBlock 3\n\n\n\n\n\nExamples:\n\nEmphasis\nLink\nFootnote\nCitation"
+  },
+  {
+    "objectID": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#section-13",
+    "href": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#section-13",
+    "title": "Welcome to Quarto",
+    "section": "",
+    "text": "A document is a list of block elements that contain inline elements or other blocks, along with associated metadata.\n\n\n\n\nMetadata\n\nAncillary info about the document’s origin, format, look, etc.\n\n\n\n\n\n\nMetadata\n\n\nBlock 1\n\n\n\n\n\nInline 1\n\n\nInline 2\n\n\nBlock 3\n\n\n\n\n\nExamples:\n\nAuthor\nKeywords\nCharacter set\nAppearance/style"
+  },
+  {
+    "objectID": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#section-14",
+    "href": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#section-14",
+    "title": "Welcome to Quarto",
+    "section": "",
+    "text": "A document is a list of block elements that contain inline elements or other blocks, along with associated metadata.\n\n\n\n\n\nHeader\n\n\nParagraph\n\n\nEmphasis\n\n\nImage"
+  },
+  {
+    "objectID": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#section-15",
+    "href": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#section-15",
+    "title": "Welcome to Quarto",
+    "section": "",
+    "text": "Markdown is designed to be easy to write, and, even more importantly, easy to read:\n\nA Markdown-formatted document should be publishable as-is, as plain text, without looking like it’s been marked up with tags or formatting instructions.\n-John Gruber\n\n\n\n\nQuarto uses extended version of Pandoc markdown designed with multiple output formats in mind."
+  },
+  {
+    "objectID": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#section-16",
+    "href": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#section-16",
+    "title": "Welcome to Quarto",
+    "section": "",
+    "text": "Whenever I hear “Pandoc”, I picture . . .\n\n\n\n\n\n\n\n\n\n\n\n\n\n. . . but there’s help!\n\n\n\n\n\nVia giphy."
+  },
+  {
+    "objectID": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#poll",
+    "href": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#poll",
+    "title": "Welcome to Quarto",
+    "section": "Poll",
+    "text": "Poll\n\nWhich of the following forms of text formatting are possible in pandoc markdown?\n\nitalics\nbold\nunderline\nsuperscript\nsubscript\nstrikethrough\n\n\n\nPlease respond at pollev.com/rmdtoquarto."
+  },
+  {
+    "objectID": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#inline-elements-text-formatting",
+    "href": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#inline-elements-text-formatting",
+    "title": "Welcome to Quarto",
+    "section": "Inline Elements: Text Formatting",
+    "text": "Inline Elements: Text Formatting\n\n\nMarkdown\nMarkdown allows you to format text with \n*emphasis* and **strong emphasis**. You can \nalso add superscripts^2^, subscripts~2~, and\ndisplay code `verbatim`. Little known fact:\nyou can also ~~strikethrough~~ text and \npresent it in [small caps]{.smallcaps}.\n\n\nOutput\nMarkdown allows you to format text with emphasis and strong emphasis. You can also add superscripts2, subscripts2, and display code verbatim. Little known fact: you can also strikethrough text and present it in small caps.\n\n\n\n1\n\nEither the * or _ can be used for emphasis and strong."
+  },
+  {
+    "objectID": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#inline-elements-math",
+    "href": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#inline-elements-math",
+    "title": "Welcome to Quarto",
+    "section": "Inline Elements: Math",
+    "text": "Inline Elements: Math\n\n\nMarkdown\nThe area of a circle is $A = \\pi r^2$,where\n$r$ is the radius and $\\pi$ is the constant\n$3.141592\\ldots$.\n\n\nOutput\nThe area of a circle is \\(A = \\pi r^2\\), where \\(r\\) is the radius and \\(\\pi\\) is the constant \\(3.141592\\ldots\\).\n\n\n\n\n\n\n\n\nTeX math lives between two $. Opening $ must have a non-space character immediately to its right, while the closing $ must have a non-space character immediately to its left, and must not be followed immediately by a digit."
+  },
+  {
+    "objectID": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#inline-elements-links-and-images",
+    "href": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#inline-elements-links-and-images",
+    "title": "Welcome to Quarto",
+    "section": "Inline Elements: Links and Images",
+    "text": "Inline Elements: Links and Images\n\n\nMarkdown\nYou can embed [links with names](https://quarto.org/),\ndirect urls like <https://quarto.org/>, and links to \n[other places](#inline-elements-text-formatting) in \nthe document. The syntax is similar for embedding an\ninline image: ![render icon](images/render-icon.png).\n\n\nOutput\nYou can embed links with names, direct urls like https://quarto.org/, and links to other places in the document. The syntax is similar for embedding an inline image: ."
+  },
+  {
+    "objectID": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#inline-elements-footnotes",
+    "href": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#inline-elements-footnotes",
+    "title": "Welcome to Quarto",
+    "section": "Inline Elements: Footnotes",
+    "text": "Inline Elements: Footnotes\n\n\nMarkdown\nHere is a short note.^[Small enough to fit inline.]\n\n\nOutput\nHere is a short note.1\n\n\n\n\n\n\n\nHere is a longer footnote[^1]\n\n[^1]: This footnote can be placed in a separate block.\nThe identifier can be any alphanumeric string.\n\nHere is a longer footnote2\n\n\n\n\n\nPlacement of the actual footnote depends on the format: end of page for pdf, end of doc for HTML, bottom of slide for presentations.\n\n\nSmall enough to fit inline.This footnote can be placed in a separate block. The identifier can be any alphanumeric string."
+  },
+  {
+    "objectID": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#block-elements-paragraph",
+    "href": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#block-elements-paragraph",
+    "title": "Welcome to Quarto",
+    "section": "Block Elements: Paragraph",
+    "text": "Block Elements: Paragraph\nOne or more lines of text followed by one or more blank lines.\n\n\nMarkdown\nLorem ipsum dolor sit amet,\nconsectetur adipiscing elit.\n\nSed do eiusmod tempor.\n\n\nOutput\nLorem ipsum dolor sit amet, consectetur adipiscing elit.\nSed do eiusmod tempor.\n\n\n\n\n\nWithout the blank line, the line break is treated as a space.\n\n\nLorem ipsum dolor sit amet, \nsconsectetur adipiscing elit.\nSed do eiusmod tempor.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor."
+  },
+  {
+    "objectID": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#block-elements-headers",
+    "href": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#block-elements-headers",
+    "title": "Welcome to Quarto",
+    "section": "Block Elements: Headers",
+    "text": "Block Elements: Headers\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\n# Header 1\nHeader 1\n\n\n## Header 2\nHeader 2\n\n\n### Header 3\nHeader 3\n\n\n#### Header 4\nHeader 4\n\n\n##### Header 5\nHeader 5\n\n\n###### Header 6\nHeader 6"
+  },
+  {
+    "objectID": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#block-elements-lists",
+    "href": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#block-elements-lists",
+    "title": "Welcome to Quarto",
+    "section": "Block Elements: Lists",
+    "text": "Block Elements: Lists\nCan use *, -, or + may be used for unordered list items.\n\n\nMarkdown\nUnordered list:\n\n* red\n* green\n* blue\n\nOrdered list:\n\n1. red\n1. green\n3. blue\n\nOutput\n\nUnordered list:\n\nred\ngreen\nblue\n\nOrdered list:\n\nred\ngreen\nblue\n\n\n\n\nPandoc gives you a lot of control over lists, including nesting, fancy lists, definition lists, blocks in lists, and example lists.\n\n\n\n\nRead the docs for details: https://pandoc.org/MANUAL.html#pandocs-markdown"
+  },
+  {
+    "objectID": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#poll-1",
+    "href": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#poll-1",
+    "title": "Welcome to Quarto",
+    "section": "Poll",
+    "text": "Poll\n\nWhich of the following will render to the output on the right?\n\n\n\nA\n1. I once has a sandwich.\n\n   It was deliiiicous.\n   \n1. I then had coffee.\n\n   It gave me joy.\nC\n1. I once has a sandwich.\nIt was deliiiicous.\n   \n2. I then had coffee.\nIt gave me joy.\n\nB\n1. I once has a sandwich.\n  It was deliiiicous.\n   \n2. I then had coffee.\n  It gave me joy.\nD\n1. I once has a sandwich.\n\n    It was deliiiicous.\n   \n2. I then had coffee.\n\n    It gave me joy.\n\nOutput\n\nI once has a sandwich.\nIt was deliiiicous.\nI then had coffee.\nIt gave me joy.\n\n\n\n\n\nPlease respond at pollev.com/rmdtoquarto.\n\n\nIt’s hard to tell but there are two paragraphs in each list item in the output."
+  },
+  {
+    "objectID": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#block-elements-lists-blocks-in-lists",
+    "href": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#block-elements-lists-blocks-in-lists",
+    "title": "Welcome to Quarto",
+    "section": "Block Elements: Lists (blocks in lists)",
+    "text": "Block Elements: Lists (blocks in lists)\n“A list item may contain multiple paragraphs and other block-level content. Subsequent block elements must be preceded by a blank line and indented to line up with the first non-space content after the list marker.”\n\n\nMarkdown\n1. First item...\n\n   ...Continued.\n\n1. Second item \n\n   # header\n   \n1. Third item\n\nOutput\n\nFirst item…\n…Continued.\nSecond item\nheader\nThird item"
+  },
+  {
+    "objectID": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#block-elements-lists-example-lists",
+    "href": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#block-elements-lists-example-lists",
+    "title": "Welcome to Quarto",
+    "section": "Block Elements: Lists (example lists)",
+    "text": "Block Elements: Lists (example lists)\n“The first list item with a @ marker will be numbered 1., the next 2., etc. The numbered examples need not occur in a single list; each new list using @ will take up where the last stopped.”\n\n\nMarkdown\n(@)  My first example will be numbered (1).\n(@)  My second example will be numbered (2).\n\nExplanation of examples.\n\n(@)  My third example will be numbered (3).\n\nOutput\n\nMy first example will be numbered (1).\nMy second example will be numbered (2).\n\nExplanation of examples.\n\nMy third example will be numbered (3).\n\n\n\n\nYou can also label your examples: (@goodname)."
+  },
+  {
+    "objectID": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#block-elements-math",
+    "href": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#block-elements-math",
+    "title": "Welcome to Quarto",
+    "section": "Block Elements: Math",
+    "text": "Block Elements: Math\n\n\nMarkdown\nA larger equation:\n\n$$ \nf(x)={\\sqrt{\\frac{\\tau}{2\\pi}}}\n      e^{-\\tau (x-\\mu )^{2}/2}\n$$\n\n\n\nThis breaks it:\n\n$$\n\n\\bar{x} = \\sum_{i=i}^n x_1\n$$\n\n\n\nOutput\nA larger equation:\n\\[\nf(x)=\\sqrt{\\frac{\\tau}{2\\pi}}\n    e^{-\\tau (x-\\mu )^{2}/2}\n\\]\nThis breaks it:\n$$\n{x} = _{i=i}^n x_1 $$\n\n\n\n\n\n\nFor “display” math, use $$ delimiters. The delimiters may be separated from the formula by whitespace. No blank lines between the opening and closing $$ delimiters."
+  },
+  {
+    "objectID": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#block-elements-images",
+    "href": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#block-elements-images",
+    "title": "Welcome to Quarto",
+    "section": "Block Elements: Images",
+    "text": "Block Elements: Images\nBlock images use the same syntax as inline images.\n\n\nMarkdown\nImages on their own line become a block:\n\n![Elephant](images/elephant.png)\n\nor do they?\n\n\nOutput\nImages on their own line become a block:\n\n\n\nElephant\n\n\nor do they?\n\n\n\n\n\n\n\n\n\nImages behave mostly like inline elements but often live in a dedicated block (e.g. a paragraph). Their behavior depends on output format."
+  },
+  {
+    "objectID": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#poll-2",
+    "href": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#poll-2",
+    "title": "Welcome to Quarto",
+    "section": "Poll",
+    "text": "Poll\n\nWhich of the following are valid ways to include metadata with a document?\n\n\n\nA\n---\ntitle: US Patent: A Spatial Toy\nauthor: Erno Rubik\nformat: html\n---\n\nMy idea is to build a cube...\nC\n---\nformat: html\n---\n\nMy idea is to build a cube...\n\n---\ntitle: A Spatial Toy\nauthor: Erno Rubik\n---\n\nC\nMy idea is to build a cube...\n… then at the command line, run:\nquarto render patent.qmd --to html -M title:patent\nD\n---\ntitle: \"US Patent: A Spatial Toy\"\nauthor: \"Erno Rubik\"\nformat: \"html\"\n---\n\nMy idea is to build a cube...\n\n\n\nPlease respond at pollev.com/rmdtoquarto."
+  },
+  {
+    "objectID": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#metadata-yaml",
+    "href": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#metadata-yaml",
+    "title": "Welcome to Quarto",
+    "section": "Metadata: YAML",
+    "text": "Metadata: YAML\nMetadata can be included via YAML (YAML Ain’t Markup Language).\n\n\n---\ntitle: \"US Patent: A Spatial Toy\"\nauthor: \n  - Erno Rubrik\n  - Albert Einstein\nformat: \n  html:\n    toc: true\n    abstract: |\n      This is the abstract.\n    \n      It has two paragraphs.\n---\n\nSome syntax rules:\n\n\nSet a single option key: value\nStrings with : must be quoted\nInclude multiple values in a list with -\nNest key-value pairs using indentation\nMulti-line strings follow |\nMultiple YAML blocks in a document will be merged\n\n\n\n\n\n\n\nPandoc’s interpretation of YAML metadata: https://pandoc.org/MANUAL%202.html#extension-yaml_metadata_block\n\nAn overview of YAML syntax: https://en.m.wikipedia.org/wiki/YAML#Syntax"
+  },
+  {
+    "objectID": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#metadata-yaml-1",
+    "href": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#metadata-yaml-1",
+    "title": "Welcome to Quarto",
+    "section": "Metadata: YAML",
+    "text": "Metadata: YAML\n\n\nA\n---\ntitle: US Patent: A Spatial Toy\nauthor: Erno Rubik\nformat: html\n---\n\nMy idea is to build a cube...\nC\n---\nformat: html\n---\n\nMy idea is to build a cube...\n\n---\ntitle: A Spatial Toy\nauthor: Erno Rubik\n---\n\nC\nMy idea is to build a cube...\n… then at the command line, run:\nquarto render patent.qmd --to html -M title:patent\nD\n---\ntitle: \"US Patent: A Spatial Toy\"\nauthor: \"Erno Rubik\"\nformat: \"html\"\n---\n\nMy idea is to build a cube..."
+  },
+  {
+    "objectID": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#references-and-further-reading",
+    "href": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#references-and-further-reading",
+    "title": "Welcome to Quarto",
+    "section": "References and further reading",
+    "text": "References and further reading\n\nA Brief History of R Markdown: a presentation by Yihui Xie in 2021.\nPandoc documentation on type references: this section documents the tools needed to write Lua filters but included in this is a compendium of the different block and inline elements recognized by pandoc.\nBlock and Inline Elements: from Client-side Web Development by Ross and Freeman. Provides clear description of elements in the setting of HTML.\nCommand Line Essentials: a short primer on how to navigate through a file structure at the command line.sla\nSpatial Logical Toy: The US patent of what became the Rubik’s Cube. Several examples in these slides borrow figures and text from the patent."
+  },
+  {
     "objectID": "materials/2-polishing-documents/index.html",
     "href": "materials/2-polishing-documents/index.html",
     "title": "Polishing Documents",
     "section": "",
-    "text": "Learning goals\n\n\nTopics\n\n\nExercises"
+    "text": "Warning\n\n\n\nUnder construction."
+  },
+  {
+    "objectID": "materials/2-polishing-documents/slides/polishing-documents.html#what-happens-when-you-pandoc-it",
+    "href": "materials/2-polishing-documents/slides/polishing-documents.html#what-happens-when-you-pandoc-it",
+    "title": "Polishing Documents",
+    "section": "What happens when you pandoc it?",
+    "text": "What happens when you pandoc it?\nFrom the last exercise . . .\nquarto pandoc -f html -t markdown ex-2-goal.html -o ex-2-answer.md\n\n\n\n\n\n\n\n\nThis looks familiar!"
+  },
+  {
+    "objectID": "materials/2-polishing-documents/slides/polishing-documents.html#what-happens-when-you-pandoc-it-1",
+    "href": "materials/2-polishing-documents/slides/polishing-documents.html#what-happens-when-you-pandoc-it-1",
+    "title": "Polishing Documents",
+    "section": "What happens when you pandoc it?",
+    "text": "What happens when you pandoc it?\nFrom the last exercise . . .\nquarto pandoc -f html -t markdown ex-2-goal.html -o ex-2-answer.md\n\n\n\n\n\n\n\n\nThis looks familiar!\n\n\n            . . . but this does not."
+  },
+  {
+    "objectID": "materials/2-polishing-documents/slides/polishing-documents.html#the-bracketed-span",
+    "href": "materials/2-polishing-documents/slides/polishing-documents.html#the-bracketed-span",
+    "title": "Polishing Documents",
+    "section": "The Bracketed Span",
+    "text": "The Bracketed Span"
+  },
+  {
+    "objectID": "materials/2-polishing-documents/slides/polishing-documents.html#the-bracketed-span-1",
+    "href": "materials/2-polishing-documents/slides/polishing-documents.html#the-bracketed-span-1",
+    "title": "Polishing Documents",
+    "section": "The Bracketed Span",
+    "text": "The Bracketed Span"
+  },
+  {
+    "objectID": "materials/2-polishing-documents/slides/polishing-documents.html#the-bracketed-span-2",
+    "href": "materials/2-polishing-documents/slides/polishing-documents.html#the-bracketed-span-2",
+    "title": "Polishing Documents",
+    "section": "The Bracketed Span",
+    "text": "The Bracketed Span"
+  },
+  {
+    "objectID": "materials/2-polishing-documents/slides/polishing-documents.html#the-bracketed-span-3",
+    "href": "materials/2-polishing-documents/slides/polishing-documents.html#the-bracketed-span-3",
+    "title": "Polishing Documents",
+    "section": "The Bracketed Span",
+    "text": "The Bracketed Span"
+  },
+  {
+    "objectID": "materials/2-polishing-documents/slides/polishing-documents.html#the-bracketed-span-4",
+    "href": "materials/2-polishing-documents/slides/polishing-documents.html#the-bracketed-span-4",
+    "title": "Polishing Documents",
+    "section": "The Bracketed Span",
+    "text": "The Bracketed Span"
+  },
+  {
+    "objectID": "materials/2-polishing-documents/slides/polishing-documents.html#the-fenced-div",
+    "href": "materials/2-polishing-documents/slides/polishing-documents.html#the-fenced-div",
+    "title": "Polishing Documents",
+    "section": "The Fenced Div",
+    "text": "The Fenced Div"
+  },
+  {
+    "objectID": "materials/2-polishing-documents/slides/polishing-documents.html#section",
+    "href": "materials/2-polishing-documents/slides/polishing-documents.html#section",
+    "title": "Polishing Documents",
+    "section": "",
+    "text": "What you’re about to see . . .\n\nMost of the elements work across the main output formats (html, pdf, docx, pptx)\nMany of the attributes work across multiple element types\nMost of this is new Quarto functionality. Some of it is original Pandoc.\nThis is a subset of the elements available. See the Quarto Guide for the full list."
+  },
+  {
+    "objectID": "materials/2-polishing-documents/slides/polishing-documents.html#callout-blocks",
+    "href": "materials/2-polishing-documents/slides/polishing-documents.html#callout-blocks",
+    "title": "Polishing Documents",
+    "section": "Callout Blocks",
+    "text": "Callout Blocks\nHighlight content for the reader in multiple formats.\n\n\nMarkdown\n:::{.callout-note}\nLook - a squirrel!\n:::\n\n:::{.callout-important}\nLook - a squirrel!\n:::\n\n:::{.callout-tip}\nLook - a squirrel!\n:::\n\n\nHTML output\n\n\n\n\n\n\nNote\n\n\nLook - a squirrel!\n\n\n\n\n\n\n\n\n\nImportant\n\n\nLook - a squirrel!\n\n\n\n\n\n\n\n\n\nTip\n\n\nLook - a squirrel!"
+  },
+  {
+    "objectID": "materials/2-polishing-documents/slides/polishing-documents.html#callout-blocks-1",
+    "href": "materials/2-polishing-documents/slides/polishing-documents.html#callout-blocks-1",
+    "title": "Polishing Documents",
+    "section": "Callout Blocks",
+    "text": "Callout Blocks\nHighlight content for the reader in multiple formats.\n\n\nMarkdown\n:::{.callout-note}\nLook - a squirrel!\n:::\n\n:::{.callout-important}\nLook - a squirrel!\n:::\n\n:::{.callout-tip}\nLook - a squirrel!\n:::\n\nPDF output"
+  },
+  {
+    "objectID": "materials/2-polishing-documents/slides/polishing-documents.html#callout-blocks-2",
+    "href": "materials/2-polishing-documents/slides/polishing-documents.html#callout-blocks-2",
+    "title": "Polishing Documents",
+    "section": "Callout Blocks",
+    "text": "Callout Blocks\nHighlight content for the reader in multiple formats.\n\n\nMarkdown\n:::{.callout-note}\nLook - a squirrel!\n:::\n\n:::{.callout-important}\nLook - a squirrel!\n:::\n\n:::{.callout-tip}\nLook - a squirrel!\n:::\n\nDOCX output"
+  },
+  {
+    "objectID": "materials/2-polishing-documents/slides/polishing-documents.html#element-layouts",
+    "href": "materials/2-polishing-documents/slides/polishing-documents.html#element-layouts",
+    "title": "Polishing Documents",
+    "section": "Element Layouts",
+    "text": "Element Layouts\nQuarto makes available several layout attributes that apply to broad range of block elements.\n\nlayout-ncol: split elements across n columns (2, 3, …).\nlayout-nrow: split elements across n rows (2, 3, …).\nlayout-valign: align elements (top, center, bottom, default).\nlayout: Split elements into a 2D array by rows and columns1.\n\nFor more control, see {.grid} which relies up the CSS Bootstrap Grid system. See the [Guide]{https://quarto.org/docs/output-formats/page-layout.html#article}."
+  },
+  {
+    "objectID": "materials/2-polishing-documents/slides/polishing-documents.html#element-layouts-1",
+    "href": "materials/2-polishing-documents/slides/polishing-documents.html#element-layouts-1",
+    "title": "Polishing Documents",
+    "section": "Element Layouts",
+    "text": "Element Layouts\nlayout-ncol\n\n\nMarkdown\n:::{layout-ncol=2}\nA novelty clock, watch, and the like for \nkeeping time at an animal's rate, defined\nin terms of a multiple of human rate by \ndividing the average lifetime of a \nparticular animal into the average \nlifetime of a human being. The multiple\nfor dogs is seven, for example.\n\n![](images/dog-watch.png)\n:::\n\nHTML output\n\n\n\nA clock for keeping time at an animal’s rate. The multiple for dogs is seven, for example."
+  },
+  {
+    "objectID": "materials/2-polishing-documents/slides/polishing-documents.html#element-layouts-2",
+    "href": "materials/2-polishing-documents/slides/polishing-documents.html#element-layouts-2",
+    "title": "Polishing Documents",
+    "section": "Element Layouts",
+    "text": "Element Layouts\nlayout-ncol + layout-valign\n\n\nMarkdown\n:::{layout-ncol=2 layout-valign=middle}\nA novelty clock, watch, and the like for \nkeeping time at an animal's rate, defined\nin terms of a multiple of human rate by \ndividing the average lifetime of a \nparticular animal into the average \nlifetime of a human being. The multiple\nfor dogs is seven, for example.\n\n![](images/dog-watch.png)\n:::\n\nHTML output\n\n\n\nA clock for keeping time at an animal’s rate. The multiple for dogs is seven, for example."
+  },
+  {
+    "objectID": "materials/2-polishing-documents/slides/polishing-documents.html#element-layouts-3",
+    "href": "materials/2-polishing-documents/slides/polishing-documents.html#element-layouts-3",
+    "title": "Polishing Documents",
+    "section": "Element Layouts",
+    "text": "Element Layouts\nlayout-ncol with small image\n\n\nMarkdown\n:::{layout-ncol=2}\nA novelty clock, watch, and the like for \nkeeping time at an animal's rate, defined\nin terms of a multiple of human rate by \ndividing the average lifetime of a \nparticular animal into the average \nlifetime of a human being. The multiple\nfor dogs is seven, for example.\n\n![](images/dog-watch-small.png)\n:::\n\nHTML output\n\n\n\nA clock for keeping time at an animal’s rate. The multiple for dogs is seven, for example."
+  },
+  {
+    "objectID": "materials/2-polishing-documents/slides/polishing-documents.html#element-layout-array",
+    "href": "materials/2-polishing-documents/slides/polishing-documents.html#element-layout-array",
+    "title": "Polishing Documents",
+    "section": "Element Layout Array",
+    "text": "Element Layout Array\nlayout: The layout attribute1 is a 2-dimensional array where the first dimension defines rows and the second columns.\n\n\n\nlayout=\"[[1,1], [1]]\" translates to: create two rows, the first of which has two columns of equal size and the second of which has a single column.\nYou can scale the relative dimension of each panel by changing the 1s.\n\nFor more control with HTML output, see {.grid} which relies up the CSS Bootstrap Grid system. See the [Guide]{https://quarto.org/docs/output-formats/page-layout.html#article}."
+  },
+  {
+    "objectID": "materials/2-polishing-documents/slides/polishing-documents.html#element-layout-array-1",
+    "href": "materials/2-polishing-documents/slides/polishing-documents.html#element-layout-array-1",
+    "title": "Polishing Documents",
+    "section": "Element Layout Array",
+    "text": "Element Layout Array\n\n\nMarkdown\n:::{layout=\"[[1,1], [1]]\"}\n![](images/watch-face.png)\n\n![](images/dog-watch.png)\n\n![](images/circuit.png)\n:::\n\n\nHTML output\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWhat would layout=\"[[1,5], [1]]\" do?"
+  },
+  {
+    "objectID": "materials/2-polishing-documents/slides/polishing-documents.html#element-layout-array-2",
+    "href": "materials/2-polishing-documents/slides/polishing-documents.html#element-layout-array-2",
+    "title": "Polishing Documents",
+    "section": "Element Layout Array",
+    "text": "Element Layout Array\n\n\nMarkdown\n:::{layout=\"[[1,5], [1]]\"}\n![](images/watch-face.png)\n\n![](images/dog-watch.png)\n\n![](images/circuit.png)\n:::\n\nHTML output"
+  },
+  {
+    "objectID": "materials/2-polishing-documents/slides/polishing-documents.html#document-layout-column-classes",
+    "href": "materials/2-polishing-documents/slides/polishing-documents.html#document-layout-column-classes",
+    "title": "Polishing Documents",
+    "section": "Document Layout: column classes",
+    "text": "Document Layout: column classes\nModify the width of the main body column for individual block elements (e.g. paragraph, figures).\n\n\n\nMarkdown\n:::{.column-body}\nA novelty clock, watch, and the like for \nkeeping time at an animal's rate, defined\nin terms of a multiple of human rate by \ndividing the average lifetime of a \nparticular animal into the average \nlifetime of a human being. The multiple\nfor dogs is seven, for example.\n:::\n\n:::{.column-screen}\nA novelty clock, watch, and the like for \nkeeping time at an animal's rate, defined\nin terms of a multiple of human rate by \ndividing the average lifetime of a \nparticular animal into the average \nlifetime of a human being. The multiple\nfor dogs is seven, for example.\n:::\n\n\nHTML output"
+  },
+  {
+    "objectID": "materials/2-polishing-documents/slides/polishing-documents.html#document-layout-column-classes-1",
+    "href": "materials/2-polishing-documents/slides/polishing-documents.html#document-layout-column-classes-1",
+    "title": "Polishing Documents",
+    "section": "Document Layout: column classes",
+    "text": "Document Layout: column classes\nModify the width of the main body column for individual block elements (e.g. paragraph, figures).\n\n\n\nMarkdown\n:::{.column-body}\nA novelty clock, watch, and the like for \nkeeping time at an animal's rate, defined\nin terms of a multiple of human rate by \ndividing the average lifetime of a \nparticular animal into the average \nlifetime of a human being. The multiple\nfor dogs is seven, for example.\n:::\n\n:::{.column-screen}\nA novelty clock, watch, and the like for \nkeeping time at an animal's rate, defined\nin terms of a multiple of human rate by \ndividing the average lifetime of a \nparticular animal into the average \nlifetime of a human being. The multiple\nfor dogs is seven, for example.\n:::\n\n\nHTML output"
+  },
+  {
+    "objectID": "materials/2-polishing-documents/slides/polishing-documents.html#document-layout-margin-classes",
+    "href": "materials/2-polishing-documents/slides/polishing-documents.html#document-layout-margin-classes",
+    "title": "Polishing Documents",
+    "section": "Document Layout: margin classes",
+    "text": "Document Layout: margin classes\nPlace any inline or block element from the body to the margin.\n\n\n\nMarkdown\n![](images/dog-watch.png)\n\nWhat a brilliant idea.\n\nOutput"
+  },
+  {
+    "objectID": "materials/2-polishing-documents/slides/polishing-documents.html#document-layout-margin-classes-1",
+    "href": "materials/2-polishing-documents/slides/polishing-documents.html#document-layout-margin-classes-1",
+    "title": "Polishing Documents",
+    "section": "Document Layout: margin classes",
+    "text": "Document Layout: margin classes\nPlace any inline or block element from the body to the margin.\n\n\nMarkdown\n![](images/dog-watch.png)\n\n:::{.column-margin}\nWhat a brilliant idea.\n:::\n\nOutput"
+  },
+  {
+    "objectID": "materials/2-polishing-documents/slides/polishing-documents.html#poll",
+    "href": "materials/2-polishing-documents/slides/polishing-documents.html#poll",
+    "title": "Polishing Documents",
+    "section": "Poll",
+    "text": "Poll\n\nWhat is your preferred method of adding a figure to an Rmd so that it displays in HTML at 300 pixels wide?\n\nA. markdown\n![A nice image.](foo/bar.png){width=300}\nB. html\n<img src=\"foo/bar.png\" width=\"300\">\nC: knitr\n```{r, out.width=\"300px\"}\nknitr::includegraphics(\"foo/bar.png\")\n```"
+  },
+  {
+    "objectID": "materials/2-polishing-documents/slides/polishing-documents.html#figures",
+    "href": "materials/2-polishing-documents/slides/polishing-documents.html#figures",
+    "title": "Polishing Documents",
+    "section": "Figures",
+    "text": "Figures\nQuarto expands the functionality of markdown. Set width, height, fig-align, add link, caption, and alt-text.\n![A caption](images/dog-watch.png){width=300 fig-align=right fig-alt=\"Dog watching a watch.\"}\n\n\n\n\nA caption\n\n\n\n\n\n\nUnits default to px.\nOther choices 300in, 300% (relative to image size), 3em (relative to font size).\nEntire fig can be nested inside the link syntax ([fig](url)) to link the image"
+  },
+  {
+    "objectID": "materials/2-polishing-documents/slides/polishing-documents.html#labels-for-links",
+    "href": "materials/2-polishing-documents/slides/polishing-documents.html#labels-for-links",
+    "title": "Polishing Documents",
+    "section": "Labels for Links",
+    "text": "Labels for Links\nIn additional to external resources, links can go to elements of the same doc through its #id.\n\n\n\nMarkdown\n![A caption](images/dog-watch.png){#dogwatch}\n\n< Much more text >\n\nA novelty clock, [watch](#dogwatch), and the\nlike for keeping time at an animal's rate . . .\n\n\nHTML output\n\n\n\n\nA caption\n\n\n\n< Much more text >\nA novelty clock, watch, and the like for keeping time at an animal’s rate . . .\n\n\n\n\n\n\nWorks for many elements,\nnot just figs!"
+  },
+  {
+    "objectID": "materials/2-polishing-documents/slides/polishing-documents.html#labels-for-references",
+    "href": "materials/2-polishing-documents/slides/polishing-documents.html#labels-for-references",
+    "title": "Polishing Documents",
+    "section": "Labels for References",
+    "text": "Labels for References\nReferences can be made dynamic using #<type>-id and @<type>-id.\n\n\n\nMarkdown\n![Caption](images/dog-watch.png){#fig-dogwatch}\n\n< Much more text >\n\nA novelty clock, watch (@fig-dogwatch), and the like for \nkeeping time at an animal's rate . . .\n\n\nHTML output\n\n\n\n\nFigure 1: A caption\n\n\n\n< Much more text >\nA novelty clock, watch (Figure 1), and the like for keeping time at an animal’s rate . . .\n\n\n\n\n\n\nUnlike a link, a reference changes\nwith the ordering of the element\nas well as its type.\nOther <type> include @tbl-,\n@sec-, @eq-, @thm-, and many\nmore for math."
+  },
+  {
+    "objectID": "materials/2-polishing-documents/slides/polishing-documents.html#customized-references",
+    "href": "materials/2-polishing-documents/slides/polishing-documents.html#customized-references",
+    "title": "Polishing Documents",
+    "section": "Customized References",
+    "text": "Customized References\nYou can customize the appearance of inline references by either changing the syntax of the inline reference or by setting options.\n\n\n\nType\nSyntax\nOutput\n\n\n\n\nDefault\n@fig-elephant\nFigure 1\n\n\nCustom Prefix\n[Fig @fig-elephant]\nFig 1\n\n\nNo Prefix\n[-@fig-elephant]\n1"
+  },
+  {
+    "objectID": "materials/2-polishing-documents/slides/polishing-documents.html#section-2",
+    "href": "materials/2-polishing-documents/slides/polishing-documents.html#section-2",
+    "title": "Polishing Documents",
+    "section": "",
+    "text": "Let’s play around in the RStudio Visual Editor!"
+  },
+  {
+    "objectID": "materials/2-polishing-documents/slides/polishing-documents.html#easy-table-generation",
+    "href": "materials/2-polishing-documents/slides/polishing-documents.html#easy-table-generation",
+    "title": "Polishing Documents",
+    "section": "Easy Table Generation",
+    "text": "Easy Table Generation\nHave the editor write the markdown for you!"
+  },
+  {
+    "objectID": "materials/2-polishing-documents/slides/polishing-documents.html#catalog-of-elements",
+    "href": "materials/2-polishing-documents/slides/polishing-documents.html#catalog-of-elements",
+    "title": "Polishing Documents",
+    "section": "Catalog of Elements",
+    "text": "Catalog of Elements\nType / on a new line to search the element types."
+  },
+  {
+    "objectID": "materials/2-polishing-documents/slides/polishing-documents.html#reminder-of-attributes",
+    "href": "materials/2-polishing-documents/slides/polishing-documents.html#reminder-of-attributes",
+    "title": "Polishing Documents",
+    "section": "Reminder of Attributes",
+    "text": "Reminder of Attributes\nClick ... next to elements to see the attributes you can change."
+  },
+  {
+    "objectID": "materials/2-polishing-documents/slides/polishing-documents.html#yaml-intelligence",
+    "href": "materials/2-polishing-documents/slides/polishing-documents.html#yaml-intelligence",
+    "title": "Polishing Documents",
+    "section": "YAML Intelligence",
+    "text": "YAML Intelligence\nCtrl + space to see all available options then tab-complete. Also works in VSCode."
+  },
+  {
+    "objectID": "materials/2-polishing-documents/slides/polishing-documents.html#references-and-further-reading",
+    "href": "materials/2-polishing-documents/slides/polishing-documents.html#references-and-further-reading",
+    "title": "Polishing Documents",
+    "section": "References and further reading",
+    "text": "References and further reading\n\nClient Side Web Developent Ch. 5-7: approachable and concise introduction to how CSS work.\nClock for keeping time at a rate other than human time: US patent by Rodney Metts and Barry Thomas\nhttps://patents.google.com/patent/US3811677A/en?q=stilts&oq=stilts\nhttps://patents.google.com/patent/US6688257B2/en?q=pet+dog&oq=pet+dog"
   },
   {
     "objectID": "materials/3-computation/index.html",
     "href": "materials/3-computation/index.html",
-    "title": "Computations",
+    "title": "Computation",
     "section": "",
-    "text": "Learning goals\n\n\nTopics\n\n\nExercises"
+    "text": "Warning\n\n\n\nThis is under construction until the start of the workshop."
+  },
+  {
+    "objectID": "materials/3-computation/slides/computation.html#pandocs-fenced-code-block",
+    "href": "materials/3-computation/slides/computation.html#pandocs-fenced-code-block",
+    "title": "Computation",
+    "section": "Pandoc’s Fenced Code Block",
+    "text": "Pandoc’s Fenced Code Block\nSandwich the code between “fences” of at least three backticks1. An optional language provides syntax highlighting.\n\n\n```cobol\n1 + 1\n```\n\n\nUseful for displaying source code, not running it\nNote that the language is not in { }\nPandoc supports 140 languages!\n\n\n\nPandoc also allows ~~~"
+  },
+  {
+    "objectID": "materials/3-computation/slides/computation.html#r-markdowns-code-chunk",
+    "href": "materials/3-computation/slides/computation.html#r-markdowns-code-chunk",
+    "title": "Computation",
+    "section": "R Markdown’s Code Chunk",
+    "text": "R Markdown’s Code Chunk\n\n\n\n\n```{r, echo=FALSE}\nrnorm(3)\n```\n\n\n\n\n\n\n\n\n\nPoll: What syntax is being used in echo=FALSE?\n\nHTML\nPandoc attribute syntax\nYAML\nCSS\nR"
+  },
+  {
+    "objectID": "materials/3-computation/slides/computation.html#results",
+    "href": "materials/3-computation/slides/computation.html#results",
+    "title": "Computation",
+    "section": "Results",
+    "text": "Results"
+  },
+  {
+    "objectID": "materials/3-computation/slides/computation.html#generalizing-the-code-chunk",
+    "href": "materials/3-computation/slides/computation.html#generalizing-the-code-chunk",
+    "title": "Computation",
+    "section": "Generalizing the Code Chunk",
+    "text": "Generalizing the Code Chunk\nHow can this be generalized to other languages?\n\n\n```{r, echo=FALSE}\nrnorm(3)\n```\n\n\nExecutable code flagged by { }"
+  },
+  {
+    "objectID": "materials/3-computation/slides/computation.html#generalizing-the-code-chunk-1",
+    "href": "materials/3-computation/slides/computation.html#generalizing-the-code-chunk-1",
+    "title": "Computation",
+    "section": "Generalizing the Code Chunk",
+    "text": "Generalizing the Code Chunk\nHow can this be generalized to other languages?\n\n\n```{language, echo=FALSE}\ncode\n```\n\n\nExecutable code flagged by { }\nSupport R, Python, Julia\nAlso support mermaid and dot diagram languages1.\n\n\n\ndiagram"
+  },
+  {
+    "objectID": "materials/3-computation/slides/computation.html#generalizing-the-code-chunk-2",
+    "href": "materials/3-computation/slides/computation.html#generalizing-the-code-chunk-2",
+    "title": "Computation",
+    "section": "Generalizing the Code Chunk",
+    "text": "Generalizing the Code Chunk\nHow can this be generalized to other languages?\n\n\n```{language}\n#| echo: false\n\ncode\n```\n\n\nExecutable code flagged by { }\nSupport R, Python, Julia\nAlso support mermaid and dot diagram languages1\nCell options live inside the cell after #| (the hash pipe!)2\n\n\nThis is a Quarto Code Cell.\n\n\n\nSee https://quarto.org/docs/authoring/diagrams.html.The hash pipe is available in the R Markdown too."
+  },
+  {
+    "objectID": "materials/3-computation/slides/computation.html#the-perks-of-the-hashpipe",
+    "href": "materials/3-computation/slides/computation.html#the-perks-of-the-hashpipe",
+    "title": "Computation",
+    "section": "The Perks of the Hashpipe #|",
+    "text": "The Perks of the Hashpipe #|\n\n\nLine breaks prevent chunk options that go on {r, and=on, and=on, and=on, and=on, and=on, and=on}\n\n\n\n\nChunk options are now pan-language with <commentchar>|.\n\n\n\n```{python}\n#| echo: false\n```\n\n```{mermaid}\n%%| echo: false\n```\n\n\n\n\n\nNo more yelling! (eval=FALSE)"
+  },
+  {
+    "objectID": "materials/3-computation/slides/computation.html#execution-options",
+    "href": "materials/3-computation/slides/computation.html#execution-options",
+    "title": "Computation",
+    "section": "Execution Options",
+    "text": "Execution Options\nControl how the code is executed with options.\n\n\n\n\n\n\n\n\nOption\nDescription\n\n\n\n\neval\nEvaluate the code chunk (if false, just echos the code into the output).\n\n\necho\nInclude the source code in output\n\n\noutput\nInclude the results of executing the code in the output (true, false, or asis to indicate that the output is raw markdown and should not have any of Quarto’s standard enclosing markdown).\n\n\nwarning\nInclude warnings in the output.\n\n\nerror\nInclude errors in the output.\n\n\ninclude\nCatch all for preventing any output (code or results) from being included (e.g. include: false suppresses all output from the code block)."
+  },
+  {
+    "objectID": "materials/3-computation/slides/computation.html#setting-knitr-options",
+    "href": "materials/3-computation/slides/computation.html#setting-knitr-options",
+    "title": "Computation",
+    "section": "Setting knitr options",
+    "text": "Setting knitr options\nThe knitr syntax for passing options still works since Quarto uses knitr.\n\n\nSource\n```{r, error=TRUE}\n#| echo: true\n\nrnorm(5       # this is missing a parens\n```\n\n\nOutput\n\nrnorm(5       # this is missing a parens\n\nError: <text>:2:0: unexpected end of input\n1: rnorm(5       # this is missing a parens\n   ^\n\n\n\n\n\n\nWhile it’s possible to use R chunks options, hash pipe options are more portable across computational engines.\n\n\n\n\nWithout error=TRUE, this would error out on rendering and produce no output."
+  },
+  {
+    "objectID": "materials/3-computation/slides/computation.html#section-1",
+    "href": "materials/3-computation/slides/computation.html#section-1",
+    "title": "Computation",
+    "section": "",
+    "text": "Don’t forget to use tab-completion to see the available options!"
+  },
+  {
+    "objectID": "materials/3-computation/slides/computation.html#from-cell-option-to-yaml",
+    "href": "materials/3-computation/slides/computation.html#from-cell-option-to-yaml",
+    "title": "Computation",
+    "section": "From Cell Option to YAML",
+    "text": "From Cell Option to YAML\n\n\n---\ntitle: My Doc\nformat: html\n---\n\n```{r}\n#| echo: true\n\npi + 1\n```"
+  },
+  {
+    "objectID": "materials/3-computation/slides/computation.html#from-cell-option-to-yaml-1",
+    "href": "materials/3-computation/slides/computation.html#from-cell-option-to-yaml-1",
+    "title": "Computation",
+    "section": "From Cell Option to YAML",
+    "text": "From Cell Option to YAML\n\n\n---\ntitle: My Doc\nformat: html\nexecute:\n  echo: true\n---\n\n```{r}\npi + 1\n```\n\n\nOptions can be moved into YAML under the execute key to apply to all chunks. Exceptions to that option can be set cell-by-cell."
+  },
+  {
+    "objectID": "materials/3-computation/slides/computation.html#from-cell-option-to-yaml-2",
+    "href": "materials/3-computation/slides/computation.html#from-cell-option-to-yaml-2",
+    "title": "Computation",
+    "section": "From Cell Option to YAML",
+    "text": "From Cell Option to YAML\n\n\n---\ntitle: My Doc\nformat: html\nexecute:\n  echo: true\nknitr:\n  opts_chunk: \n    collapse: true\n---\n\n```{r}\npi + 1\n```\n\n\nOptions can be moved into YAML under the execute key to apply to all chunks. Exceptions to that option can be set cell-by-cell.\nYou can also pass options via YAML to knitr through the knitr key1.\n\n\n\nNo more ```{r setup} 🎉"
+  },
+  {
+    "objectID": "materials/3-computation/slides/computation.html#from-cell-option-to-yaml-3",
+    "href": "materials/3-computation/slides/computation.html#from-cell-option-to-yaml-3",
+    "title": "Computation",
+    "section": "From Cell Option to YAML",
+    "text": "From Cell Option to YAML\n\n\n---\ntitle: My Doc\nformat: html\nexecute:\n  echo: true\nknitr:\n  opts_chunk: \n    collapse: true\n    R.options:\n      digits: 2\n---\n\n```{r}\npi + 1\n```\n\n\nOptions can be moved into YAML under the execute key to apply to all chunks. Exceptions to that option can be set cell-by-cell.\nYou can also pass options via YAML to knitr through the knitr key1.\nYou can use knitr to pass options that control your R session.\n\n\n\nNo more ```{r setup} 🎉"
+  },
+  {
+    "objectID": "materials/3-computation/slides/computation.html#figures-compared",
+    "href": "materials/3-computation/slides/computation.html#figures-compared",
+    "title": "Computation",
+    "section": "Figures Compared",
+    "text": "Figures Compared\nFigure output options are similar to those from markdown figures except YAML syntax is swapped in for Pandoc’s markdown syntax. Some examples:\n\n\n\nFigure output\n\n\nfig-width: 5\nfig-height: 3\nfig-align: center\nfig-cap: \"The dog watch.\"\nfig-alt: \"Dog watching watch.\"\n\n\n\nMarkdown figures\n\n\nwidth=5\nheight=3\nalign=center\nfig-cap=\"The dog watch.\"\nfig-alt=\"Dog watching watch.\"\n\n\n\n\n\nQuarto defaults to inches. Pandoc defaults to pixels but can be changed.\n\nfig-width=5, fig-width = 5, fig-width=5px, all work in Pandoc markdown. fig-width=5 px does not.\nOther units besides px: cm, mm, in, inch and %."
+  },
+  {
+    "objectID": "materials/3-computation/slides/computation.html#figure-output-example",
+    "href": "materials/3-computation/slides/computation.html#figure-output-example",
+    "title": "Computation",
+    "section": "Figure Output Example",
+    "text": "Figure Output Example\n\n\n```{r}\nlibrary(palmerpenguins)\nlibrary(ggplot2)\n\nggplot(penguins, aes(x = bill_length_mm,\n                     y = bill_depth_mm,\n                     col = island)) +\n  geom_point()\n```"
+  },
+  {
+    "objectID": "materials/3-computation/slides/computation.html#figure-output-example-1",
+    "href": "materials/3-computation/slides/computation.html#figure-output-example-1",
+    "title": "Computation",
+    "section": "Figure Output Example",
+    "text": "Figure Output Example\n\n\n```{r}\n#| fig-width: 5\n#| fig-height: 3\n\nlibrary(palmerpenguins)\nlibrary(ggplot2)\n\nggplot(penguins, aes(x = bill_length_mm,\n                     y = bill_depth_mm,\n                     col = island)) +\n  geom_point()\n```"
+  },
+  {
+    "objectID": "materials/3-computation/slides/computation.html#figure-output-example-2",
+    "href": "materials/3-computation/slides/computation.html#figure-output-example-2",
+    "title": "Computation",
+    "section": "Figure Output Example",
+    "text": "Figure Output Example\n\n\n```{r}\n#| fig-width: 5\n#| fig-height: 3\n#| fig-cap: \"Size of penguins on three islands in the Palmer Archipelago.\"\n#| fig-alt: \"Scatterplot showing the bill sizes of penguins across three islands.\"\n\nlibrary(palmerpenguins)\nlibrary(ggplot2)\n\nggplot(penguins, aes(x = bill_length_mm,\n                     y = bill_depth_mm,\n                     col = island)) +\n  geom_point()\n```\n\n\n\n\n\n\nSize of penguins on three islands in the Palmer Archipelago."
+  },
+  {
+    "objectID": "materials/3-computation/slides/computation.html#a-very-modest-data-frame",
+    "href": "materials/3-computation/slides/computation.html#a-very-modest-data-frame",
+    "title": "Computation",
+    "section": "A very modest data frame",
+    "text": "A very modest data frame\n\nR’s default isn’t designed for effective display.\n\n\n```{r}\npenguins\n```\n\n\n\n# A tibble: 344 × 8\n   species island    bill_length_mm bill_depth_mm flipper_length_mm body_mass_g\n   <fct>   <fct>              <dbl>         <dbl>             <int>       <int>\n 1 Adelie  Torgersen           39.1          18.7               181        3750\n 2 Adelie  Torgersen           39.5          17.4               186        3800\n 3 Adelie  Torgersen           40.3          18                 195        3250\n 4 Adelie  Torgersen           NA            NA                  NA          NA\n 5 Adelie  Torgersen           36.7          19.3               193        3450\n 6 Adelie  Torgersen           39.3          20.6               190        3650\n 7 Adelie  Torgersen           38.9          17.8               181        3625\n 8 Adelie  Torgersen           39.2          19.6               195        4675\n 9 Adelie  Torgersen           34.1          18.1               193        3475\n10 Adelie  Torgersen           42            20.2               190        4250\n# … with 334 more rows, and 2 more variables: sex <fct>, year <int>"
+  },
+  {
+    "objectID": "materials/3-computation/slides/computation.html#knitrkable-in-an-rmd",
+    "href": "materials/3-computation/slides/computation.html#knitrkable-in-an-rmd",
+    "title": "Computation",
+    "section": "knitr::kable in an Rmd",
+    "text": "knitr::kable in an Rmd\nkable() creates tables for \\(\\LaTeX\\), HTML, and Markdown output.\n\n\n```{r}\nknitr::kable(penguins)\n```\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nspecies\nisland\nbill_length_mm\nbill_depth_mm\nflipper_length_mm\nbody_mass_g\nsex\nyear\n\n\n\n\nAdelie\nTorgersen\n39.1\n18.7\n181\n3750\nmale\n2007\n\n\nAdelie\nTorgersen\n39.5\n17.4\n186\n3800\nfemale\n2007\n\n\nAdelie\nTorgersen\n40.3\n18.0\n195\n3250\nfemale\n2007\n\n\nAdelie\nTorgersen\nNA\nNA\nNA\nNA\nNA\n2007\n\n\nAdelie\nTorgersen\n36.7\n19.3\n193\n3450\nfemale\n2007\n\n\nAdelie\nTorgersen\n39.3\n20.6\n190\n3650\nmale\n2007\n\n\nAdelie\nTorgersen\n38.9\n17.8\n181\n3625\nfemale\n2007\n\n\nAdelie\nTorgersen\n39.2\n19.6\n195\n4675\nmale\n2007\n\n\nAdelie\nTorgersen\n34.1\n18.1\n193\n3475\nNA\n2007\n\n\nAdelie\nTorgersen\n42.0\n20.2\n190\n4250\nNA\n2007\n\n\nAdelie\nTorgersen\n37.8\n17.1\n186\n3300\nNA\n2007\n\n\nAdelie\nTorgersen\n37.8\n17.3\n180\n3700\nNA\n2007\n\n\nAdelie\nTorgersen\n41.1\n17.6\n182\n3200\nfemale\n2007\n\n\nAdelie\nTorgersen\n38.6\n21.2\n191\n3800\nmale\n2007\n\n\nAdelie\nTorgersen\n34.6\n21.1\n198\n4400\nmale\n2007\n\n\nAdelie\nTorgersen\n36.6\n17.8\n185\n3700\nfemale\n2007\n\n\nAdelie\nTorgersen\n38.7\n19.0\n195\n3450\nfemale\n2007\n\n\nAdelie\nTorgersen\n42.5\n20.7\n197\n4500\nmale\n2007\n\n\nAdelie\nTorgersen\n34.4\n18.4\n184\n3325\nfemale\n2007\n\n\nAdelie\nTorgersen\n46.0\n21.5\n194\n4200\nmale\n2007\n\n\nAdelie\nBiscoe\n37.8\n18.3\n174\n3400\nfemale\n2007\n\n\nAdelie\nBiscoe\n37.7\n18.7\n180\n3600\nmale\n2007\n\n\nAdelie\nBiscoe\n35.9\n19.2\n189\n3800\nfemale\n2007\n\n\nAdelie\nBiscoe\n38.2\n18.1\n185\n3950\nmale\n2007\n\n\nAdelie\nBiscoe\n38.8\n17.2\n180\n3800\nmale\n2007\n\n\nAdelie\nBiscoe\n35.3\n18.9\n187\n3800\nfemale\n2007\n\n\nAdelie\nBiscoe\n40.6\n18.6\n183\n3550\nmale\n2007\n\n\nAdelie\nBiscoe\n40.5\n17.9\n187\n3200\nfemale\n2007\n\n\nAdelie\nBiscoe\n37.9\n18.6\n172\n3150\nfemale\n2007\n\n\nAdelie\nBiscoe\n40.5\n18.9\n180\n3950\nmale\n2007\n\n\nAdelie\nDream\n39.5\n16.7\n178\n3250\nfemale\n2007\n\n\nAdelie\nDream\n37.2\n18.1\n178\n3900\nmale\n2007\n\n\nAdelie\nDream\n39.5\n17.8\n188\n3300\nfemale\n2007\n\n\nAdelie\nDream\n40.9\n18.9\n184\n3900\nmale\n2007\n\n\nAdelie\nDream\n36.4\n17.0\n195\n3325\nfemale\n2007\n\n\nAdelie\nDream\n39.2\n21.1\n196\n4150\nmale\n2007\n\n\nAdelie\nDream\n38.8\n20.0\n190\n3950\nmale\n2007\n\n\nAdelie\nDream\n42.2\n18.5\n180\n3550\nfemale\n2007\n\n\nAdelie\nDream\n37.6\n19.3\n181\n3300\nfemale\n2007\n\n\nAdelie\nDream\n39.8\n19.1\n184\n4650\nmale\n2007\n\n\nAdelie\nDream\n36.5\n18.0\n182\n3150\nfemale\n2007\n\n\nAdelie\nDream\n40.8\n18.4\n195\n3900\nmale\n2007\n\n\nAdelie\nDream\n36.0\n18.5\n186\n3100\nfemale\n2007\n\n\nAdelie\nDream\n44.1\n19.7\n196\n4400\nmale\n2007\n\n\nAdelie\nDream\n37.0\n16.9\n185\n3000\nfemale\n2007\n\n\nAdelie\nDream\n39.6\n18.8\n190\n4600\nmale\n2007\n\n\nAdelie\nDream\n41.1\n19.0\n182\n3425\nmale\n2007\n\n\nAdelie\nDream\n37.5\n18.9\n179\n2975\nNA\n2007\n\n\nAdelie\nDream\n36.0\n17.9\n190\n3450\nfemale\n2007\n\n\nAdelie\nDream\n42.3\n21.2\n191\n4150\nmale\n2007\n\n\nAdelie\nBiscoe\n39.6\n17.7\n186\n3500\nfemale\n2008\n\n\nAdelie\nBiscoe\n40.1\n18.9\n188\n4300\nmale\n2008\n\n\nAdelie\nBiscoe\n35.0\n17.9\n190\n3450\nfemale\n2008\n\n\nAdelie\nBiscoe\n42.0\n19.5\n200\n4050\nmale\n2008\n\n\nAdelie\nBiscoe\n34.5\n18.1\n187\n2900\nfemale\n2008\n\n\nAdelie\nBiscoe\n41.4\n18.6\n191\n3700\nmale\n2008\n\n\nAdelie\nBiscoe\n39.0\n17.5\n186\n3550\nfemale\n2008\n\n\nAdelie\nBiscoe\n40.6\n18.8\n193\n3800\nmale\n2008\n\n\nAdelie\nBiscoe\n36.5\n16.6\n181\n2850\nfemale\n2008\n\n\nAdelie\nBiscoe\n37.6\n19.1\n194\n3750\nmale\n2008\n\n\nAdelie\nBiscoe\n35.7\n16.9\n185\n3150\nfemale\n2008\n\n\nAdelie\nBiscoe\n41.3\n21.1\n195\n4400\nmale\n2008\n\n\nAdelie\nBiscoe\n37.6\n17.0\n185\n3600\nfemale\n2008\n\n\nAdelie\nBiscoe\n41.1\n18.2\n192\n4050\nmale\n2008\n\n\nAdelie\nBiscoe\n36.4\n17.1\n184\n2850\nfemale\n2008\n\n\nAdelie\nBiscoe\n41.6\n18.0\n192\n3950\nmale\n2008\n\n\nAdelie\nBiscoe\n35.5\n16.2\n195\n3350\nfemale\n2008\n\n\nAdelie\nBiscoe\n41.1\n19.1\n188\n4100\nmale\n2008\n\n\nAdelie\nTorgersen\n35.9\n16.6\n190\n3050\nfemale\n2008\n\n\nAdelie\nTorgersen\n41.8\n19.4\n198\n4450\nmale\n2008\n\n\nAdelie\nTorgersen\n33.5\n19.0\n190\n3600\nfemale\n2008\n\n\nAdelie\nTorgersen\n39.7\n18.4\n190\n3900\nmale\n2008\n\n\nAdelie\nTorgersen\n39.6\n17.2\n196\n3550\nfemale\n2008\n\n\nAdelie\nTorgersen\n45.8\n18.9\n197\n4150\nmale\n2008\n\n\nAdelie\nTorgersen\n35.5\n17.5\n190\n3700\nfemale\n2008\n\n\nAdelie\nTorgersen\n42.8\n18.5\n195\n4250\nmale\n2008\n\n\nAdelie\nTorgersen\n40.9\n16.8\n191\n3700\nfemale\n2008\n\n\nAdelie\nTorgersen\n37.2\n19.4\n184\n3900\nmale\n2008\n\n\nAdelie\nTorgersen\n36.2\n16.1\n187\n3550\nfemale\n2008\n\n\nAdelie\nTorgersen\n42.1\n19.1\n195\n4000\nmale\n2008\n\n\nAdelie\nTorgersen\n34.6\n17.2\n189\n3200\nfemale\n2008\n\n\nAdelie\nTorgersen\n42.9\n17.6\n196\n4700\nmale\n2008\n\n\nAdelie\nTorgersen\n36.7\n18.8\n187\n3800\nfemale\n2008\n\n\nAdelie\nTorgersen\n35.1\n19.4\n193\n4200\nmale\n2008\n\n\nAdelie\nDream\n37.3\n17.8\n191\n3350\nfemale\n2008\n\n\nAdelie\nDream\n41.3\n20.3\n194\n3550\nmale\n2008\n\n\nAdelie\nDream\n36.3\n19.5\n190\n3800\nmale\n2008\n\n\nAdelie\nDream\n36.9\n18.6\n189\n3500\nfemale\n2008\n\n\nAdelie\nDream\n38.3\n19.2\n189\n3950\nmale\n2008\n\n\nAdelie\nDream\n38.9\n18.8\n190\n3600\nfemale\n2008\n\n\nAdelie\nDream\n35.7\n18.0\n202\n3550\nfemale\n2008\n\n\nAdelie\nDream\n41.1\n18.1\n205\n4300\nmale\n2008\n\n\nAdelie\nDream\n34.0\n17.1\n185\n3400\nfemale\n2008\n\n\nAdelie\nDream\n39.6\n18.1\n186\n4450\nmale\n2008\n\n\nAdelie\nDream\n36.2\n17.3\n187\n3300\nfemale\n2008\n\n\nAdelie\nDream\n40.8\n18.9\n208\n4300\nmale\n2008\n\n\nAdelie\nDream\n38.1\n18.6\n190\n3700\nfemale\n2008\n\n\nAdelie\nDream\n40.3\n18.5\n196\n4350\nmale\n2008\n\n\nAdelie\nDream\n33.1\n16.1\n178\n2900\nfemale\n2008\n\n\nAdelie\nDream\n43.2\n18.5\n192\n4100\nmale\n2008\n\n\nAdelie\nBiscoe\n35.0\n17.9\n192\n3725\nfemale\n2009\n\n\nAdelie\nBiscoe\n41.0\n20.0\n203\n4725\nmale\n2009\n\n\nAdelie\nBiscoe\n37.7\n16.0\n183\n3075\nfemale\n2009\n\n\nAdelie\nBiscoe\n37.8\n20.0\n190\n4250\nmale\n2009\n\n\nAdelie\nBiscoe\n37.9\n18.6\n193\n2925\nfemale\n2009\n\n\nAdelie\nBiscoe\n39.7\n18.9\n184\n3550\nmale\n2009\n\n\nAdelie\nBiscoe\n38.6\n17.2\n199\n3750\nfemale\n2009\n\n\nAdelie\nBiscoe\n38.2\n20.0\n190\n3900\nmale\n2009\n\n\nAdelie\nBiscoe\n38.1\n17.0\n181\n3175\nfemale\n2009\n\n\nAdelie\nBiscoe\n43.2\n19.0\n197\n4775\nmale\n2009\n\n\nAdelie\nBiscoe\n38.1\n16.5\n198\n3825\nfemale\n2009\n\n\nAdelie\nBiscoe\n45.6\n20.3\n191\n4600\nmale\n2009\n\n\nAdelie\nBiscoe\n39.7\n17.7\n193\n3200\nfemale\n2009\n\n\nAdelie\nBiscoe\n42.2\n19.5\n197\n4275\nmale\n2009\n\n\nAdelie\nBiscoe\n39.6\n20.7\n191\n3900\nfemale\n2009\n\n\nAdelie\nBiscoe\n42.7\n18.3\n196\n4075\nmale\n2009\n\n\nAdelie\nTorgersen\n38.6\n17.0\n188\n2900\nfemale\n2009\n\n\nAdelie\nTorgersen\n37.3\n20.5\n199\n3775\nmale\n2009\n\n\nAdelie\nTorgersen\n35.7\n17.0\n189\n3350\nfemale\n2009\n\n\nAdelie\nTorgersen\n41.1\n18.6\n189\n3325\nmale\n2009\n\n\nAdelie\nTorgersen\n36.2\n17.2\n187\n3150\nfemale\n2009\n\n\nAdelie\nTorgersen\n37.7\n19.8\n198\n3500\nmale\n2009\n\n\nAdelie\nTorgersen\n40.2\n17.0\n176\n3450\nfemale\n2009\n\n\nAdelie\nTorgersen\n41.4\n18.5\n202\n3875\nmale\n2009\n\n\nAdelie\nTorgersen\n35.2\n15.9\n186\n3050\nfemale\n2009\n\n\nAdelie\nTorgersen\n40.6\n19.0\n199\n4000\nmale\n2009\n\n\nAdelie\nTorgersen\n38.8\n17.6\n191\n3275\nfemale\n2009\n\n\nAdelie\nTorgersen\n41.5\n18.3\n195\n4300\nmale\n2009\n\n\nAdelie\nTorgersen\n39.0\n17.1\n191\n3050\nfemale\n2009\n\n\nAdelie\nTorgersen\n44.1\n18.0\n210\n4000\nmale\n2009\n\n\nAdelie\nTorgersen\n38.5\n17.9\n190\n3325\nfemale\n2009\n\n\nAdelie\nTorgersen\n43.1\n19.2\n197\n3500\nmale\n2009\n\n\nAdelie\nDream\n36.8\n18.5\n193\n3500\nfemale\n2009\n\n\nAdelie\nDream\n37.5\n18.5\n199\n4475\nmale\n2009\n\n\nAdelie\nDream\n38.1\n17.6\n187\n3425\nfemale\n2009\n\n\nAdelie\nDream\n41.1\n17.5\n190\n3900\nmale\n2009\n\n\nAdelie\nDream\n35.6\n17.5\n191\n3175\nfemale\n2009\n\n\nAdelie\nDream\n40.2\n20.1\n200\n3975\nmale\n2009\n\n\nAdelie\nDream\n37.0\n16.5\n185\n3400\nfemale\n2009\n\n\nAdelie\nDream\n39.7\n17.9\n193\n4250\nmale\n2009\n\n\nAdelie\nDream\n40.2\n17.1\n193\n3400\nfemale\n2009\n\n\nAdelie\nDream\n40.6\n17.2\n187\n3475\nmale\n2009\n\n\nAdelie\nDream\n32.1\n15.5\n188\n3050\nfemale\n2009\n\n\nAdelie\nDream\n40.7\n17.0\n190\n3725\nmale\n2009\n\n\nAdelie\nDream\n37.3\n16.8\n192\n3000\nfemale\n2009\n\n\nAdelie\nDream\n39.0\n18.7\n185\n3650\nmale\n2009\n\n\nAdelie\nDream\n39.2\n18.6\n190\n4250\nmale\n2009\n\n\nAdelie\nDream\n36.6\n18.4\n184\n3475\nfemale\n2009\n\n\nAdelie\nDream\n36.0\n17.8\n195\n3450\nfemale\n2009\n\n\nAdelie\nDream\n37.8\n18.1\n193\n3750\nmale\n2009\n\n\nAdelie\nDream\n36.0\n17.1\n187\n3700\nfemale\n2009\n\n\nAdelie\nDream\n41.5\n18.5\n201\n4000\nmale\n2009\n\n\nGentoo\nBiscoe\n46.1\n13.2\n211\n4500\nfemale\n2007\n\n\nGentoo\nBiscoe\n50.0\n16.3\n230\n5700\nmale\n2007\n\n\nGentoo\nBiscoe\n48.7\n14.1\n210\n4450\nfemale\n2007\n\n\nGentoo\nBiscoe\n50.0\n15.2\n218\n5700\nmale\n2007\n\n\nGentoo\nBiscoe\n47.6\n14.5\n215\n5400\nmale\n2007\n\n\nGentoo\nBiscoe\n46.5\n13.5\n210\n4550\nfemale\n2007\n\n\nGentoo\nBiscoe\n45.4\n14.6\n211\n4800\nfemale\n2007\n\n\nGentoo\nBiscoe\n46.7\n15.3\n219\n5200\nmale\n2007\n\n\nGentoo\nBiscoe\n43.3\n13.4\n209\n4400\nfemale\n2007\n\n\nGentoo\nBiscoe\n46.8\n15.4\n215\n5150\nmale\n2007\n\n\nGentoo\nBiscoe\n40.9\n13.7\n214\n4650\nfemale\n2007\n\n\nGentoo\nBiscoe\n49.0\n16.1\n216\n5550\nmale\n2007\n\n\nGentoo\nBiscoe\n45.5\n13.7\n214\n4650\nfemale\n2007\n\n\nGentoo\nBiscoe\n48.4\n14.6\n213\n5850\nmale\n2007\n\n\nGentoo\nBiscoe\n45.8\n14.6\n210\n4200\nfemale\n2007\n\n\nGentoo\nBiscoe\n49.3\n15.7\n217\n5850\nmale\n2007\n\n\nGentoo\nBiscoe\n42.0\n13.5\n210\n4150\nfemale\n2007\n\n\nGentoo\nBiscoe\n49.2\n15.2\n221\n6300\nmale\n2007\n\n\nGentoo\nBiscoe\n46.2\n14.5\n209\n4800\nfemale\n2007\n\n\nGentoo\nBiscoe\n48.7\n15.1\n222\n5350\nmale\n2007\n\n\nGentoo\nBiscoe\n50.2\n14.3\n218\n5700\nmale\n2007\n\n\nGentoo\nBiscoe\n45.1\n14.5\n215\n5000\nfemale\n2007\n\n\nGentoo\nBiscoe\n46.5\n14.5\n213\n4400\nfemale\n2007\n\n\nGentoo\nBiscoe\n46.3\n15.8\n215\n5050\nmale\n2007\n\n\nGentoo\nBiscoe\n42.9\n13.1\n215\n5000\nfemale\n2007\n\n\nGentoo\nBiscoe\n46.1\n15.1\n215\n5100\nmale\n2007\n\n\nGentoo\nBiscoe\n44.5\n14.3\n216\n4100\nNA\n2007\n\n\nGentoo\nBiscoe\n47.8\n15.0\n215\n5650\nmale\n2007\n\n\nGentoo\nBiscoe\n48.2\n14.3\n210\n4600\nfemale\n2007\n\n\nGentoo\nBiscoe\n50.0\n15.3\n220\n5550\nmale\n2007\n\n\nGentoo\nBiscoe\n47.3\n15.3\n222\n5250\nmale\n2007\n\n\nGentoo\nBiscoe\n42.8\n14.2\n209\n4700\nfemale\n2007\n\n\nGentoo\nBiscoe\n45.1\n14.5\n207\n5050\nfemale\n2007\n\n\nGentoo\nBiscoe\n59.6\n17.0\n230\n6050\nmale\n2007\n\n\nGentoo\nBiscoe\n49.1\n14.8\n220\n5150\nfemale\n2008\n\n\nGentoo\nBiscoe\n48.4\n16.3\n220\n5400\nmale\n2008\n\n\nGentoo\nBiscoe\n42.6\n13.7\n213\n4950\nfemale\n2008\n\n\nGentoo\nBiscoe\n44.4\n17.3\n219\n5250\nmale\n2008\n\n\nGentoo\nBiscoe\n44.0\n13.6\n208\n4350\nfemale\n2008\n\n\nGentoo\nBiscoe\n48.7\n15.7\n208\n5350\nmale\n2008\n\n\nGentoo\nBiscoe\n42.7\n13.7\n208\n3950\nfemale\n2008\n\n\nGentoo\nBiscoe\n49.6\n16.0\n225\n5700\nmale\n2008\n\n\nGentoo\nBiscoe\n45.3\n13.7\n210\n4300\nfemale\n2008\n\n\nGentoo\nBiscoe\n49.6\n15.0\n216\n4750\nmale\n2008\n\n\nGentoo\nBiscoe\n50.5\n15.9\n222\n5550\nmale\n2008\n\n\nGentoo\nBiscoe\n43.6\n13.9\n217\n4900\nfemale\n2008\n\n\nGentoo\nBiscoe\n45.5\n13.9\n210\n4200\nfemale\n2008\n\n\nGentoo\nBiscoe\n50.5\n15.9\n225\n5400\nmale\n2008\n\n\nGentoo\nBiscoe\n44.9\n13.3\n213\n5100\nfemale\n2008\n\n\nGentoo\nBiscoe\n45.2\n15.8\n215\n5300\nmale\n2008\n\n\nGentoo\nBiscoe\n46.6\n14.2\n210\n4850\nfemale\n2008\n\n\nGentoo\nBiscoe\n48.5\n14.1\n220\n5300\nmale\n2008\n\n\nGentoo\nBiscoe\n45.1\n14.4\n210\n4400\nfemale\n2008\n\n\nGentoo\nBiscoe\n50.1\n15.0\n225\n5000\nmale\n2008\n\n\nGentoo\nBiscoe\n46.5\n14.4\n217\n4900\nfemale\n2008\n\n\nGentoo\nBiscoe\n45.0\n15.4\n220\n5050\nmale\n2008\n\n\nGentoo\nBiscoe\n43.8\n13.9\n208\n4300\nfemale\n2008\n\n\nGentoo\nBiscoe\n45.5\n15.0\n220\n5000\nmale\n2008\n\n\nGentoo\nBiscoe\n43.2\n14.5\n208\n4450\nfemale\n2008\n\n\nGentoo\nBiscoe\n50.4\n15.3\n224\n5550\nmale\n2008\n\n\nGentoo\nBiscoe\n45.3\n13.8\n208\n4200\nfemale\n2008\n\n\nGentoo\nBiscoe\n46.2\n14.9\n221\n5300\nmale\n2008\n\n\nGentoo\nBiscoe\n45.7\n13.9\n214\n4400\nfemale\n2008\n\n\nGentoo\nBiscoe\n54.3\n15.7\n231\n5650\nmale\n2008\n\n\nGentoo\nBiscoe\n45.8\n14.2\n219\n4700\nfemale\n2008\n\n\nGentoo\nBiscoe\n49.8\n16.8\n230\n5700\nmale\n2008\n\n\nGentoo\nBiscoe\n46.2\n14.4\n214\n4650\nNA\n2008\n\n\nGentoo\nBiscoe\n49.5\n16.2\n229\n5800\nmale\n2008\n\n\nGentoo\nBiscoe\n43.5\n14.2\n220\n4700\nfemale\n2008\n\n\nGentoo\nBiscoe\n50.7\n15.0\n223\n5550\nmale\n2008\n\n\nGentoo\nBiscoe\n47.7\n15.0\n216\n4750\nfemale\n2008\n\n\nGentoo\nBiscoe\n46.4\n15.6\n221\n5000\nmale\n2008\n\n\nGentoo\nBiscoe\n48.2\n15.6\n221\n5100\nmale\n2008\n\n\nGentoo\nBiscoe\n46.5\n14.8\n217\n5200\nfemale\n2008\n\n\nGentoo\nBiscoe\n46.4\n15.0\n216\n4700\nfemale\n2008\n\n\nGentoo\nBiscoe\n48.6\n16.0\n230\n5800\nmale\n2008\n\n\nGentoo\nBiscoe\n47.5\n14.2\n209\n4600\nfemale\n2008\n\n\nGentoo\nBiscoe\n51.1\n16.3\n220\n6000\nmale\n2008\n\n\nGentoo\nBiscoe\n45.2\n13.8\n215\n4750\nfemale\n2008\n\n\nGentoo\nBiscoe\n45.2\n16.4\n223\n5950\nmale\n2008\n\n\nGentoo\nBiscoe\n49.1\n14.5\n212\n4625\nfemale\n2009\n\n\nGentoo\nBiscoe\n52.5\n15.6\n221\n5450\nmale\n2009\n\n\nGentoo\nBiscoe\n47.4\n14.6\n212\n4725\nfemale\n2009\n\n\nGentoo\nBiscoe\n50.0\n15.9\n224\n5350\nmale\n2009\n\n\nGentoo\nBiscoe\n44.9\n13.8\n212\n4750\nfemale\n2009\n\n\nGentoo\nBiscoe\n50.8\n17.3\n228\n5600\nmale\n2009\n\n\nGentoo\nBiscoe\n43.4\n14.4\n218\n4600\nfemale\n2009\n\n\nGentoo\nBiscoe\n51.3\n14.2\n218\n5300\nmale\n2009\n\n\nGentoo\nBiscoe\n47.5\n14.0\n212\n4875\nfemale\n2009\n\n\nGentoo\nBiscoe\n52.1\n17.0\n230\n5550\nmale\n2009\n\n\nGentoo\nBiscoe\n47.5\n15.0\n218\n4950\nfemale\n2009\n\n\nGentoo\nBiscoe\n52.2\n17.1\n228\n5400\nmale\n2009\n\n\nGentoo\nBiscoe\n45.5\n14.5\n212\n4750\nfemale\n2009\n\n\nGentoo\nBiscoe\n49.5\n16.1\n224\n5650\nmale\n2009\n\n\nGentoo\nBiscoe\n44.5\n14.7\n214\n4850\nfemale\n2009\n\n\nGentoo\nBiscoe\n50.8\n15.7\n226\n5200\nmale\n2009\n\n\nGentoo\nBiscoe\n49.4\n15.8\n216\n4925\nmale\n2009\n\n\nGentoo\nBiscoe\n46.9\n14.6\n222\n4875\nfemale\n2009\n\n\nGentoo\nBiscoe\n48.4\n14.4\n203\n4625\nfemale\n2009\n\n\nGentoo\nBiscoe\n51.1\n16.5\n225\n5250\nmale\n2009\n\n\nGentoo\nBiscoe\n48.5\n15.0\n219\n4850\nfemale\n2009\n\n\nGentoo\nBiscoe\n55.9\n17.0\n228\n5600\nmale\n2009\n\n\nGentoo\nBiscoe\n47.2\n15.5\n215\n4975\nfemale\n2009\n\n\nGentoo\nBiscoe\n49.1\n15.0\n228\n5500\nmale\n2009\n\n\nGentoo\nBiscoe\n47.3\n13.8\n216\n4725\nNA\n2009\n\n\nGentoo\nBiscoe\n46.8\n16.1\n215\n5500\nmale\n2009\n\n\nGentoo\nBiscoe\n41.7\n14.7\n210\n4700\nfemale\n2009\n\n\nGentoo\nBiscoe\n53.4\n15.8\n219\n5500\nmale\n2009\n\n\nGentoo\nBiscoe\n43.3\n14.0\n208\n4575\nfemale\n2009\n\n\nGentoo\nBiscoe\n48.1\n15.1\n209\n5500\nmale\n2009\n\n\nGentoo\nBiscoe\n50.5\n15.2\n216\n5000\nfemale\n2009\n\n\nGentoo\nBiscoe\n49.8\n15.9\n229\n5950\nmale\n2009\n\n\nGentoo\nBiscoe\n43.5\n15.2\n213\n4650\nfemale\n2009\n\n\nGentoo\nBiscoe\n51.5\n16.3\n230\n5500\nmale\n2009\n\n\nGentoo\nBiscoe\n46.2\n14.1\n217\n4375\nfemale\n2009\n\n\nGentoo\nBiscoe\n55.1\n16.0\n230\n5850\nmale\n2009\n\n\nGentoo\nBiscoe\n44.5\n15.7\n217\n4875\nNA\n2009\n\n\nGentoo\nBiscoe\n48.8\n16.2\n222\n6000\nmale\n2009\n\n\nGentoo\nBiscoe\n47.2\n13.7\n214\n4925\nfemale\n2009\n\n\nGentoo\nBiscoe\nNA\nNA\nNA\nNA\nNA\n2009\n\n\nGentoo\nBiscoe\n46.8\n14.3\n215\n4850\nfemale\n2009\n\n\nGentoo\nBiscoe\n50.4\n15.7\n222\n5750\nmale\n2009\n\n\nGentoo\nBiscoe\n45.2\n14.8\n212\n5200\nfemale\n2009\n\n\nGentoo\nBiscoe\n49.9\n16.1\n213\n5400\nmale\n2009\n\n\nChinstrap\nDream\n46.5\n17.9\n192\n3500\nfemale\n2007\n\n\nChinstrap\nDream\n50.0\n19.5\n196\n3900\nmale\n2007\n\n\nChinstrap\nDream\n51.3\n19.2\n193\n3650\nmale\n2007\n\n\nChinstrap\nDream\n45.4\n18.7\n188\n3525\nfemale\n2007\n\n\nChinstrap\nDream\n52.7\n19.8\n197\n3725\nmale\n2007\n\n\nChinstrap\nDream\n45.2\n17.8\n198\n3950\nfemale\n2007\n\n\nChinstrap\nDream\n46.1\n18.2\n178\n3250\nfemale\n2007\n\n\nChinstrap\nDream\n51.3\n18.2\n197\n3750\nmale\n2007\n\n\nChinstrap\nDream\n46.0\n18.9\n195\n4150\nfemale\n2007\n\n\nChinstrap\nDream\n51.3\n19.9\n198\n3700\nmale\n2007\n\n\nChinstrap\nDream\n46.6\n17.8\n193\n3800\nfemale\n2007\n\n\nChinstrap\nDream\n51.7\n20.3\n194\n3775\nmale\n2007\n\n\nChinstrap\nDream\n47.0\n17.3\n185\n3700\nfemale\n2007\n\n\nChinstrap\nDream\n52.0\n18.1\n201\n4050\nmale\n2007\n\n\nChinstrap\nDream\n45.9\n17.1\n190\n3575\nfemale\n2007\n\n\nChinstrap\nDream\n50.5\n19.6\n201\n4050\nmale\n2007\n\n\nChinstrap\nDream\n50.3\n20.0\n197\n3300\nmale\n2007\n\n\nChinstrap\nDream\n58.0\n17.8\n181\n3700\nfemale\n2007\n\n\nChinstrap\nDream\n46.4\n18.6\n190\n3450\nfemale\n2007\n\n\nChinstrap\nDream\n49.2\n18.2\n195\n4400\nmale\n2007\n\n\nChinstrap\nDream\n42.4\n17.3\n181\n3600\nfemale\n2007\n\n\nChinstrap\nDream\n48.5\n17.5\n191\n3400\nmale\n2007\n\n\nChinstrap\nDream\n43.2\n16.6\n187\n2900\nfemale\n2007\n\n\nChinstrap\nDream\n50.6\n19.4\n193\n3800\nmale\n2007\n\n\nChinstrap\nDream\n46.7\n17.9\n195\n3300\nfemale\n2007\n\n\nChinstrap\nDream\n52.0\n19.0\n197\n4150\nmale\n2007\n\n\nChinstrap\nDream\n50.5\n18.4\n200\n3400\nfemale\n2008\n\n\nChinstrap\nDream\n49.5\n19.0\n200\n3800\nmale\n2008\n\n\nChinstrap\nDream\n46.4\n17.8\n191\n3700\nfemale\n2008\n\n\nChinstrap\nDream\n52.8\n20.0\n205\n4550\nmale\n2008\n\n\nChinstrap\nDream\n40.9\n16.6\n187\n3200\nfemale\n2008\n\n\nChinstrap\nDream\n54.2\n20.8\n201\n4300\nmale\n2008\n\n\nChinstrap\nDream\n42.5\n16.7\n187\n3350\nfemale\n2008\n\n\nChinstrap\nDream\n51.0\n18.8\n203\n4100\nmale\n2008\n\n\nChinstrap\nDream\n49.7\n18.6\n195\n3600\nmale\n2008\n\n\nChinstrap\nDream\n47.5\n16.8\n199\n3900\nfemale\n2008\n\n\nChinstrap\nDream\n47.6\n18.3\n195\n3850\nfemale\n2008\n\n\nChinstrap\nDream\n52.0\n20.7\n210\n4800\nmale\n2008\n\n\nChinstrap\nDream\n46.9\n16.6\n192\n2700\nfemale\n2008\n\n\nChinstrap\nDream\n53.5\n19.9\n205\n4500\nmale\n2008\n\n\nChinstrap\nDream\n49.0\n19.5\n210\n3950\nmale\n2008\n\n\nChinstrap\nDream\n46.2\n17.5\n187\n3650\nfemale\n2008\n\n\nChinstrap\nDream\n50.9\n19.1\n196\n3550\nmale\n2008\n\n\nChinstrap\nDream\n45.5\n17.0\n196\n3500\nfemale\n2008\n\n\nChinstrap\nDream\n50.9\n17.9\n196\n3675\nfemale\n2009\n\n\nChinstrap\nDream\n50.8\n18.5\n201\n4450\nmale\n2009\n\n\nChinstrap\nDream\n50.1\n17.9\n190\n3400\nfemale\n2009\n\n\nChinstrap\nDream\n49.0\n19.6\n212\n4300\nmale\n2009\n\n\nChinstrap\nDream\n51.5\n18.7\n187\n3250\nmale\n2009\n\n\nChinstrap\nDream\n49.8\n17.3\n198\n3675\nfemale\n2009\n\n\nChinstrap\nDream\n48.1\n16.4\n199\n3325\nfemale\n2009\n\n\nChinstrap\nDream\n51.4\n19.0\n201\n3950\nmale\n2009\n\n\nChinstrap\nDream\n45.7\n17.3\n193\n3600\nfemale\n2009\n\n\nChinstrap\nDream\n50.7\n19.7\n203\n4050\nmale\n2009\n\n\nChinstrap\nDream\n42.5\n17.3\n187\n3350\nfemale\n2009\n\n\nChinstrap\nDream\n52.2\n18.8\n197\n3450\nmale\n2009\n\n\nChinstrap\nDream\n45.2\n16.6\n191\n3250\nfemale\n2009\n\n\nChinstrap\nDream\n49.3\n19.9\n203\n4050\nmale\n2009\n\n\nChinstrap\nDream\n50.2\n18.8\n202\n3800\nmale\n2009\n\n\nChinstrap\nDream\n45.6\n19.4\n194\n3525\nfemale\n2009\n\n\nChinstrap\nDream\n51.9\n19.5\n206\n3950\nmale\n2009\n\n\nChinstrap\nDream\n46.8\n16.5\n189\n3650\nfemale\n2009\n\n\nChinstrap\nDream\n45.7\n17.0\n195\n3650\nfemale\n2009\n\n\nChinstrap\nDream\n55.8\n19.8\n207\n4000\nmale\n2009\n\n\nChinstrap\nDream\n43.5\n18.1\n202\n3400\nfemale\n2009\n\n\nChinstrap\nDream\n49.6\n18.2\n193\n3775\nmale\n2009\n\n\nChinstrap\nDream\n50.8\n19.0\n210\n4100\nmale\n2009\n\n\nChinstrap\nDream\n50.2\n18.7\n198\n3775\nfemale\n2009"
+  },
+  {
+    "objectID": "materials/3-computation/slides/computation.html#knitrkable-in-quarto",
+    "href": "materials/3-computation/slides/computation.html#knitrkable-in-quarto",
+    "title": "Computation",
+    "section": "knitr::kable in Quarto",
+    "text": "knitr::kable in Quarto\ndf-print: kable available as a document-level option.\n\n\n---\nformat:\n  html:\n    df-print: kable\n---\n\n```{r}\npenguins\n```\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nspecies\nisland\nbill_length_mm\nbill_depth_mm\nflipper_length_mm\nbody_mass_g\nsex\nyear\n\n\n\n\nAdelie\nTorgersen\n39.1\n18.7\n181\n3750\nmale\n2007\n\n\nAdelie\nTorgersen\n39.5\n17.4\n186\n3800\nfemale\n2007\n\n\nAdelie\nTorgersen\n40.3\n18.0\n195\n3250\nfemale\n2007\n\n\nAdelie\nTorgersen\nNA\nNA\nNA\nNA\nNA\n2007\n\n\nAdelie\nTorgersen\n36.7\n19.3\n193\n3450\nfemale\n2007\n\n\nAdelie\nTorgersen\n39.3\n20.6\n190\n3650\nmale\n2007\n\n\nAdelie\nTorgersen\n38.9\n17.8\n181\n3625\nfemale\n2007\n\n\nAdelie\nTorgersen\n39.2\n19.6\n195\n4675\nmale\n2007\n\n\nAdelie\nTorgersen\n34.1\n18.1\n193\n3475\nNA\n2007\n\n\nAdelie\nTorgersen\n42.0\n20.2\n190\n4250\nNA\n2007\n\n\nAdelie\nTorgersen\n37.8\n17.1\n186\n3300\nNA\n2007\n\n\nAdelie\nTorgersen\n37.8\n17.3\n180\n3700\nNA\n2007\n\n\nAdelie\nTorgersen\n41.1\n17.6\n182\n3200\nfemale\n2007\n\n\nAdelie\nTorgersen\n38.6\n21.2\n191\n3800\nmale\n2007\n\n\nAdelie\nTorgersen\n34.6\n21.1\n198\n4400\nmale\n2007\n\n\nAdelie\nTorgersen\n36.6\n17.8\n185\n3700\nfemale\n2007\n\n\nAdelie\nTorgersen\n38.7\n19.0\n195\n3450\nfemale\n2007\n\n\nAdelie\nTorgersen\n42.5\n20.7\n197\n4500\nmale\n2007\n\n\nAdelie\nTorgersen\n34.4\n18.4\n184\n3325\nfemale\n2007\n\n\nAdelie\nTorgersen\n46.0\n21.5\n194\n4200\nmale\n2007\n\n\nAdelie\nBiscoe\n37.8\n18.3\n174\n3400\nfemale\n2007\n\n\nAdelie\nBiscoe\n37.7\n18.7\n180\n3600\nmale\n2007\n\n\nAdelie\nBiscoe\n35.9\n19.2\n189\n3800\nfemale\n2007\n\n\nAdelie\nBiscoe\n38.2\n18.1\n185\n3950\nmale\n2007\n\n\nAdelie\nBiscoe\n38.8\n17.2\n180\n3800\nmale\n2007\n\n\nAdelie\nBiscoe\n35.3\n18.9\n187\n3800\nfemale\n2007\n\n\nAdelie\nBiscoe\n40.6\n18.6\n183\n3550\nmale\n2007\n\n\nAdelie\nBiscoe\n40.5\n17.9\n187\n3200\nfemale\n2007\n\n\nAdelie\nBiscoe\n37.9\n18.6\n172\n3150\nfemale\n2007\n\n\nAdelie\nBiscoe\n40.5\n18.9\n180\n3950\nmale\n2007\n\n\nAdelie\nDream\n39.5\n16.7\n178\n3250\nfemale\n2007\n\n\nAdelie\nDream\n37.2\n18.1\n178\n3900\nmale\n2007\n\n\nAdelie\nDream\n39.5\n17.8\n188\n3300\nfemale\n2007\n\n\nAdelie\nDream\n40.9\n18.9\n184\n3900\nmale\n2007\n\n\nAdelie\nDream\n36.4\n17.0\n195\n3325\nfemale\n2007\n\n\nAdelie\nDream\n39.2\n21.1\n196\n4150\nmale\n2007\n\n\nAdelie\nDream\n38.8\n20.0\n190\n3950\nmale\n2007\n\n\nAdelie\nDream\n42.2\n18.5\n180\n3550\nfemale\n2007\n\n\nAdelie\nDream\n37.6\n19.3\n181\n3300\nfemale\n2007\n\n\nAdelie\nDream\n39.8\n19.1\n184\n4650\nmale\n2007\n\n\nAdelie\nDream\n36.5\n18.0\n182\n3150\nfemale\n2007\n\n\nAdelie\nDream\n40.8\n18.4\n195\n3900\nmale\n2007\n\n\nAdelie\nDream\n36.0\n18.5\n186\n3100\nfemale\n2007\n\n\nAdelie\nDream\n44.1\n19.7\n196\n4400\nmale\n2007\n\n\nAdelie\nDream\n37.0\n16.9\n185\n3000\nfemale\n2007\n\n\nAdelie\nDream\n39.6\n18.8\n190\n4600\nmale\n2007\n\n\nAdelie\nDream\n41.1\n19.0\n182\n3425\nmale\n2007\n\n\nAdelie\nDream\n37.5\n18.9\n179\n2975\nNA\n2007\n\n\nAdelie\nDream\n36.0\n17.9\n190\n3450\nfemale\n2007\n\n\nAdelie\nDream\n42.3\n21.2\n191\n4150\nmale\n2007\n\n\nAdelie\nBiscoe\n39.6\n17.7\n186\n3500\nfemale\n2008\n\n\nAdelie\nBiscoe\n40.1\n18.9\n188\n4300\nmale\n2008\n\n\nAdelie\nBiscoe\n35.0\n17.9\n190\n3450\nfemale\n2008\n\n\nAdelie\nBiscoe\n42.0\n19.5\n200\n4050\nmale\n2008\n\n\nAdelie\nBiscoe\n34.5\n18.1\n187\n2900\nfemale\n2008\n\n\nAdelie\nBiscoe\n41.4\n18.6\n191\n3700\nmale\n2008\n\n\nAdelie\nBiscoe\n39.0\n17.5\n186\n3550\nfemale\n2008\n\n\nAdelie\nBiscoe\n40.6\n18.8\n193\n3800\nmale\n2008\n\n\nAdelie\nBiscoe\n36.5\n16.6\n181\n2850\nfemale\n2008\n\n\nAdelie\nBiscoe\n37.6\n19.1\n194\n3750\nmale\n2008\n\n\nAdelie\nBiscoe\n35.7\n16.9\n185\n3150\nfemale\n2008\n\n\nAdelie\nBiscoe\n41.3\n21.1\n195\n4400\nmale\n2008\n\n\nAdelie\nBiscoe\n37.6\n17.0\n185\n3600\nfemale\n2008\n\n\nAdelie\nBiscoe\n41.1\n18.2\n192\n4050\nmale\n2008\n\n\nAdelie\nBiscoe\n36.4\n17.1\n184\n2850\nfemale\n2008\n\n\nAdelie\nBiscoe\n41.6\n18.0\n192\n3950\nmale\n2008\n\n\nAdelie\nBiscoe\n35.5\n16.2\n195\n3350\nfemale\n2008\n\n\nAdelie\nBiscoe\n41.1\n19.1\n188\n4100\nmale\n2008\n\n\nAdelie\nTorgersen\n35.9\n16.6\n190\n3050\nfemale\n2008\n\n\nAdelie\nTorgersen\n41.8\n19.4\n198\n4450\nmale\n2008\n\n\nAdelie\nTorgersen\n33.5\n19.0\n190\n3600\nfemale\n2008\n\n\nAdelie\nTorgersen\n39.7\n18.4\n190\n3900\nmale\n2008\n\n\nAdelie\nTorgersen\n39.6\n17.2\n196\n3550\nfemale\n2008\n\n\nAdelie\nTorgersen\n45.8\n18.9\n197\n4150\nmale\n2008\n\n\nAdelie\nTorgersen\n35.5\n17.5\n190\n3700\nfemale\n2008\n\n\nAdelie\nTorgersen\n42.8\n18.5\n195\n4250\nmale\n2008\n\n\nAdelie\nTorgersen\n40.9\n16.8\n191\n3700\nfemale\n2008\n\n\nAdelie\nTorgersen\n37.2\n19.4\n184\n3900\nmale\n2008\n\n\nAdelie\nTorgersen\n36.2\n16.1\n187\n3550\nfemale\n2008\n\n\nAdelie\nTorgersen\n42.1\n19.1\n195\n4000\nmale\n2008\n\n\nAdelie\nTorgersen\n34.6\n17.2\n189\n3200\nfemale\n2008\n\n\nAdelie\nTorgersen\n42.9\n17.6\n196\n4700\nmale\n2008\n\n\nAdelie\nTorgersen\n36.7\n18.8\n187\n3800\nfemale\n2008\n\n\nAdelie\nTorgersen\n35.1\n19.4\n193\n4200\nmale\n2008\n\n\nAdelie\nDream\n37.3\n17.8\n191\n3350\nfemale\n2008\n\n\nAdelie\nDream\n41.3\n20.3\n194\n3550\nmale\n2008\n\n\nAdelie\nDream\n36.3\n19.5\n190\n3800\nmale\n2008\n\n\nAdelie\nDream\n36.9\n18.6\n189\n3500\nfemale\n2008\n\n\nAdelie\nDream\n38.3\n19.2\n189\n3950\nmale\n2008\n\n\nAdelie\nDream\n38.9\n18.8\n190\n3600\nfemale\n2008\n\n\nAdelie\nDream\n35.7\n18.0\n202\n3550\nfemale\n2008\n\n\nAdelie\nDream\n41.1\n18.1\n205\n4300\nmale\n2008\n\n\nAdelie\nDream\n34.0\n17.1\n185\n3400\nfemale\n2008\n\n\nAdelie\nDream\n39.6\n18.1\n186\n4450\nmale\n2008\n\n\nAdelie\nDream\n36.2\n17.3\n187\n3300\nfemale\n2008\n\n\nAdelie\nDream\n40.8\n18.9\n208\n4300\nmale\n2008\n\n\nAdelie\nDream\n38.1\n18.6\n190\n3700\nfemale\n2008\n\n\nAdelie\nDream\n40.3\n18.5\n196\n4350\nmale\n2008\n\n\nAdelie\nDream\n33.1\n16.1\n178\n2900\nfemale\n2008\n\n\nAdelie\nDream\n43.2\n18.5\n192\n4100\nmale\n2008\n\n\nAdelie\nBiscoe\n35.0\n17.9\n192\n3725\nfemale\n2009\n\n\nAdelie\nBiscoe\n41.0\n20.0\n203\n4725\nmale\n2009\n\n\nAdelie\nBiscoe\n37.7\n16.0\n183\n3075\nfemale\n2009\n\n\nAdelie\nBiscoe\n37.8\n20.0\n190\n4250\nmale\n2009\n\n\nAdelie\nBiscoe\n37.9\n18.6\n193\n2925\nfemale\n2009\n\n\nAdelie\nBiscoe\n39.7\n18.9\n184\n3550\nmale\n2009\n\n\nAdelie\nBiscoe\n38.6\n17.2\n199\n3750\nfemale\n2009\n\n\nAdelie\nBiscoe\n38.2\n20.0\n190\n3900\nmale\n2009\n\n\nAdelie\nBiscoe\n38.1\n17.0\n181\n3175\nfemale\n2009\n\n\nAdelie\nBiscoe\n43.2\n19.0\n197\n4775\nmale\n2009\n\n\nAdelie\nBiscoe\n38.1\n16.5\n198\n3825\nfemale\n2009\n\n\nAdelie\nBiscoe\n45.6\n20.3\n191\n4600\nmale\n2009\n\n\nAdelie\nBiscoe\n39.7\n17.7\n193\n3200\nfemale\n2009\n\n\nAdelie\nBiscoe\n42.2\n19.5\n197\n4275\nmale\n2009\n\n\nAdelie\nBiscoe\n39.6\n20.7\n191\n3900\nfemale\n2009\n\n\nAdelie\nBiscoe\n42.7\n18.3\n196\n4075\nmale\n2009\n\n\nAdelie\nTorgersen\n38.6\n17.0\n188\n2900\nfemale\n2009\n\n\nAdelie\nTorgersen\n37.3\n20.5\n199\n3775\nmale\n2009\n\n\nAdelie\nTorgersen\n35.7\n17.0\n189\n3350\nfemale\n2009\n\n\nAdelie\nTorgersen\n41.1\n18.6\n189\n3325\nmale\n2009\n\n\nAdelie\nTorgersen\n36.2\n17.2\n187\n3150\nfemale\n2009\n\n\nAdelie\nTorgersen\n37.7\n19.8\n198\n3500\nmale\n2009\n\n\nAdelie\nTorgersen\n40.2\n17.0\n176\n3450\nfemale\n2009\n\n\nAdelie\nTorgersen\n41.4\n18.5\n202\n3875\nmale\n2009\n\n\nAdelie\nTorgersen\n35.2\n15.9\n186\n3050\nfemale\n2009\n\n\nAdelie\nTorgersen\n40.6\n19.0\n199\n4000\nmale\n2009\n\n\nAdelie\nTorgersen\n38.8\n17.6\n191\n3275\nfemale\n2009\n\n\nAdelie\nTorgersen\n41.5\n18.3\n195\n4300\nmale\n2009\n\n\nAdelie\nTorgersen\n39.0\n17.1\n191\n3050\nfemale\n2009\n\n\nAdelie\nTorgersen\n44.1\n18.0\n210\n4000\nmale\n2009\n\n\nAdelie\nTorgersen\n38.5\n17.9\n190\n3325\nfemale\n2009\n\n\nAdelie\nTorgersen\n43.1\n19.2\n197\n3500\nmale\n2009\n\n\nAdelie\nDream\n36.8\n18.5\n193\n3500\nfemale\n2009\n\n\nAdelie\nDream\n37.5\n18.5\n199\n4475\nmale\n2009\n\n\nAdelie\nDream\n38.1\n17.6\n187\n3425\nfemale\n2009\n\n\nAdelie\nDream\n41.1\n17.5\n190\n3900\nmale\n2009\n\n\nAdelie\nDream\n35.6\n17.5\n191\n3175\nfemale\n2009\n\n\nAdelie\nDream\n40.2\n20.1\n200\n3975\nmale\n2009\n\n\nAdelie\nDream\n37.0\n16.5\n185\n3400\nfemale\n2009\n\n\nAdelie\nDream\n39.7\n17.9\n193\n4250\nmale\n2009\n\n\nAdelie\nDream\n40.2\n17.1\n193\n3400\nfemale\n2009\n\n\nAdelie\nDream\n40.6\n17.2\n187\n3475\nmale\n2009\n\n\nAdelie\nDream\n32.1\n15.5\n188\n3050\nfemale\n2009\n\n\nAdelie\nDream\n40.7\n17.0\n190\n3725\nmale\n2009\n\n\nAdelie\nDream\n37.3\n16.8\n192\n3000\nfemale\n2009\n\n\nAdelie\nDream\n39.0\n18.7\n185\n3650\nmale\n2009\n\n\nAdelie\nDream\n39.2\n18.6\n190\n4250\nmale\n2009\n\n\nAdelie\nDream\n36.6\n18.4\n184\n3475\nfemale\n2009\n\n\nAdelie\nDream\n36.0\n17.8\n195\n3450\nfemale\n2009\n\n\nAdelie\nDream\n37.8\n18.1\n193\n3750\nmale\n2009\n\n\nAdelie\nDream\n36.0\n17.1\n187\n3700\nfemale\n2009\n\n\nAdelie\nDream\n41.5\n18.5\n201\n4000\nmale\n2009\n\n\nGentoo\nBiscoe\n46.1\n13.2\n211\n4500\nfemale\n2007\n\n\nGentoo\nBiscoe\n50.0\n16.3\n230\n5700\nmale\n2007\n\n\nGentoo\nBiscoe\n48.7\n14.1\n210\n4450\nfemale\n2007\n\n\nGentoo\nBiscoe\n50.0\n15.2\n218\n5700\nmale\n2007\n\n\nGentoo\nBiscoe\n47.6\n14.5\n215\n5400\nmale\n2007\n\n\nGentoo\nBiscoe\n46.5\n13.5\n210\n4550\nfemale\n2007\n\n\nGentoo\nBiscoe\n45.4\n14.6\n211\n4800\nfemale\n2007\n\n\nGentoo\nBiscoe\n46.7\n15.3\n219\n5200\nmale\n2007\n\n\nGentoo\nBiscoe\n43.3\n13.4\n209\n4400\nfemale\n2007\n\n\nGentoo\nBiscoe\n46.8\n15.4\n215\n5150\nmale\n2007\n\n\nGentoo\nBiscoe\n40.9\n13.7\n214\n4650\nfemale\n2007\n\n\nGentoo\nBiscoe\n49.0\n16.1\n216\n5550\nmale\n2007\n\n\nGentoo\nBiscoe\n45.5\n13.7\n214\n4650\nfemale\n2007\n\n\nGentoo\nBiscoe\n48.4\n14.6\n213\n5850\nmale\n2007\n\n\nGentoo\nBiscoe\n45.8\n14.6\n210\n4200\nfemale\n2007\n\n\nGentoo\nBiscoe\n49.3\n15.7\n217\n5850\nmale\n2007\n\n\nGentoo\nBiscoe\n42.0\n13.5\n210\n4150\nfemale\n2007\n\n\nGentoo\nBiscoe\n49.2\n15.2\n221\n6300\nmale\n2007\n\n\nGentoo\nBiscoe\n46.2\n14.5\n209\n4800\nfemale\n2007\n\n\nGentoo\nBiscoe\n48.7\n15.1\n222\n5350\nmale\n2007\n\n\nGentoo\nBiscoe\n50.2\n14.3\n218\n5700\nmale\n2007\n\n\nGentoo\nBiscoe\n45.1\n14.5\n215\n5000\nfemale\n2007\n\n\nGentoo\nBiscoe\n46.5\n14.5\n213\n4400\nfemale\n2007\n\n\nGentoo\nBiscoe\n46.3\n15.8\n215\n5050\nmale\n2007\n\n\nGentoo\nBiscoe\n42.9\n13.1\n215\n5000\nfemale\n2007\n\n\nGentoo\nBiscoe\n46.1\n15.1\n215\n5100\nmale\n2007\n\n\nGentoo\nBiscoe\n44.5\n14.3\n216\n4100\nNA\n2007\n\n\nGentoo\nBiscoe\n47.8\n15.0\n215\n5650\nmale\n2007\n\n\nGentoo\nBiscoe\n48.2\n14.3\n210\n4600\nfemale\n2007\n\n\nGentoo\nBiscoe\n50.0\n15.3\n220\n5550\nmale\n2007\n\n\nGentoo\nBiscoe\n47.3\n15.3\n222\n5250\nmale\n2007\n\n\nGentoo\nBiscoe\n42.8\n14.2\n209\n4700\nfemale\n2007\n\n\nGentoo\nBiscoe\n45.1\n14.5\n207\n5050\nfemale\n2007\n\n\nGentoo\nBiscoe\n59.6\n17.0\n230\n6050\nmale\n2007\n\n\nGentoo\nBiscoe\n49.1\n14.8\n220\n5150\nfemale\n2008\n\n\nGentoo\nBiscoe\n48.4\n16.3\n220\n5400\nmale\n2008\n\n\nGentoo\nBiscoe\n42.6\n13.7\n213\n4950\nfemale\n2008\n\n\nGentoo\nBiscoe\n44.4\n17.3\n219\n5250\nmale\n2008\n\n\nGentoo\nBiscoe\n44.0\n13.6\n208\n4350\nfemale\n2008\n\n\nGentoo\nBiscoe\n48.7\n15.7\n208\n5350\nmale\n2008\n\n\nGentoo\nBiscoe\n42.7\n13.7\n208\n3950\nfemale\n2008\n\n\nGentoo\nBiscoe\n49.6\n16.0\n225\n5700\nmale\n2008\n\n\nGentoo\nBiscoe\n45.3\n13.7\n210\n4300\nfemale\n2008\n\n\nGentoo\nBiscoe\n49.6\n15.0\n216\n4750\nmale\n2008\n\n\nGentoo\nBiscoe\n50.5\n15.9\n222\n5550\nmale\n2008\n\n\nGentoo\nBiscoe\n43.6\n13.9\n217\n4900\nfemale\n2008\n\n\nGentoo\nBiscoe\n45.5\n13.9\n210\n4200\nfemale\n2008\n\n\nGentoo\nBiscoe\n50.5\n15.9\n225\n5400\nmale\n2008\n\n\nGentoo\nBiscoe\n44.9\n13.3\n213\n5100\nfemale\n2008\n\n\nGentoo\nBiscoe\n45.2\n15.8\n215\n5300\nmale\n2008\n\n\nGentoo\nBiscoe\n46.6\n14.2\n210\n4850\nfemale\n2008\n\n\nGentoo\nBiscoe\n48.5\n14.1\n220\n5300\nmale\n2008\n\n\nGentoo\nBiscoe\n45.1\n14.4\n210\n4400\nfemale\n2008\n\n\nGentoo\nBiscoe\n50.1\n15.0\n225\n5000\nmale\n2008\n\n\nGentoo\nBiscoe\n46.5\n14.4\n217\n4900\nfemale\n2008\n\n\nGentoo\nBiscoe\n45.0\n15.4\n220\n5050\nmale\n2008\n\n\nGentoo\nBiscoe\n43.8\n13.9\n208\n4300\nfemale\n2008\n\n\nGentoo\nBiscoe\n45.5\n15.0\n220\n5000\nmale\n2008\n\n\nGentoo\nBiscoe\n43.2\n14.5\n208\n4450\nfemale\n2008\n\n\nGentoo\nBiscoe\n50.4\n15.3\n224\n5550\nmale\n2008\n\n\nGentoo\nBiscoe\n45.3\n13.8\n208\n4200\nfemale\n2008\n\n\nGentoo\nBiscoe\n46.2\n14.9\n221\n5300\nmale\n2008\n\n\nGentoo\nBiscoe\n45.7\n13.9\n214\n4400\nfemale\n2008\n\n\nGentoo\nBiscoe\n54.3\n15.7\n231\n5650\nmale\n2008\n\n\nGentoo\nBiscoe\n45.8\n14.2\n219\n4700\nfemale\n2008\n\n\nGentoo\nBiscoe\n49.8\n16.8\n230\n5700\nmale\n2008\n\n\nGentoo\nBiscoe\n46.2\n14.4\n214\n4650\nNA\n2008\n\n\nGentoo\nBiscoe\n49.5\n16.2\n229\n5800\nmale\n2008\n\n\nGentoo\nBiscoe\n43.5\n14.2\n220\n4700\nfemale\n2008\n\n\nGentoo\nBiscoe\n50.7\n15.0\n223\n5550\nmale\n2008\n\n\nGentoo\nBiscoe\n47.7\n15.0\n216\n4750\nfemale\n2008\n\n\nGentoo\nBiscoe\n46.4\n15.6\n221\n5000\nmale\n2008\n\n\nGentoo\nBiscoe\n48.2\n15.6\n221\n5100\nmale\n2008\n\n\nGentoo\nBiscoe\n46.5\n14.8\n217\n5200\nfemale\n2008\n\n\nGentoo\nBiscoe\n46.4\n15.0\n216\n4700\nfemale\n2008\n\n\nGentoo\nBiscoe\n48.6\n16.0\n230\n5800\nmale\n2008\n\n\nGentoo\nBiscoe\n47.5\n14.2\n209\n4600\nfemale\n2008\n\n\nGentoo\nBiscoe\n51.1\n16.3\n220\n6000\nmale\n2008\n\n\nGentoo\nBiscoe\n45.2\n13.8\n215\n4750\nfemale\n2008\n\n\nGentoo\nBiscoe\n45.2\n16.4\n223\n5950\nmale\n2008\n\n\nGentoo\nBiscoe\n49.1\n14.5\n212\n4625\nfemale\n2009\n\n\nGentoo\nBiscoe\n52.5\n15.6\n221\n5450\nmale\n2009\n\n\nGentoo\nBiscoe\n47.4\n14.6\n212\n4725\nfemale\n2009\n\n\nGentoo\nBiscoe\n50.0\n15.9\n224\n5350\nmale\n2009\n\n\nGentoo\nBiscoe\n44.9\n13.8\n212\n4750\nfemale\n2009\n\n\nGentoo\nBiscoe\n50.8\n17.3\n228\n5600\nmale\n2009\n\n\nGentoo\nBiscoe\n43.4\n14.4\n218\n4600\nfemale\n2009\n\n\nGentoo\nBiscoe\n51.3\n14.2\n218\n5300\nmale\n2009\n\n\nGentoo\nBiscoe\n47.5\n14.0\n212\n4875\nfemale\n2009\n\n\nGentoo\nBiscoe\n52.1\n17.0\n230\n5550\nmale\n2009\n\n\nGentoo\nBiscoe\n47.5\n15.0\n218\n4950\nfemale\n2009\n\n\nGentoo\nBiscoe\n52.2\n17.1\n228\n5400\nmale\n2009\n\n\nGentoo\nBiscoe\n45.5\n14.5\n212\n4750\nfemale\n2009\n\n\nGentoo\nBiscoe\n49.5\n16.1\n224\n5650\nmale\n2009\n\n\nGentoo\nBiscoe\n44.5\n14.7\n214\n4850\nfemale\n2009\n\n\nGentoo\nBiscoe\n50.8\n15.7\n226\n5200\nmale\n2009\n\n\nGentoo\nBiscoe\n49.4\n15.8\n216\n4925\nmale\n2009\n\n\nGentoo\nBiscoe\n46.9\n14.6\n222\n4875\nfemale\n2009\n\n\nGentoo\nBiscoe\n48.4\n14.4\n203\n4625\nfemale\n2009\n\n\nGentoo\nBiscoe\n51.1\n16.5\n225\n5250\nmale\n2009\n\n\nGentoo\nBiscoe\n48.5\n15.0\n219\n4850\nfemale\n2009\n\n\nGentoo\nBiscoe\n55.9\n17.0\n228\n5600\nmale\n2009\n\n\nGentoo\nBiscoe\n47.2\n15.5\n215\n4975\nfemale\n2009\n\n\nGentoo\nBiscoe\n49.1\n15.0\n228\n5500\nmale\n2009\n\n\nGentoo\nBiscoe\n47.3\n13.8\n216\n4725\nNA\n2009\n\n\nGentoo\nBiscoe\n46.8\n16.1\n215\n5500\nmale\n2009\n\n\nGentoo\nBiscoe\n41.7\n14.7\n210\n4700\nfemale\n2009\n\n\nGentoo\nBiscoe\n53.4\n15.8\n219\n5500\nmale\n2009\n\n\nGentoo\nBiscoe\n43.3\n14.0\n208\n4575\nfemale\n2009\n\n\nGentoo\nBiscoe\n48.1\n15.1\n209\n5500\nmale\n2009\n\n\nGentoo\nBiscoe\n50.5\n15.2\n216\n5000\nfemale\n2009\n\n\nGentoo\nBiscoe\n49.8\n15.9\n229\n5950\nmale\n2009\n\n\nGentoo\nBiscoe\n43.5\n15.2\n213\n4650\nfemale\n2009\n\n\nGentoo\nBiscoe\n51.5\n16.3\n230\n5500\nmale\n2009\n\n\nGentoo\nBiscoe\n46.2\n14.1\n217\n4375\nfemale\n2009\n\n\nGentoo\nBiscoe\n55.1\n16.0\n230\n5850\nmale\n2009\n\n\nGentoo\nBiscoe\n44.5\n15.7\n217\n4875\nNA\n2009\n\n\nGentoo\nBiscoe\n48.8\n16.2\n222\n6000\nmale\n2009\n\n\nGentoo\nBiscoe\n47.2\n13.7\n214\n4925\nfemale\n2009\n\n\nGentoo\nBiscoe\nNA\nNA\nNA\nNA\nNA\n2009\n\n\nGentoo\nBiscoe\n46.8\n14.3\n215\n4850\nfemale\n2009\n\n\nGentoo\nBiscoe\n50.4\n15.7\n222\n5750\nmale\n2009\n\n\nGentoo\nBiscoe\n45.2\n14.8\n212\n5200\nfemale\n2009\n\n\nGentoo\nBiscoe\n49.9\n16.1\n213\n5400\nmale\n2009\n\n\nChinstrap\nDream\n46.5\n17.9\n192\n3500\nfemale\n2007\n\n\nChinstrap\nDream\n50.0\n19.5\n196\n3900\nmale\n2007\n\n\nChinstrap\nDream\n51.3\n19.2\n193\n3650\nmale\n2007\n\n\nChinstrap\nDream\n45.4\n18.7\n188\n3525\nfemale\n2007\n\n\nChinstrap\nDream\n52.7\n19.8\n197\n3725\nmale\n2007\n\n\nChinstrap\nDream\n45.2\n17.8\n198\n3950\nfemale\n2007\n\n\nChinstrap\nDream\n46.1\n18.2\n178\n3250\nfemale\n2007\n\n\nChinstrap\nDream\n51.3\n18.2\n197\n3750\nmale\n2007\n\n\nChinstrap\nDream\n46.0\n18.9\n195\n4150\nfemale\n2007\n\n\nChinstrap\nDream\n51.3\n19.9\n198\n3700\nmale\n2007\n\n\nChinstrap\nDream\n46.6\n17.8\n193\n3800\nfemale\n2007\n\n\nChinstrap\nDream\n51.7\n20.3\n194\n3775\nmale\n2007\n\n\nChinstrap\nDream\n47.0\n17.3\n185\n3700\nfemale\n2007\n\n\nChinstrap\nDream\n52.0\n18.1\n201\n4050\nmale\n2007\n\n\nChinstrap\nDream\n45.9\n17.1\n190\n3575\nfemale\n2007\n\n\nChinstrap\nDream\n50.5\n19.6\n201\n4050\nmale\n2007\n\n\nChinstrap\nDream\n50.3\n20.0\n197\n3300\nmale\n2007\n\n\nChinstrap\nDream\n58.0\n17.8\n181\n3700\nfemale\n2007\n\n\nChinstrap\nDream\n46.4\n18.6\n190\n3450\nfemale\n2007\n\n\nChinstrap\nDream\n49.2\n18.2\n195\n4400\nmale\n2007\n\n\nChinstrap\nDream\n42.4\n17.3\n181\n3600\nfemale\n2007\n\n\nChinstrap\nDream\n48.5\n17.5\n191\n3400\nmale\n2007\n\n\nChinstrap\nDream\n43.2\n16.6\n187\n2900\nfemale\n2007\n\n\nChinstrap\nDream\n50.6\n19.4\n193\n3800\nmale\n2007\n\n\nChinstrap\nDream\n46.7\n17.9\n195\n3300\nfemale\n2007\n\n\nChinstrap\nDream\n52.0\n19.0\n197\n4150\nmale\n2007\n\n\nChinstrap\nDream\n50.5\n18.4\n200\n3400\nfemale\n2008\n\n\nChinstrap\nDream\n49.5\n19.0\n200\n3800\nmale\n2008\n\n\nChinstrap\nDream\n46.4\n17.8\n191\n3700\nfemale\n2008\n\n\nChinstrap\nDream\n52.8\n20.0\n205\n4550\nmale\n2008\n\n\nChinstrap\nDream\n40.9\n16.6\n187\n3200\nfemale\n2008\n\n\nChinstrap\nDream\n54.2\n20.8\n201\n4300\nmale\n2008\n\n\nChinstrap\nDream\n42.5\n16.7\n187\n3350\nfemale\n2008\n\n\nChinstrap\nDream\n51.0\n18.8\n203\n4100\nmale\n2008\n\n\nChinstrap\nDream\n49.7\n18.6\n195\n3600\nmale\n2008\n\n\nChinstrap\nDream\n47.5\n16.8\n199\n3900\nfemale\n2008\n\n\nChinstrap\nDream\n47.6\n18.3\n195\n3850\nfemale\n2008\n\n\nChinstrap\nDream\n52.0\n20.7\n210\n4800\nmale\n2008\n\n\nChinstrap\nDream\n46.9\n16.6\n192\n2700\nfemale\n2008\n\n\nChinstrap\nDream\n53.5\n19.9\n205\n4500\nmale\n2008\n\n\nChinstrap\nDream\n49.0\n19.5\n210\n3950\nmale\n2008\n\n\nChinstrap\nDream\n46.2\n17.5\n187\n3650\nfemale\n2008\n\n\nChinstrap\nDream\n50.9\n19.1\n196\n3550\nmale\n2008\n\n\nChinstrap\nDream\n45.5\n17.0\n196\n3500\nfemale\n2008\n\n\nChinstrap\nDream\n50.9\n17.9\n196\n3675\nfemale\n2009\n\n\nChinstrap\nDream\n50.8\n18.5\n201\n4450\nmale\n2009\n\n\nChinstrap\nDream\n50.1\n17.9\n190\n3400\nfemale\n2009\n\n\nChinstrap\nDream\n49.0\n19.6\n212\n4300\nmale\n2009\n\n\nChinstrap\nDream\n51.5\n18.7\n187\n3250\nmale\n2009\n\n\nChinstrap\nDream\n49.8\n17.3\n198\n3675\nfemale\n2009\n\n\nChinstrap\nDream\n48.1\n16.4\n199\n3325\nfemale\n2009\n\n\nChinstrap\nDream\n51.4\n19.0\n201\n3950\nmale\n2009\n\n\nChinstrap\nDream\n45.7\n17.3\n193\n3600\nfemale\n2009\n\n\nChinstrap\nDream\n50.7\n19.7\n203\n4050\nmale\n2009\n\n\nChinstrap\nDream\n42.5\n17.3\n187\n3350\nfemale\n2009\n\n\nChinstrap\nDream\n52.2\n18.8\n197\n3450\nmale\n2009\n\n\nChinstrap\nDream\n45.2\n16.6\n191\n3250\nfemale\n2009\n\n\nChinstrap\nDream\n49.3\n19.9\n203\n4050\nmale\n2009\n\n\nChinstrap\nDream\n50.2\n18.8\n202\n3800\nmale\n2009\n\n\nChinstrap\nDream\n45.6\n19.4\n194\n3525\nfemale\n2009\n\n\nChinstrap\nDream\n51.9\n19.5\n206\n3950\nmale\n2009\n\n\nChinstrap\nDream\n46.8\n16.5\n189\n3650\nfemale\n2009\n\n\nChinstrap\nDream\n45.7\n17.0\n195\n3650\nfemale\n2009\n\n\nChinstrap\nDream\n55.8\n19.8\n207\n4000\nmale\n2009\n\n\nChinstrap\nDream\n43.5\n18.1\n202\n3400\nfemale\n2009\n\n\nChinstrap\nDream\n49.6\n18.2\n193\n3775\nmale\n2009\n\n\nChinstrap\nDream\n50.8\n19.0\n210\n4100\nmale\n2009\n\n\nChinstrap\nDream\n50.2\n18.7\n198\n3775\nfemale\n2009"
+  },
+  {
+    "objectID": "materials/3-computation/slides/computation.html#paged-output",
+    "href": "materials/3-computation/slides/computation.html#paged-output",
+    "title": "Computation",
+    "section": "Paged Output",
+    "text": "Paged Output\ndf-print: paged available as a document-level option.\n\n\n---\nformat:\n  html:\n    df-print: paged\n---\n\n```{r}\npenguins\n```"
+  },
+  {
+    "objectID": "materials/3-computation/slides/computation.html#classes-for-appearance",
+    "href": "materials/3-computation/slides/computation.html#classes-for-appearance",
+    "title": "Computation",
+    "section": "Classes for Appearance",
+    "text": "Classes for Appearance"
+  },
+  {
+    "objectID": "materials/3-computation/slides/computation.html#shiny",
+    "href": "materials/3-computation/slides/computation.html#shiny",
+    "title": "Computation",
+    "section": "Shiny",
+    "text": "Shiny"
+  },
+  {
+    "objectID": "materials/3-computation/slides/computation.html#parameterized-documents",
+    "href": "materials/3-computation/slides/computation.html#parameterized-documents",
+    "title": "Computation",
+    "section": "Parameterized Documents",
+    "text": "Parameterized Documents"
+  },
+  {
+    "objectID": "materials/3-computation/slides/computation.html#raw-output-output-asis",
+    "href": "materials/3-computation/slides/computation.html#raw-output-output-asis",
+    "title": "Computation",
+    "section": "Raw output output: asis",
+    "text": "Raw output output: asis"
+  },
+  {
+    "objectID": "materials/3-computation/slides/computation.html#multilingual-docs",
+    "href": "materials/3-computation/slides/computation.html#multilingual-docs",
+    "title": "Computation",
+    "section": "Multilingual docs",
+    "text": "Multilingual docs"
+  },
+  {
+    "objectID": "materials/3-computation/slides/computation.html#references-and-further-reading",
+    "href": "materials/3-computation/slides/computation.html#references-and-further-reading",
+    "title": "Computation",
+    "section": "References and further reading",
+    "text": "References and further reading\n\nClient Side Web Developent Ch. 5-7: approachable and concise introduction to how CSS work.\n:\nhttps://patents.google.com/patent/US3811677A/en?q=stilts&oq=stilts\nhttps://patents.google.com/patent/US6688257B2/en?q=pet+dog&oq=pet+dog"
   },
   {
     "objectID": "materials/4-projects-and-publishing/index.html",
     "href": "materials/4-projects-and-publishing/index.html",
     "title": "Projects and Publishing",
     "section": "",
-    "text": "Learning goals\n\n\nTopics\n\n\nExercises"
+    "text": "Warning\n\n\n\nThis is under construction until the start of the workshop."
   },
   {
     "objectID": "materials/5-presentations/index.html",
     "href": "materials/5-presentations/index.html",
     "title": "Presentations",
     "section": "",
-    "text": "Learning goals\n\n\nTopics\n\n\nExercises"
+    "text": "Warning\n\n\n\nThis is under construction until the start of the workshop."
   },
   {
     "objectID": "materials/6-websites-and-books/index.html",
     "href": "materials/6-websites-and-books/index.html",
     "title": "Websites and Books",
     "section": "",
-    "text": "Learning goals\n\n\nTopics\n\n\nExercises"
+    "text": "Warning\n\n\n\nThis is under construction until the start of the workshop."
   },
   {
     "objectID": "materials/7-workshop/index.html",
     "href": "materials/7-workshop/index.html",
     "title": "Workshop",
     "section": "",
-    "text": "Learning goals\n\n\nTopics\n\n\nExercises"
+    "text": "Warning\n\n\n\nThis is under construction until the start of the workshop."
   },
   {
-    "objectID": "materials/8-extending-quarto/index.html",
-    "href": "materials/8-extending-quarto/index.html",
-    "title": "Extending Quarto",
+    "objectID": "materials/7-workshop/slides/workshop.html#documents",
+    "href": "materials/7-workshop/slides/workshop.html#documents",
+    "title": "Quarto",
+    "section": "Documents",
+    "text": "Documents\n\nStyle your code chunk\nSelect a distinctive font"
+  },
+  {
+    "objectID": "materials/7-workshop/slides/workshop.html#presentations",
+    "href": "materials/7-workshop/slides/workshop.html#presentations",
+    "title": "Quarto",
+    "section": "Presentations",
+    "text": "Presentations\n\nFine tune your palette(s)\nStyle your title slide"
+  },
+  {
+    "objectID": "materials/7-workshop/slides/workshop.html#websites",
+    "href": "materials/7-workshop/slides/workshop.html#websites",
+    "title": "Quarto",
+    "section": "Websites",
+    "text": "Websites"
+  },
+  {
+    "objectID": "materials/7-workshop/slides/workshop.html#blogs",
+    "href": "materials/7-workshop/slides/workshop.html#blogs",
+    "title": "Quarto",
+    "section": "Blogs",
+    "text": "Blogs"
+  },
+  {
+    "objectID": "materials/8-future-of-quarto/index.html",
+    "href": "materials/8-future-of-quarto/index.html",
+    "title": "The Future of Quarto",
     "section": "",
-    "text": "Learning goals\n\n\nTopics\n\n\nExercises"
+    "text": "Warning\n\n\n\nThis is under construction until the start of the workshop."
   },
   {
     "objectID": "materials/index.html",
     "href": "materials/index.html",
     "title": "Materials",
     "section": "",
-    "text": "Warning\n\n\n\nUnder construction."
+    "text": "Each session of the workshop features exercises that will learn Quarto by doing. To prepare, please install the following on your machine:\n\nIf you haven’t already, please sign-up for a free GitHub account.\nInstall latest version of RStudio, v2022.07.0-548 or later\nInstall latest version of Quarto (v1.0.36 or greater)\nAfter installing Quarto, open the terminal in RStudio and:\n\nSee this guide for details on using the terminal\nInstall/Update TinyTeX for PDFs with quarto install tool tinytex\nInstall/Update Chromium with quarto install tool chromium\n\nIdeally upgrade/use to R 4.1 or R 4.2\nInstall these R packages:\n\npkg_list <- c(\"tidyverse\", \"quarto\", \"rmarkdown\", \"palmerpenguins\")\ninstall.packages(pkg_list)"
+  },
+  {
+    "objectID": "old-index.html",
+    "href": "old-index.html",
+    "title": "From R Markdown to Quarto",
+    "section": "",
+    "text": "Day One\n\n9-10:30 am Welcome to Quarto\n10:30-11 am Coffee Break\n11-12:30 pm Polishing Documents\n12:30-1:30 pm Lunch\n1:30-3 pm Computation\n3-3:30 pm Coffee Break\n3:30-5 pm Projects and Publishing\n\n\n\nDay Two\n\n9-10:30 am Presentations\n10:30-11 am Coffee Break\n11-12:30 pm Websites and Books\n12:30-1:30 pm Lunch\n1:30-3 pm Workshop\n3-3:30 pm Coffee Break\n3:30-5 pm Extending Quarto"
   }
 ]
