@@ -389,6 +389,19 @@
   <p class="author">Andrew Bray</p>
 </section>
 
+<section id="from-r-markdown-to-quarto" class="slide level2" style="text-align: center">
+<h2>From R Markdown to Quarto</h2>
+<p><br>
+</p>
+<h3 style="color: orange" id="welcome">Welcome!</h3>
+<p>As you arrive, if you haven’t already, please get your machine configured using the steps found on the workshop website. Please assist your neighbors if they’re running into issues.</p>
+<p><br>
+</p>
+<p><a href="https://rstudio-conf-2022.github.io/rmd-to-quarto/materials/" style="text-align: center">https://rstudio-conf-2022.github.io/rmd-to-quarto/materials/</a></p>
+<p><br>
+</p>
+<p>Also, please be ready with <strong>Discord</strong> for discussions (you should have an invite in your email from the conference).</p>
+</section>
 <section id="introductions" class="slide level2">
 <h2>Introductions</h2>
 <p>Take ~2 minutes to introduce yourself to your neighbors.</p>
@@ -783,6 +796,17 @@ Please carefully review the Code of Conduct and COVID policies<sup>1</sup> can b
 <!-- ::: -->
 <!-- ::: {data-id="typed-code" style="background: #02733e50; width: 537px; height: 22px; margin: 5px; position: absolute; top: 455px; left: 95px"} -->
 <!-- ::: -->
+</div>
+</section>
+<section id="getting-exercise" class="slide level2">
+<h2>Getting Exercise</h2>
+<p>To get the materials for each part of this course packed in an RStudio Project, run:</p>
+<div class="sourceCode" id="cb3" style="font-size: 1.5em"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1"></a><span class="in">```{r}</span></span>
+<span id="cb3-2"><a href="#cb3-2"></a>usethis<span class="sc">::</span><span class="fu">use_course</span>(<span class="st">"rmd-to-quarto/welcome-to-quarto"</span>)</span>
+<span id="cb3-3"><a href="#cb3-3"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<blockquote>
+<p>You can also <code>git clone</code> if you prefer that workflow.</p>
+</blockquote>
 <aside class="notes">
 <ol type="1">
 <li>Navigate to the terminal tab of the console pane</li>
@@ -802,22 +826,21 @@ Please carefully review the Code of Conduct and COVID policies<sup>1</sup> can b
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-</div>
 </section>
 <section id="element-expression-depends-on-format" class="slide level2">
 <h2>Element expression depends on format</h2>
 <h4 id="emphasis">Emphasis</h4>
 <p><span class="smallcaps" style="font-size: .5em">HTML</span></p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource html number-lines code-with-copy"><code class="sourceCode html"><span id="cb3-1"><a href="#cb3-1"></a>A <span class="kw">&lt;em&gt;</span>spatial logical toy<span class="kw">&lt;/em&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource html number-lines code-with-copy"><code class="sourceCode html"><span id="cb4-1"><a href="#cb4-1"></a>A <span class="kw">&lt;em&gt;</span>spatial logical toy<span class="kw">&lt;/em&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><span class="smallcaps" style="font-size: .5em">LATEX</span></p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource latex number-lines code-with-copy"><code class="sourceCode latex"><span id="cb4-1"><a href="#cb4-1"></a>A <span class="fu">\emph</span>{spatial logical toy}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource latex number-lines code-with-copy"><code class="sourceCode latex"><span id="cb5-1"><a href="#cb5-1"></a>A <span class="fu">\emph</span>{spatial logical toy}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><br>
 </p>
 <h4 id="image">Image</h4>
 <p><span class="smallcaps" style="font-size: .5em">HTML</span></p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource html number-lines code-with-copy"><code class="sourceCode html"><span id="cb5-1"><a href="#cb5-1"></a><span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"images/med-rubiks-cube.png"</span> <span class="er">class</span><span class="ot">=</span><span class="st">"img-fluid"</span><span class="kw">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource html number-lines code-with-copy"><code class="sourceCode html"><span id="cb6-1"><a href="#cb6-1"></a><span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"images/med-rubiks-cube.png"</span> <span class="er">class</span><span class="ot">=</span><span class="st">"img-fluid"</span><span class="kw">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><span class="smallcaps" style="font-size: .5em">LATEX</span></p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource latex number-lines code-with-copy"><code class="sourceCode latex"><span id="cb6-1"><a href="#cb6-1"></a><span class="bu">\includegraphics</span>{<span class="ex">images/med-rubiks-cube.png</span>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource latex number-lines code-with-copy"><code class="sourceCode latex"><span id="cb7-1"><a href="#cb7-1"></a><span class="bu">\includegraphics</span>{<span class="ex">images/med-rubiks-cube.png</span>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section></section>
 <section>
 <section id="fa-terminal-exercise-1" class="title-slide slide level1 center" data-background-color="#00403d" style="font-size: .8em">
@@ -1126,12 +1149,12 @@ Please carefully review the Code of Conduct and COVID policies<sup>1</sup> can b
 <div class="columns">
 <div class="column" style="width:50%;">
 <h4 id="markdown">Markdown</h4>
-<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a href="#cb7-1"></a>Markdown allows you to format text with </span>
-<span id="cb7-2"><a href="#cb7-2"></a>*emphasis* and **strong emphasis**. You can </span>
-<span id="cb7-3"><a href="#cb7-3"></a>also add superscripts^2^, subscripts~2~, and</span>
-<span id="cb7-4"><a href="#cb7-4"></a>display code <span class="in">`verbatim`</span>. Little known fact:</span>
-<span id="cb7-5"><a href="#cb7-5"></a>you can also ~~strikethrough~~ text and </span>
-<span id="cb7-6"><a href="#cb7-6"></a>present it in <span class="co">[</span><span class="ot">small caps</span><span class="co">]</span>{.smallcaps}.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb8-1"><a href="#cb8-1"></a>Markdown allows you to format text with </span>
+<span id="cb8-2"><a href="#cb8-2"></a>*emphasis* and **strong emphasis**. You can </span>
+<span id="cb8-3"><a href="#cb8-3"></a>also add superscripts^2^, subscripts~2~, and</span>
+<span id="cb8-4"><a href="#cb8-4"></a>display code <span class="in">`verbatim`</span>. Little known fact:</span>
+<span id="cb8-5"><a href="#cb8-5"></a>you can also ~~strikethrough~~ text and </span>
+<span id="cb8-6"><a href="#cb8-6"></a>present it in <span class="co">[</span><span class="ot">small caps</span><span class="co">]</span>{.smallcaps}.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column fragment" style="width:50%;">
 <!-- -->
 <h4 id="output">Output</h4>
@@ -1147,9 +1170,9 @@ Please carefully review the Code of Conduct and COVID policies<sup>1</sup> can b
 <div class="columns">
 <div class="column" style="width:50%;">
 <h4 id="markdown-1">Markdown</h4>
-<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb8-1"><a href="#cb8-1"></a>The area of a circle is $A = \pi r^2$,where</span>
-<span id="cb8-2"><a href="#cb8-2"></a>$r$ is the radius and $\pi$ is the constant</span>
-<span id="cb8-3"><a href="#cb8-3"></a>$3.141592\ldots$.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb9-1"><a href="#cb9-1"></a>The area of a circle is $A = \pi r^2$,where</span>
+<span id="cb9-2"><a href="#cb9-2"></a>$r$ is the radius and $\pi$ is the constant</span>
+<span id="cb9-3"><a href="#cb9-3"></a>$3.141592\ldots$.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column fragment" style="width:50%;">
 <!-- -->
 <h4 id="output-1">Output</h4>
@@ -1171,11 +1194,11 @@ Please carefully review the Code of Conduct and COVID policies<sup>1</sup> can b
 <div class="columns">
 <div class="column" style="width:50%;">
 <h4 id="markdown-2">Markdown</h4>
-<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb9-1"><a href="#cb9-1"></a>You can embed <span class="co">[</span><span class="ot">links with names</span><span class="co">](https://quarto.org/)</span>,</span>
-<span id="cb9-2"><a href="#cb9-2"></a>direct urls like <span class="ot">&lt;https://quarto.org/&gt;</span>, and links to </span>
-<span id="cb9-3"><a href="#cb9-3"></a><span class="co">[</span><span class="ot">other places</span><span class="co">](#inline-elements-text-formatting)</span> in </span>
-<span id="cb9-4"><a href="#cb9-4"></a>the document. The syntax is similar for embedding an</span>
-<span id="cb9-5"><a href="#cb9-5"></a>inline image: <span class="al">![render icon](images/render-icon.png)</span>.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb10-1"><a href="#cb10-1"></a>You can embed <span class="co">[</span><span class="ot">links with names</span><span class="co">](https://quarto.org/)</span>,</span>
+<span id="cb10-2"><a href="#cb10-2"></a>direct urls like <span class="ot">&lt;https://quarto.org/&gt;</span>, and links to </span>
+<span id="cb10-3"><a href="#cb10-3"></a><span class="co">[</span><span class="ot">other places</span><span class="co">](#inline-elements-text-formatting)</span> in </span>
+<span id="cb10-4"><a href="#cb10-4"></a>the document. The syntax is similar for embedding an</span>
+<span id="cb10-5"><a href="#cb10-5"></a>inline image: <span class="al">![render icon](images/render-icon.png)</span>.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column fragment" style="width:50%;">
 <!-- -->
 <h4 id="output-2">Output</h4>
@@ -1188,7 +1211,7 @@ Please carefully review the Code of Conduct and COVID policies<sup>1</sup> can b
 <div class="columns">
 <div class="column" style="width:50%;">
 <h4 id="markdown-3">Markdown</h4>
-<div class="sourceCode" id="cb10"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb10-1"><a href="#cb10-1"></a>Here is a short note.^<span class="co">[</span><span class="ot">Small enough to fit inline.</span><span class="co">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb11-1"><a href="#cb11-1"></a>Here is a short note.^<span class="co">[</span><span class="ot">Small enough to fit inline.</span><span class="co">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column fragment" style="width:50%;">
 <!-- -->
 <h4 id="output-3">Output</h4>
@@ -1200,10 +1223,10 @@ Please carefully review the Code of Conduct and COVID policies<sup>1</sup> can b
 </p>
 <div class="columns">
 <div class="column" style="width:50%;">
-<div class="sourceCode" id="cb11"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb11-1"><a href="#cb11-1"></a>Here is a longer footnote<span class="ot">[^1]</span></span>
-<span id="cb11-2"><a href="#cb11-2"></a></span>
-<span id="cb11-3"><a href="#cb11-3"></a><span class="ot">[^1]: </span>This footnote can be placed in a separate block.</span>
-<span id="cb11-4"><a href="#cb11-4"></a>The identifier can be any alphanumeric string.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb12-1"><a href="#cb12-1"></a>Here is a longer footnote<span class="ot">[^1]</span></span>
+<span id="cb12-2"><a href="#cb12-2"></a></span>
+<span id="cb12-3"><a href="#cb12-3"></a><span class="ot">[^1]: </span>This footnote can be placed in a separate block.</span>
+<span id="cb12-4"><a href="#cb12-4"></a>The identifier can be any alphanumeric string.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column fragment" style="width:50%;">
 <p>Here is a longer footnote<sup>2</sup></p>
 </div>
@@ -1221,10 +1244,10 @@ Please carefully review the Code of Conduct and COVID policies<sup>1</sup> can b
 <div class="columns">
 <div class="column" style="width:50%;">
 <h4 id="markdown-4">Markdown</h4>
-<div class="sourceCode" id="cb12"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb12-1"><a href="#cb12-1"></a>Lorem ipsum dolor sit amet,</span>
-<span id="cb12-2"><a href="#cb12-2"></a>consectetur adipiscing elit.</span>
-<span id="cb12-3"><a href="#cb12-3"></a></span>
-<span id="cb12-4"><a href="#cb12-4"></a>Sed do eiusmod tempor.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb13-1"><a href="#cb13-1"></a>Lorem ipsum dolor sit amet,</span>
+<span id="cb13-2"><a href="#cb13-2"></a>consectetur adipiscing elit.</span>
+<span id="cb13-3"><a href="#cb13-3"></a></span>
+<span id="cb13-4"><a href="#cb13-4"></a>Sed do eiusmod tempor.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column fragment" style="width:50%;">
 <!-- -->
 <h4 id="output-4">Output</h4>
@@ -1238,9 +1261,9 @@ Please carefully review the Code of Conduct and COVID policies<sup>1</sup> can b
 <p>Without the blank line, the line break is treated as a space.</p>
 <div class="columns">
 <div class="column" style="width:50%;">
-<div class="sourceCode" id="cb13"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb13-1"><a href="#cb13-1"></a>Lorem ipsum dolor sit amet, </span>
-<span id="cb13-2"><a href="#cb13-2"></a>sconsectetur adipiscing elit.</span>
-<span id="cb13-3"><a href="#cb13-3"></a>Sed do eiusmod tempor.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb14-1"><a href="#cb14-1"></a>Lorem ipsum dolor sit amet, </span>
+<span id="cb14-2"><a href="#cb14-2"></a>sconsectetur adipiscing elit.</span>
+<span id="cb14-3"><a href="#cb14-3"></a>Sed do eiusmod tempor.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column" style="width:&quot;50%;">
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p>
 </div>
@@ -1294,17 +1317,17 @@ Please carefully review the Code of Conduct and COVID policies<sup>1</sup> can b
 <div class="columns">
 <div class="column" style="width:30%;">
 <h4 id="markdown-5">Markdown</h4>
-<div class="sourceCode" id="cb20"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb20-1"><a href="#cb20-1"></a><span class="an">Unordered list:</span></span>
-<span id="cb20-2"><a href="#cb20-2"></a></span>
-<span id="cb20-3"><a href="#cb20-3"></a><span class="ss">* </span>red</span>
-<span id="cb20-4"><a href="#cb20-4"></a><span class="ss">* </span>green</span>
-<span id="cb20-5"><a href="#cb20-5"></a><span class="ss">* </span>blue</span>
-<span id="cb20-6"><a href="#cb20-6"></a></span>
-<span id="cb20-7"><a href="#cb20-7"></a>Ordered list:</span>
-<span id="cb20-8"><a href="#cb20-8"></a></span>
-<span id="cb20-9"><a href="#cb20-9"></a><span class="ss">1. </span>red</span>
-<span id="cb20-10"><a href="#cb20-10"></a><span class="ss">1. </span>green</span>
-<span id="cb20-11"><a href="#cb20-11"></a><span class="ss">3. </span>blue</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb21"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb21-1"><a href="#cb21-1"></a><span class="an">Unordered list:</span></span>
+<span id="cb21-2"><a href="#cb21-2"></a></span>
+<span id="cb21-3"><a href="#cb21-3"></a><span class="ss">* </span>red</span>
+<span id="cb21-4"><a href="#cb21-4"></a><span class="ss">* </span>green</span>
+<span id="cb21-5"><a href="#cb21-5"></a><span class="ss">* </span>blue</span>
+<span id="cb21-6"><a href="#cb21-6"></a></span>
+<span id="cb21-7"><a href="#cb21-7"></a>Ordered list:</span>
+<span id="cb21-8"><a href="#cb21-8"></a></span>
+<span id="cb21-9"><a href="#cb21-9"></a><span class="ss">1. </span>red</span>
+<span id="cb21-10"><a href="#cb21-10"></a><span class="ss">1. </span>green</span>
+<span id="cb21-11"><a href="#cb21-11"></a><span class="ss">3. </span>blue</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column" style="width:30%;">
 <h4 id="output-5">Output</h4>
 <div style="font-size: .8em">
@@ -1338,34 +1361,34 @@ Pandoc gives you a lot of control over lists, including <em>nesting</em>, <em>fa
 <div class="columns">
 <div class="column" style="width:33%;">
 <p><span class="smallcaps">A</span></p>
-<div class="sourceCode" id="cb21"><pre class="sourceCode numberSource {markdown} number-lines code-with-copy"><code class="sourceCode"><span id="cb21-1"><a href="#cb21-1"></a>1. I once has a sandwich.</span>
-<span id="cb21-2"><a href="#cb21-2"></a></span>
-<span id="cb21-3"><a href="#cb21-3"></a>   It was deliiiicous.</span>
-<span id="cb21-4"><a href="#cb21-4"></a>   </span>
-<span id="cb21-5"><a href="#cb21-5"></a>1. I then had coffee.</span>
-<span id="cb21-6"><a href="#cb21-6"></a></span>
-<span id="cb21-7"><a href="#cb21-7"></a>   It gave me joy.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><span class="smallcaps">C</span></p>
 <div class="sourceCode" id="cb22"><pre class="sourceCode numberSource {markdown} number-lines code-with-copy"><code class="sourceCode"><span id="cb22-1"><a href="#cb22-1"></a>1. I once has a sandwich.</span>
-<span id="cb22-2"><a href="#cb22-2"></a>It was deliiiicous.</span>
-<span id="cb22-3"><a href="#cb22-3"></a>   </span>
-<span id="cb22-4"><a href="#cb22-4"></a>2. I then had coffee.</span>
-<span id="cb22-5"><a href="#cb22-5"></a>It gave me joy.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div><div class="column" style="width:33%;">
-<p><span class="smallcaps">B</span></p>
+<span id="cb22-2"><a href="#cb22-2"></a></span>
+<span id="cb22-3"><a href="#cb22-3"></a>   It was deliiiicous.</span>
+<span id="cb22-4"><a href="#cb22-4"></a>   </span>
+<span id="cb22-5"><a href="#cb22-5"></a>1. I then had coffee.</span>
+<span id="cb22-6"><a href="#cb22-6"></a></span>
+<span id="cb22-7"><a href="#cb22-7"></a>   It gave me joy.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><span class="smallcaps">C</span></p>
 <div class="sourceCode" id="cb23"><pre class="sourceCode numberSource {markdown} number-lines code-with-copy"><code class="sourceCode"><span id="cb23-1"><a href="#cb23-1"></a>1. I once has a sandwich.</span>
-<span id="cb23-2"><a href="#cb23-2"></a>  It was deliiiicous.</span>
+<span id="cb23-2"><a href="#cb23-2"></a>It was deliiiicous.</span>
 <span id="cb23-3"><a href="#cb23-3"></a>   </span>
 <span id="cb23-4"><a href="#cb23-4"></a>2. I then had coffee.</span>
-<span id="cb23-5"><a href="#cb23-5"></a>  It gave me joy.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><span class="smallcaps">D</span></p>
+<span id="cb23-5"><a href="#cb23-5"></a>It gave me joy.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column" style="width:33%;">
+<p><span class="smallcaps">B</span></p>
 <div class="sourceCode" id="cb24"><pre class="sourceCode numberSource {markdown} number-lines code-with-copy"><code class="sourceCode"><span id="cb24-1"><a href="#cb24-1"></a>1. I once has a sandwich.</span>
-<span id="cb24-2"><a href="#cb24-2"></a></span>
-<span id="cb24-3"><a href="#cb24-3"></a>    It was deliiiicous.</span>
-<span id="cb24-4"><a href="#cb24-4"></a>   </span>
-<span id="cb24-5"><a href="#cb24-5"></a>2. I then had coffee.</span>
-<span id="cb24-6"><a href="#cb24-6"></a></span>
-<span id="cb24-7"><a href="#cb24-7"></a>    It gave me joy.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb24-2"><a href="#cb24-2"></a>  It was deliiiicous.</span>
+<span id="cb24-3"><a href="#cb24-3"></a>   </span>
+<span id="cb24-4"><a href="#cb24-4"></a>2. I then had coffee.</span>
+<span id="cb24-5"><a href="#cb24-5"></a>  It gave me joy.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><span class="smallcaps">D</span></p>
+<div class="sourceCode" id="cb25"><pre class="sourceCode numberSource {markdown} number-lines code-with-copy"><code class="sourceCode"><span id="cb25-1"><a href="#cb25-1"></a>1. I once has a sandwich.</span>
+<span id="cb25-2"><a href="#cb25-2"></a></span>
+<span id="cb25-3"><a href="#cb25-3"></a>    It was deliiiicous.</span>
+<span id="cb25-4"><a href="#cb25-4"></a>   </span>
+<span id="cb25-5"><a href="#cb25-5"></a>2. I then had coffee.</span>
+<span id="cb25-6"><a href="#cb25-6"></a></span>
+<span id="cb25-7"><a href="#cb25-7"></a>    It gave me joy.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column" style="width:34%;">
 <h4 id="output-6">Output</h4>
 <ol type="1">
@@ -1396,15 +1419,15 @@ Pandoc gives you a lot of control over lists, including <em>nesting</em>, <em>fa
 <div class="columns">
 <div class="column" style="width:50%;">
 <h4 id="markdown-6">Markdown</h4>
-<div class="sourceCode" id="cb25"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb25-1"><a href="#cb25-1"></a><span class="ss">1. </span>First item...</span>
-<span id="cb25-2"><a href="#cb25-2"></a></span>
-<span id="cb25-3"><a href="#cb25-3"></a>   ...Continued.</span>
-<span id="cb25-4"><a href="#cb25-4"></a></span>
-<span id="cb25-5"><a href="#cb25-5"></a><span class="ss">1. </span>Second item </span>
-<span id="cb25-6"><a href="#cb25-6"></a></span>
-<span id="cb25-7"><a href="#cb25-7"></a>   # header</span>
-<span id="cb25-8"><a href="#cb25-8"></a>   </span>
-<span id="cb25-9"><a href="#cb25-9"></a><span class="ss">1. </span>Third item</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb26"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb26-1"><a href="#cb26-1"></a><span class="ss">1. </span>First item...</span>
+<span id="cb26-2"><a href="#cb26-2"></a></span>
+<span id="cb26-3"><a href="#cb26-3"></a>   ...Continued.</span>
+<span id="cb26-4"><a href="#cb26-4"></a></span>
+<span id="cb26-5"><a href="#cb26-5"></a><span class="ss">1. </span>Second item </span>
+<span id="cb26-6"><a href="#cb26-6"></a></span>
+<span id="cb26-7"><a href="#cb26-7"></a>   # header</span>
+<span id="cb26-8"><a href="#cb26-8"></a>   </span>
+<span id="cb26-9"><a href="#cb26-9"></a><span class="ss">1. </span>Third item</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column" style="width:50%;">
 <h4 id="output-7">Output</h4>
 <ol type="1">
@@ -1423,12 +1446,12 @@ Pandoc gives you a lot of control over lists, including <em>nesting</em>, <em>fa
 <div class="columns">
 <div class="column" style="width:50%;">
 <h4 id="markdown-7">Markdown</h4>
-<div class="sourceCode" id="cb26"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb26-1"><a href="#cb26-1"></a>(@)  My first example will be numbered (1).</span>
-<span id="cb26-2"><a href="#cb26-2"></a>(@)  My second example will be numbered (2).</span>
-<span id="cb26-3"><a href="#cb26-3"></a></span>
-<span id="cb26-4"><a href="#cb26-4"></a>Explanation of examples.</span>
-<span id="cb26-5"><a href="#cb26-5"></a></span>
-<span id="cb26-6"><a href="#cb26-6"></a>(@)  My third example will be numbered (3).</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb27"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb27-1"><a href="#cb27-1"></a>(@)  My first example will be numbered (1).</span>
+<span id="cb27-2"><a href="#cb27-2"></a>(@)  My second example will be numbered (2).</span>
+<span id="cb27-3"><a href="#cb27-3"></a></span>
+<span id="cb27-4"><a href="#cb27-4"></a>Explanation of examples.</span>
+<span id="cb27-5"><a href="#cb27-5"></a></span>
+<span id="cb27-6"><a href="#cb27-6"></a>(@)  My third example will be numbered (3).</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column" style="width:50%;">
 <h4 id="output-8">Output</h4>
 <ol class="example" type="1">
@@ -1450,22 +1473,22 @@ Pandoc gives you a lot of control over lists, including <em>nesting</em>, <em>fa
 <div class="columns">
 <div class="column" style="width:50%;">
 <h4 id="markdown-8">Markdown</h4>
-<div class="sourceCode" id="cb27"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb27-1"><a href="#cb27-1"></a><span class="an">A larger equation:</span></span>
-<span id="cb27-2"><a href="#cb27-2"></a></span>
-<span id="cb27-3"><a href="#cb27-3"></a>$$ </span>
-<span id="cb27-4"><a href="#cb27-4"></a>f(x)={\sqrt{\frac{\tau}{2\pi}}}</span>
-<span id="cb27-5"><a href="#cb27-5"></a>      e^{-\tau (x-\mu )^{2}/2}</span>
-<span id="cb27-6"><a href="#cb27-6"></a>$$</span>
-<span id="cb27-7"><a href="#cb27-7"></a></span>
-<span id="cb27-8"><a href="#cb27-8"></a></span>
-<span id="cb27-9"><a href="#cb27-9"></a></span>
-<span id="cb27-10"><a href="#cb27-10"></a>This breaks it:</span>
-<span id="cb27-11"><a href="#cb27-11"></a></span>
-<span id="cb27-12"><a href="#cb27-12"></a>$$</span>
-<span id="cb27-13"><a href="#cb27-13"></a></span>
-<span id="cb27-14"><a href="#cb27-14"></a>\bar{x} = \sum_{i=i}^n x_1</span>
-<span id="cb27-15"><a href="#cb27-15"></a>$$</span>
-<span id="cb27-16"><a href="#cb27-16"></a></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb28"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb28-1"><a href="#cb28-1"></a><span class="an">A larger equation:</span></span>
+<span id="cb28-2"><a href="#cb28-2"></a></span>
+<span id="cb28-3"><a href="#cb28-3"></a>$$ </span>
+<span id="cb28-4"><a href="#cb28-4"></a>f(x)={\sqrt{\frac{\tau}{2\pi}}}</span>
+<span id="cb28-5"><a href="#cb28-5"></a>      e^{-\tau (x-\mu )^{2}/2}</span>
+<span id="cb28-6"><a href="#cb28-6"></a>$$</span>
+<span id="cb28-7"><a href="#cb28-7"></a></span>
+<span id="cb28-8"><a href="#cb28-8"></a></span>
+<span id="cb28-9"><a href="#cb28-9"></a></span>
+<span id="cb28-10"><a href="#cb28-10"></a>This breaks it:</span>
+<span id="cb28-11"><a href="#cb28-11"></a></span>
+<span id="cb28-12"><a href="#cb28-12"></a>$$</span>
+<span id="cb28-13"><a href="#cb28-13"></a></span>
+<span id="cb28-14"><a href="#cb28-14"></a>\bar{x} = \sum_{i=i}^n x_1</span>
+<span id="cb28-15"><a href="#cb28-15"></a>$$</span>
+<span id="cb28-16"><a href="#cb28-16"></a></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column fragment" style="width:50%;">
 <!-- -->
 <h4 id="output-9">Output</h4>
@@ -1493,11 +1516,11 @@ f(x)=\sqrt{\frac{\tau}{2\pi}}
 <div class="columns">
 <div class="column" style="width:50%;">
 <h4 id="markdown-9">Markdown</h4>
-<div class="sourceCode" id="cb28"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb28-1"><a href="#cb28-1"></a><span class="an">Images on their own line become a block:</span></span>
-<span id="cb28-2"><a href="#cb28-2"></a></span>
-<span id="cb28-3"><a href="#cb28-3"></a><span class="al">![Elephant](images/elephant.png)</span></span>
-<span id="cb28-4"><a href="#cb28-4"></a></span>
-<span id="cb28-5"><a href="#cb28-5"></a>or do they?</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb29"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb29-1"><a href="#cb29-1"></a><span class="an">Images on their own line become a block:</span></span>
+<span id="cb29-2"><a href="#cb29-2"></a></span>
+<span id="cb29-3"><a href="#cb29-3"></a><span class="al">![Elephant](images/elephant.png)</span></span>
+<span id="cb29-4"><a href="#cb29-4"></a></span>
+<span id="cb29-5"><a href="#cb29-5"></a>or do they?</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column fragment" style="width:50%;">
 <!-- -->
 <h4 id="output-10">Output</h4>
@@ -1529,37 +1552,37 @@ f(x)=\sqrt{\frac{\tau}{2\pi}}
 <div class="columns">
 <div class="column" style="width:50%;">
 <p><span class="smallcaps">A</span></p>
-<div class="sourceCode" id="cb29"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb29-1"><a href="#cb29-1"></a><span class="co">---</span></span>
-<span id="cb29-2"><a href="#cb29-2"></a><span class="an">title:</span><span class="co"> US Patent: A Spatial Toy</span></span>
-<span id="cb29-3"><a href="#cb29-3"></a><span class="an">author:</span><span class="co"> Erno Rubik</span></span>
-<span id="cb29-4"><a href="#cb29-4"></a><span class="an">format:</span><span class="co"> html</span></span>
-<span id="cb29-5"><a href="#cb29-5"></a><span class="co">---</span></span>
-<span id="cb29-6"><a href="#cb29-6"></a></span>
-<span id="cb29-7"><a href="#cb29-7"></a>My idea is to build a cube...</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><span class="smallcaps">C</span></p>
 <div class="sourceCode" id="cb30"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb30-1"><a href="#cb30-1"></a><span class="co">---</span></span>
-<span id="cb30-2"><a href="#cb30-2"></a><span class="an">format:</span><span class="co"> html</span></span>
-<span id="cb30-3"><a href="#cb30-3"></a><span class="co">---</span></span>
-<span id="cb30-4"><a href="#cb30-4"></a></span>
-<span id="cb30-5"><a href="#cb30-5"></a>My idea is to build a cube...</span>
+<span id="cb30-2"><a href="#cb30-2"></a><span class="an">title:</span><span class="co"> US Patent: A Spatial Toy</span></span>
+<span id="cb30-3"><a href="#cb30-3"></a><span class="an">author:</span><span class="co"> Erno Rubik</span></span>
+<span id="cb30-4"><a href="#cb30-4"></a><span class="an">format:</span><span class="co"> html</span></span>
+<span id="cb30-5"><a href="#cb30-5"></a><span class="co">---</span></span>
 <span id="cb30-6"><a href="#cb30-6"></a></span>
-<span id="cb30-7"><a href="#cb30-7"></a>---</span>
-<span id="cb30-8"><a href="#cb30-8"></a>title: A Spatial Toy</span>
-<span id="cb30-9"><a href="#cb30-9"></a>author: Erno Rubik</span>
-<span id="cb30-10"><a href="#cb30-10"></a>---</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb30-7"><a href="#cb30-7"></a>My idea is to build a cube...</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><span class="smallcaps">C</span></p>
+<div class="sourceCode" id="cb31"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb31-1"><a href="#cb31-1"></a><span class="co">---</span></span>
+<span id="cb31-2"><a href="#cb31-2"></a><span class="an">format:</span><span class="co"> html</span></span>
+<span id="cb31-3"><a href="#cb31-3"></a><span class="co">---</span></span>
+<span id="cb31-4"><a href="#cb31-4"></a></span>
+<span id="cb31-5"><a href="#cb31-5"></a>My idea is to build a cube...</span>
+<span id="cb31-6"><a href="#cb31-6"></a></span>
+<span id="cb31-7"><a href="#cb31-7"></a>---</span>
+<span id="cb31-8"><a href="#cb31-8"></a>title: A Spatial Toy</span>
+<span id="cb31-9"><a href="#cb31-9"></a>author: Erno Rubik</span>
+<span id="cb31-10"><a href="#cb31-10"></a>---</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column" style="width:50%;">
 <p><span class="smallcaps">C</span></p>
-<div class="sourceCode" id="cb31"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb31-1"><a href="#cb31-1"></a>My idea is to build a cube...</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb32"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb32-1"><a href="#cb32-1"></a>My idea is to build a cube...</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><span style="font-size: .8em">… then at the command line, run:</span></p>
-<div class="sourceCode" id="cb32"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb32-1"><a href="#cb32-1"></a><span class="ex">quarto</span> render patent.qmd <span class="at">--to</span> html <span class="at">-M</span> title:patent</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb33"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb33-1"><a href="#cb33-1"></a><span class="ex">quarto</span> render patent.qmd <span class="at">--to</span> html <span class="at">-M</span> title:patent</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><span class="smallcaps">D</span></p>
-<div class="sourceCode" id="cb33"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb33-1"><a href="#cb33-1"></a><span class="co">---</span></span>
-<span id="cb33-2"><a href="#cb33-2"></a><span class="an">title:</span><span class="co"> "US Patent: A Spatial Toy"</span></span>
-<span id="cb33-3"><a href="#cb33-3"></a><span class="an">author:</span><span class="co"> "Erno Rubik"</span></span>
-<span id="cb33-4"><a href="#cb33-4"></a><span class="an">format:</span><span class="co"> "html"</span></span>
-<span id="cb33-5"><a href="#cb33-5"></a><span class="co">---</span></span>
-<span id="cb33-6"><a href="#cb33-6"></a></span>
-<span id="cb33-7"><a href="#cb33-7"></a>My idea is to build a cube...</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb34"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb34-1"><a href="#cb34-1"></a><span class="co">---</span></span>
+<span id="cb34-2"><a href="#cb34-2"></a><span class="an">title:</span><span class="co"> "US Patent: A Spatial Toy"</span></span>
+<span id="cb34-3"><a href="#cb34-3"></a><span class="an">author:</span><span class="co"> "Erno Rubik"</span></span>
+<span id="cb34-4"><a href="#cb34-4"></a><span class="an">format:</span><span class="co"> "html"</span></span>
+<span id="cb34-5"><a href="#cb34-5"></a><span class="co">---</span></span>
+<span id="cb34-6"><a href="#cb34-6"></a></span>
+<span id="cb34-7"><a href="#cb34-7"></a>My idea is to build a cube...</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 <div class="footer">
@@ -1578,19 +1601,19 @@ f(x)=\sqrt{\frac{\tau}{2\pi}}
 <p>Metadata can be included via YAML (YAML Ain’t Markup Language).</p>
 <div class="columns">
 <div class="column" style="width:50%;">
-<div class="sourceCode" id="cb34"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb34-1"><a href="#cb34-1"></a><span class="pp">---</span></span>
-<span id="cb34-2"><a href="#cb34-2"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"US Patent: A Spatial Toy"</span></span>
-<span id="cb34-3"><a href="#cb34-3"></a><span class="fu">author</span><span class="kw">:</span><span class="at"> </span></span>
-<span id="cb34-4"><a href="#cb34-4"></a><span class="at">  </span><span class="kw">-</span><span class="at"> Erno Rubrik</span></span>
-<span id="cb34-5"><a href="#cb34-5"></a><span class="at">  </span><span class="kw">-</span><span class="at"> Albert Einstein</span></span>
-<span id="cb34-6"><a href="#cb34-6"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> </span></span>
-<span id="cb34-7"><a href="#cb34-7"></a><span class="at">  </span><span class="fu">html</span><span class="kw">:</span></span>
-<span id="cb34-8"><a href="#cb34-8"></a><span class="at">    </span><span class="fu">toc</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
-<span id="cb34-9"><a href="#cb34-9"></a><span class="fu">    abstract</span><span class="kw">: </span><span class="ch">|</span></span>
-<span id="cb34-10"><a href="#cb34-10"></a>      This is the abstract.</span>
-<span id="cb34-11"><a href="#cb34-11"></a><span class="at">    </span></span>
-<span id="cb34-12"><a href="#cb34-12"></a>      It has two paragraphs.</span>
-<span id="cb34-13"><a href="#cb34-13"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb35"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb35-1"><a href="#cb35-1"></a><span class="pp">---</span></span>
+<span id="cb35-2"><a href="#cb35-2"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"US Patent: A Spatial Toy"</span></span>
+<span id="cb35-3"><a href="#cb35-3"></a><span class="fu">author</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb35-4"><a href="#cb35-4"></a><span class="at">  </span><span class="kw">-</span><span class="at"> Erno Rubrik</span></span>
+<span id="cb35-5"><a href="#cb35-5"></a><span class="at">  </span><span class="kw">-</span><span class="at"> Albert Einstein</span></span>
+<span id="cb35-6"><a href="#cb35-6"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb35-7"><a href="#cb35-7"></a><span class="at">  </span><span class="fu">html</span><span class="kw">:</span></span>
+<span id="cb35-8"><a href="#cb35-8"></a><span class="at">    </span><span class="fu">toc</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb35-9"><a href="#cb35-9"></a><span class="fu">    abstract</span><span class="kw">: </span><span class="ch">|</span></span>
+<span id="cb35-10"><a href="#cb35-10"></a>      This is the abstract.</span>
+<span id="cb35-11"><a href="#cb35-11"></a><span class="at">    </span></span>
+<span id="cb35-12"><a href="#cb35-12"></a>      It has two paragraphs.</span>
+<span id="cb35-13"><a href="#cb35-13"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column" style="width:50%;">
 <p>Some syntax rules:</p>
 <div>
@@ -1617,37 +1640,37 @@ f(x)=\sqrt{\frac{\tau}{2\pi}}
 <div class="columns">
 <div class="column" style="width:50%;">
 <p><span class="smallcaps">A</span></p>
-<div class="sourceCode" id="cb35"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb35-1"><a href="#cb35-1"></a><span class="co">---</span></span>
-<span id="cb35-2"><a href="#cb35-2"></a><span class="an">title:</span><span class="co"> US Patent: A Spatial Toy</span></span>
-<span id="cb35-3"><a href="#cb35-3"></a><span class="an">author:</span><span class="co"> Erno Rubik</span></span>
-<span id="cb35-4"><a href="#cb35-4"></a><span class="an">format:</span><span class="co"> html</span></span>
-<span id="cb35-5"><a href="#cb35-5"></a><span class="co">---</span></span>
-<span id="cb35-6"><a href="#cb35-6"></a></span>
-<span id="cb35-7"><a href="#cb35-7"></a>My idea is to build a cube...</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><span class="smallcaps">C</span></p>
 <div class="sourceCode" id="cb36"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb36-1"><a href="#cb36-1"></a><span class="co">---</span></span>
-<span id="cb36-2"><a href="#cb36-2"></a><span class="an">format:</span><span class="co"> html</span></span>
-<span id="cb36-3"><a href="#cb36-3"></a><span class="co">---</span></span>
-<span id="cb36-4"><a href="#cb36-4"></a></span>
-<span id="cb36-5"><a href="#cb36-5"></a>My idea is to build a cube...</span>
+<span id="cb36-2"><a href="#cb36-2"></a><span class="an">title:</span><span class="co"> US Patent: A Spatial Toy</span></span>
+<span id="cb36-3"><a href="#cb36-3"></a><span class="an">author:</span><span class="co"> Erno Rubik</span></span>
+<span id="cb36-4"><a href="#cb36-4"></a><span class="an">format:</span><span class="co"> html</span></span>
+<span id="cb36-5"><a href="#cb36-5"></a><span class="co">---</span></span>
 <span id="cb36-6"><a href="#cb36-6"></a></span>
-<span id="cb36-7"><a href="#cb36-7"></a>---</span>
-<span id="cb36-8"><a href="#cb36-8"></a>title: A Spatial Toy</span>
-<span id="cb36-9"><a href="#cb36-9"></a>author: Erno Rubik</span>
-<span id="cb36-10"><a href="#cb36-10"></a>---</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb36-7"><a href="#cb36-7"></a>My idea is to build a cube...</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><span class="smallcaps">C</span></p>
+<div class="sourceCode" id="cb37"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb37-1"><a href="#cb37-1"></a><span class="co">---</span></span>
+<span id="cb37-2"><a href="#cb37-2"></a><span class="an">format:</span><span class="co"> html</span></span>
+<span id="cb37-3"><a href="#cb37-3"></a><span class="co">---</span></span>
+<span id="cb37-4"><a href="#cb37-4"></a></span>
+<span id="cb37-5"><a href="#cb37-5"></a>My idea is to build a cube...</span>
+<span id="cb37-6"><a href="#cb37-6"></a></span>
+<span id="cb37-7"><a href="#cb37-7"></a>---</span>
+<span id="cb37-8"><a href="#cb37-8"></a>title: A Spatial Toy</span>
+<span id="cb37-9"><a href="#cb37-9"></a>author: Erno Rubik</span>
+<span id="cb37-10"><a href="#cb37-10"></a>---</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column" style="width:50%;">
 <p><span class="smallcaps">C</span></p>
-<div class="sourceCode" id="cb37"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb37-1"><a href="#cb37-1"></a>My idea is to build a cube...</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb38"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb38-1"><a href="#cb38-1"></a>My idea is to build a cube...</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><span style="font-size: .8em">… then at the command line, run:</span></p>
-<div class="sourceCode" id="cb38"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb38-1"><a href="#cb38-1"></a><span class="ex">quarto</span> render patent.qmd <span class="at">--to</span> html <span class="at">-M</span> title:patent</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb39"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb39-1"><a href="#cb39-1"></a><span class="ex">quarto</span> render patent.qmd <span class="at">--to</span> html <span class="at">-M</span> title:patent</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><span class="smallcaps">D</span></p>
-<div class="sourceCode" id="cb39"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb39-1"><a href="#cb39-1"></a><span class="co">---</span></span>
-<span id="cb39-2"><a href="#cb39-2"></a><span class="an">title:</span><span class="co"> "US Patent: A Spatial Toy"</span></span>
-<span id="cb39-3"><a href="#cb39-3"></a><span class="an">author:</span><span class="co"> "Erno Rubik"</span></span>
-<span id="cb39-4"><a href="#cb39-4"></a><span class="an">format:</span><span class="co"> "html"</span></span>
-<span id="cb39-5"><a href="#cb39-5"></a><span class="co">---</span></span>
-<span id="cb39-6"><a href="#cb39-6"></a></span>
-<span id="cb39-7"><a href="#cb39-7"></a>My idea is to build a cube...</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb40"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb40-1"><a href="#cb40-1"></a><span class="co">---</span></span>
+<span id="cb40-2"><a href="#cb40-2"></a><span class="an">title:</span><span class="co"> "US Patent: A Spatial Toy"</span></span>
+<span id="cb40-3"><a href="#cb40-3"></a><span class="an">author:</span><span class="co"> "Erno Rubik"</span></span>
+<span id="cb40-4"><a href="#cb40-4"></a><span class="an">format:</span><span class="co"> "html"</span></span>
+<span id="cb40-5"><a href="#cb40-5"></a><span class="co">---</span></span>
+<span id="cb40-6"><a href="#cb40-6"></a></span>
+<span id="cb40-7"><a href="#cb40-7"></a>My idea is to build a cube...</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </section></section>

@@ -389,6 +389,16 @@
   <p class="author">Andrew Bray</p>
 </section>
 
+<section id="getting-exercise" class="slide level2">
+<h2>Getting Exercise</h2>
+<p>To get the materials for each part of this course packed in an RStudio Project, run:</p>
+<div class="sourceCode" id="cb1" style="font-size: 1.5em"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1"></a><span class="in">```{r}</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a>usethis<span class="sc">::</span><span class="fu">use_course</span>(<span class="st">"rmd-to-quarto/polishing-documents"</span>)</span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<blockquote>
+<p>You can also <code>git clone</code> if you prefer that workflow.</p>
+</blockquote>
+</section>
 <section>
 <section id="generic-blocks-and-inlines" class="title-slide slide level1 center">
 <h1>Generic Blocks and Inlines</h1>
@@ -397,7 +407,7 @@
 <section id="what-happens-when-you-pandoc-it" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">What happens when you pandoc it?</h2>
 <p>From the last exercise . . .</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource bash number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode bash hljs"><span id="cb1-1" class="hljs-ln-code"><a href="#cb1-1"></a><span class="ex">quarto</span> pandoc <span class="at">-f</span> html <span class="at">-t</span> markdown ex-2-goal.html <span class="at">-o</span> ex-2-answer.md</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource bash number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode bash hljs"><span id="cb2-1" class="hljs-ln-code"><a href="#cb2-1"></a><span class="ex">quarto</span> pandoc <span class="at">-f</span> html <span class="at">-t</span> markdown ex-2-goal.html <span class="at">-o</span> ex-2-answer.md</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="fragment">
 <div class="columns">
 <div class="column" style="width:60%;">
@@ -414,7 +424,7 @@
 <section id="what-happens-when-you-pandoc-it-1" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">What happens when you pandoc it?</h2>
 <p>From the last exercise . . .</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource bash number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode bash hljs"><span id="cb2-1" class="hljs-ln-code"><a href="#cb2-1"></a><span class="ex">quarto</span> pandoc <span class="at">-f</span> html <span class="at">-t</span> markdown ex-2-goal.html <span class="at">-o</span> ex-2-answer.md</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource bash number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode bash hljs"><span id="cb3-1" class="hljs-ln-code"><a href="#cb3-1"></a><span class="ex">quarto</span> pandoc <span class="at">-f</span> html <span class="at">-t</span> markdown ex-2-goal.html <span class="at">-o</span> ex-2-answer.md</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="columns">
 <div class="column" style="width:60%;">
 <p><img data-src="images/pandoc-convert-2.png"></p>
@@ -485,17 +495,17 @@
 <div class="columns">
 <div class="column" style="width:50%;">
 <h4 id="markdown">Markdown</h4>
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource markdown number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode markdown hljs"><span id="cb3-1" class="hljs-ln-code"><a href="#cb3-1"></a>:::{.callout-note}</span>
-<span id="cb3-2" class="hljs-ln-code"><a href="#cb3-2"></a>Look - a squirrel!</span>
-<span id="cb3-3" class="hljs-ln-code"><a href="#cb3-3"></a>:::</span>
-<span id="cb3-4" class="hljs-ln-code"><a href="#cb3-4"></a></span>
-<span id="cb3-5" class="hljs-ln-code"><a href="#cb3-5"></a>:::{.callout-important}</span>
-<span id="cb3-6" class="hljs-ln-code"><a href="#cb3-6"></a>Look - a squirrel!</span>
-<span id="cb3-7" class="hljs-ln-code"><a href="#cb3-7"></a>:::</span>
-<span id="cb3-8" class="hljs-ln-code"><a href="#cb3-8"></a></span>
-<span id="cb3-9" class="hljs-ln-code"><a href="#cb3-9"></a>:::{.callout-tip}</span>
-<span id="cb3-10" class="hljs-ln-code"><a href="#cb3-10"></a>Look - a squirrel!</span>
-<span id="cb3-11" class="hljs-ln-code"><a href="#cb3-11"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource markdown number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode markdown hljs"><span id="cb4-1" class="hljs-ln-code"><a href="#cb4-1"></a>:::{.callout-note}</span>
+<span id="cb4-2" class="hljs-ln-code"><a href="#cb4-2"></a>Look - a squirrel!</span>
+<span id="cb4-3" class="hljs-ln-code"><a href="#cb4-3"></a>:::</span>
+<span id="cb4-4" class="hljs-ln-code"><a href="#cb4-4"></a></span>
+<span id="cb4-5" class="hljs-ln-code"><a href="#cb4-5"></a>:::{.callout-important}</span>
+<span id="cb4-6" class="hljs-ln-code"><a href="#cb4-6"></a>Look - a squirrel!</span>
+<span id="cb4-7" class="hljs-ln-code"><a href="#cb4-7"></a>:::</span>
+<span id="cb4-8" class="hljs-ln-code"><a href="#cb4-8"></a></span>
+<span id="cb4-9" class="hljs-ln-code"><a href="#cb4-9"></a>:::{.callout-tip}</span>
+<span id="cb4-10" class="hljs-ln-code"><a href="#cb4-10"></a>Look - a squirrel!</span>
+<span id="cb4-11" class="hljs-ln-code"><a href="#cb4-11"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column fragment" style="width:50%;">
 <!-- -->
 <h4 id="html-output">HTML output</h4>
@@ -547,17 +557,17 @@
 <div class="columns">
 <div class="column" style="width:50%;">
 <h4 id="markdown-1">Markdown</h4>
-<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource markdown number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode markdown hljs"><span id="cb4-1" class="hljs-ln-code"><a href="#cb4-1"></a>:::{.callout-note}</span>
-<span id="cb4-2" class="hljs-ln-code"><a href="#cb4-2"></a>Look - a squirrel!</span>
-<span id="cb4-3" class="hljs-ln-code"><a href="#cb4-3"></a>:::</span>
-<span id="cb4-4" class="hljs-ln-code"><a href="#cb4-4"></a></span>
-<span id="cb4-5" class="hljs-ln-code"><a href="#cb4-5"></a>:::{.callout-important}</span>
-<span id="cb4-6" class="hljs-ln-code"><a href="#cb4-6"></a>Look - a squirrel!</span>
-<span id="cb4-7" class="hljs-ln-code"><a href="#cb4-7"></a>:::</span>
-<span id="cb4-8" class="hljs-ln-code"><a href="#cb4-8"></a></span>
-<span id="cb4-9" class="hljs-ln-code"><a href="#cb4-9"></a>:::{.callout-tip}</span>
-<span id="cb4-10" class="hljs-ln-code"><a href="#cb4-10"></a>Look - a squirrel!</span>
-<span id="cb4-11" class="hljs-ln-code"><a href="#cb4-11"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource markdown number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode markdown hljs"><span id="cb5-1" class="hljs-ln-code"><a href="#cb5-1"></a>:::{.callout-note}</span>
+<span id="cb5-2" class="hljs-ln-code"><a href="#cb5-2"></a>Look - a squirrel!</span>
+<span id="cb5-3" class="hljs-ln-code"><a href="#cb5-3"></a>:::</span>
+<span id="cb5-4" class="hljs-ln-code"><a href="#cb5-4"></a></span>
+<span id="cb5-5" class="hljs-ln-code"><a href="#cb5-5"></a>:::{.callout-important}</span>
+<span id="cb5-6" class="hljs-ln-code"><a href="#cb5-6"></a>Look - a squirrel!</span>
+<span id="cb5-7" class="hljs-ln-code"><a href="#cb5-7"></a>:::</span>
+<span id="cb5-8" class="hljs-ln-code"><a href="#cb5-8"></a></span>
+<span id="cb5-9" class="hljs-ln-code"><a href="#cb5-9"></a>:::{.callout-tip}</span>
+<span id="cb5-10" class="hljs-ln-code"><a href="#cb5-10"></a>Look - a squirrel!</span>
+<span id="cb5-11" class="hljs-ln-code"><a href="#cb5-11"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column" style="width:50%;">
 <h4 id="pdf-output">PDF output</h4>
 <p><img data-src="images/callouts-pdf.png"></p>
@@ -570,17 +580,17 @@
 <div class="columns">
 <div class="column" style="width:50%;">
 <h4 id="markdown-2">Markdown</h4>
-<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource markdown number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode markdown hljs"><span id="cb5-1" class="hljs-ln-code"><a href="#cb5-1"></a>:::{.callout-note}</span>
-<span id="cb5-2" class="hljs-ln-code"><a href="#cb5-2"></a>Look - a squirrel!</span>
-<span id="cb5-3" class="hljs-ln-code"><a href="#cb5-3"></a>:::</span>
-<span id="cb5-4" class="hljs-ln-code"><a href="#cb5-4"></a></span>
-<span id="cb5-5" class="hljs-ln-code"><a href="#cb5-5"></a>:::{.callout-important}</span>
-<span id="cb5-6" class="hljs-ln-code"><a href="#cb5-6"></a>Look - a squirrel!</span>
-<span id="cb5-7" class="hljs-ln-code"><a href="#cb5-7"></a>:::</span>
-<span id="cb5-8" class="hljs-ln-code"><a href="#cb5-8"></a></span>
-<span id="cb5-9" class="hljs-ln-code"><a href="#cb5-9"></a>:::{.callout-tip}</span>
-<span id="cb5-10" class="hljs-ln-code"><a href="#cb5-10"></a>Look - a squirrel!</span>
-<span id="cb5-11" class="hljs-ln-code"><a href="#cb5-11"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource markdown number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode markdown hljs"><span id="cb6-1" class="hljs-ln-code"><a href="#cb6-1"></a>:::{.callout-note}</span>
+<span id="cb6-2" class="hljs-ln-code"><a href="#cb6-2"></a>Look - a squirrel!</span>
+<span id="cb6-3" class="hljs-ln-code"><a href="#cb6-3"></a>:::</span>
+<span id="cb6-4" class="hljs-ln-code"><a href="#cb6-4"></a></span>
+<span id="cb6-5" class="hljs-ln-code"><a href="#cb6-5"></a>:::{.callout-important}</span>
+<span id="cb6-6" class="hljs-ln-code"><a href="#cb6-6"></a>Look - a squirrel!</span>
+<span id="cb6-7" class="hljs-ln-code"><a href="#cb6-7"></a>:::</span>
+<span id="cb6-8" class="hljs-ln-code"><a href="#cb6-8"></a></span>
+<span id="cb6-9" class="hljs-ln-code"><a href="#cb6-9"></a>:::{.callout-tip}</span>
+<span id="cb6-10" class="hljs-ln-code"><a href="#cb6-10"></a>Look - a squirrel!</span>
+<span id="cb6-11" class="hljs-ln-code"><a href="#cb6-11"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column" style="width:50%;">
 <h4 id="docx-output">DOCX output</h4>
 <p><img data-src="images/callouts-doc.png"></p>
@@ -605,17 +615,17 @@
 <div class="columns">
 <div class="column" style="width:50%;">
 <h4 id="markdown-3">Markdown</h4>
-<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource markdown number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode markdown hljs"><span id="cb6-1" class="hljs-ln-code"><a href="#cb6-1"></a>:::{layout-ncol=2}</span>
-<span id="cb6-2" class="hljs-ln-code"><a href="#cb6-2"></a>A novelty clock, watch, and the like for </span>
-<span id="cb6-3" class="hljs-ln-code"><a href="#cb6-3"></a>keeping time at an animal's rate, defined</span>
-<span id="cb6-4" class="hljs-ln-code"><a href="#cb6-4"></a>in terms of a multiple of human rate by </span>
-<span id="cb6-5" class="hljs-ln-code"><a href="#cb6-5"></a>dividing the average lifetime of a </span>
-<span id="cb6-6" class="hljs-ln-code"><a href="#cb6-6"></a>particular animal into the average </span>
-<span id="cb6-7" class="hljs-ln-code"><a href="#cb6-7"></a>lifetime of a human being. The multiple</span>
-<span id="cb6-8" class="hljs-ln-code"><a href="#cb6-8"></a>for dogs is seven, for example.</span>
-<span id="cb6-9" class="hljs-ln-code"><a href="#cb6-9"></a></span>
-<span id="cb6-10" class="hljs-ln-code"><a href="#cb6-10"></a><span class="al">![](images/dog-watch.png)</span></span>
-<span id="cb6-11" class="hljs-ln-code"><a href="#cb6-11"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource markdown number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode markdown hljs"><span id="cb7-1" class="hljs-ln-code"><a href="#cb7-1"></a>:::{layout-ncol=2}</span>
+<span id="cb7-2" class="hljs-ln-code"><a href="#cb7-2"></a>A novelty clock, watch, and the like for </span>
+<span id="cb7-3" class="hljs-ln-code"><a href="#cb7-3"></a>keeping time at an animal's rate, defined</span>
+<span id="cb7-4" class="hljs-ln-code"><a href="#cb7-4"></a>in terms of a multiple of human rate by </span>
+<span id="cb7-5" class="hljs-ln-code"><a href="#cb7-5"></a>dividing the average lifetime of a </span>
+<span id="cb7-6" class="hljs-ln-code"><a href="#cb7-6"></a>particular animal into the average </span>
+<span id="cb7-7" class="hljs-ln-code"><a href="#cb7-7"></a>lifetime of a human being. The multiple</span>
+<span id="cb7-8" class="hljs-ln-code"><a href="#cb7-8"></a>for dogs is seven, for example.</span>
+<span id="cb7-9" class="hljs-ln-code"><a href="#cb7-9"></a></span>
+<span id="cb7-10" class="hljs-ln-code"><a href="#cb7-10"></a><span class="al">![](images/dog-watch.png)</span></span>
+<span id="cb7-11" class="hljs-ln-code"><a href="#cb7-11"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column border" style="width:50%;">
 <h4 id="html-output-1">HTML output</h4>
 <div class="quarto-layout-panel" style="border: 2px solid #5c5859">
@@ -637,17 +647,17 @@
 <div class="columns">
 <div class="column" style="width:50%;">
 <h4 id="markdown-4">Markdown</h4>
-<div class="sourceCode" id="cb7" data-code-line-numbers="1"><pre class="sourceCode numberSource markdown number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode markdown hljs"><span id="cb7-1" class="hljs-ln-code"><a href="#cb7-1"></a>:::{layout-ncol=2 layout-valign=middle}</span>
-<span id="cb7-2" class="hljs-ln-code"><a href="#cb7-2"></a>A novelty clock, watch, and the like for </span>
-<span id="cb7-3" class="hljs-ln-code"><a href="#cb7-3"></a>keeping time at an animal's rate, defined</span>
-<span id="cb7-4" class="hljs-ln-code"><a href="#cb7-4"></a>in terms of a multiple of human rate by </span>
-<span id="cb7-5" class="hljs-ln-code"><a href="#cb7-5"></a>dividing the average lifetime of a </span>
-<span id="cb7-6" class="hljs-ln-code"><a href="#cb7-6"></a>particular animal into the average </span>
-<span id="cb7-7" class="hljs-ln-code"><a href="#cb7-7"></a>lifetime of a human being. The multiple</span>
-<span id="cb7-8" class="hljs-ln-code"><a href="#cb7-8"></a>for dogs is seven, for example.</span>
-<span id="cb7-9" class="hljs-ln-code"><a href="#cb7-9"></a></span>
-<span id="cb7-10" class="hljs-ln-code"><a href="#cb7-10"></a><span class="al">![](images/dog-watch.png)</span></span>
-<span id="cb7-11" class="hljs-ln-code"><a href="#cb7-11"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb8" data-code-line-numbers="1"><pre class="sourceCode numberSource markdown number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode markdown hljs"><span id="cb8-1" class="hljs-ln-code"><a href="#cb8-1"></a>:::{layout-ncol=2 layout-valign=middle}</span>
+<span id="cb8-2" class="hljs-ln-code"><a href="#cb8-2"></a>A novelty clock, watch, and the like for </span>
+<span id="cb8-3" class="hljs-ln-code"><a href="#cb8-3"></a>keeping time at an animal's rate, defined</span>
+<span id="cb8-4" class="hljs-ln-code"><a href="#cb8-4"></a>in terms of a multiple of human rate by </span>
+<span id="cb8-5" class="hljs-ln-code"><a href="#cb8-5"></a>dividing the average lifetime of a </span>
+<span id="cb8-6" class="hljs-ln-code"><a href="#cb8-6"></a>particular animal into the average </span>
+<span id="cb8-7" class="hljs-ln-code"><a href="#cb8-7"></a>lifetime of a human being. The multiple</span>
+<span id="cb8-8" class="hljs-ln-code"><a href="#cb8-8"></a>for dogs is seven, for example.</span>
+<span id="cb8-9" class="hljs-ln-code"><a href="#cb8-9"></a></span>
+<span id="cb8-10" class="hljs-ln-code"><a href="#cb8-10"></a><span class="al">![](images/dog-watch.png)</span></span>
+<span id="cb8-11" class="hljs-ln-code"><a href="#cb8-11"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column border" style="width:50%;">
 <h4 id="html-output-2">HTML output</h4>
 <div class="quarto-layout-panel" style="border: 2px solid #5c5859">
@@ -669,17 +679,17 @@
 <div class="columns">
 <div class="column" style="width:50%;">
 <h4 id="markdown-5">Markdown</h4>
-<div class="sourceCode" id="cb8" data-code-line-numbers="10"><pre class="sourceCode numberSource markdown number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode markdown hljs"><span id="cb8-1" class="hljs-ln-code"><a href="#cb8-1"></a>:::{layout-ncol=2}</span>
-<span id="cb8-2" class="hljs-ln-code"><a href="#cb8-2"></a>A novelty clock, watch, and the like for </span>
-<span id="cb8-3" class="hljs-ln-code"><a href="#cb8-3"></a>keeping time at an animal's rate, defined</span>
-<span id="cb8-4" class="hljs-ln-code"><a href="#cb8-4"></a>in terms of a multiple of human rate by </span>
-<span id="cb8-5" class="hljs-ln-code"><a href="#cb8-5"></a>dividing the average lifetime of a </span>
-<span id="cb8-6" class="hljs-ln-code"><a href="#cb8-6"></a>particular animal into the average </span>
-<span id="cb8-7" class="hljs-ln-code"><a href="#cb8-7"></a>lifetime of a human being. The multiple</span>
-<span id="cb8-8" class="hljs-ln-code"><a href="#cb8-8"></a>for dogs is seven, for example.</span>
-<span id="cb8-9" class="hljs-ln-code"><a href="#cb8-9"></a></span>
-<span id="cb8-10" class="hljs-ln-code"><a href="#cb8-10"></a><span class="al">![](images/dog-watch-small.png)</span></span>
-<span id="cb8-11" class="hljs-ln-code"><a href="#cb8-11"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb9" data-code-line-numbers="10"><pre class="sourceCode numberSource markdown number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode markdown hljs"><span id="cb9-1" class="hljs-ln-code"><a href="#cb9-1"></a>:::{layout-ncol=2}</span>
+<span id="cb9-2" class="hljs-ln-code"><a href="#cb9-2"></a>A novelty clock, watch, and the like for </span>
+<span id="cb9-3" class="hljs-ln-code"><a href="#cb9-3"></a>keeping time at an animal's rate, defined</span>
+<span id="cb9-4" class="hljs-ln-code"><a href="#cb9-4"></a>in terms of a multiple of human rate by </span>
+<span id="cb9-5" class="hljs-ln-code"><a href="#cb9-5"></a>dividing the average lifetime of a </span>
+<span id="cb9-6" class="hljs-ln-code"><a href="#cb9-6"></a>particular animal into the average </span>
+<span id="cb9-7" class="hljs-ln-code"><a href="#cb9-7"></a>lifetime of a human being. The multiple</span>
+<span id="cb9-8" class="hljs-ln-code"><a href="#cb9-8"></a>for dogs is seven, for example.</span>
+<span id="cb9-9" class="hljs-ln-code"><a href="#cb9-9"></a></span>
+<span id="cb9-10" class="hljs-ln-code"><a href="#cb9-10"></a><span class="al">![](images/dog-watch-small.png)</span></span>
+<span id="cb9-11" class="hljs-ln-code"><a href="#cb9-11"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column border" style="width:50%;">
 <h4 id="html-output-3">HTML output</h4>
 <div class="quarto-layout-panel" style="border: 2px solid #5c5859">
@@ -736,13 +746,13 @@
 <div class="columns">
 <div class="column" style="width:50%;">
 <h4 id="markdown-6">Markdown</h4>
-<div class="sourceCode" id="cb9" data-code-line-numbers="1"><pre class="sourceCode numberSource markdown number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode markdown hljs"><span id="cb9-1" class="hljs-ln-code"><a href="#cb9-1"></a>:::{layout="[<span class="co">[</span><span class="ot">1,1</span><span class="co">]</span>, <span class="co">[</span><span class="ot">1</span><span class="co">]</span>]"}</span>
-<span id="cb9-2" class="hljs-ln-code"><a href="#cb9-2"></a><span class="al">![](images/watch-face.png)</span></span>
-<span id="cb9-3" class="hljs-ln-code"><a href="#cb9-3"></a></span>
-<span id="cb9-4" class="hljs-ln-code"><a href="#cb9-4"></a><span class="al">![](images/dog-watch.png)</span></span>
-<span id="cb9-5" class="hljs-ln-code"><a href="#cb9-5"></a></span>
-<span id="cb9-6" class="hljs-ln-code"><a href="#cb9-6"></a><span class="al">![](images/circuit.png)</span></span>
-<span id="cb9-7" class="hljs-ln-code"><a href="#cb9-7"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb10" data-code-line-numbers="1"><pre class="sourceCode numberSource markdown number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode markdown hljs"><span id="cb10-1" class="hljs-ln-code"><a href="#cb10-1"></a>:::{layout="[<span class="co">[</span><span class="ot">1,1</span><span class="co">]</span>, <span class="co">[</span><span class="ot">1</span><span class="co">]</span>]"}</span>
+<span id="cb10-2" class="hljs-ln-code"><a href="#cb10-2"></a><span class="al">![](images/watch-face.png)</span></span>
+<span id="cb10-3" class="hljs-ln-code"><a href="#cb10-3"></a></span>
+<span id="cb10-4" class="hljs-ln-code"><a href="#cb10-4"></a><span class="al">![](images/dog-watch.png)</span></span>
+<span id="cb10-5" class="hljs-ln-code"><a href="#cb10-5"></a></span>
+<span id="cb10-6" class="hljs-ln-code"><a href="#cb10-6"></a><span class="al">![](images/circuit.png)</span></span>
+<span id="cb10-7" class="hljs-ln-code"><a href="#cb10-7"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column border fragment" style="width:50%;">
 <!-- -->
 <h4 id="html-output-4">HTML output</h4>
@@ -772,13 +782,13 @@
 <div class="columns">
 <div class="column" style="width:50%;">
 <h4 id="markdown-7">Markdown</h4>
-<div class="sourceCode" id="cb10" data-code-line-numbers="1"><pre class="sourceCode numberSource markdown number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode markdown hljs"><span id="cb10-1" class="hljs-ln-code"><a href="#cb10-1"></a>:::{layout="[<span class="co">[</span><span class="ot">1,5</span><span class="co">]</span>, <span class="co">[</span><span class="ot">1</span><span class="co">]</span>]"}</span>
-<span id="cb10-2" class="hljs-ln-code"><a href="#cb10-2"></a><span class="al">![](images/watch-face.png)</span></span>
-<span id="cb10-3" class="hljs-ln-code"><a href="#cb10-3"></a></span>
-<span id="cb10-4" class="hljs-ln-code"><a href="#cb10-4"></a><span class="al">![](images/dog-watch.png)</span></span>
-<span id="cb10-5" class="hljs-ln-code"><a href="#cb10-5"></a></span>
-<span id="cb10-6" class="hljs-ln-code"><a href="#cb10-6"></a><span class="al">![](images/circuit.png)</span></span>
-<span id="cb10-7" class="hljs-ln-code"><a href="#cb10-7"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb11" data-code-line-numbers="1"><pre class="sourceCode numberSource markdown number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode markdown hljs"><span id="cb11-1" class="hljs-ln-code"><a href="#cb11-1"></a>:::{layout="[<span class="co">[</span><span class="ot">1,5</span><span class="co">]</span>, <span class="co">[</span><span class="ot">1</span><span class="co">]</span>]"}</span>
+<span id="cb11-2" class="hljs-ln-code"><a href="#cb11-2"></a><span class="al">![](images/watch-face.png)</span></span>
+<span id="cb11-3" class="hljs-ln-code"><a href="#cb11-3"></a></span>
+<span id="cb11-4" class="hljs-ln-code"><a href="#cb11-4"></a><span class="al">![](images/dog-watch.png)</span></span>
+<span id="cb11-5" class="hljs-ln-code"><a href="#cb11-5"></a></span>
+<span id="cb11-6" class="hljs-ln-code"><a href="#cb11-6"></a><span class="al">![](images/circuit.png)</span></span>
+<span id="cb11-7" class="hljs-ln-code"><a href="#cb11-7"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column border" style="width:50%;">
 <h4 id="html-output-5">HTML output</h4>
 <div class="quarto-layout-panel" style="border: 2px solid #5c5859">
@@ -806,44 +816,6 @@
 <div class="columns">
 <div class="column" style="width:50%;">
 <h4 id="markdown-8">Markdown</h4>
-<div class="sourceCode" id="cb11" data-code-line-numbers="1,11"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb11-1"><a href="#cb11-1"></a>:::{.column-body}</span>
-<span id="cb11-2"><a href="#cb11-2"></a>A novelty clock, watch, and the like for </span>
-<span id="cb11-3"><a href="#cb11-3"></a>keeping time at an animal's rate, defined</span>
-<span id="cb11-4"><a href="#cb11-4"></a>in terms of a multiple of human rate by </span>
-<span id="cb11-5"><a href="#cb11-5"></a>dividing the average lifetime of a </span>
-<span id="cb11-6"><a href="#cb11-6"></a>particular animal into the average </span>
-<span id="cb11-7"><a href="#cb11-7"></a>lifetime of a human being. The multiple</span>
-<span id="cb11-8"><a href="#cb11-8"></a>for dogs is seven, for example.</span>
-<span id="cb11-9"><a href="#cb11-9"></a>:::</span>
-<span id="cb11-10"><a href="#cb11-10"></a></span>
-<span id="cb11-11"><a href="#cb11-11"></a>:::{.column-screen}</span>
-<span id="cb11-12"><a href="#cb11-12"></a>A novelty clock, watch, and the like for </span>
-<span id="cb11-13"><a href="#cb11-13"></a>keeping time at an animal's rate, defined</span>
-<span id="cb11-14"><a href="#cb11-14"></a>in terms of a multiple of human rate by </span>
-<span id="cb11-15"><a href="#cb11-15"></a>dividing the average lifetime of a </span>
-<span id="cb11-16"><a href="#cb11-16"></a>particular animal into the average </span>
-<span id="cb11-17"><a href="#cb11-17"></a>lifetime of a human being. The multiple</span>
-<span id="cb11-18"><a href="#cb11-18"></a>for dogs is seven, for example.</span>
-<span id="cb11-19"><a href="#cb11-19"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div><div class="column fragment" style="width:50%;">
-<!-- -->
-<h4 id="html-output-6">HTML output</h4>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/doc-layout.png"></p>
-</figure>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="document-layout-column-classes-1" class="slide level2">
-<h2>Document Layout: column classes</h2>
-<p>Modify the width of the main body column for individual block elements (e.g.&nbsp;paragraph, figures).</p>
-<div class="fragment">
-<div class="columns">
-<div class="column" style="width:50%;">
-<h4 id="markdown-9">Markdown</h4>
 <div class="sourceCode" id="cb12" data-code-line-numbers="1,11"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb12-1"><a href="#cb12-1"></a>:::{.column-body}</span>
 <span id="cb12-2"><a href="#cb12-2"></a>A novelty clock, watch, and the like for </span>
 <span id="cb12-3"><a href="#cb12-3"></a>keeping time at an animal's rate, defined</span>
@@ -865,6 +837,44 @@
 <span id="cb12-19"><a href="#cb12-19"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column fragment" style="width:50%;">
 <!-- -->
+<h4 id="html-output-6">HTML output</h4>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/doc-layout.png"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="document-layout-column-classes-1" class="slide level2">
+<h2>Document Layout: column classes</h2>
+<p>Modify the width of the main body column for individual block elements (e.g.&nbsp;paragraph, figures).</p>
+<div class="fragment">
+<div class="columns">
+<div class="column" style="width:50%;">
+<h4 id="markdown-9">Markdown</h4>
+<div class="sourceCode" id="cb13" data-code-line-numbers="1,11"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb13-1"><a href="#cb13-1"></a>:::{.column-body}</span>
+<span id="cb13-2"><a href="#cb13-2"></a>A novelty clock, watch, and the like for </span>
+<span id="cb13-3"><a href="#cb13-3"></a>keeping time at an animal's rate, defined</span>
+<span id="cb13-4"><a href="#cb13-4"></a>in terms of a multiple of human rate by </span>
+<span id="cb13-5"><a href="#cb13-5"></a>dividing the average lifetime of a </span>
+<span id="cb13-6"><a href="#cb13-6"></a>particular animal into the average </span>
+<span id="cb13-7"><a href="#cb13-7"></a>lifetime of a human being. The multiple</span>
+<span id="cb13-8"><a href="#cb13-8"></a>for dogs is seven, for example.</span>
+<span id="cb13-9"><a href="#cb13-9"></a>:::</span>
+<span id="cb13-10"><a href="#cb13-10"></a></span>
+<span id="cb13-11"><a href="#cb13-11"></a>:::{.column-screen}</span>
+<span id="cb13-12"><a href="#cb13-12"></a>A novelty clock, watch, and the like for </span>
+<span id="cb13-13"><a href="#cb13-13"></a>keeping time at an animal's rate, defined</span>
+<span id="cb13-14"><a href="#cb13-14"></a>in terms of a multiple of human rate by </span>
+<span id="cb13-15"><a href="#cb13-15"></a>dividing the average lifetime of a </span>
+<span id="cb13-16"><a href="#cb13-16"></a>particular animal into the average </span>
+<span id="cb13-17"><a href="#cb13-17"></a>lifetime of a human being. The multiple</span>
+<span id="cb13-18"><a href="#cb13-18"></a>for dogs is seven, for example.</span>
+<span id="cb13-19"><a href="#cb13-19"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column fragment" style="width:50%;">
+<!-- -->
 <h4 id="html-output-7">HTML output</h4>
 <div class="quarto-figure quarto-figure-center">
 <figure>
@@ -882,9 +892,9 @@
 <div class="columns">
 <div class="column" style="width:50%;">
 <h4 id="markdown-10">Markdown</h4>
-<div class="sourceCode" id="cb13"><pre class="sourceCode numberSource markdown number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode markdown hljs"><span id="cb13-1" class="hljs-ln-code"><a href="#cb13-1"></a><span class="al">![](images/dog-watch.png)</span></span>
-<span id="cb13-2" class="hljs-ln-code"><a href="#cb13-2"></a></span>
-<span id="cb13-3" class="hljs-ln-code"><a href="#cb13-3"></a>What a brilliant idea.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode numberSource markdown number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode markdown hljs"><span id="cb14-1" class="hljs-ln-code"><a href="#cb14-1"></a><span class="al">![](images/dog-watch.png)</span></span>
+<span id="cb14-2" class="hljs-ln-code"><a href="#cb14-2"></a></span>
+<span id="cb14-3" class="hljs-ln-code"><a href="#cb14-3"></a>What a brilliant idea.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column" style="width:50%;">
 <h4 id="output">Output</h4>
 <p><img data-src="images/margin-no.png" style="border: 2px solid #5c5859"></p>
@@ -898,11 +908,11 @@
 <div class="columns">
 <div class="column" style="width:50%;">
 <h4 id="markdown-11">Markdown</h4>
-<div class="sourceCode" id="cb14" data-code-line-numbers="3"><pre class="sourceCode numberSource markdown number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode markdown hljs"><span id="cb14-1" class="hljs-ln-code"><a href="#cb14-1"></a><span class="al">![](images/dog-watch.png)</span></span>
-<span id="cb14-2" class="hljs-ln-code"><a href="#cb14-2"></a></span>
-<span id="cb14-3" class="hljs-ln-code"><a href="#cb14-3"></a>:::{.column-margin}</span>
-<span id="cb14-4" class="hljs-ln-code"><a href="#cb14-4"></a>What a brilliant idea.</span>
-<span id="cb14-5" class="hljs-ln-code"><a href="#cb14-5"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb15" data-code-line-numbers="3"><pre class="sourceCode numberSource markdown number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode markdown hljs"><span id="cb15-1" class="hljs-ln-code"><a href="#cb15-1"></a><span class="al">![](images/dog-watch.png)</span></span>
+<span id="cb15-2" class="hljs-ln-code"><a href="#cb15-2"></a></span>
+<span id="cb15-3" class="hljs-ln-code"><a href="#cb15-3"></a>:::{.column-margin}</span>
+<span id="cb15-4" class="hljs-ln-code"><a href="#cb15-4"></a>What a brilliant idea.</span>
+<span id="cb15-5" class="hljs-ln-code"><a href="#cb15-5"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column" style="width:50%;">
 <h4 id="output-1">Output</h4>
 <p><img data-src="images/margin-yes.png" style="border: 2px solid #5c5859"></p>
@@ -915,13 +925,13 @@
 <p>What is your preferred method of adding a figure to an Rmd so that it displays in HTML at 300 pixels wide?</p>
 </div>
 <p><span class="smallcaps">A. markdown</span></p>
-<div class="sourceCode" id="cb15"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb15-1"><a href="#cb15-1"></a><span class="al">![A nice image.](foo/bar.png)</span>{width=300}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb16"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb16-1"><a href="#cb16-1"></a><span class="al">![A nice image.](foo/bar.png)</span>{width=300}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><span class="smallcaps">B. html</span></p>
-<div class="sourceCode" id="cb16"><pre class="sourceCode numberSource html number-lines code-with-copy"><code class="sourceCode html"><span id="cb16-1"><a href="#cb16-1"></a><span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"foo/bar.png"</span> <span class="er">width</span><span class="ot">=</span><span class="st">"300"</span><span class="kw">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb17"><pre class="sourceCode numberSource html number-lines code-with-copy"><code class="sourceCode html"><span id="cb17-1"><a href="#cb17-1"></a><span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"foo/bar.png"</span> <span class="er">width</span><span class="ot">=</span><span class="st">"300"</span><span class="kw">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><span class="smallcaps">C: knitr</span></p>
-<div class="sourceCode" id="cb17"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, out.width="300px"}</span></span>
-<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">includegraphics</span>(<span class="st">"foo/bar.png"</span>)</span>
-<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb18"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, out.width="300px"}</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">includegraphics</span>(<span class="st">"foo/bar.png"</span>)</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="section-1" class="slide level2" data-menu-title="Results">
 <h2></h2>
@@ -933,7 +943,7 @@
 <section id="figures" class="slide level2">
 <h2>Figures</h2>
 <p><span style="font-size: .8em">Quarto expands the functionality of markdown. Set <code>width</code>, <code>height</code>, <code>fig-align</code>, add link, caption, and alt-text.</span></p>
-<div class="sourceCode" id="cb18"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb18-1"><a href="#cb18-1"></a><span class="al">![A caption](images/dog-watch.png)</span>{width=300 fig-align=right fig-alt="Dog watching a watch."}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb19"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb19-1"><a href="#cb19-1"></a><span class="al">![A caption](images/dog-watch.png)</span>{width=300 fig-align=right fig-alt="Dog watching a watch."}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="fragment">
 <div class="quarto-figure quarto-figure-right">
 <figure>
@@ -959,12 +969,12 @@
 <div class="columns">
 <div class="column" style="width:50%;">
 <h4 id="markdown-12">Markdown</h4>
-<div class="sourceCode" id="cb19"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb19-1"><a href="#cb19-1"></a><span class="al">![A caption](images/dog-watch.png)</span>{#dogwatch}</span>
-<span id="cb19-2"><a href="#cb19-2"></a></span>
-<span id="cb19-3"><a href="#cb19-3"></a>&lt; Much more text &gt;</span>
-<span id="cb19-4"><a href="#cb19-4"></a></span>
-<span id="cb19-5"><a href="#cb19-5"></a>A novelty clock, <span class="co">[</span><span class="ot">watch</span><span class="co">](#dogwatch)</span>, and the</span>
-<span id="cb19-6"><a href="#cb19-6"></a>like for keeping time at an animal's rate . . .</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb20"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb20-1"><a href="#cb20-1"></a><span class="al">![A caption](images/dog-watch.png)</span>{#dogwatch}</span>
+<span id="cb20-2"><a href="#cb20-2"></a></span>
+<span id="cb20-3"><a href="#cb20-3"></a>&lt; Much more text &gt;</span>
+<span id="cb20-4"><a href="#cb20-4"></a></span>
+<span id="cb20-5"><a href="#cb20-5"></a>A novelty clock, <span class="co">[</span><span class="ot">watch</span><span class="co">](#dogwatch)</span>, and the</span>
+<span id="cb20-6"><a href="#cb20-6"></a>like for keeping time at an animal's rate . . .</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column fragment" style="width:50%;">
 <!-- -->
 <h4 id="html-output-8">HTML output</h4>
@@ -997,12 +1007,12 @@ not just figs!</li>
 <div class="columns">
 <div class="column" style="width:50%;">
 <h4 id="markdown-13">Markdown</h4>
-<div class="sourceCode" id="cb20" data-code-line-numbers="1,5"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb20-1"><a href="#cb20-1"></a><span class="al">![Caption](images/dog-watch.png)</span>{#fig-dogwatch}</span>
-<span id="cb20-2"><a href="#cb20-2"></a></span>
-<span id="cb20-3"><a href="#cb20-3"></a>&lt; Much more text &gt;</span>
-<span id="cb20-4"><a href="#cb20-4"></a></span>
-<span id="cb20-5"><a href="#cb20-5"></a>A novelty clock, watch (@fig-dogwatch), and the like for </span>
-<span id="cb20-6"><a href="#cb20-6"></a>keeping time at an animal's rate . . .</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb21" data-code-line-numbers="1,5"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb21-1"><a href="#cb21-1"></a><span class="al">![Caption](images/dog-watch.png)</span>{#fig-dogwatch}</span>
+<span id="cb21-2"><a href="#cb21-2"></a></span>
+<span id="cb21-3"><a href="#cb21-3"></a>&lt; Much more text &gt;</span>
+<span id="cb21-4"><a href="#cb21-4"></a></span>
+<span id="cb21-5"><a href="#cb21-5"></a>A novelty clock, watch (@fig-dogwatch), and the like for </span>
+<span id="cb21-6"><a href="#cb21-6"></a>keeping time at an animal's rate . . .</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column fragment" style="width:50%;">
 <!-- -->
 <h4 id="html-output-9">HTML output</h4>
@@ -1198,11 +1208,11 @@ more for math.</li>
 <section id="fa-umbrella-beach-exercise-3-redux" class="title-slide slide level1 center" data-background-color="#00403d">
 <h1><i class="fa-solid fa-umbrella-beach"></i> Exercise 3 Redux</h1>
 <p>Add a Bootswatch theme to your <code>ex-3.qmd</code> by adding the following to your YAML.</p>
-<div class="sourceCode" id="cb21"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb21-1"><a href="#cb21-1"></a><span class="co">---</span></span>
-<span id="cb21-2"><a href="#cb21-2"></a><span class="an">format:</span></span>
-<span id="cb21-3"><a href="#cb21-3"></a><span class="co">  html:</span></span>
-<span id="cb21-4"><a href="#cb21-4"></a><span class="co">    theme: &lt;theme&gt;</span></span>
-<span id="cb21-5"><a href="#cb21-5"></a><span class="co">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb22"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb22-1"><a href="#cb22-1"></a><span class="co">---</span></span>
+<span id="cb22-2"><a href="#cb22-2"></a><span class="an">format:</span></span>
+<span id="cb22-3"><a href="#cb22-3"></a><span class="co">  html:</span></span>
+<span id="cb22-4"><a href="#cb22-4"></a><span class="co">    theme: &lt;theme&gt;</span></span>
+<span id="cb22-5"><a href="#cb22-5"></a><span class="co">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>You can find the list of theme names at <a href="https://quarto.org/docs/output-formats/html-themes.html">Quarto Guide &gt;&gt; Documents &gt;&gt; HTML</a>.</p>
 <p><br>
 </p>
@@ -1211,35 +1221,136 @@ more for math.</li>
 
 <section>
 <section id="baby-steps-into-css" class="title-slide slide level1 center">
-<h1>Baby steps into CSS</h1>
+<h1>Baby Steps into CSS</h1>
 
 </section>
-<section id="rule-syntax" class="slide level2">
-<h2>Rule syntax</h2>
+<section id="html-attributes" class="slide level2">
+<h2>HTML attributes</h2>
+<p>HTML, like markdown, has a set of elements that structure a website: <code>&lt;div&gt;</code>, <code>&lt;body&gt;</code>, <code>&lt;pre&gt;</code>, <code>&lt;span&gt;</code>, etc. Compare:</p>
+<div class="columns">
+<div class="column" style="width:33%;">
+<h4 id="markdown-14">Markdown</h4>
+<div class="sourceCode" id="cb23"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb23-1"><a href="#cb23-1"></a>A <span class="co">[</span><span class="ot">Span Element</span><span class="co">]</span>{}.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column" style="width:37%;">
+<h4 id="html-code">HTML Code</h4>
+<div class="sourceCode" id="cb24"><pre class="sourceCode numberSource html number-lines code-with-copy"><code class="sourceCode html"><span id="cb24-1"><a href="#cb24-1"></a><span class="kw">&lt;p&gt;</span>A <span class="kw">&lt;span&gt;</span>Span Element<span class="kw">&lt;/span&gt;</span>.<span class="kw">&lt;/p&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column" style="width:30%;">
+<h4 id="html-output-10">HTML Output</h4>
+<p>A <span>Span Element</span>.</p>
+</div>
+</div>
+<div class="fragment">
+<p>we can add labels.</p>
+<div class="columns">
+<div class="column" style="width:33%;">
+<h4 id="markdown-15">Markdown</h4>
+<div class="sourceCode" id="cb25"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb25-1"><a href="#cb25-1"></a>A <span class="co">[</span><span class="ot">Span Element</span><span class="co">]</span>{#label}.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column" style="width:37%;">
+<h4 id="html-code-1">HTML Code</h4>
+<div class="sourceCode" id="cb26"><pre class="sourceCode numberSource html number-lines code-with-copy"><code class="sourceCode html"><span id="cb26-1"><a href="#cb26-1"></a><span class="kw">&lt;p&gt;</span>A <span class="kw">&lt;span</span> <span class="er">id</span><span class="ot">=</span><span class="st">"label"</span><span class="kw">&gt;</span>Span Element<span class="kw">&lt;/span&gt;</span>.<span class="kw">&lt;/p&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column" style="width:30%;">
+<h4 id="html-output-11">HTML Output</h4>
+<p>A <span id="label">Span Element</span>.</p>
+</div>
+</div>
+</div>
+<div class="fragment">
+<p><br>
+<br>
+</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;. . . still looks the same. Let’s add some style.</p>
+</div>
 </section>
-<section id="attributes" class="slide level2">
-<h2>Attributes</h2>
+<section id="adding-style" class="slide level2">
+<h2>Adding Style</h2>
+<h4 id="markdown-16">Markdown</h4>
+<div class="sourceCode" id="cb27" style="font-size: 1.3em"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb27-1"><a href="#cb27-1"></a>A <span class="co">[</span><span class="ot">Span Element</span><span class="co">]</span>{#label style="color: red"}.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="fragment">
+<p><br>
+</p>
+</div>
+<h4 id="html">HTML</h4>
+<div class="sourceCode" id="cb28" style="font-size: 1.3em"><pre class="sourceCode numberSource html number-lines code-with-copy"><code class="sourceCode html"><span id="cb28-1"><a href="#cb28-1"></a><span class="kw">&lt;p&gt;</span>A <span class="kw">&lt;span</span> <span class="er">id</span><span class="ot">=</span><span class="st">"label"</span> <span class="er">style</span><span class="ot">=</span><span class="st">"color: red"</span><span class="kw">&gt;</span>Span Element<span class="kw">&lt;/span&gt;</span>.<span class="kw">&lt;/p&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="fragment">
+<p><br>
+</p>
+</div>
+<h4 id="html-output-12">HTML Output</h4>
+<p>A <span id="label" style="color: red">Span Element</span>.</p>
 </section>
-<section id="selectors" class="slide level2">
-<h2>Selectors</h2>
+<section id="quick-exercise" class="slide level2" data-background-color="#00403d">
+<h2>Quick Exercise</h2>
+<h4 id="css-properties">CSS Properties</h4>
+<p>There are many many many CSS properties available for styling.</p>
+<p><a href="https://www.w3schools.com/cssref/" class="uri">https://www.w3schools.com/cssref/</a></p>
+<p>Take a moment and add a few more different style properties from the list to a test span in your sandbox.</p>
+<p>Syntax: <code>style="property-1: value; property-2: value"</code></p>
+<p><br>
+<br>
+<br>
+</p>
+<p>What do you they do?</p>
 </section>
-<section id="cascade" class="slide level2">
-<h2>Cascade</h2>
+<section id="dry-for-style" class="slide level2">
+<h2>DRY for style</h2>
+<p>If you have a <span style="font-size: 1.5em; text-decoration: underline">style</span> that you want to apply <span style="font-size: 1.5em; text-decoration: underline">multiple times</span>, it makes sense to encapsulate it in a CSS rule. Why?</p>
+<div class="fragment">
+<h4 id="source">Source</h4>
+<p><code>If you have a [style]{style="font-size: 1.5em; text-decoration: underline"} that you want to apply [multiple times]{style="font-size: 1.5em; text-decoration: underline"}, it makes sense to encapsulate it in a CSS rule. Why?</code></p>
+<div class="fragment">
+<p><br>
+</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="meta-el">Don’t Repeat Yourself</span> (DRY): repetitive code is hard to update… and long!</p>
+</div>
+</div>
 </section>
-<section id="ex.-formatting-text-inline" class="slide level2">
-<h2>Ex. Formatting text inline</h2>
+<section id="css-rule-syntax" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">CSS Rule syntax</h2>
+<p>To write a rule for a class.</p>
+<div class="sourceCode" id="cb29" style="font-size: 1.5em"><pre class="sourceCode numberSource css number-lines code-with-copy"><code class="sourceCode css"><span id="cb29-1"><a href="#cb29-1"></a><span class="fu">.class</span> {</span>
+<span id="cb29-2"><a href="#cb29-2"></a>  property-1<span class="in">: value</span>;</span>
+<span id="cb29-3"><a href="#cb29-3"></a>  property-2<span class="in">: value</span>;</span>
+<span id="cb29-4"><a href="#cb29-4"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="fragment">
+<p>Contrast with the inline style approach:</p>
+<div class="sourceCode" id="cb30" style="font-size: 1.5em"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb30-1"><a href="#cb30-1"></a>style="property-1: value; property-2: value"</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="fragment">
+<p>To make the rule accessible to your document, put it into a separate <code>styles.css</code> file and link to in the YAML.</p>
+<div class="sourceCode" id="cb31"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb31-1"><a href="#cb31-1"></a><span class="pp">---</span></span>
+<span id="cb31-2"><a href="#cb31-2"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"CSS Demo"</span></span>
+<span id="cb31-3"><a href="#cb31-3"></a><span class="fu">format</span><span class="kw">:</span></span>
+<span id="cb31-4"><a href="#cb31-4"></a><span class="at">  </span><span class="fu">html</span><span class="kw">:</span></span>
+<span id="cb31-5"><a href="#cb31-5"></a><span class="at">    </span><span class="fu">css</span><span class="kw">:</span><span class="at"> styles.css</span></span>
+<span id="cb31-6"><a href="#cb31-6"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </section>
-<section id="ex.-making-a-box" class="slide level2">
-<h2>Ex. Making a box</h2>
-</section>
-<section id="what-are-css" class="slide level2">
-<h2>What are CSS</h2>
-<p><span class="inline-el">Cascading Style Sheets</span> (CSS) are a formal system of <em>rules</em> by which particular styles will be applied to a webpage.</p>
+<section id="css-rule-syntax-1" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">CSS Rule syntax</h2>
+<p>To write a rule for a class.</p>
+<div class="sourceCode" id="cb32" style="font-size: 1.5em"><pre class="sourceCode numberSource css number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode css hljs"><span id="cb32-1" class="hljs-ln-code"><a href="#cb32-1"></a><span class="fu">.loud</span> {</span>
+<span id="cb32-2" class="hljs-ln-code"><a href="#cb32-2"></a>  <span class="kw">font-size</span>: <span class="dv">1.5</span><span class="dt">em</span><span class="op">;</span></span>
+<span id="cb32-3" class="hljs-ln-code"><a href="#cb32-3"></a>  <span class="kw">text-decoration</span>: <span class="dv">underline</span><span class="op">;</span></span>
+<span id="cb32-4" class="hljs-ln-code"><a href="#cb32-4"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="fragment">
+<p><br>
+</p>
+<p><code>If you have a [style]{.loud} that you want to apply [multiple times]{.loud}, it makes sense to encapsulate it in a CSS rule. Why?</code></p>
+</div>
 </section></section>
+<section id="fa-palette-exercise-4" class="title-slide slide level1 center" data-background-color="#00403d">
+<h1><i class="fa-solid fa-palette"></i> Exercise 4</h1>
+<p>There are three CSS challenges in this exercise</p>
+<ol type="1">
+<li>Write the rules that style <span class="inline-el">Inline Elements</span>, <span class="block-el">Block Elements</span>, and <span class="meta-el">Metadata Elements</span> in these slides.</li>
+<li>Create your own rudimentary callout box.</li>
+</ol>
+</section>
+
 <section>
-<section id="exercise-4" class="title-slide slide level1 center">
-<h1>Exercise 4</h1>
-<p>Make your own css</p>
+<section id="fa-clone-stickies" class="title-slide slide level1 center" data-background-color="#00403d">
+<h1><i class="fa-solid fa-clone"></i> Stickies</h1>
+<p>On your way out the door for lunch, please write on the blue sticky note one that confused or frustrated you and on the yellow sticky something that you enjoyed, or got your excited.</p>
 </section>
 <section id="references-and-further-reading" class="slide level2 smaller">
 <h2>References and further reading</h2>

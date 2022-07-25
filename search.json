@@ -4,7 +4,21 @@
     "href": "about.html",
     "title": "About the Workshop",
     "section": "",
-    "text": "Location: National Harbor 12/13\nGaylord National Convention Center\nTime: 9 am - 5 pm July 25th and July26\n\n\nTeaching Team\n\nAndrew Bray\nAndrew Bray is a statistician at UC Berkeley where he develops and teaches courses in statistics and data science. His gets excited about empowering students to use data to understand the world and enjoys being part of a community of people developing open source software and open source educational resources. Though primarily an R user, last year he taught a large data science class to 1100 students in Python, which had him sorely missing the R Markdown ecosystem. The experience made him particularly grateful for Quarto as a bridge to other communities of data scientists.\n\n\nRebecca Barter\nRebecca is a statistician, data scientist, educator, and communicator who has a dual passion for empowering others by teaching critical thinking and technical skills for data science, and for uncovering the hidden patterns and stories that live inside complex datasets (primarily related to healthcare and medicine). She is currently a postdoc at UC Berkeley and she sometimes writes about data science and R on her website at www.rebeccabarter.com.\n\n\nSilvia Canelón\nSilvia (she/her) is a researcher, community organizer, and R educator. Her research projects at the University of Pennsylvania leverage electronic health record data to study pregnancy-related outcomes, and her organizing values data literacy as a way to build power and effect change.\nShe enjoys finding ways to communicate technical knowledge with a variety of audiences and loves learning how modern tools in the R ecosystem can support reproducible, efficient, and accessible workflows.\nYou can find out what Silvia is up to lately at silviacanelon.com.\n\n\nChristophe Dervieu\nChristophe Dervieux is an active member of the R community, currently living in France. With a master’s degree in energy and economics, he started working with R as an analyst doing economic studies about market designs, before becoming a developer advocate and R admin, promoting R and supporting R users where he works.\nHe is interested in helping others get the most from R, and you can find him wandering in the RStudio Community as a sustainer, or on several GitHub issue boards for various R packages. In both places, you may better recognize him by his shorter handle “cderv.”\nAs an R developer, he is a contributor to several R packages, such as bookdown, rmarkdown, and knitr. He has also co-authored the crrri package. His own projects can be found on GitHub (https://github.com/cderv), and sometimes he shares his ideas on Twitter (https://twitter.com/chrisderv).\nHe does not like spicy food, but he enjoys playing badminton every week.\n\n\nDevin Pastoor\nBio coming soon.\n\n\nTatsu Shigeta\nTatsu works on the Customer Success team at RStudio, and specializes in managing consulting and high tech clients. He is also PhD student at Northeastern University - studying how exercise affects the brain - that has all but defended (coming up in two weeks!). He has used RStudio for his own research purposes for a better part of decade, and looks forward to talking data science with everyone at his first rstudio::conf.\n\n\n\nAbout these materials\nThis source code and license for all of the materials found on this website can be found on Github ."
+    "text": "These materials are for a two day workshop taking place before rstudio::conf 2022 in Washington, DC."
+  },
+  {
+    "objectID": "about.html#teaching-team",
+    "href": "about.html#teaching-team",
+    "title": "About the Workshop",
+    "section": "Teaching Team",
+    "text": "Teaching Team\n\nAndrew Bray\nAndrew Bray is a statistician at UC Berkeley where he develops and teaches courses in statistics and data science. His gets excited about empowering students to use data to understand the world and enjoys being part of a community of people developing open source software and open source educational resources. Though primarily an R user, last year he taught a large data science class to 1100 students in Python, which had him sorely missing the R Markdown ecosystem. The experience made him particularly grateful for Quarto as a bridge to other communities of data scientists.\n\n\nRebecca Barter\nRebecca is a statistician, data scientist, educator, and communicator who has a dual passion for empowering others by teaching critical thinking and technical skills for data science, and for uncovering the hidden patterns and stories that live inside complex datasets (primarily related to healthcare and medicine). She is currently a postdoc at UC Berkeley and she sometimes writes about data science and R on her website at www.rebeccabarter.com.\n\n\nSilvia Canelón\nSilvia (she/her) is a researcher, community organizer, and R educator. Her research projects at the University of Pennsylvania leverage electronic health record data to study pregnancy-related outcomes, and her organizing values data literacy as a way to build power and effect change.\nShe enjoys finding ways to communicate technical knowledge with a variety of audiences and loves learning how modern tools in the R ecosystem can support reproducible, efficient, and accessible workflows.\nYou can find out what Silvia is up to lately at silviacanelon.com.\n\n\nChristophe Dervieu\nChristophe Dervieux is an active member of the R community, currently living in France. With a master’s degree in energy and economics, he started working with R as an analyst doing economic studies about market designs, before becoming a developer advocate and R admin, promoting R and supporting R users where he works.\nHe is interested in helping others get the most from R, and you can find him wandering in the RStudio Community as a sustainer, or on several GitHub issue boards for various R packages. In both places, you may better recognize him by his shorter handle “cderv.”\nAs an R developer, he is a contributor to several R packages, such as bookdown, rmarkdown, and knitr. He has also co-authored the crrri package. His own projects can be found on GitHub (https://github.com/cderv), and sometimes he shares his ideas on Twitter (https://twitter.com/chrisderv).\nHe does not like spicy food, but he enjoys playing badminton every week.\n\n\nDevin Pastoor\nBio coming soon.\n\n\nTatsu Shigeta\nTatsu works on the Customer Success team at RStudio, and specializes in managing consulting and high tech clients. He is also PhD student at Northeastern University - studying how exercise affects the brain - that has all but defended (coming up in two weeks!). He has used RStudio for his own research purposes for a better part of decade, and looks forward to talking data science with everyone at his first rstudio::conf."
+  },
+  {
+    "objectID": "about.html#about-these-materials",
+    "href": "about.html#about-these-materials",
+    "title": "About the Workshop",
+    "section": "About these materials",
+    "text": "About these materials\nThis source code and license for all of the materials found on this website can be found on Github ."
   },
   {
     "objectID": "index.html",
@@ -18,7 +32,7 @@
     "href": "materials/1-welcome-to-quarto/index.html",
     "title": "Welcome to Quarto",
     "section": "",
-    "text": "Warning\n\n\n\nUnder construction."
+    "text": "Outline\nLink to slides\n\nAbout the Workshop\nWhat can you do with Quarto?\nQuarto and R Markdown: A History\nRendering in Quarto\nThe Structure of a Document\n\nInline Elements\nBlock Elements\nMetadata\n\nThe Elements of Markdown\n\nText Formatting\nMath\nLinks and Images\nFootnotes\nParagraph\nHeaders\nLists\nDisplay Math\nYAML"
   },
   {
     "objectID": "materials/1-welcome-to-quarto/slides/images/ex-2.html",
@@ -26,6 +40,13 @@
     "title": "From R Markdown to Quarto",
     "section": "",
     "text": "Spatial Logical Toy Inventor: Erno Rubik Assignee: Politoys Ipari Szovetkezet, Budapest, Hungary The first patent by the inventor is registered in Hungary. Appl. No.: 289,192 Filed: Aug. 3, 1981 Background of the Invention The invention relates to a spatial logical toy having a total of eighteen toy elements which form a regular or an irregular spatial body, preferably an oblong body, in the assembled state. Spatial logical toys are well known, such as that described in the HU-PS No. 170 062 of the same applicant, which relates to a spatial logical toy consisting of twenty-seven solids which form a cube in the assembled state. The toy elements, in the shape of small cubes, may be turned along the spatial axes of the cube by means of connecting elements arranged in the geometric center of the large cube. The surfaces of the small cubes forming each surface of the large cube are colored or carry numbers, figures or any other symbols which can be assembled into the predetermined logical order of sequence by simultaneously rotating the nine toy elements forming the surfaces of the large cube. Summary of the Invention The logical toy according to the present invention represents an improved form of the previously described spatial logical toy. The construction is based on the same principles, however, the internal connection is performed by means of absolutely new and particular solids. The key feature according to the invention, i.e. shape, name, sounds, mode of interconnection and central fixture will be described in detail by means of two preferred embodiments, by the aid of the accompanying drawings, wherein. Component blocks of the spatial logial toy. ex-2-figs.png What is claimed is: 1. In a spatial logical toy assembled from a plurality of toy elements, of which a predetermined number may be rotated in the direction of the spatial axes starting from the geometrical center of the logical toy, the improvement wherein the spatial logical toy is formed by a total of eighteen toy elements. Two sets of eight toy elements each comprise substantially cubiforms with integally formed cam elements and each of the sets comprise eight identical toy elements, and two connecting toy elements, and means for joining the connecting toy elements to coact with the cam elements to form an integrated toy body, the joining means comprising a single screw enclosed by a spring. The spatial logical toy as claimed in claim 1, wherein the toy has the shape of a regular geometrical body in the assembled state. The toy elements thereof belonging to one set comprise eight cubiform homologous elements each having a first cam element connected to one corner thereof. Two confining surfaces of which lie at a unit distance from two surfaces of the cube and are parallel therewith and are cut-off in the form of an ellipsis-quarter, and a third confining surface thereof is coplanar with another surface of the cube and between the two confining faces of the first cam element running parallel with the cube and the cube there is a hollow with a convex spherical surface."
+  },
+  {
+    "objectID": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#from-r-markdown-to-quarto",
+    "href": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#from-r-markdown-to-quarto",
+    "title": "Welcome to Quarto",
+    "section": "From R Markdown to Quarto",
+    "text": "From R Markdown to Quarto\n\n\nWelcome!\nAs you arrive, if you haven’t already, please get your machine configured using the steps found on the workshop website. Please assist your neighbors if they’re running into issues.\n\n\nhttps://rstudio-conf-2022.github.io/rmd-to-quarto/materials/\n\n\nAlso, please be ready with Discord for discussions (you should have an invite in your email from the conference)."
   },
   {
     "objectID": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#introductions",
@@ -165,7 +186,14 @@
     "href": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#three-ways-to-render",
     "title": "Welcome to Quarto",
     "section": "Three ways to render",
-    "text": "Three ways to render\n\n\nQuarto is integrated into RStudio\nClick  in Editor pane of RStudio.\n\n\n\n\nQuarto is an R package\nRun in R:\nquarto::quarto_render(input = ___, output_format = ___)\n\n\n\n\nQuarto is a command line tool\nRun at the terminal:\nquarto render <input> --to <format>`\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNavigate to the terminal tab of the console pane\nRun quarto render demo.qmd –to html\nRun quarto render demo.qmd –to docx\nRun quarto render demo.qmd –to latex\nInspect how emphasis and the image is expressed"
+    "text": "Three ways to render\n\n\nQuarto is integrated into RStudio\nClick  in Editor pane of RStudio.\n\n\n\n\nQuarto is an R package\nRun in R:\nquarto::quarto_render(input = ___, output_format = ___)\n\n\n\n\nQuarto is a command line tool\nRun at the terminal:\nquarto render <input> --to <format>`"
+  },
+  {
+    "objectID": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#getting-exercise",
+    "href": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#getting-exercise",
+    "title": "Welcome to Quarto",
+    "section": "Getting Exercise",
+    "text": "Getting Exercise\nTo get the materials for each part of this course packed in an RStudio Project, run:\n```{r}\nusethis::use_course(\"rmd-to-quarto/welcome-to-quarto\")\n```\n\nYou can also git clone if you prefer that workflow.\n\n\n\nNavigate to the terminal tab of the console pane\nRun quarto render demo.qmd –to html\nRun quarto render demo.qmd –to docx\nRun quarto render demo.qmd –to latex\nInspect how emphasis and the image is expressed"
   },
   {
     "objectID": "materials/1-welcome-to-quarto/slides/welcome-to-quarto.html#element-expression-depends-on-format",
@@ -361,7 +389,14 @@
     "href": "materials/2-polishing-documents/index.html",
     "title": "Polishing Documents",
     "section": "",
-    "text": "Warning\n\n\n\nUnder construction."
+    "text": "Topics\nLink to slides\n\nGeneric Elements\n\nBracketed Spans\nFenced Divs\n\nQuarto Elements\n\nCallout Blocks\nElement Layout\nDocument Layout\nFigures\nLabels, Links, and References\n\nRStudio’s Visual Editor\nStyling with HTML Themes\nBaby Steps into CSS"
+  },
+  {
+    "objectID": "materials/2-polishing-documents/slides/polishing-documents.html#getting-exercise",
+    "href": "materials/2-polishing-documents/slides/polishing-documents.html#getting-exercise",
+    "title": "Polishing Documents",
+    "section": "Getting Exercise",
+    "text": "Getting Exercise\nTo get the materials for each part of this course packed in an RStudio Project, run:\n```{r}\nusethis::use_course(\"rmd-to-quarto/polishing-documents\")\n```\n\nYou can also git clone if you prefer that workflow."
   },
   {
     "objectID": "materials/2-polishing-documents/slides/polishing-documents.html#what-happens-when-you-pandoc-it",
@@ -630,53 +665,46 @@
     "text": "HTML Themes\nA collection of CSS rules that define font, colors, and spacing is called a theme. Quarto has 25 pre-loaded themes from Bootswatch.\n{fig-alt=“screenshot of a collection of bootswatch themes.}\n\nhttps://bootswatch.com/"
   },
   {
-    "objectID": "materials/2-polishing-documents/slides/polishing-documents.html#rule-syntax",
-    "href": "materials/2-polishing-documents/slides/polishing-documents.html#rule-syntax",
+    "objectID": "materials/2-polishing-documents/slides/polishing-documents.html#html-attributes",
+    "href": "materials/2-polishing-documents/slides/polishing-documents.html#html-attributes",
     "title": "Polishing Documents",
-    "section": "Rule syntax",
-    "text": "Rule syntax"
+    "section": "HTML attributes",
+    "text": "HTML attributes\nHTML, like markdown, has a set of elements that structure a website: <div>, <body>, <pre>, <span>, etc. Compare:\n\n\nMarkdown\nA [Span Element]{}.\n\nHTML Code\n<p>A <span>Span Element</span>.</p>\n\nHTML Output\nA Span Element.\n\n\n\nwe can add labels.\n\n\nMarkdown\nA [Span Element]{#label}.\n\nHTML Code\n<p>A <span id=\"label\">Span Element</span>.</p>\n\nHTML Output\nA Span Element.\n\n\n\n\n\n\n\n             . . . still looks the same. Let’s add some style."
   },
   {
-    "objectID": "materials/2-polishing-documents/slides/polishing-documents.html#attributes",
-    "href": "materials/2-polishing-documents/slides/polishing-documents.html#attributes",
+    "objectID": "materials/2-polishing-documents/slides/polishing-documents.html#adding-style",
+    "href": "materials/2-polishing-documents/slides/polishing-documents.html#adding-style",
     "title": "Polishing Documents",
-    "section": "Attributes",
-    "text": "Attributes"
+    "section": "Adding Style",
+    "text": "Adding Style\nMarkdown\nA [Span Element]{#label style=\"color: red\"}.\n\n\n\n\nHTML\n<p>A <span id=\"label\" style=\"color: red\">Span Element</span>.</p>\n\n\n\n\nHTML Output\nA Span Element."
   },
   {
-    "objectID": "materials/2-polishing-documents/slides/polishing-documents.html#selectors",
-    "href": "materials/2-polishing-documents/slides/polishing-documents.html#selectors",
+    "objectID": "materials/2-polishing-documents/slides/polishing-documents.html#quick-exercise",
+    "href": "materials/2-polishing-documents/slides/polishing-documents.html#quick-exercise",
     "title": "Polishing Documents",
-    "section": "Selectors",
-    "text": "Selectors"
+    "section": "Quick Exercise",
+    "text": "Quick Exercise\nCSS Properties\nThere are many many many CSS properties available for styling.\nhttps://www.w3schools.com/cssref/\nTake a moment and add a few more different style properties from the list to a test span in your sandbox.\nSyntax: style=\"property-1: value; property-2: value\"\n\n\n\n\nWhat do you they do?"
   },
   {
-    "objectID": "materials/2-polishing-documents/slides/polishing-documents.html#cascade",
-    "href": "materials/2-polishing-documents/slides/polishing-documents.html#cascade",
+    "objectID": "materials/2-polishing-documents/slides/polishing-documents.html#dry-for-style",
+    "href": "materials/2-polishing-documents/slides/polishing-documents.html#dry-for-style",
     "title": "Polishing Documents",
-    "section": "Cascade",
-    "text": "Cascade"
+    "section": "DRY for style",
+    "text": "DRY for style\nIf you have a style that you want to apply multiple times, it makes sense to encapsulate it in a CSS rule. Why?\n\nSource\nIf you have a [style]{style=\"font-size: 1.5em; text-decoration: underline\"} that you want to apply [multiple times]{style=\"font-size: 1.5em; text-decoration: underline\"}, it makes sense to encapsulate it in a CSS rule. Why?\n\n\n\n          Don’t Repeat Yourself (DRY): repetitive code is hard to update… and long!"
   },
   {
-    "objectID": "materials/2-polishing-documents/slides/polishing-documents.html#ex.-formatting-text-inline",
-    "href": "materials/2-polishing-documents/slides/polishing-documents.html#ex.-formatting-text-inline",
+    "objectID": "materials/2-polishing-documents/slides/polishing-documents.html#css-rule-syntax",
+    "href": "materials/2-polishing-documents/slides/polishing-documents.html#css-rule-syntax",
     "title": "Polishing Documents",
-    "section": "Ex. Formatting text inline",
-    "text": "Ex. Formatting text inline"
+    "section": "CSS Rule syntax",
+    "text": "CSS Rule syntax\nTo write a rule for a class.\n.class {\n  property-1: value;\n  property-2: value;\n}\n\nContrast with the inline style approach:\nstyle=\"property-1: value; property-2: value\"\n\n\nTo make the rule accessible to your document, put it into a separate styles.css file and link to in the YAML.\n---\ntitle: \"CSS Demo\"\nformat:\n  html:\n    css: styles.css\n---"
   },
   {
-    "objectID": "materials/2-polishing-documents/slides/polishing-documents.html#ex.-making-a-box",
-    "href": "materials/2-polishing-documents/slides/polishing-documents.html#ex.-making-a-box",
+    "objectID": "materials/2-polishing-documents/slides/polishing-documents.html#css-rule-syntax-1",
+    "href": "materials/2-polishing-documents/slides/polishing-documents.html#css-rule-syntax-1",
     "title": "Polishing Documents",
-    "section": "Ex. Making a box",
-    "text": "Ex. Making a box"
-  },
-  {
-    "objectID": "materials/2-polishing-documents/slides/polishing-documents.html#what-are-css",
-    "href": "materials/2-polishing-documents/slides/polishing-documents.html#what-are-css",
-    "title": "Polishing Documents",
-    "section": "What are CSS",
-    "text": "What are CSS\nCascading Style Sheets (CSS) are a formal system of rules by which particular styles will be applied to a webpage."
+    "section": "CSS Rule syntax",
+    "text": "CSS Rule syntax\nTo write a rule for a class.\n.loud {\n  font-size: 1.5em;\n  text-decoration: underline;\n}\n\n\n\nIf you have a [style]{.loud} that you want to apply [multiple times]{.loud}, it makes sense to encapsulate it in a CSS rule. Why?"
   },
   {
     "objectID": "materials/2-polishing-documents/slides/polishing-documents.html#references-and-further-reading",
@@ -816,7 +844,7 @@
     "href": "materials/3-computation/slides/computation.html#figure-output-example-2",
     "title": "Computation",
     "section": "Figure Output Example",
-    "text": "Figure Output Example\n\n\n```{r}\n#| fig-width: 5\n#| fig-height: 3\n#| fig-cap: \"Size of penguins on three islands in the Palmer Archipelago.\"\n#| fig-alt: \"Scatterplot showing the bill sizes of penguins across three islands.\"\n\nlibrary(palmerpenguins)\nlibrary(ggplot2)\n\nggplot(penguins, aes(x = bill_length_mm,\n                     y = bill_depth_mm,\n                     col = island)) +\n  geom_point()\n```\n\n\n\n\n\n\nSize of penguins on three islands in the Palmer Archipelago."
+    "text": "Figure Output Example\n\n\n```{r}\n#| fig-width: 5\n#| fig-height: 3\n#| fig-cap: \"Size of penguins on three islands in the Palmer Archipelago.\"\n#| fig-alt: \"Scatterplot showing the bill sizes of penguins across three islands.\"\n\nlibrary(palmerpenguins)\nlibrary(ggplot2)\n\nggplot(penguins, aes(x = bill_length_mm,\n                     y = bill_depth_mm,\n                     col = island)) +\n  geom_point()\n```\n\n\n\n\n\n\nSize of penguins on three islands in the Palmer Archipelago.\n\n\n\n\n\n\n\n\nSave time/code by moving figure sizing defaults up to the YAML."
   },
   {
     "objectID": "materials/3-computation/slides/computation.html#a-very-modest-data-frame",
