@@ -2,23 +2,21 @@
 title: "Polishing Documents"
 ---
 
-:::{.callout-warning}
-Under construction.
-:::
-
 > Learn how to create generic block and inline elements, leverage id labels, set classes and attributes, practice using Quarto-specific elements in RStudio's visual editor, and customize the appearance of your documents with elementary CSS.
 
-### Outline
+### Topics
+
+[Link to slides](slides/polishing-documents.qmd)
+
 1. Generic Elements
    i. Bracketed Spans
    ii. Fenced Divs
-2. Cross Referening with Labels
-3. Quarto-specific Elements
-4. Setting Attributes with YAML
+2. Quarto Elements
+   i. Callout Blocks
+   ii. Element Layout
+   iii. Document Layout
+   iv. Figures
+   v. Labels, Links, and References
 5. RStudio's Visual Editor
-6. Customizing Appearance with CSS
-
-### Exercises
-
-1. 
-2. 
+6. Styling with HTML Themes
+7. Baby Steps into CSS
