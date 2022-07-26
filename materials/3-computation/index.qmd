@@ -1,14 +1,29 @@
 ---
-title: "Computations"
-toc: true
+title: "Computation"
 ---
 
-:::{.callout-warning}
-This is under construction until the start of the workshop.
-:::
-
-> Learning goals
 
 ### Topics
 
+[Link to slides](slides/computation.qmd)
+
+1. Code Blocks
+   1. The Hashpipe!
+   2. Controlling execution
+   3. Other chunk options
+2. Figure Output
+3. Data Frame Output
+4. Shiny
+5. Parameterized reports
+6. Controlling YAML through R
+7. Speaking Python
+
 ### Exercises
+
+To get the materials for each part of this course packed in an RStudio Project, run:
+
+````{.markdown}
+```{{r}}
+usethis::use_course("rmd-to-quarto/computation")
+```
+````
