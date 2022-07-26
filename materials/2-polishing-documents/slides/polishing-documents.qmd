@@ -22,6 +22,19 @@ format:
       data-background-color: #f8f5f0
 ---
 
+## Getting Exercise
+
+To get the materials for each part of this course packed in an RStudio Project, run:
+
+````{.markdown style="font-size: 1.5em"}
+```{{r}}
+usethis::use_course("rmd-to-quarto/polishing-documents")
+```
+````
+
+> You can also `git clone` if you prefer that workflow.
+
+
 # Generic Blocks and Inlines
 
 ## What happens when you pandoc it? {auto-animate="true"}
@@ -966,11 +979,6 @@ Take a moment and add a few more different style properties from the list to a t
 
 Syntax: `style="property-1: value; property-2: value"`
 
-\
-\
-\
-
-What do you they do?
 
 ## DRY for style
 
