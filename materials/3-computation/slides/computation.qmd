@@ -1,47 +1,747 @@
 ---
-title: "Computations"
-subtitle: "rstudio::conf(2022) <br> From R Markdown to Quarto"
+title: "Computation"
+subtitle: "From R Markdown to Quarto </br> rstudio::conf 2022"
 author: "Andrew Bray"
 format:
   revealjs:
+    height: 900
+    width: 1600
     theme: ../../slides.scss
-    css: ../tachyons.min.css
-    multiplex: true
+    multiplex: false
     transition: fade
-    slide-number: true
+    slide-number: c
     incremental: false 
     center: false
     menu: false
     highlight-style: github
     progress: false
     code-overflow: wrap
+    title-slide-attributes:
+      data-background-image: ../../../images/seaplane-bg.png
+      data-background-size: contain
+      data-background-color: #f8f5f0
 ---
 
-# Code Blocks for Display
+## Getting Exercise
 
-## pandoc code cells
+To get the materials for each part of this course packed in an RStudio Project, run:
 
-# Code Blocks for Computing
-
-## Quarto syntax
-
-````markdown
-```{language}
-#| option1: value
-#| option2: value
-
-code
+````{.markdown style="font-size: 1.5em"}
+```{{r}}
+usethis::use_course("rmd-to-quarto/computation")
 ```
 ````
 
-# Shiny
+##  {data-menu-title="Enter Quarto"}
+
+![](images/quarto-workshop-13.jpg){fig-align="center"}
+
+# Code Blocks
+
+## Pandoc's Fenced Code Block
+
+Sandwich the code between "fences" of at least three backticks[^1]. An optional language provides syntax highlighting.
+
+[^1]: Pandoc also allows `~~~`
+
+::: columns
+::: {.column width=50%}
+```` markdown
+```cobol
+1 + 1
+```
+````
+:::
+
+::: {.column .fragment width=50%}
+-   Useful for **displaying** source code, not running it
+-   Note that the language is not in `{ }`
+-   Pandoc supports 140 languages!
+:::
+:::
+
+## R Markdown's Code Chunk
+
+::: columns
+::: {.column width=25%}
+:::
+
+::: {.column width=50% style="font-size: 2em"}
+    ```{{r, echo=FALSE}}
+    rnorm(3)
+    ```
+:::
+
+::: {.column width=25%}
+:::
+:::
+
+. . .
+
+\
+\
+
+::: poll
+**Poll**: What syntax is being used in `echo=FALSE`?
+
+1.  HTML
+2.  Pandoc attribute syntax
+3.  YAML
+4.  CSS
+5.  R
+:::
+
+## Results
+
+<center>
+
+<iframe src="https://embed.polleverywhere.com/multiple_choice_polls/hqaFsD7vuXPJkUmKmMAhc?controls=none&amp;short_poll=true" width="800px" height="600px">
+
+</iframe>
+
+</center>
+
+## Generalizing the Code Chunk {auto-animate="true"}
+
+How can this be generalized to other languages?
+
+::: columns
+::: {.column width="50%"}
+    ```{{r, echo=FALSE}}
+    rnorm(3)
+    ```
+:::
+
+::: {.column width="50%"}
+-   Executable code flagged by `{ }`
+:::
+:::
+
+## Generalizing the Code Chunk {auto-animate="true"}
+
+How can this be generalized to other languages?
+
+::: columns
+::: {.column width="50%"}
+    ```{{language, echo=FALSE}}
+    code
+    ```
+:::
+
+::: {.column width="50%"}
+-   Executable code flagged by `{ }`
+-   Support R, Python, Julia
+-   Also support `mermaid` and `dot` diagram languages[^2].
+:::
+:::
+
+[^2]: diagram
+
+## Generalizing the Code Chunk {auto-animate="true"}
+
+How can this be generalized to other languages?
+
+::: columns
+::: {.column width="50%"}
+    ```{{language}}
+    #| echo: false
+
+    code
+    ```
+:::
+
+::: {.column width="50%"}
+-   Executable code flagged by `{ }`
+-   Support R, Python, Julia
+-   Also support `mermaid` and `dot` diagram languages[^3]
+-   Cell options live inside the cell after `#|` (the hash pipe!)[^4]
+
+::: fragment
+[**This is a Quarto Code Cell.**]{style="color: green"}
+:::
+:::
+:::
+
+[^3]: See <https://quarto.org/docs/authoring/diagrams.html>.
+
+[^4]: The hash pipe is available in the R Markdown too.
+
+## The Perks of the Hashpipe `#|`
+
+::: {.fragment style="margin-left: 20px; white-space: nowrap"}
+1.  Line breaks prevent chunk options that go on `{r, and=on, and=on, and=on, and=on, and=on, and=on}`{style="white-space: nowrap"}
+:::
+
+::: {.fragment style="margin-left: 20px"}
+2.  Chunk options are now pan-language with `<commentchar>|`.
+
+::: columns
+::: {.column width="50%"}
+````markdown
+```{{python}}
+#| echo: false
+```
+````
+:::
+
+::: {.column width="50%"}
+````markdown
+```{{mermaid}}
+%%| echo: false
+```
+````
+:::
+:::
+:::
+
+::: {.fragment style="margin-left: 20px; white-space: nowrap"}
+3.  No more yelling! (`eval=FALSE`)
+:::
+
+## Execution Options
+
+Control how the code is executed with options.
+
+::: {style="font-size: .8em"}
+| Option    | Description                                                                                                                                                                                       |
+|------------|------------------------------------------------------------|
+| `eval`    | Evaluate the code chunk (if `false`, just echos the code into the output).                                                                                                                        |
+| `echo`    | Include the source code in output                                                                                                                                                                 |
+| `output`  | Include the results of executing the code in the output (`true`, `false`, or `asis` to indicate that the output is raw markdown and should not have any of Quarto's standard enclosing markdown). |
+| `warning` | Include warnings in the output.                                                                                                                                                                   |
+| `error`   | Include errors in the output.                                                                                                                                                                     |
+| `include` | Catch all for preventing any output (code or results) from being included (e.g. `include: false` suppresses all output from the code block).                                                      |
+:::
+
+## Setting `knitr` options
+
+The `knitr` syntax for passing options still works since Quarto uses `knitr`.
+
+::: columns
+::: {.column width="50%"}
+#### Source
+
+````markdown
+```{{r, error=TRUE}}
+#| echo: true
+
+rnorm(5       # this is missing a parens
+```
+````
+:::
+
+::: {.column .fragment width="50%"}
+#### Output
+
+```{r, error=TRUE}
+#| echo: true
+
+rnorm(5       # this is missing a parens
+```
+:::
+:::
+ 
+. . .
+
+> While it's possible to use R chunks options, hash pipe options are more portable across computational engines.
+
+::: aside
+Without `error=TRUE`, this would error out on rendering and produce no output.
+:::
+
+##  {menu-title="YAML Intelligence"}
+
+\
+\
+
+[Don't forget to use tab-completion to see the available options!]{style="align: center"}
+
+![](images/code-yaml-intelligence.png){width="100px"}
+
+## From Cell Option to YAML {auto-animate=true}
+
+:::columns
+:::{.column width=50%}
+````{.markdown code-line-numbers="7"}
+---
+title: My Doc
+format: html
+---
+
+```{{r}}
+#| echo: true
+
+pi + 1
+```
+````
+:::
+:::
+
+## From Cell Option to YAML {auto-animate=true}
+
+:::columns
+:::{.column width=50%}
+````{.markdown code-line-numbers="4,5"}
+---
+title: My Doc
+format: html
+execute:
+  echo: true
+---
+
+```{{r}}
+pi + 1
+```
+````
+:::
+:::{.column width=50%}
+- Options can be moved into YAML under the `execute` key to apply to all chunks. Exceptions to that option can be set cell-by-cell.
+:::
+:::
+
+## From Cell Option to YAML {auto-animate=true}
+
+:::columns
+:::{.column width=50%}
+````{.markdown code-line-numbers="6-8"}
+---
+title: My Doc
+format: html
+execute:
+  echo: true
+knitr:
+  opts_chunk: 
+    collapse: true
+---
+
+```{{r}}
+pi + 1
+```
+````
+:::
+:::{.column width=50%}
+- Options can be moved into YAML under the `execute` key to apply to all chunks. Exceptions to that option can be set cell-by-cell.
+
+- You can also pass options via YAML to knitr through the `knitr` key[^setup].
+:::
+:::
+
+[^setup]: No more ````{r setup}` :tada:
 
 
+## From Cell Option to YAML {auto-animate=true}
+
+:::columns
+:::{.column width=50%}
+````{.markdown code-line-numbers="9-10"}
+---
+title: My Doc
+format: html
+execute:
+  echo: true
+knitr:
+  opts_chunk: 
+    collapse: true
+    R.options:
+      digits: 2
+---
+
+```{{r}}
+pi + 1
+```
+````
+:::
+:::{.column width=50%}
+- Options can be moved into YAML under the `execute` key to apply to all chunks. Exceptions to that option can be set cell-by-cell.
+
+- You can also pass options via YAML to knitr through the `knitr` key[^setup].
+
+- You can use knitr to pass options that control your R session.
+:::
+:::
+
+[^setup]: No more ````{r setup}` :tada:
 
 
-## References and further reading {.smaller}
+# Figure Output
 
-- [Client Side Web Developent Ch. 5-7](https://info340.github.io/css.html): approachable and concise introduction to how CSS work.
-- [](): 
-- https://patents.google.com/patent/US3811677A/en?q=stilts&oq=stilts
-- https://patents.google.com/patent/US6688257B2/en?q=pet+dog&oq=pet+dog
+## Figures Compared
+
+Figure output options are similar to those from markdown figures except YAML syntax is swapped in for Pandoc's markdown syntax. Some examples:
+
+. . .
+
+:::{.columns style="border-bottom: 3px solid #5c5859"}
+:::{.column width=50%}
+#### Figure output
+
+:::{style="font-size: .8em"}
+1. `fig-width: 5`
+2. `fig-height: 3`
+3. `fig-align: center`
+4. `fig-cap: "The dog watch."`
+5. `fig-alt: "Dog watching watch."`
+:::
+:::
+
+:::{.column width=50%}
+#### Markdown figures
+
+:::{style="font-size: .8em"}
+1. `width=5`
+2. `height=3`
+3. `align=center`
+4. `fig-cap="The dog watch."`
+5. `fig-alt="Dog watching watch."`
+:::
+:::
+:::
+
+:::{style="font-size: .9em"}
+Quarto defaults to inches. Pandoc defaults to pixels but can be changed.
+
+- `fig-width=5`, `fig-width = 5`, `fig-width=5px`, all work in Pandoc markdown. `fig-width=5 px` does not.
+- Other units besides `px`: `cm`, `mm`, `in`, `inch` and `%`.
+:::
+
+## Figure Output Example {auto-animate=true}
+
+:::columns
+:::{.column width=50%}
+````markdown
+```{{r}}
+library(palmerpenguins)
+library(ggplot2)
+
+ggplot(penguins, aes(x = bill_length_mm,
+                     y = bill_depth_mm,
+                     col = island)) +
+  geom_point()
+```
+````
+:::
+:::{.column width=50% .fragment}
+```{r}
+#| echo: false
+library(palmerpenguins)
+library(ggplot2)
+
+ggplot(penguins, aes(x = bill_length_mm,
+                     y = bill_depth_mm,
+                     col = island)) +
+  geom_point() +
+  theme_grey(base_size = 18)
+```
+:::
+:::
+
+## Figure Output Example {auto-animate=true}
+
+:::columns
+:::{.column width=50%}
+````markdown
+```{{r}}
+#| fig-width: 5
+#| fig-height: 3
+
+library(palmerpenguins)
+library(ggplot2)
+
+ggplot(penguins, aes(x = bill_length_mm,
+                     y = bill_depth_mm,
+                     col = island)) +
+  geom_point()
+```
+````
+:::
+:::{.column width=50% .fragment}
+```{r}
+#| echo: false
+#| fig-width: 5
+#| fig-height: 3
+#| 
+library(palmerpenguins)
+library(ggplot2)
+
+ggplot(penguins, aes(x = bill_length_mm,
+                     y = bill_depth_mm,
+                     col = island)) +
+  geom_point() +
+  theme_grey(base_size = 18)
+```
+:::
+:::
+
+## Figure Output Example {auto-animate=true}
+
+:::columns
+:::{.column width=50%}
+````markdown
+```{{r}}
+#| fig-width: 5
+#| fig-height: 3
+#| fig-cap: "Size of penguins on three islands in the Palmer Archipelago."
+#| fig-alt: "Scatterplot showing the bill sizes of penguins across three islands."
+
+library(palmerpenguins)
+library(ggplot2)
+
+ggplot(penguins, aes(x = bill_length_mm,
+                     y = bill_depth_mm,
+                     col = island)) +
+  geom_point()
+```
+````
+:::
+:::{.column width=50% .fragment}
+```{r}
+#| echo: false
+#| fig-width: 5
+#| fig-height: 3
+#| fig-cap: "Size of penguins on three islands in the Palmer Archipelago."
+#| fig-alt: "Scatterplot showing the bill sizes of penguins across three islands."
+
+
+library(palmerpenguins)
+library(ggplot2)
+
+ggplot(penguins, aes(x = bill_length_mm,
+                     y = bill_depth_mm,
+                     col = island)) +
+  geom_point() +
+  theme_grey(base_size = 18)
+```
+:::
+:::
+
+. . .
+
+> Save time/code by moving figure sizing defaults up to the YAML.
+
+# Data Frame Output 
+
+## A very modest data frame {auto-animate=true}
+
+. . .
+
+R's default isn't designed for effective display.
+
+:::columns
+:::{.column width=30%}
+````markdown
+```{{r}}
+penguins
+```
+````
+:::
+:::{.column width=70%}
+```{r}
+penguins
+```
+
+:::
+:::
+
+## `knitr::kable` in an Rmd {auto-animate=true}
+
+`kable()` creates tables for $\LaTeX$, HTML, and Markdown output.
+
+:::columns
+:::{.column width=30%}
+````markdown
+```{{r}}
+knitr::kable(penguins)
+```
+````
+:::
+:::{.column width=70%}
+```{r}
+#| label: ex-kable
+knitr::kable(penguins)
+```
+:::
+:::
+
+## `knitr::kable` in Quarto {auto-animate=true}
+
+`df-print: kable` available as a document-level option.
+
+:::columns
+:::{.column width=30%}
+````markdown
+---
+format:
+  html:
+    df-print: kable
+---
+
+```{{r}}
+penguins
+```
+````
+:::
+:::{.column width=70%}
+```{r}
+#| ref.label="ex-kable"
+```
+:::
+:::
+
+## Paged Output {auto-animate=true}
+
+`df-print: paged` available as a document-level option.
+
+:::columns
+:::{.column width=30%}
+````markdown
+---
+format:
+  html:
+    df-print: paged
+---
+
+```{{r}}
+penguins
+```
+````
+:::
+:::{.column width=70%}
+![](images/paged-df.png){width=70%}
+:::
+:::
+
+# {{< fa code >}} Exercise 5 {background-color="#00403d"}
+
+Create a mock analysis of the `penguins` data frame in the `palmerspenguins` R package and practice with code cell evaluation, display, and formatting.
+
+You're welcome to share your work on the workshop discussion thread.
+
+# Advanced Code Features
+
+## Shiny
+
+:::columns
+:::{.column width=40%}
+![](images/shiny.png)
+:::
+:::{.column width=60%}
+- Specify `server: shiny` in the YAML
+- Set the UI in a normal R chunk
+- Set the server in a chunk with `#| context: server`
+:::
+:::
+
+See <https://quarto.org/docs/interactive/shiny/> for an example
+
+## Pass from Yaml to R
+
+This allows you to create *parameterized* reports
+
+````{.markdown}
+---
+title: "My Document"
+params:
+  n_penguins: 50
+---
+
+```{{r}}
+library(palmerpenguins)
+library(ggplot2)
+ggplot(aes(x = bill_length_mm,
+           y = bill_depth_mm)) +
+      geom_point()
+```
+````
+
+- The `params` YAML field can take many parameters as keys.
+- It's available as a list in R using `params$key`.
+- Since the parameters are passed through YAML, you can easily script the generation of parameterized report using `quarto` CLI.
+
+## Pass from Yaml to R
+
+You can create YAML dynamically using inline R!
+
+![](images/r-in-yaml.png)
+
+# {{< fa code >}} Exercise 5 Redux {background-color="#00403d"}
+
+Revising your penguins analysis and think of parameters that you could pass to affect the R output. Knit with a few combinations of parameters and revel in the power!
+
+
+# Speaking Python 
+
+## {menu-title="Python and R"}
+
+:::columns
+:::{.column width=50%}
+````{.markdown}
+---
+title: "matplotlib demo"
+format: html
+---
+
+```{{r}}
+rnorm(5)
+```
+
+For a line plot, see @fig-polar.
+
+```{{python}}
+#| label: fig-polar
+#| fig-cap: "A line plot on a polar axis"
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+r = np.arange(0, 2, 0.01)
+theta = 2 * np.pi * r
+fig, ax = plt.subplots(
+  subplot_kw = {'projection': 'polar'} 
+)
+ax.plot(theta, r)
+plt.show()
+```
+````
+
+[Since R is the first language detected, Quarto will have knitr run the R code and process the Python cells via the `reticulate` R package.]{.fragment}
+
+:::
+:::{.column width=50%}
+````{.markdown}
+---
+title: "matplotlib demo"
+format: html
+---
+
+For a line plot, see @fig-polar.
+
+```{{python}}
+#| label: fig-polar
+#| fig-cap: "A line plot on a polar axis"
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+r = np.arange(0, 2, 0.01)
+theta = 2 * np.pi * r
+fig, ax = plt.subplots(
+  subplot_kw = {'projection': 'polar'} 
+)
+ax.plot(theta, r)
+plt.show()
+```
+
+```{{r}}
+rnorm(5)
+```
+````
+[Since Python is the first language detected, Quarto will have jupyter run the Python code and process the R cells via the `r`py2` Python package.]{.fragment}
+:::
+:::
+
+
+## The Upshot
+
+- A single qmd file is processed by a single engine running R, Python, or Julia.
+- A qmd running R can run Python via the `reticulate` R package.
+- A qmd running Python can run R via the `rpy2` Python package.
