@@ -7924,18 +7924,84 @@
 <p>You can create YAML dynamically using inline R!</p>
 
 <img data-src="images/r-in-yaml.png" class="r-stretch"></section></section>
-<section>
 <section id="fa-code-exercise-5-redux" class="title-slide slide level1 center" data-background-color="#00403d">
 <h1><i class="fa-solid fa-code"></i> Exercise 5 Redux</h1>
 <p>Revising your penguins analysis and think of parameters that you could pass to affect the R output. Knit with a few combinations of parameters and revel in the power!</p>
 </section>
-<section id="references-and-further-reading" class="slide level2 smaller">
-<h2>References and further reading</h2>
+
+<section>
+<section id="speaking-python" class="title-slide slide level1 center">
+<h1>Speaking Python</h1>
+
+</section>
+<section id="section-2" class="slide level2" data-menu-title="Python and R">
+<h2></h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="sourceCode" id="cb25"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb25-1"><a href="#cb25-1"></a><span class="co">---</span></span>
+<span id="cb25-2"><a href="#cb25-2"></a><span class="an">title:</span><span class="co"> "matplotlib demo"</span></span>
+<span id="cb25-3"><a href="#cb25-3"></a><span class="an">format:</span><span class="co"> html</span></span>
+<span id="cb25-4"><a href="#cb25-4"></a><span class="co">---</span></span>
+<span id="cb25-5"><a href="#cb25-5"></a></span>
+<span id="cb25-6"><a href="#cb25-6"></a><span class="in">```{r}</span></span>
+<span id="cb25-7"><a href="#cb25-7"></a><span class="fu">rnorm</span>(<span class="dv">5</span>)</span>
+<span id="cb25-8"><a href="#cb25-8"></a><span class="in">```</span></span>
+<span id="cb25-9"><a href="#cb25-9"></a></span>
+<span id="cb25-10"><a href="#cb25-10"></a>For a line plot, see @fig-polar.</span>
+<span id="cb25-11"><a href="#cb25-11"></a></span>
+<span id="cb25-12"><a href="#cb25-12"></a><span class="in">```{python}</span></span>
+<span id="cb25-13"><a href="#cb25-13"></a><span class="co">#| label: fig-polar</span></span>
+<span id="cb25-14"><a href="#cb25-14"></a><span class="co">#| fig-cap: "A line plot on a polar axis"</span></span>
+<span id="cb25-15"><a href="#cb25-15"></a></span>
+<span id="cb25-16"><a href="#cb25-16"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb25-17"><a href="#cb25-17"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb25-18"><a href="#cb25-18"></a></span>
+<span id="cb25-19"><a href="#cb25-19"></a>r <span class="op">=</span> np.arange(<span class="dv">0</span>, <span class="dv">2</span>, <span class="fl">0.01</span>)</span>
+<span id="cb25-20"><a href="#cb25-20"></a>theta <span class="op">=</span> <span class="dv">2</span> <span class="op">*</span> np.pi <span class="op">*</span> r</span>
+<span id="cb25-21"><a href="#cb25-21"></a>fig, ax <span class="op">=</span> plt.subplots(</span>
+<span id="cb25-22"><a href="#cb25-22"></a>  subplot_kw <span class="op">=</span> {<span class="st">'projection'</span>: <span class="st">'polar'</span>} </span>
+<span id="cb25-23"><a href="#cb25-23"></a>)</span>
+<span id="cb25-24"><a href="#cb25-24"></a>ax.plot(theta, r)</span>
+<span id="cb25-25"><a href="#cb25-25"></a>plt.show()</span>
+<span id="cb25-26"><a href="#cb25-26"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><span class="fragment">Since R is the first language detected, Quarto will have knitr run the R code and process the Python cells via the <code>reticulate</code> R package.</span></p>
+</div><div class="column" style="width:50%;">
+<div class="sourceCode" id="cb26"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb26-1"><a href="#cb26-1"></a><span class="co">---</span></span>
+<span id="cb26-2"><a href="#cb26-2"></a><span class="an">title:</span><span class="co"> "matplotlib demo"</span></span>
+<span id="cb26-3"><a href="#cb26-3"></a><span class="an">format:</span><span class="co"> html</span></span>
+<span id="cb26-4"><a href="#cb26-4"></a><span class="co">---</span></span>
+<span id="cb26-5"><a href="#cb26-5"></a></span>
+<span id="cb26-6"><a href="#cb26-6"></a>For a line plot, see @fig-polar.</span>
+<span id="cb26-7"><a href="#cb26-7"></a></span>
+<span id="cb26-8"><a href="#cb26-8"></a><span class="in">```{python}</span></span>
+<span id="cb26-9"><a href="#cb26-9"></a><span class="co">#| label: fig-polar</span></span>
+<span id="cb26-10"><a href="#cb26-10"></a><span class="co">#| fig-cap: "A line plot on a polar axis"</span></span>
+<span id="cb26-11"><a href="#cb26-11"></a></span>
+<span id="cb26-12"><a href="#cb26-12"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb26-13"><a href="#cb26-13"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb26-14"><a href="#cb26-14"></a></span>
+<span id="cb26-15"><a href="#cb26-15"></a>r <span class="op">=</span> np.arange(<span class="dv">0</span>, <span class="dv">2</span>, <span class="fl">0.01</span>)</span>
+<span id="cb26-16"><a href="#cb26-16"></a>theta <span class="op">=</span> <span class="dv">2</span> <span class="op">*</span> np.pi <span class="op">*</span> r</span>
+<span id="cb26-17"><a href="#cb26-17"></a>fig, ax <span class="op">=</span> plt.subplots(</span>
+<span id="cb26-18"><a href="#cb26-18"></a>  subplot_kw <span class="op">=</span> {<span class="st">'projection'</span>: <span class="st">'polar'</span>} </span>
+<span id="cb26-19"><a href="#cb26-19"></a>)</span>
+<span id="cb26-20"><a href="#cb26-20"></a>ax.plot(theta, r)</span>
+<span id="cb26-21"><a href="#cb26-21"></a>plt.show()</span>
+<span id="cb26-22"><a href="#cb26-22"></a><span class="in">```</span></span>
+<span id="cb26-23"><a href="#cb26-23"></a></span>
+<span id="cb26-24"><a href="#cb26-24"></a><span class="in">```{r}</span></span>
+<span id="cb26-25"><a href="#cb26-25"></a><span class="fu">rnorm</span>(<span class="dv">5</span>)</span>
+<span id="cb26-26"><a href="#cb26-26"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><span class="fragment">Since Python is the first language detected, Quarto will have jupyter run the Python code and process the R cells via the <code>r</code>py2` Python package.</span></p>
+</div>
+</div>
+</section>
+<section id="the-upshot" class="slide level2">
+<h2>The Upshot</h2>
 <ul>
-<li><a href="https://info340.github.io/css.html">Client Side Web Developent Ch. 5-7</a>: approachable and concise introduction to how CSS work.</li>
-<li>:</li>
-<li>https://patents.google.com/patent/US3811677A/en?q=stilts&amp;oq=stilts</li>
-<li>https://patents.google.com/patent/US6688257B2/en?q=pet+dog&amp;oq=pet+dog</li>
+<li>A single qmd file is processed by a single engine running R, Python, or Julia.</li>
+<li>A qmd running R can run Python via the <code>reticulate</code> R package.</li>
+<li>A qmd running Python can run R via the <code>rpy2</code> Python package.</li>
 </ul>
 
 <div class="footer footer-default">

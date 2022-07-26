@@ -32,7 +32,7 @@
     "href": "materials/1-welcome-to-quarto/index.html",
     "title": "Welcome to Quarto",
     "section": "",
-    "text": "Outline\nLink to slides\n\nAbout the Workshop\nWhat can you do with Quarto?\nQuarto and R Markdown: A History\nRendering in Quarto\nThe Structure of a Document\n\nInline Elements\nBlock Elements\nMetadata\n\nThe Elements of Markdown\n\nText Formatting\nMath\nLinks and Images\nFootnotes\nParagraph\nHeaders\nLists\nDisplay Math\nYAML"
+    "text": "Outline\nLink to slides\n\nAbout the Workshop\nWhat can you do with Quarto?\nQuarto and R Markdown: A History\nRendering in Quarto\nThe Structure of a Document\n\nInline Elements\nBlock Elements\nMetadata\n\nThe Elements of Markdown\n\nText Formatting\nMath\nLinks and Images\nFootnotes\nParagraph\nHeaders\nLists\nDisplay Math\nYAML\n\n\n\n\nExercises\nTo get the materials for each part of this course packed in an RStudio Project, run:\n```{r}\nusethis::use_course(\"rmd-to-quarto/welcome-to-quarto\")\n```"
   },
   {
     "objectID": "materials/1-welcome-to-quarto/slides/images/ex-2.html",
@@ -389,7 +389,7 @@
     "href": "materials/2-polishing-documents/index.html",
     "title": "Polishing Documents",
     "section": "",
-    "text": "Topics\nLink to slides\n\nGeneric Elements\n\nBracketed Spans\nFenced Divs\n\nQuarto Elements\n\nCallout Blocks\nElement Layout\nDocument Layout\nFigures\nLabels, Links, and References\n\nRStudio’s Visual Editor\nStyling with HTML Themes\nBaby Steps into CSS"
+    "text": "Topics\nLink to slides\n\nGeneric Elements\n\nBracketed Spans\nFenced Divs\n\nQuarto Elements\n\nCallout Blocks\nElement Layout\nDocument Layout\nFigures\nLabels, Links, and References\n\nRStudio’s Visual Editor\nStyling with HTML Themes\nBaby Steps into CSS\n\n\n\nExercises\nTo get the materials for each part of this course packed in an RStudio Project, run:\n```{r}\nusethis::use_course(\"rmd-to-quarto/polishing-documents\")\n```"
   },
   {
     "objectID": "materials/2-polishing-documents/slides/polishing-documents.html#getting-exercise",
@@ -718,7 +718,7 @@
     "href": "materials/3-computation/index.html",
     "title": "Computation",
     "section": "",
-    "text": "Link to slides\n\nCode Blocks\n\nThe Hashpipe!\nControlling execution\nOther chunk options\n\nFigure Output\nData Frame Output\nShiny\nParameterized reports\nControlling YAML through R"
+    "text": "Exercises\nTo get the materials for each part of this course packed in an RStudio Project, run:\n```{r}\nusethis::use_course(\"rmd-to-quarto/computation\")\n```"
   },
   {
     "objectID": "materials/3-computation/slides/computation.html#getting-exercise",
@@ -903,11 +903,18 @@
     "text": "Pass from Yaml to R\nYou can create YAML dynamically using inline R!"
   },
   {
-    "objectID": "materials/3-computation/slides/computation.html#references-and-further-reading",
-    "href": "materials/3-computation/slides/computation.html#references-and-further-reading",
+    "objectID": "materials/3-computation/slides/computation.html#section-2",
+    "href": "materials/3-computation/slides/computation.html#section-2",
     "title": "Computation",
-    "section": "References and further reading",
-    "text": "References and further reading\n\nClient Side Web Developent Ch. 5-7: approachable and concise introduction to how CSS work.\n:\nhttps://patents.google.com/patent/US3811677A/en?q=stilts&oq=stilts\nhttps://patents.google.com/patent/US6688257B2/en?q=pet+dog&oq=pet+dog"
+    "section": "",
+    "text": "---\ntitle: \"matplotlib demo\"\nformat: html\n---\n\n```{r}\nrnorm(5)\n```\n\nFor a line plot, see @fig-polar.\n\n```{python}\n#| label: fig-polar\n#| fig-cap: \"A line plot on a polar axis\"\n\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\nfig, ax = plt.subplots(\n  subplot_kw = {'projection': 'polar'} \n)\nax.plot(theta, r)\nplt.show()\n```\nSince R is the first language detected, Quarto will have knitr run the R code and process the Python cells via the reticulate R package.\n\n---\ntitle: \"matplotlib demo\"\nformat: html\n---\n\nFor a line plot, see @fig-polar.\n\n```{python}\n#| label: fig-polar\n#| fig-cap: \"A line plot on a polar axis\"\n\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\nfig, ax = plt.subplots(\n  subplot_kw = {'projection': 'polar'} \n)\nax.plot(theta, r)\nplt.show()\n```\n\n```{r}\nrnorm(5)\n```\nSince Python is the first language detected, Quarto will have jupyter run the Python code and process the R cells via the rpy2` Python package."
+  },
+  {
+    "objectID": "materials/3-computation/slides/computation.html#the-upshot",
+    "href": "materials/3-computation/slides/computation.html#the-upshot",
+    "title": "Computation",
+    "section": "The Upshot",
+    "text": "The Upshot\n\nA single qmd file is processed by a single engine running R, Python, or Julia.\nA qmd running R can run Python via the reticulate R package.\nA qmd running Python can run R via the rpy2 Python package."
   },
   {
     "objectID": "materials/4-projects-and-publishing/index.html",
