@@ -1,0 +1,35 @@
+---
+title: Sandbox
+format: html
+---
+
+Feel free to to play along while we explore some elements in Quarto.
+
+## Executing code
+
+```{r}
+#| echo: true
+
+rnorm(5)
+```
+
+## Figure output
+
+```{r}
+library(palmerpenguins)
+library(ggplot2)
+
+ggplot(penguins, aes(x = bill_length_mm,
+                     y = bill_depth_mm,
+                     col = island)) +
+  geom_point() +
+  theme_grey(base_size = 18)
+```
+
+## Data frame output
+
+```{r}
+mtcars
+```
+
+

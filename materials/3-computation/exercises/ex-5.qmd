@@ -1,0 +1,44 @@
+---
+title: "Exercise 5"
+format: html
+---
+
+In this exercise you'll experiment with code cells in Quarto by creating a short document featuring an analysis of biometric data on penguins from the Palmer Archipelago in Antarctica. Read about the data here: <https://allisonhorst.github.io/palmerpenguins/> and load the data frame `penguins` into R with:
+
+```{r}
+library(palmerpenguins)
+penguins
+```
+
+The tasks below focus on the features of Quarto we've been covering, but if you can't keep your inner data scientist quiet, you'll welcome to make this a more fully fleshed out analysis with headers, some interpretative text, etc. If you're familiar with plotting in R, please go ahead and make your own plots. If you're not, there is plotting code at the bottom of this document that you're welcome to recycle.
+
+1. Be sure that all code is echoed to your output document.
+2. Print a portion of the `penguins` data frame into your report. Experiment with the different Quarto print methods but if you're familiar with table making package in R such at `gt` and `kableExtra`, trying giving those a go too.
+3. Create a data visualization of some aspect of `penguins` as a figure that is
+   - is 3 inches wide by 2 inches tall
+   - centered
+   - with a caption and alt text
+   - links to 
+4. Create two additional data visualizations and place them side-by-side on the same line of the output document. Additionally,
+   - add captions to each and caption to the whole figure.
+   - add references to all three (the sub figures and the whole figure) in a paragraph of text that follows the figure.
+5. Create one more plot and move into into the right margin.
+6. The HTML format has several features that allow users to interact with code. Read about them (<https://quarto.org/docs/output-formats/html-code.html>) then experiment by adding them to your document (code folding could make sense here).
+7. Move at least one chunk option from individual cells up to the document YAML.
+8. Use tab-complete in the IDE to add an obscure chunk option to your chunks.
+
+When you're pleased with your document, please share a screenshot of it on the workshop discussion.
+
+```{r}
+library(ggplot2)
+ggplot(penguins, aes(x = bill_length_mm,
+                     y = bill_depth_mm,
+                     color = island)) +
+  geom_point()
+```
+
+```{r}
+ggplot(penguins, aes(x = flipper_length_mm,
+                     fill = species)) +
+  geom_density()
+```
