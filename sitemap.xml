@@ -2,86 +2,82 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://github.com/rstudio-conf-2022/rmd-to-quarto/about.html</loc>
-    <lastmod>2022-07-26T10:37:18.571Z</lastmod>
+    <lastmod>2022-07-26T13:02:23.610Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/rstudio-conf-2022/rmd-to-quarto/index.html</loc>
-    <lastmod>2022-07-26T10:37:18.923Z</lastmod>
+    <lastmod>2022-07-26T13:02:23.971Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/rstudio-conf-2022/rmd-to-quarto/materials/1-welcome-to-quarto/index.html</loc>
-    <lastmod>2022-07-26T10:37:19.710Z</lastmod>
+    <lastmod>2022-07-26T13:02:25.255Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/rstudio-conf-2022/rmd-to-quarto/materials/1-welcome-to-quarto/slides/images/ex-2.html</loc>
-    <lastmod>2022-07-26T10:37:20.017Z</lastmod>
+    <lastmod>2022-07-26T13:02:25.621Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/rstudio-conf-2022/rmd-to-quarto/materials/1-welcome-to-quarto/slides/welcome-to-quarto.html</loc>
-    <lastmod>2022-07-26T10:37:21.547Z</lastmod>
+    <lastmod>2022-07-26T13:02:27.437Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/rstudio-conf-2022/rmd-to-quarto/materials/2-polishing-documents/index.html</loc>
-    <lastmod>2022-07-26T10:37:21.939Z</lastmod>
+    <lastmod>2022-07-26T13:02:27.839Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/rstudio-conf-2022/rmd-to-quarto/materials/2-polishing-documents/slides/polishing-documents.html</loc>
-    <lastmod>2022-07-26T10:37:22.707Z</lastmod>
+    <lastmod>2022-07-26T13:02:28.877Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/rstudio-conf-2022/rmd-to-quarto/materials/3-computation/index.html</loc>
-    <lastmod>2022-07-26T10:37:23.066Z</lastmod>
+    <lastmod>2022-07-26T13:02:29.320Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/rstudio-conf-2022/rmd-to-quarto/materials/3-computation/slides/computation.html</loc>
-    <lastmod>2022-07-26T10:37:25.894Z</lastmod>
+    <lastmod>2022-07-26T13:02:32.525Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/rstudio-conf-2022/rmd-to-quarto/materials/4-projects-and-publishing/index.html</loc>
-    <lastmod>2022-07-26T10:37:26.234Z</lastmod>
+    <lastmod>2022-07-26T13:02:32.877Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/rstudio-conf-2022/rmd-to-quarto/materials/4-projects-and-publishing/slides/projects-and-publishing.html</loc>
-    <lastmod>2022-07-26T10:37:26.539Z</lastmod>
+    <lastmod>2022-07-26T13:02:33.250Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/rstudio-conf-2022/rmd-to-quarto/materials/5-presentations/index.html</loc>
-    <lastmod>2022-07-26T10:37:26.878Z</lastmod>
+    <lastmod>2022-07-26T13:02:33.697Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/rstudio-conf-2022/rmd-to-quarto/materials/5-presentations/slides/presentations.html</loc>
-    <lastmod>2022-07-26T10:37:27.221Z</lastmod>
+    <lastmod>2022-07-26T13:02:34.073Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/rstudio-conf-2022/rmd-to-quarto/materials/6-websites-and-books/index.html</loc>
-    <lastmod>2022-07-26T10:37:27.531Z</lastmod>
+    <lastmod>2022-07-26T13:02:34.406Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/rstudio-conf-2022/rmd-to-quarto/materials/6-websites-and-books/slides/websites-and-books.html</loc>
-    <lastmod>2022-07-26T10:37:27.866Z</lastmod>
+    <lastmod>2022-07-26T13:02:34.692Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/rstudio-conf-2022/rmd-to-quarto/materials/7-workshop/index.html</loc>
-    <lastmod>2022-07-26T10:37:28.189Z</lastmod>
+    <lastmod>2022-07-26T13:02:35.023Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/rstudio-conf-2022/rmd-to-quarto/materials/7-workshop/slides/workshop.html</loc>
-    <lastmod>2022-07-26T10:37:28.481Z</lastmod>
+    <lastmod>2022-07-26T13:02:35.345Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/rstudio-conf-2022/rmd-to-quarto/materials/8-future-of-quarto/index.html</loc>
-    <lastmod>2022-07-26T10:37:28.800Z</lastmod>
+    <lastmod>2022-07-26T13:02:35.677Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/rstudio-conf-2022/rmd-to-quarto/materials/8-future-of-quarto/slides/future-of-quarto.html</loc>
-    <lastmod>2022-07-26T10:37:29.084Z</lastmod>
+    <lastmod>2022-07-26T13:02:36.005Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/rstudio-conf-2022/rmd-to-quarto/materials/index.html</loc>
-    <lastmod>2022-07-26T10:37:29.611Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/rstudio-conf-2022/rmd-to-quarto/old-index.html</loc>
-    <lastmod>2022-07-26T10:37:29.919Z</lastmod>
+    <lastmod>2022-07-26T13:02:36.663Z</lastmod>
   </url>
 </urlset>

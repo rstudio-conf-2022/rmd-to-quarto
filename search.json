@@ -928,7 +928,35 @@
     "href": "materials/5-presentations/index.html",
     "title": "Presentations",
     "section": "",
-    "text": "Warning\n\n\n\nThis is under construction until the start of the workshop."
+    "text": "Exercises\nTo get the materials for each part of this course packed in an RStudio Project, run:\n```{r}\nusethis::use_course(\"rmd-to-quarto/presentations\")\n```"
+  },
+  {
+    "objectID": "materials/5-presentations/slides/presentations.html#getting-exercise",
+    "href": "materials/5-presentations/slides/presentations.html#getting-exercise",
+    "title": "Presentations",
+    "section": "Getting Exercise",
+    "text": "Getting Exercise\nTo get the materials for each part of this course packed in an RStudio Project, run:\n```{r}\nusethis::use_course(\"rmd-to-quarto/presentations\")\n```"
+  },
+  {
+    "objectID": "materials/5-presentations/slides/presentations.html#one-concept-three-formats",
+    "href": "materials/5-presentations/slides/presentations.html#one-concept-three-formats",
+    "title": "Presentations",
+    "section": "One concept, three formats",
+    "text": "One concept, three formats\n\n\n\n---\ntitle: \"Quarto Presentations\"\nauthor: Author\nformat: beamer\n---\n\n\n---\ntitle: \"Quarto Presentations\"\nauthor: Author\nformat: pptx\n---\n\n\n---\ntitle: \"Quarto Presentations\"\nauthor: Author\nformat: revealjs\n---"
+  },
+  {
+    "objectID": "materials/5-presentations/slides/presentations.html#revealjs",
+    "href": "materials/5-presentations/slides/presentations.html#revealjs",
+    "title": "Presentations",
+    "section": "Revealjs",
+    "text": "Revealjs\n\n\nHTML format for slides (similar to remarkjs utilized by xaringan R package)\nFeature rich and still being developed\n\n\n\nLet’s give it a spin!"
+  },
+  {
+    "objectID": "materials/5-presentations/slides/presentations.html#features-of-revealjs",
+    "href": "materials/5-presentations/slides/presentations.html#features-of-revealjs",
+    "title": "Presentations",
+    "section": "Features of Revealjs",
+    "text": "Features of Revealjs\n\nQuarto Demo Presentation"
   },
   {
     "objectID": "materials/6-websites-and-books/index.html",
@@ -985,12 +1013,5 @@
     "title": "Materials",
     "section": "",
     "text": "Each session of the workshop features exercises that will help you learn Quarto by doing. To prepare, please install the following on your machine:\n\nIf you haven’t already, please sign-up for a free GitHub account.\nInstall latest version of RStudio, v2022.07.0-548 or later\nInstall latest version of Quarto (v1.0.36 or greater)\nAfter installing Quarto, open the terminal in RStudio and:\n\nSee this guide for details on using the terminal\nInstall/Update TinyTeX for PDFs with quarto install tool tinytex\nInstall/Update Chromium with quarto install tool chromium\n\nIdeally upgrade/use to R 4.1 or R 4.2\nInstall these R packages:\n\npkg_list <- c(\"tidyverse\", \"quarto\", \"rmarkdown\", \"palmerpenguins\")\ninstall.packages(pkg_list)"
-  },
-  {
-    "objectID": "old-index.html",
-    "href": "old-index.html",
-    "title": "From R Markdown to Quarto",
-    "section": "",
-    "text": "Day One\n\n9-10:30 am Welcome to Quarto\n10:30-11 am Coffee Break\n11-12:30 pm Polishing Documents\n12:30-1:30 pm Lunch\n1:30-3 pm Computation\n3-3:30 pm Coffee Break\n3:30-5 pm Projects and Publishing\n\n\n\nDay Two\n\n9-10:30 am Presentations\n10:30-11 am Coffee Break\n11-12:30 pm Websites and Books\n12:30-1:30 pm Lunch\n1:30-3 pm Workshop\n3-3:30 pm Coffee Break\n3:30-5 pm Extending Quarto"
   }
 ]

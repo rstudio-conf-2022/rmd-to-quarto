@@ -11,7 +11,7 @@
   <meta name="generator" content="quarto-1.0.36">
 
   <meta name="author" content="Andrew Bray">
-  <title>From R Markdown to Quarto - Quarto</title>
+  <title>From R Markdown to Quarto - Presentations</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -24,6 +24,70 @@
     div.column{display: inline-block; vertical-align: top; width: 50%;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+      }
+    pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+    div.sourceCode
+      { color: #24292e;  }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #24292e; } /* Normal */
+    code span.al { color: #ff5555; font-weight: bold; } /* Alert */
+    code span.an { color: #6a737d; } /* Annotation */
+    code span.at { color: #d73a49; } /* Attribute */
+    code span.bn { color: #005cc5; } /* BaseN */
+    code span.bu { color: #d73a49; } /* BuiltIn */
+    code span.cf { color: #d73a49; } /* ControlFlow */
+    code span.ch { color: #032f62; } /* Char */
+    code span.cn { color: #005cc5; } /* Constant */
+    code span.co { color: #6a737d; } /* Comment */
+    code span.cv { color: #6a737d; } /* CommentVar */
+    code span.do { color: #6a737d; } /* Documentation */
+    code span.dt { color: #d73a49; } /* DataType */
+    code span.dv { color: #005cc5; } /* DecVal */
+    code span.er { color: #ff5555; text-decoration: underline; } /* Error */
+    code span.ex { color: #d73a49; font-weight: bold; } /* Extension */
+    code span.fl { color: #005cc5; } /* Float */
+    code span.fu { color: #6f42c1; } /* Function */
+    code span.im { color: #032f62; } /* Import */
+    code span.in { color: #6a737d; } /* Information */
+    code span.kw { color: #d73a49; } /* Keyword */
+    code span.op { color: #24292e; } /* Operator */
+    code span.ot { color: #6f42c1; } /* Other */
+    code span.pp { color: #d73a49; } /* Preprocessor */
+    code span.re { color: #6a737d; } /* RegionMarker */
+    code span.sc { color: #005cc5; } /* SpecialChar */
+    code span.ss { color: #032f62; } /* SpecialString */
+    code span.st { color: #032f62; } /* String */
+    code span.va { color: #e36209; } /* Variable */
+    code span.vs { color: #032f62; } /* VerbatimString */
+    code span.wa { color: #ff5555; } /* Warning */
   </style>
   <link rel="stylesheet" href="../../../site_libs/revealjs/dist/theme/quarto.css" id="theme">
   <link href="../../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -319,36 +383,66 @@
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" data-background-image="images/seaplane-headon.png" data-background-size="contain" class="center">
-  <h1 class="title">Quarto</h1>
+<section id="title-slide" data-background-color="" data-background-image="../../../images/seaplane-bg.png" data-background-size="contain" class="center">
+  <h1 class="title">Presentations</h1>
   <p class="subtitle">rstudio::conf(2022) <br> From R Markdown to Quarto</p>
   <p class="author">Andrew Bray</p>
 </section>
 
-<section class="slide level2">
+<section id="getting-exercise" class="slide level2">
+<h2>Getting Exercise</h2>
+<p>To get the materials for each part of this course packed in an RStudio Project, run:</p>
+<div class="sourceCode" id="cb1" style="font-size: 1.5em"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1"></a><span class="in">```{r}</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a>usethis<span class="sc">::</span><span class="fu">use_course</span>(<span class="st">"rmd-to-quarto/presentations"</span>)</span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="one-concept-three-formats" class="slide level2">
+<h2>One concept, three formats</h2>
+<div class="columns">
+<div class="column" style="width:33%;">
+<p><img data-src="images/beamer.png"></p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb2-1"><a href="#cb2-1"></a><span class="pp">---</span></span>
+<span id="cb2-2"><a href="#cb2-2"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Quarto Presentations"</span></span>
+<span id="cb2-3"><a href="#cb2-3"></a><span class="fu">author</span><span class="kw">:</span><span class="at"> Author</span></span>
+<span id="cb2-4"><a href="#cb2-4"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> beamer</span></span>
+<span id="cb2-5"><a href="#cb2-5"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column fragment" style="width:33%;">
+<p><img data-src="images/pptx.png"></p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb3-1"><a href="#cb3-1"></a><span class="pp">---</span></span>
+<span id="cb3-2"><a href="#cb3-2"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Quarto Presentations"</span></span>
+<span id="cb3-3"><a href="#cb3-3"></a><span class="fu">author</span><span class="kw">:</span><span class="at"> Author</span></span>
+<span id="cb3-4"><a href="#cb3-4"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> pptx</span></span>
+<span id="cb3-5"><a href="#cb3-5"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column fragment" style="width:33%;">
+<p><img data-src="images/reveal.png"></p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb4-1"><a href="#cb4-1"></a><span class="pp">---</span></span>
+<span id="cb4-2"><a href="#cb4-2"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Quarto Presentations"</span></span>
+<span id="cb4-3"><a href="#cb4-3"></a><span class="fu">author</span><span class="kw">:</span><span class="at"> Author</span></span>
+<span id="cb4-4"><a href="#cb4-4"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> revealjs</span></span>
+<span id="cb4-5"><a href="#cb4-5"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</section>
+<section id="revealjs" class="slide level2">
+<h2>Revealjs</h2>
 
-<ol type="1">
-<li>Features</li>
-</ol>
-<ul>
-<li>menu</li>
-<li>chalkboard</li>
-<li>multiplex</li>
-<li>print to pdf</li>
+<img data-src="images/reveal-logo.png" class="r-stretch quarto-figure-center"><ul>
+<li>HTML format for slides (similar to remarkjs utilized by <code>xaringan</code> R package)</li>
+<li>Feature rich and still being developed</li>
 </ul>
-<ol type="1">
-<li>multicolumn layout</li>
-<li>sequential reveal</li>
-<li>fragments</li>
-<li>animation-auto</li>
-<li>source-output increment using fragment and labels and echo = false</li>
-<li>reveal vs remark</li>
-</ol>
-<p>https://meghan.rbind.io/blog/quarto-slides/#section-header</p>
-<p>exercise 0: look through the thing and answer quiz last exercise: either try to get from here to there or make your own template</p>
+<div class="fragment">
+<blockquote>
+<p><span class="block-el" style="font-size: 1.2em">Let’s give it a spin!</span></p>
+</blockquote>
+</div>
+</section>
+<section id="features-of-revealjs" class="slide level2">
+<h2>Features of Revealjs</h2>
+<div style="text-align: center; margin-top: 1em">
+<p><a href="https://quarto.org/docs/presentations/revealjs/demo/#/title-slide" data-preview-link="true" style="text-align: center">Quarto Demo Presentation</a></p>
+</div>
 
-
-<img src="seaplane.png" class="slide-logo r-stretch"><div class="footer footer-default">
+<div class="footer footer-default">
 
 </div>
 </section>
@@ -377,7 +471,7 @@
       // https://revealjs.com/config/
       Reveal.initialize({
 'controlsAuto': true,
-'previewLinksAuto': false,
+'previewLinksAuto': true,
 'smaller': false,
 'pdfSeparateFragments': false,
 'autoAnimateEasing': "ease",
