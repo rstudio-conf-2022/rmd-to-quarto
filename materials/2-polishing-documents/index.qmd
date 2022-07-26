@@ -20,3 +20,13 @@ title: "Polishing Documents"
 5. RStudio's Visual Editor
 6. Styling with HTML Themes
 7. Baby Steps into CSS
+
+### Exercises
+
+To get the materials for each part of this course packed in an RStudio Project, run:
+
+````{.markdown}
+```{{r}}
+usethis::use_course("rmd-to-quarto/polishing-documents")
+```
+````
