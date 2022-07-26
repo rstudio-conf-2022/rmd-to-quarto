@@ -27,3 +27,12 @@ title: "Welcome to Quarto"
    viii. Display Math
    ix. YAML
 
+### Exercises
+
+To get the materials for each part of this course packed in an RStudio Project, run:
+
+````{.markdown}
+```{{r}}
+usethis::use_course("rmd-to-quarto/welcome-to-quarto")
+```
+````
