@@ -393,6 +393,18 @@ Render input file to various document formats.
 <!-- ::: {data-id="typed-code" style="background: #02733e50; width: 537px; height: 22px; margin: 5px; position: absolute; top: 455px; left: 95px"} -->
 <!-- ::: -->
 
+## Getting Exercise
+
+To get the materials for each part of this course packed in an RStudio Project, run:
+
+````{.markdown style="font-size: 1.5em"}
+```{{r}}
+usethis::use_course("rmd-to-quarto/welcome-to-quarto")
+```
+````
+
+> You can also `git clone` if you prefer that workflow.
+
 ::: notes
 1.  Navigate to the terminal tab of the console pane
 2.  Run quarto render demo.qmd --to html
